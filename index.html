@@ -9,127 +9,169 @@
     <title>PULSE — News in motion</title>
     <meta
       name="description"
-      content="Vertical short-form news. Swipe, listen, read."
+      content="Live vertical short-form news. Swipe, listen, read, save."
     />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#090a0f" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta
       name="apple-mobile-web-app-status-bar-style"
       content="black-translucent"
     />
-    <link rel="icon" type="image/svg+xml" href="icon.svg" />
-    <link rel="stylesheet" href="styles.css" />
-    <script defer src="data/fallback-feed.js"></script>
-    <script defer src="app.js"></script>
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./data/fallback-feed.js"></script>
+    <script defer src="./app.js"></script>
   </head>
   <body>
-    <div id="ambient"></div>
-    <aside class="desk-pill" id="desk" aria-label="Quick controls">
-      <div class="dp-h">PULSE <span id="st-live">Cached</span></div>
-      <div class="dp-s">
-        <b id="st-pos">0/0</b> stories · updated <span id="st-time">—</span>
-      </div>
-      <ul>
-        <li><kbd>↑</kbd><kbd>↓</kbd> Navigate</li>
-        <li><kbd>L</kbd> Like</li>
-        <li><kbd>M</kbd> Voice Anchor</li>
-        <li><kbd>A</kbd> Auto-Scroll</li>
-        <li><kbd>R</kbd> Full Reader</li>
-        <li><kbd>/</kbd> Search</li>
-        <li><kbd>S</kbd> Save</li>
-      </ul>
-    </aside>
-    <div class="stage-viewport" id="stage">
-      <main id="feed" aria-live="polite"></main>
-      <div id="empty" hidden></div>
+    <div class="stage" id="stage">
+      <main id="feed" class="feed-container" aria-live="polite"></main>
 
-      <header class="top-hud">
-        <div class="autobar"><i id="autofill"></i></div>
-        <div id="segs" class="segs"></div>
-        <div class="hud-row">
-          <button
-            class="pill"
-            id="pill"
-            data-action="open-location-modal"
-            aria-label="Change location or country"
-          >
-            🌐 Global
-          </button>
-          <span id="sync" class="sync" title="Live sync"></span>
-          <button
-            class="ico"
-            data-action="open-search"
-            aria-label="Search any topic or city"
-          >
-            🔍
-          </button>
-          <button
-            class="ico auto"
-            data-action="toggle-autoscroll"
-            aria-label="Toggle auto-scroll"
-          >
-            ▶️ Auto
+      <header class="top">
+        <div class="prog"><i id="prog"></i></div>
+        <div class="row">
+          <div class="brand">
+            <b>PULSE</b><span id="ctx">For You • Top Stories</span>
+          </div>
+          <span id="live" class="live">• UPDATED</span>
+          <button class="ico" data-action="open-search" aria-label="Search">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="6.5" />
+              <path d="M16 16l4.5 4.5" />
+            </svg>
           </button>
           <button
             class="ico"
-            id="refresh"
-            data-action="refresh"
-            aria-label="Refresh feed"
+            data-action="open-saved"
+            aria-label="Saved stories"
           >
-            🔄
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6.5 3.5h11a1 1 0 0 1 1 1V21l-6.5-4-6.5 4V4.5a1 1 0 0 1 1-1z"
+              />
+            </svg>
+            <i id="saved-count" hidden>0</i>
           </button>
-          <span class="logo">PULSE</span>
+          <button class="ico" data-action="refresh" aria-label="Refresh">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 11a8 8 0 1 0-2.3 5.7" />
+              <path d="M20 4v7h-7" />
+            </svg>
+          </button>
         </div>
-        <nav class="chips" id="chips" aria-label="Categories"></nav>
-        <div id="livepill" class="livepill">⚡ Live Feed Updated</div>
+        <div class="sub">
+          <span id="daily" class="dpill">⚡ 0/10 Read</span>
+          <span id="streak" class="dpill" hidden>🔥 1-day streak</span>
+          <span
+            class="loc"
+            id="location-badge"
+            role="button"
+            tabindex="0"
+            data-action="open-loc"
+            aria-label="Change city"
+            style="cursor: pointer"
+            title="Change city"
+            hidden
+            >📍 Set City ✏️</span
+          >
+        </div>
+        <nav
+          class="chips category-bar"
+          id="chips"
+          aria-label="Categories"
+        ></nav>
       </header>
 
-      <aside class="right-rail" aria-label="Story actions">
-        <button data-action="prev-card" aria-label="Previous story">
-          <b><span>↑</span></b
-          ><small>Prev</small>
-        </button>
-        <button data-action="like" aria-label="Like">
-          <b><span>🤍</span></b
-          ><small>0</small>
-        </button>
+      <aside class="rail" aria-label="Story actions">
         <button data-action="listen" aria-label="Listen">
-          <b
-            ><span>🔊</span><i class="wave"><u></u><u></u><u></u><u></u></i></b
+          <span class="ib"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5z" />
+              <path class="w" d="M15.5 9a4 4 0 0 1 0 6" />
+              <path class="w" d="M18 6.5a7.5 7.5 0 0 1 0 11" /></svg></span
           ><small>Listen</small>
         </button>
-        <button data-action="read" aria-label="Read full story">
-          <b><span>📖</span></b
+        <button data-action="read" aria-label="Read full source">
+          <span class="ib"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M3.5 5.5c3-1 6-.8 8.5 1 2.5-1.8 5.5-2 8.5-1v13c-3-1-6-.8-8.5 1-2.5-1.8-5.5-2-8.5-1z"
+              />
+              <path d="M12 6.5v13" /></svg></span
           ><small>Read</small>
         </button>
-        <button data-action="save" aria-label="Save">
-          <b><span>🔖</span></b
-          ><small>0</small>
+        <button data-action="save" aria-label="Save story">
+          <span class="ib"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6.5 3.5h11a1 1 0 0 1 1 1V21l-6.5-4-6.5 4V4.5a1 1 0 0 1 1-1z"
+              /></svg></span
+          ><small>Save</small>
         </button>
         <button data-action="share" aria-label="Share">
-          <b><span>🔗</span></b
+          <span class="ib"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="18" cy="5.5" r="2.5" />
+              <circle cx="6" cy="12" r="2.5" />
+              <circle cx="18" cy="18.5" r="2.5" />
+              <path d="M8.2 10.8l7.6-4M8.2 13.2l7.6 4" /></svg></span
           ><small>Share</small>
         </button>
-        <button data-action="next-card" aria-label="Next story">
-          <b><span>↓</span></b
-          ><small>Next</small>
+        <button class="desk" data-action="prev" aria-label="Previous">
+          <span class="ib"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 14l6-6 6 6" /></svg
+          ></span>
+        </button>
+        <button class="desk" data-action="next" aria-label="Next">
+          <span class="ib"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 10l6 6 6-6" /></svg
+          ></span>
         </button>
       </aside>
 
-      <div class="toast-layer"><div id="toast" role="status"></div></div>
+      <div id="toast" role="status"></div>
+      <div id="geo" role="status" hidden>
+        <span id="geo-txt"></span><button data-action="geo-yes">Switch</button
+        ><button data-action="geo-no" aria-label="Dismiss">✕</button>
+      </div>
 
-      <div class="modal-backdrop" id="reader" data-action="close-modal">
+      <div class="modal" id="savedmodal" data-action="close">
         <section
-          class="modal-dialog sheet"
+          class="sheet"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Saved stories"
+        >
+          <div class="shead">
+            <h3>Saved stories</h3>
+            <div class="sh-actions">
+              <button
+                id="saved-clear"
+                class="txtbtn"
+                data-action="saved-clear"
+                hidden
+              >
+                Clear all</button
+              ><button data-action="close" aria-label="Close">✕</button>
+            </div>
+          </div>
+          <div id="saved-list" class="saved-list"></div>
+        </section>
+      </div>
+
+      <div class="modal" id="reader" data-action="close">
+        <section
+          class="sheet"
           role="dialog"
           aria-modal="true"
           aria-label="Full story"
         >
-          <div class="grab"></div>
           <div class="shead">
             <h3 id="rd-title"></h3>
-            <button data-action="close-modal" aria-label="Close">✕</button>
+            <button data-action="close" aria-label="Close">✕</button>
           </div>
           <div id="rd-meta" class="rd-meta"></div>
           <div id="rd-body" class="rd-body"></div>
@@ -138,77 +180,76 @@
             class="rd-ext"
             target="_blank"
             rel="noopener noreferrer"
-            >Open Original Article ↗</a
+            >Read full story at source ↗</a
           >
         </section>
       </div>
 
-      <div class="modal-backdrop" id="searchmodal" data-action="close-modal">
+      <div class="modal" id="searchmodal" data-action="close">
         <section
-          class="modal-dialog box"
+          class="sheet"
           role="dialog"
           aria-modal="true"
-          aria-label="Live search"
+          aria-label="Search"
         >
-          <div class="bh">
-            <h1>SEARCH</h1>
-            <button data-action="close-modal" aria-label="Close">✕</button>
+          <div class="shead">
+            <h3>Search live news</h3>
+            <button data-action="close" aria-label="Close">✕</button>
           </div>
-          <p>Type any topic, event or city for a dedicated live Reels feed.</p>
           <div class="qrow">
             <input
               id="search-q"
               type="search"
-              placeholder="Jamshedpur, Pune, AI, Cricket, Formula 1…"
+              placeholder="Mumbai, AI, Cricket, Formula 1…"
               aria-label="Search live news"
-            /><button class="go" data-action="run-search">Go</button>
+            />
+            <button class="go" data-action="run-search">Go</button>
           </div>
           <div class="sugs">
-            <button data-action="run-search" data-q="Jamshedpur">
-              Jamshedpur</button
-            ><button data-action="run-search" data-q="Pune">Pune</button
-            ><button data-action="run-search" data-q="AI">AI</button
-            ><button data-action="run-search" data-q="Cricket">Cricket</button
-            ><button data-action="run-search" data-q="Formula 1">
-              Formula 1</button
-            ><button data-action="run-search" data-q="Stock Market">
-              Stock Market</button
-            ><button data-action="run-search" data-q="Tokyo">Tokyo</button
-            ><button data-action="run-search" data-q="Space">Space</button>
+            <button data-action="run-search" data-q="Mumbai" data-kind="city">
+              Mumbai
+            </button>
+            <button data-action="run-search" data-q="Delhi" data-kind="city">
+              Delhi
+            </button>
+            <button data-action="run-search" data-q="AI">AI</button>
+            <button data-action="run-search" data-q="Cricket">Cricket</button>
+            <button data-action="run-search" data-q="Formula 1">
+              Formula 1
+            </button>
+            <button data-action="run-search" data-q="Stock Market">
+              Stock Market
+            </button>
+            <button data-action="run-search" data-q="Space">Space</button>
           </div>
         </section>
       </div>
 
-      <div class="modal-backdrop" id="locmodal" data-action="close-modal">
+      <div class="modal" id="locmodal" data-action="close">
         <section
-          class="modal-dialog box"
+          class="sheet"
           role="dialog"
           aria-modal="true"
-          aria-label="Location and country"
+          aria-label="Change city"
         >
-          <div class="bh">
-            <h1>PULSE</h1>
-            <button data-action="close-modal" aria-label="Close">✕</button>
+          <div class="shead">
+            <h3>Change your city</h3>
+            <button data-action="close" aria-label="Close">✕</button>
           </div>
-          <p>Tune your feed to where you are or what you care about.</p>
-          <button class="big" data-action="detect-gps">
-            📍 Detect My Current Location (GPS / IP)
-          </button>
+          <p class="cur">Local feed: <b id="loc-cur">not set</b></p>
           <div class="qrow">
             <input
               id="loc-q"
               type="search"
-              placeholder="Search any city, country or topic…"
-              aria-label="Search city, country or topic"
-            /><button class="go" data-action="search-location">Go</button>
+              placeholder="Type any city or place…"
+              aria-label="City"
+            />
+            <button class="go" data-action="set-city">Save</button>
           </div>
-          <button class="big alt" data-action="open-search">
-            🔍 Live search any topic or city
+          <div id="loc-grid" class="sugs"></div>
+          <button class="big alt" data-action="detect-gps">
+            📍 Use my current location
           </button>
-          <button class="big alt" data-action="select-global">
-            🌐 Global Viral
-          </button>
-          <div id="loc-grid" class="loc-grid"></div>
         </section>
       </div>
     </div>

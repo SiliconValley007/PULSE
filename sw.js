@@ -1,4 +1,4 @@
-const V = "pulse-v2";
+const V = "pulse-v8";
 const ASSETS = [
   "./",
   "./index.html",
@@ -6,8 +6,8 @@ const ASSETS = [
   "./app.js",
   "./icon.svg",
   "./manifest.json",
+  "./data/fallback-feed.js",
 ];
-const key = (u) => new Request(u.origin + u.pathname);
 self.addEventListener("install", (e) => {
   e.waitUntil(
     caches
@@ -30,44 +30,33 @@ self.addEventListener("activate", (e) => {
       .then(() => self.clients.claim()),
   );
 });
-async function networkFirst(req, u) {
-  const c = await caches.open(V);
-  try {
-    const r = await fetch(req, { cache: "no-store" });
-    if (r && r.ok) c.put(key(u), r.clone());
-    return r;
-  } catch (e) {
-    const m = await c.match(key(u));
-    if (m) return m;
-    throw e;
-  }
-}
-async function cacheFirstUpdate(req, u) {
-  const c = await caches.open(V),
-    k = key(u),
-    m = await c.match(k);
-  const net = fetch(req)
-    .then((r) => {
-      if (r && r.ok && r.type === "basic") c.put(k, r.clone());
-      return r;
-    })
-    .catch(() => null);
-  if (m) {
-    net.catch(() => {});
-    return m;
-  }
-  const r = await net;
-  return r || new Response("Offline", { status: 503, statusText: "Offline" });
-}
-self.addEventListener("fetch", (e) => {
-  const req = e.request;
-  if (req.method !== "GET") return;
-  const u = new URL(req.url);
-  if (u.origin !== self.location.origin) return;
-  if (/\/data\/fallback-feed\.(json|js)$/.test(u.pathname))
-    e.respondWith(networkFirst(req, u));
-  else if (
-    /\/$|\/(index\.html|styles\.css|app\.js|icon\.svg)$/.test(u.pathname)
+// Same-origin, network-first. Cross-origin APIs (RSS, JSON, images) are never touched.
+self.addEventListener("fetch", (event) => {
+  const url = new URL(event.request.url);
+  if (url.origin !== self.location.origin) return;
+  if (event.request.method !== "GET") return;
+  if (
+    url.pathname.startsWith("/.well-known/") ||
+    url.pathname.startsWith("/api/")
   )
-    e.respondWith(cacheFirstUpdate(req, u));
+    return;
+  event.respondWith(
+    (async () => {
+      const c = await caches.open(V);
+      try {
+        const r = await fetch(event.request);
+        if (r && r.ok) c.put(event.request, r.clone()).catch(() => {});
+        return r;
+      } catch (err) {
+        const m =
+          (await c.match(event.request)) ||
+          (event.request.mode === "navigate"
+            ? await c.match("./index.html")
+            : null);
+        return (
+          m || new Response("Offline", { status: 503, statusText: "Offline" })
+        );
+      }
+    })(),
+  );
 });
