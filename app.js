@@ -45,6 +45,543 @@
   };
   const BAD = new RegExp("wi" + "ki(pedia|media)\\.org", "i");
 
+  /* ---------- engagement engine: fingerprints + persistent stores ---------- */
+  const GOAL = 5;
+  let NOSTORE = false;
+  // 32-bit FNV-1a -> 8-char hex.
+  const fnv1a = (str) => {
+    let h = 0x811c9dc5;
+    for (let i = 0; i < str.length; i++) {
+      h ^= str.charCodeAt(i);
+      h = Math.imul(h, 0x01000193);
+    }
+    return (h >>> 0).toString(16).padStart(8, "0");
+  };
+  // Strip utm_*, #hash and trailing slash. Scheme-insensitive so http/https variants match.
+  const normUrl = (u) => {
+    const raw = String(u || "").trim();
+    if (!raw) return "";
+    try {
+      const x = new URL(raw);
+      [...x.searchParams.keys()].forEach((k) => {
+        if (/^utm_/i.test(k)) x.searchParams.delete(k);
+      });
+      x.hash = "";
+      return x.host + x.pathname.replace(/\/+$/, "") + x.search;
+    } catch {
+      return raw.replace(/#.*$/, "").replace(/\/+$/, "");
+    }
+  };
+  const normTitle = (t) =>
+    String(t == null ? "" : t)
+      .trim()
+      .toLowerCase();
+  const getArticleId = (item) => {
+    const it = item || {};
+    const key =
+      normUrl(it.url || it.link) ||
+      normTitle(it.title) ||
+      String(it.id == null ? "" : it.id);
+    return fnv1a(key);
+  };
+  const STOP = new Set(
+    "a an the and or of to in on at for with by from as is are was were be been it its this that these those will would can could has have had not no but into over after before about says say said new".split(
+      " ",
+    ),
+  );
+  // Headline signature: strip " - Source"/" | Source", non-alphanumerics and stopwords.
+  const titleSig = (t) => {
+    const x = String(t == null ? "" : t)
+      .toLowerCase()
+      .replace(/\s+[-|–—]\s+[^-|–—]{2,40}$/, "");
+    const w = x
+      .replace(/[^a-z0-9]+/g, " ")
+      .split(" ")
+      .filter((q) => q && !STOP.has(q));
+    return w.length >= 3 ? fnv1a(w.join(" ")) : "";
+  };
+  const stamp = (s) => {
+    if (s && typeof s === "object") {
+      if (!s._cid) s._cid = getArticleId(s);
+      if (!s._titleSig) s._titleSig = titleSig(s.title) || fnv1a("u:" + s._cid);
+    }
+    return s;
+  };
+  const cid = (s) => (s ? s._cid || stamp(s)._cid : "");
+  const tsig = (s) => (s ? s._titleSig || stamp(s)._titleSig : "");
+  const ymd = (d) =>
+    d.getFullYear() +
+    "-" +
+    String(d.getMonth() + 1).padStart(2, "0") +
+    "-" +
+    String(d.getDate()).padStart(2, "0");
+  const todayStr = () => ymd(new Date());
+  const ydayStr = () => {
+    const y = new Date();
+    y.setDate(y.getDate() - 1);
+    return ymd(y);
+  };
+
+  // Permanent seen-ID set: FIFO capped, loaded synchronously, debounced writes.
+  const SeenStore = (() => {
+    const KEY = "pulse_seen_v1",
+      MAX = 10000;
+    let arr = [],
+      set = new Set(),
+      timer = 0,
+      dirty = false;
+    const read = () => {
+      const v = LS.get(KEY, []);
+      arr = Array.isArray(v)
+        ? v.filter((x) => typeof x === "string").slice(-MAX)
+        : [];
+      set = new Set(arr);
+    };
+    const flush = () => {
+      clearTimeout(timer);
+      timer = 0;
+      if (!dirty) return;
+      try {
+        localStorage.setItem(KEY, JSON.stringify(arr));
+        dirty = false;
+      } catch {}
+    };
+    read();
+    return {
+      has: (id) => set.has(id),
+      add(id) {
+        if (!id || set.has(id)) return false;
+        set.add(id);
+        arr.push(id);
+        if (arr.length > MAX)
+          arr.splice(0, arr.length - MAX).forEach((x) => set.delete(x));
+        dirty = true;
+        clearTimeout(timer);
+        timer = setTimeout(flush, 200);
+        return true;
+      },
+      flush,
+      remove(ids) {
+        const rm = new Set(ids);
+        let hit = false;
+        arr = arr.filter((x) => {
+          if (!rm.has(x)) return true;
+          set.delete(x);
+          hit = true;
+          return false;
+        });
+        if (hit) {
+          dirty = true;
+          flush();
+        }
+        return hit;
+      },
+      // Merge ids written by another tab without losing our unsaved ones.
+      reload() {
+        const mine = arr;
+        read();
+        mine.forEach((id) => {
+          if (!set.has(id)) {
+            set.add(id);
+            arr.push(id);
+          }
+        });
+      },
+      get size() {
+        return set.size;
+      },
+    };
+  })();
+
+  // Saved vault (article objects). Migrates the legacy v2 list on first run.
+  const SavedStore = (() => {
+    const KEY = "pulse_saved_v1";
+    return {
+      load() {
+        let v = LS.get(KEY, null);
+        const migrate = !Array.isArray(v);
+        if (migrate) v = LS.get("pulse_saved_v2", []);
+        if (!Array.isArray(v)) v = [];
+        const seen = new Set();
+        v = v
+          .filter((x) => x && x.id && x.title && x.url)
+          .map(stamp)
+          .filter((x) => !seen.has(x._cid) && seen.add(x._cid));
+        if (migrate && v.length) LS.set(KEY, v);
+        return v;
+      },
+      save(list) {
+        LS.set(KEY, list);
+      },
+    };
+  })();
+
+  // Daily goal + streak. A streak day counts once the daily goal is reached.
+  const StreakStore = (() => {
+    const KEY = "pulse_streak_v1";
+    const blank = () => ({
+      currentStreak: 0,
+      bestStreak: 0,
+      lastActiveDate: "",
+      todayDate: todayStr(),
+      todayReadCount: 0,
+    });
+    let d;
+    const load = () => {
+      const v = LS.get(KEY, null);
+      if (v && typeof v === "object") return Object.assign(blank(), v);
+      const b = blank(),
+        old = LS.get("pulse_daily", null);
+      if (old && typeof old === "object") {
+        b.currentStreak = +old.streak || 0;
+        b.bestStreak = b.currentStreak;
+        b.lastActiveDate = old.last || "";
+        if (old.date === b.todayDate && Array.isArray(old.read))
+          b.todayReadCount = old.read.length;
+      }
+      return b;
+    };
+    const roll = () => {
+      const t = todayStr();
+      if (d.todayDate !== t) {
+        d.todayDate = t;
+        d.todayReadCount = 0;
+      }
+      if (
+        d.currentStreak &&
+        d.lastActiveDate !== t &&
+        d.lastActiveDate !== ydayStr()
+      )
+        d.currentStreak = 0;
+    };
+    d = load();
+    roll();
+    return {
+      status() {
+        roll();
+        const locked = d.lastActiveDate === todayStr();
+        return {
+          streak: d.currentStreak,
+          best: d.bestStreak,
+          today: d.todayReadCount,
+          goal: GOAL,
+          locked,
+          atRisk: !locked && d.currentStreak > 0,
+        };
+      },
+      // The FIRST read each day locks/increments the streak; the goal ring
+      // (todayReadCount/GOAL) completes independently, exactly once per day.
+      bump() {
+        roll();
+        d.todayReadCount++;
+        let first = false;
+        if (d.lastActiveDate !== todayStr()) {
+          d.currentStreak =
+            d.lastActiveDate === ydayStr() ? d.currentStreak + 1 : 1;
+          d.bestStreak = Math.max(d.bestStreak, d.currentStreak);
+          d.lastActiveDate = todayStr();
+          first = true;
+        }
+        LS.set(KEY, d);
+        return { first, goalDone: d.todayReadCount === GOAL };
+      },
+    };
+  })();
+
+  // Fast topic inference for generic "top" stories: source host first, then keywords.
+  const SRC_CAT = [
+    [
+      "sports",
+      /espn|cricbuzz|cricinfo|skysports|sportstar|goal\.com|olympics|bleacherreport/,
+    ],
+    [
+      "tech",
+      /techcrunch|verge|wired|arstechnica|engadget|gadgets360|9to5|zdnet|cnet|tomshardware|androidauthority|hackernews|ycombinator/,
+    ],
+    [
+      "business",
+      /livemint|mint|economictimes|moneycontrol|businessstandard|bloomberg|ft\.com|cnbc|marketwatch|financialexpress|forbes|wsj/,
+    ],
+    [
+      "science",
+      /nature\.com|space\.com|sciencedaily|newscientist|sciencenews|phys\.org|isro|nasa/,
+    ],
+    [
+      "world",
+      /aljazeera|dw\.com|bbc\.com\/news\/world|france24|apnews|reuters/,
+    ],
+    [
+      "entertainment",
+      /variety|hollywoodreporter|deadline|billboard|rollingstone|pinkvilla|filmfare|bollywoodhungama|ew\.com/,
+    ],
+    [
+      "health",
+      /webmd|healthline|statnews|medicalnewstoday|who\.int|everydayhealth|healthshots/,
+    ],
+    [
+      "india",
+      /ndtv|thehindu|hindustantimes|indianexpress|timesofindia|news18|indiatoday|deccan|theprint|scroll\.in/,
+    ],
+  ];
+  const KW_CAT = [
+    [
+      "sports",
+      /\b(cricket|ipl|bcci|wicket|batter|bowler|innings|football|fifa|tennis|olympic|olympics|grand slam|formula 1|f1|nba|nfl|medal|tournament|league|world cup|champions? trophy|coach|striker|goalkeeper|stadium|match)\b/g,
+    ],
+    [
+      "tech",
+      /\b(ai|artificial intelligence|openai|chatgpt|google|apple|iphone|android|microsoft|nvidia|semiconductor|chip|chips|software|startup|cyber|hacker|robot|smartphone|laptop|tesla|spacex|app|gadget|data breach|cloud|algorithm|tech)\b/g,
+    ],
+    [
+      "business",
+      /\b(sensex|nifty|stock|stocks|shares|market|markets|rbi|bank|banks|inflation|gdp|economy|economic|rupee|dollar|ipo|profit|revenue|earnings|tax|gst|trade|tariff|merger|acquisition|investors?|fund|rate cut|interest rates?)\b/g,
+    ],
+    [
+      "science",
+      /\b(nasa|isro|space|scientists?|research|researchers|study|climate|vaccine|planet|telescope|species|quantum|physics|lunar|moon|mars|astronomers?|fossil|genome|discovery|asteroid)\b/g,
+    ],
+    [
+      "world",
+      /\b(ukraine|russia|gaza|israel|hamas|iran|china|beijing|washington|white house|un|nato|president|prime minister|embassy|sanctions|ceasefire|treaty|europe|eu|pakistan|bangladesh|taliban|summit)\b/g,
+    ],
+    [
+      "entertainment",
+      /\b(movie|movies|film|box office|actor|actress|bollywood|hollywood|netflix|series|album|singer|concert|trailer|oscars?|grammys?|celebrity|streaming)\b/g,
+    ],
+    [
+      "health",
+      /\b(health|hospital|doctors?|disease|virus|vaccine|cancer|diabetes|obesity|nutrition|diet|mental health|wellness|outbreak|patients?|medicine|symptoms?)\b/g,
+    ],
+    [
+      "india",
+      /\b(india|indian|modi|bjp|congress|lok sabha|rajya sabha|supreme court|delhi|mumbai|kolkata|chennai|bengaluru|bangalore|hyderabad|jharkhand|ranchi|jamshedpur|bihar|uttar pradesh|maharashtra|kerala|gujarat)\b/g,
+    ],
+  ];
+  const inferCategory = (item) => {
+    const it = item || {};
+    let host = "";
+    try {
+      host = new URL(it.url || it.link || "").hostname;
+    } catch {}
+    const who = (String(it.src || "") + " " + host).toLowerCase();
+    for (const [c, re] of SRC_CAT) if (re.test(who)) return c;
+    const text = (
+      String(it.title || "") +
+      " " +
+      String(it.summary || "")
+    ).toLowerCase();
+    let best = "",
+      top = 0;
+    for (const [c, re] of KW_CAT) {
+      const n = (text.match(re) || []).length;
+      if (n > top) {
+        top = n;
+        best = c;
+      }
+    }
+    return best;
+  };
+  // Effective topic: real category if known, else inferred (cached on the item).
+  const topicOf = (s) => {
+    if (!s) return "";
+    if (s._topicCategory === undefined) {
+      const c = s.ocat || s.cat || "";
+      s._topicCategory =
+        c && c !== "top" && c !== "local" ? c : inferCategory(s) || c || "";
+    }
+    return s._topicCategory;
+  };
+
+  // Implicit interest weights per category and per source.
+  const AffinityStore = (() => {
+    const KEY = "pulse_affinity_v1",
+      CAP = 200,
+      KEEP = 60;
+    let d = LS.get(KEY, null),
+      t = 0;
+    if (!d || typeof d !== "object") d = {};
+    if (!d.c || typeof d.c !== "object") d.c = {};
+    if (!d.s || typeof d.s !== "object") d.s = {};
+    const trim = (o) => {
+      const k = Object.keys(o);
+      if (k.length > KEEP)
+        k.sort((a, b) => o[b] - o[a])
+          .slice(KEEP)
+          .forEach((x) => delete o[x]);
+    };
+    const flush = () => {
+      clearTimeout(t);
+      t = 0;
+      try {
+        localStorage.setItem(KEY, JSON.stringify(d));
+      } catch {}
+    };
+    return {
+      bump(s, n) {
+        if (!s || s.seed) return;
+        const c = String(topicOf(s)),
+          r = String(s.src || "");
+        if (c) d.c[c] = Math.min(CAP, (d.c[c] || 0) + n);
+        if (r) {
+          d.s[r] = Math.min(CAP, (d.s[r] || 0) + n);
+          trim(d.s);
+        }
+        clearTimeout(t);
+        t = setTimeout(flush, 400);
+      },
+      // 0..1, saturating.
+      score(s) {
+        const raw = 0.6 * (d.c[topicOf(s)] || 0) + 0.4 * (d.s[s.src] || 0);
+        return raw / (raw + 8);
+      },
+      top(n) {
+        return Object.keys(d.c)
+          .filter((k) => d.c[k] > 0)
+          .sort((a, b) => d.c[b] - d.c[a])
+          .slice(0, n);
+      },
+      flush,
+    };
+  })();
+
+  // A story is "seen" if EITHER its URL id or its headline signature was seen.
+  const isSeen = (s) =>
+    !!s && (SeenStore.has(cid(s)) || SeenStore.has("t:" + tsig(s)));
+  const seenAdd = (s) => {
+    if (isSeen(s)) return false;
+    SeenStore.add(cid(s));
+    SeenStore.add("t:" + tsig(s));
+    return true;
+  };
+
+  // Persistent reservoir of unseen stories (cap 150) for instant backfill.
+  const UnseenPoolStore = (() => {
+    const KEY = "pulse_pool_v1",
+      CAP = 150,
+      MAXAGE = 14 * 864e5;
+    const rej = new Set();
+    let t = 0;
+    const slim = (s) => ({
+      id: s.id,
+      ocat: s.ocat,
+      title: s.title,
+      url: s.url,
+      src: s.src,
+      ts: s.ts,
+      img: s.img,
+      stock: s.stock,
+      cat: s.cat,
+      cl: s.cl,
+      summary: s.summary,
+      gen: s.gen,
+      bullets: Array.isArray(s.bullets) ? s.bullets.slice(0, 3) : [],
+    });
+    const keys = (s) => [cid(s), "t:" + tsig(s)];
+    const ok = (s) =>
+      s &&
+      s.title &&
+      s.url &&
+      s.ts &&
+      Date.now() - s.ts <= MAXAGE &&
+      !isSeen(s);
+    let items = [];
+    {
+      const v = LS.get(KEY, []);
+      const have = new Set();
+      (Array.isArray(v) ? v : []).forEach((x) => {
+        if (!ok(x)) return;
+        stamp(x);
+        const k = keys(x);
+        if (k.some((q) => have.has(q))) return;
+        k.forEach((q) => have.add(q));
+        items.push(x);
+      });
+    }
+    const flush = () => {
+      clearTimeout(t);
+      t = 0;
+      try {
+        localStorage.setItem(KEY, JSON.stringify(items.map(slim)));
+      } catch {}
+    };
+    const later = () => {
+      clearTimeout(t);
+      t = setTimeout(flush, 300);
+    };
+    return {
+      add(list) {
+        const have = new Set();
+        items.forEach((x) => keys(x).forEach((q) => have.add(q)));
+        let n = 0;
+        for (const raw of list || []) {
+          if (!raw || !raw.title || !raw.url || !raw.ts || raw.seed) continue;
+          const c = stamp(slim(raw));
+          const k = keys(c);
+          if (!ok(c) || k.some((q) => have.has(q) || rej.has(q))) continue;
+          k.forEach((q) => have.add(q));
+          items.push(c);
+          n++;
+        }
+        if (n) {
+          if (items.length > CAP)
+            items = items.sort((a, b) => b.ts - a.ts).slice(0, CAP);
+          later();
+        }
+        return n;
+      },
+      evict(s) {
+        const k = new Set(keys(s)),
+          before = items.length;
+        items = items.filter((x) => !keys(x).some((q) => k.has(q)));
+        if (items.length !== before) later();
+      },
+      reject(s) {
+        keys(s).forEach((q) => rej.add(q));
+        this.evict(s);
+      },
+      // Best unseen, not-yet-rendered stories: topic match first, then blended score.
+      pick(cat, n, ex, strict) {
+        if (n <= 0) return [];
+        return items
+          .filter(
+            (s) =>
+              !isSeen(s) &&
+              !(ex && keys(s).some((q) => ex.has(q))) &&
+              (!strict || topicOf(s) === cat),
+          )
+          .map((s) => ({
+            s,
+            k: blend(s) + (cat !== "foryou" && topicOf(s) === cat ? 1 : 0),
+          }))
+          .sort((a, b) => b.k - a.k)
+          .slice(0, n)
+          .map((x) => x.s);
+      },
+      all: () => items.slice(),
+      get size() {
+        return items.length;
+      },
+      flush,
+    };
+  })();
+
+  // Paging cursors for the deep-harvest JSON APIs.
+  const CursorStore = (() => {
+    const KEY = "pulse_cursors_v1";
+    let d = LS.get(KEY, null);
+    if (!d || typeof d !== "object" || Array.isArray(d)) d = {};
+    d = Object.assign({ hn: 0, sf: 0, dev: 1, rd: "", sub: 0 }, d);
+    return {
+      get: (k) => d[k],
+      set(k, v) {
+        d[k] = v;
+        try {
+          localStorage.setItem(KEY, JSON.stringify(d));
+        } catch {}
+      },
+    };
+  })();
+
   /* ---------- config ---------- */
   const GL = "hl=en-IN&gl=IN&ceid=IN:en";
   const topicURL = (t) =>
@@ -119,6 +656,24 @@
       fb: "science",
       sv: ["science/in", "science/us"],
       ok: ["Science"],
+    },
+    {
+      id: "entertainment",
+      label: "Entertainment",
+      topic: "ENTERTAINMENT",
+      q: "entertainment",
+      fb: "entertainment",
+      sv: ["entertainment/in", "entertainment/us"],
+      ok: ["Entertainment"],
+    },
+    {
+      id: "health",
+      label: "Health",
+      topic: "HEALTH",
+      q: "health",
+      fb: "health",
+      sv: ["health/in", "health/us"],
+      ok: ["Health"],
     },
   ];
   const QUICK = [
@@ -196,6 +751,22 @@
       "1446776811953-b23d57bd21aa",
       "1581093458791-9d15482442f7",
     ],
+    entertainment: [
+      "1489599849927-2ee91cede3ba",
+      "1536440136628-849c177e76a1",
+      "1514525253161-7a46d19cd819",
+      "1470229722913-7c0e2dbbafd3",
+      "1478720568477-152d9b164e26",
+      "1485846234645-a62644f84728",
+    ],
+    health: [
+      "1505751172876-fa1923c5c528",
+      "1576091160399-112ba8d25d1d",
+      "1490645935967-10de6ba17061",
+      "1571019613454-1cb2f99b2d8b",
+      "1584515933487-779824d29309",
+      "1579684385127-1ef15d508118",
+    ],
   };
   const stock = (cat, seed, k) => {
     const a = POOL[cat] || POOL.top;
@@ -255,9 +826,7 @@
       localStorage.removeItem(k),
     );
   } catch {}
-  state.savedList = (LS.get("pulse_saved_v2", []) || []).filter(
-    (x) => x && x.id && x.title && x.url,
-  );
+  state.savedList = SavedStore.load();
   state.city = cityGet();
   let navTouched = false;
   let retries = 0;
@@ -389,7 +958,10 @@
       timedOut = true;
       c.abort();
     }, ms || 3000);
-    return fetch(u, { signal: c.signal })
+    return fetch(u, {
+      signal: c.signal,
+      cache: NOSTORE ? "no-store" : "default",
+    })
       .then((r) => {
         if (!r.ok) throw new Error("HTTP " + r.status);
         return type === "json" ? r.json() : r.text();
@@ -610,6 +1182,8 @@
     business: "business",
     sports: "sports",
     science: "science",
+    entertainment: "entertainment",
+    health: "health",
   };
   const leadLine = (cat, src, loc) =>
     `Breaking ${CATW[cat] || cat} coverage reported by ${src}${loc ? " • " + loc : ""}. Tap Read for the full story.`;
@@ -670,6 +1244,7 @@
       /^https?:\/\//.test(r.img || "") && !BAD.test(r.img) ? r.img : "";
     return {
       id: hash(link),
+      _cid: getArticleId({ url: link, title }),
       title,
       url: link,
       src: src || (link.match(/\/\/(?:www\.)?([^/]+)/) || [, "Source"])[1],
@@ -713,6 +1288,8 @@
           : goodSummary(s.summary, s.title, s.src);
         return {
           id: s.id,
+          _cid: getArticleId(s),
+          ocat: s.cat,
           title: s.title,
           url: s.url,
           src: s.src,
@@ -730,28 +1307,27 @@
       });
   }
   const cacheGet = (cat) =>
-    (LS.get("pulse.cache." + cat, []) || []).filter(
-      (s) => s && s.title && s.url && !BAD.test(s.url) && fresh(s),
-    );
+    (LS.get("pulse.cache." + cat, []) || [])
+      .filter((s) => s && s.title && s.url && !BAD.test(s.url) && fresh(s))
+      .map(stamp);
   const cacheSet = (cat, items) =>
     LS.set(
       "pulse.cache." + cat,
-      items
-        .slice(0, 30)
-        .map((s) => ({
-          id: s.id,
-          title: s.title,
-          url: s.url,
-          src: s.src,
-          ts: s.ts,
-          img: s.img,
-          stock: s.stock,
-          cat: s.cat,
-          cl: s.cl,
-          summary: s.summary,
-          gen: s.gen,
-          bullets: s.bullets,
-        })),
+      items.slice(0, 30).map((s) => ({
+        id: s.id,
+        ocat: s.ocat,
+        title: s.title,
+        url: s.url,
+        src: s.src,
+        ts: s.ts,
+        img: s.img,
+        stock: s.stock,
+        cat: s.cat,
+        cl: s.cl,
+        summary: s.summary,
+        gen: s.gen,
+        bullets: s.bullets,
+      })),
     );
   async function region(city) {
     try {
@@ -831,7 +1407,7 @@
         : v.kind === "city"
           ? "local:" + v.q.toLowerCase()
           : "";
-    if (key && !state.degraded)
+    if (key && !state.degraded && state.items.some((s) => !s.seed))
       cacheSet(
         key,
         state.items.filter((s) => !s.seed),
@@ -839,6 +1415,7 @@
   }
   function onItems(my, b, total) {
     if (my !== state.req) return;
+    UnseenPoolStore.add(b);
     if (state.degraded) {
       state.degraded = false;
       state.instant = false;
@@ -867,7 +1444,7 @@
     cacheView();
   }
   function mergeNew(b) {
-    if (state.items.length >= 80) return;
+    if (state.items.length >= 3000) return;
     const real = b.filter((s) => !s.stock);
     state.items.forEach((s, i) => {
       if (!s.stock || s.seed) return;
@@ -883,13 +1460,20 @@
         im.src = m.img;
       }
     });
-    const add = spread(dedupe(b, state.items), state.items.slice(-2));
+    const add = spread(
+      dedupe(prepFeed(b, rendered), state.items),
+      state.items.slice(-2),
+    );
     if (!add.length) return;
     const from = state.items.length;
     state.items = state.items.concat(add);
+    add.forEach((x) => keyPair(x).forEach((k) => rendered.add(k)));
     uniq(state.items, from);
     addCards(from, state.items.length, false);
+    trimDom();
     setActive(state.active, true);
+    refreshStats();
+    scheduleChips();
   }
   // Guaranteed result: live India feed (saurav.tech) or the bundled snapshot, clearly badged. Never a dead screen.
   async function degrade(my, v, indiaP) {
@@ -931,6 +1515,7 @@
     toast("Live local proxies busy — showing top India & regional stories");
   }
   async function load() {
+    if (state.view.type === "saved") return showSaved();
     const my = ++state.req;
     const v = state.view,
       isCat = v.type === "cat",
@@ -949,9 +1534,13 @@
     setPill(badge);
     let pre = [];
     if (isCat) {
-      pre = cacheGet(v.cat);
-      if (!pre.length) pre = fallback(c.fb, label, c.id === "foryou");
-    } else if (city) pre = cacheGet("local:" + v.q.toLowerCase());
+      pre = cacheGet(v.cat).filter(feedOK);
+      if (!pre.length)
+        pre = fallback(c.fb, label, c.id === "foryou").filter(feedOK);
+    } else if (city)
+      pre = cacheGet("local:" + v.q.toLowerCase()).filter(feedOK);
+    if (isCat && pre.length < FEED_MIN)
+      pre = pre.concat(poolFill(v.cat, FEED_MIN - pre.length, keySet(pre)));
     if (pre.length) {
       state.instant = true;
       state.shown = true;
@@ -976,6 +1565,8 @@
       if (total.length) {
         setLive(true);
         cacheSet(v.cat, total);
+        loadedCats.add(v.cat);
+        scheduleChips();
         retries = 0;
         return;
       }
@@ -991,6 +1582,14 @@
       }
       state.items = [];
       setLive(false);
+      if (
+        cacheGet(v.cat).length ||
+        fallback(c.fb, label, c.id === "foryou").length
+      ) {
+        state.shown = true;
+        render([]);
+        return;
+      }
       showEmpty({
         h: "Can't reach live news",
         p: "Live sources didn't respond. Check your connection and retry.",
@@ -1037,7 +1636,11 @@
     state.loading = false;
     if (total.length) {
       setLive(true);
-      if (city) cacheSet("local:" + q.toLowerCase(), total);
+      if (city) {
+        cacheSet("local:" + q.toLowerCase(), total);
+        loadedCats.add("local");
+        scheduleChips();
+      }
       return;
     }
     await degrade(my, v, indiaP);
@@ -1048,11 +1651,13 @@
     '<article class="news-card sk"><div class="bar b0" style="opacity:.2"></div><div class="bar b1"></div><div class="bar b2"></div><div class="bar b3"></div><div class="bar b4"></div></article>';
   function showSkeleton() {
     stopTTS();
+    seenReset();
     feed.innerHTML = skeleton();
     feed.scrollTop = 0;
     $("#prog").style.width = "0";
   }
   function showEmpty(e) {
+    seenReset();
     const q = state.view.q || "";
     feed.innerHTML = `<article class="news-card empty"><h2>${esc(e.h)}</h2><p>${esc(e.p)}</p><button data-action="retry">Retry</button>${e.city ? `<button data-action="as-city" data-q="${esc(q)}">Try “${esc(q)}” as a city</button>` : ""}<button data-action="open-loc">Choose another city</button></article>`;
     $("#prog").style.width = "0";
@@ -1077,13 +1682,11 @@
         "</ul>"
       : "";
     return (
-      `<article class="news-card" data-i="${i}"><div class="bg" style="--g:radial-gradient(at 18% 12%,hsl(${hue} 62% 36%) 0,transparent 55%),radial-gradient(at 85% 30%,hsl(${(hue + 70) % 360} 58% 30%) 0,transparent 52%),radial-gradient(at 35% 92%,hsl(${(hue + 300) % 360} 52% 24%) 0,transparent 55%),#090a0f"><img src="${esc(s.img)}" alt="" loading="${i < 2 ? "eager" : "lazy"}" decoding="async" referrerpolicy="no-referrer"></div><div class="shade"></div>` +
+      `<article class="news-card" data-i="${i}"><div class="bg" style="--g:radial-gradient(at 18% 12%,hsl(${hue} 62% 36%) 0,transparent 55%),radial-gradient(at 85% 30%,hsl(${(hue + 70) % 360} 58% 30%) 0,transparent 52%),radial-gradient(at 35% 92%,hsl(${(hue + 300) % 360} 52% 24%) 0,transparent 55%),#090a0f"><img src="${esc(s.img)}" alt="" loading="${i < 3 ? "eager" : "lazy"}" decoding="async" referrerpolicy="no-referrer"></div><div class="shade"></div>` +
       `<div class="meta"><span class="cpill">${esc(s.cl)}</span>${s.ts ? `<span class="time">${ago(s.ts)}</span>` : ""}</div>` +
       `<div class="body"><span class="pub">✔ ${esc(s.src)}</span><h2>${esc(s.title)}</h2>${body}${ul}</div></article>`
     );
   }
-  const endCard = () =>
-    '<article class="news-card empty" data-end="1"><h2>You’re all caught up</h2><p>That’s every fresh story for now.</p><button data-action="refresh">Refresh feed</button></article>';
   let io = null;
   function observe(nodes) {
     if (!io) {
@@ -1098,6 +1701,7 @@
       );
     }
     nodes.forEach((n) => io.observe(n));
+    seenObserve(nodes);
   }
   function bindImgs(nodes) {
     nodes.forEach((c) => {
@@ -1124,6 +1728,7 @@
     if (end) end.remove();
     if (reset) {
       if (io) io.disconnect();
+      seenReset();
       feed.innerHTML = "";
     }
     tmp.innerHTML = h;
@@ -1134,15 +1739,26 @@
     });
     bindImgs(nodes);
     observe(nodes);
+    syncCards(nodes);
+    placeSentinel();
   }
   function render(items) {
-    state.items = spread(dedupe(items));
+    let kept = prepFeed(items, null);
+    if (kept.length < FEED_MIN && state.view.type === "cat")
+      kept = kept.concat(
+        poolFill(state.view.cat, FEED_MIN - kept.length, keySet(kept)),
+      );
+    state.items = spread(dedupe(kept));
+    rebuildRendered();
     state.active = 0;
     items = state.items;
     uniq(state.items, 0);
     addCards(0, items.length, true);
     feed.scrollTop = 0;
     setActive(0, true);
+    refreshStats();
+    scheduleChips();
+    maybeTopUp();
   }
   function setActive(i, force) {
     if (!force && i === state.active) return;
@@ -1158,16 +1774,19 @@
     const n = state.items.length;
     $("#prog").style.width = n ? Math.min(100, ((i + 1) / n) * 100) + "%" : "0";
     syncRail();
-    markRead(i);
+    onActive(i);
     if (advancing) {
       state.autoAdv = false;
       speakCurrent();
     }
-    if (n && i >= n - 3) loadMore();
+    if (n && i >= n - 3) {
+      loadMore();
+      maybeTopUp();
+    }
   }
   function syncRail() {
     const s = state.items[state.active],
-      sv = !!s && isSaved(s.id);
+      sv = !!s && isSaved(s);
     const b = document.querySelector('.rail [data-action="save"]');
     if (b) {
       b.classList.toggle("on", sv);
@@ -1213,7 +1832,7 @@
     $("#" + id).classList.add("open");
   };
   let tt;
-  function toast(m, act, fn) {
+  function toast(m, act, fn, ms) {
     const t = $("#toast");
     t.textContent = "";
     const sp = document.createElement("span");
@@ -1231,7 +1850,7 @@
     }
     t.classList.add("show");
     clearTimeout(tt);
-    tt = setTimeout(() => t.classList.remove("show"), act ? 4500 : 1800);
+    tt = setTimeout(() => t.classList.remove("show"), act ? 4500 : ms || 1800);
   }
   const CTX = {
     foryou: "For You • Top Stories",
@@ -1241,6 +1860,8 @@
     business: "Business • Live Briefing",
     sports: "Sports • Live Briefing",
     science: "Science • Live Briefing",
+    entertainment: "Entertainment • Live Briefing",
+    health: "Health • Live Briefing",
   };
   function setPill(t) {
     const v = state.view,
@@ -1249,6 +1870,7 @@
     if (t && t.startsWith("📍")) ctx = t;
     else if (v.type === "query")
       ctx = onLocal ? "📍 " + v.q : "Search • " + v.q;
+    else if (v.type === "saved") ctx = "Saved • Your Vault";
     else ctx = CTX[v.cat] || "Top Stories";
     $("#ctx").textContent = ctx;
     const b = $("#location-badge");
@@ -1269,9 +1891,12 @@
     l.textContent = on ? "• LIVE" : "• UPDATED";
   }
   const cur = () => state.items[state.active];
-  const isSaved = (id) => state.savedList.some((x) => x.id === id);
+  const isSaved = (s) => {
+    const k = cid(s);
+    return state.savedList.some((x) => cid(x) === k);
+  };
   function persistSaved() {
-    LS.set("pulse_saved_v2", state.savedList);
+    SavedStore.save(state.savedList);
     updateSavedUI();
   }
   function updateSavedUI() {
@@ -1284,18 +1909,15 @@
       c.hidden = !n;
     }
     syncRail();
+    syncCards();
+    const m = $("#savedmodal");
+    if (m && m.classList.contains("open")) renderSaved();
   }
-  function save() {
-    const s = cur();
-    if (!s) return;
-    if (isSaved(s.id)) {
-      state.savedList = state.savedList.filter((x) => x.id !== s.id);
-      persistSaved();
-      toast("Removed from bookmarks");
-      return;
-    }
+  function addSaved(s) {
+    if (isSaved(s)) return false;
     state.savedList.unshift({
       id: s.id,
+      _cid: cid(s),
       title: s.title,
       url: s.url,
       src: s.src,
@@ -1310,6 +1932,23 @@
     });
     state.savedList = state.savedList.slice(0, 100);
     persistSaved();
+    AffinityStore.bump(s, 4);
+    markSeen(s, "save");
+    return true;
+  }
+  function save() {
+    const s = cur();
+    if (!s) return;
+    if (isSaved(s)) {
+      const k = cid(s);
+      state.savedList = state.savedList.filter((x) => cid(x) !== k);
+      persistSaved();
+      toast("Removed from bookmarks");
+      return;
+    }
+    addSaved(s);
+    burst(cardOf(s));
+    buzz(15);
     toast("Saved to bookmarks • ", "View →", openSaved);
   }
   function renderSaved() {
@@ -1418,62 +2057,1045 @@
         await navigator.clipboard.writeText(text);
         toast("Digest copied — paste it anywhere");
       }
+      markSeen(s, "share");
+      AffinityStore.bump(s, 5);
     } catch {}
   }
-  /* ---- Daily briefing progress + streak ---- */
-  const dayStr = (d) =>
-    d.getFullYear() +
-    "-" +
-    String(d.getMonth() + 1).padStart(2, "0") +
-    "-" +
-    String(d.getDate()).padStart(2, "0");
-  const yesterday = () => {
-    const y = new Date();
-    y.setDate(y.getDate() - 1);
-    return dayStr(y);
+  /* ---------- retention engine: seen tracking, rings, caught-up, pulse, preload ---------- */
+  const SEEN_VIS = 0.6,
+    SEEN_MS = 1500,
+    DWELL_MS = 4000;
+  const buzz = (ms) => {
+    try {
+      navigator.vibrate?.(ms);
+    } catch {}
   };
-  function daily() {
-    const t = dayStr(new Date());
-    const d = LS.get("pulse_daily", null);
-    return !d || d.date !== t
-      ? {
-          date: t,
-          read: [],
-          streak: d ? d.streak || 0 : 0,
-          last: d ? d.last || "" : "",
-        }
-      : d;
+  const readBumped = new Set();
+  const flushAll = () => {
+    UnseenPoolStore.flush();
+    SeenStore.flush();
+    AffinityStore.flush();
+  };
+  const feedOK = (s) => !!s && !isSeen(s);
+  const recency = (s) =>
+    s.ts ? Math.exp(-Math.max(0, Date.now() - s.ts) / (36 * 36e5)) : 0;
+  // Blended For You score: recency 65% + affinity 35%. Stable sort.
+  const blend = (s) => recency(s) * 0.65 + AffinityStore.score(s) * 0.35;
+  function rankForYou(list) {
+    return list
+      .map((s, i) => ({
+        s,
+        i,
+        k: blend(s),
+      }))
+      .sort((a, b) => b.k - a.k || a.i - b.i)
+      .map((x) => x.s);
   }
-  function renderDaily() {
-    const d = daily();
-    $("#daily").textContent = `⚡ ${Math.min(d.read.length, 10)}/10 Read`;
-    const alive = d.last === d.date || d.last === yesterday();
-    const st = alive ? d.streak : 0;
-    $("#streak").textContent = `🔥 ${st}-day streak`;
-    $("#streak").hidden = !st;
+  // Every list headed for the feed passes through here: drop seen, rank For You.
+  function prepFeed(list, ex) {
+    const real = lockFilter(list, ex);
+    const v = state.view;
+    return v.type === "cat" && v.cat === "foryou" ? rankForYou(real) : real;
   }
-  let readTimer = 0;
-  function markRead(i) {
-    clearTimeout(readTimer);
-    const s = state.items[i];
-    if (!s || s.seed) return;
-    readTimer = setTimeout(() => {
-      if (state.active !== i || state.items[i] !== s) return;
-      const d = daily();
-      if (d.read.includes(s.id)) return;
-      d.read.push(s.id);
-      d.read = d.read.slice(-200);
-      if (d.last !== d.date) {
-        d.streak = d.last === yesterday() ? (d.streak || 0) + 1 : 1;
-        d.last = d.date;
+  const itemOf = (el) => state.items[+el.dataset.i];
+  const cardOf = (s) => {
+    const i = state.items.indexOf(s);
+    return i < 0 ? null : feed.querySelector(`.news-card[data-i="${i}"]`);
+  };
+  const unseenInView = () =>
+    state.items.reduce((n, s) => n + (!isSeen(s) ? 1 : 0), 0);
+
+  /* -- viewport tracking: >=60% visible for 1.5s => seen; 4s => affinity -- */
+  let seenIO = null;
+  const vis = new Set(),
+    dwelled = new Set();
+  // Per-card state. The seen timer (1.5s) and affinity timer (4s) each need CONTINUOUS >=60%
+  // visibility; dropping below cancels whichever has not fired. A card is only unobserved
+  // once BOTH have completed.
+  const cstate = new Map(); // el -> { a, b, seen, aff }
+  const cs = (el) => {
+    let c = cstate.get(el);
+    if (!c) {
+      c = { a: 0, b: 0, seen: false, aff: false };
+      cstate.set(el, c);
+    }
+    return c;
+  };
+  function settle(el) {
+    const c = cstate.get(el);
+    if (!c || !c.seen || !c.aff) return;
+    clearTimeout(c.a);
+    clearTimeout(c.b);
+    if (seenIO) seenIO.unobserve(el);
+    cstate.delete(el);
+    vis.delete(el);
+  }
+  function disarm(el) {
+    const c = cstate.get(el);
+    if (!c) return;
+    clearTimeout(c.a);
+    clearTimeout(c.b);
+    c.a = c.b = 0;
+  }
+  function arm(el) {
+    disarm(el);
+    if (document.hidden) return;
+    const s = itemOf(el);
+    if (!s) return;
+    const c = cs(el),
+      id = cid(s);
+    if (isSeen(s)) c.seen = true;
+    if (state.view.type === "saved" || dwelled.has(id)) c.aff = true;
+    if (c.seen && c.aff) return settle(el);
+    if (!c.seen)
+      c.a = setTimeout(() => {
+        c.a = 0;
+        markSeen(s, "view");
+        c.seen = true;
+        settle(el);
+      }, SEEN_MS);
+    if (!c.aff)
+      c.b = setTimeout(() => {
+        c.b = 0;
+        c.aff = true;
+        dwelled.add(id);
+        AffinityStore.bump(s, 1);
+        settle(el);
+      }, DWELL_MS);
+  }
+  function seenObserve(nodes) {
+    if (!seenIO)
+      seenIO = new IntersectionObserver(
+        (es) =>
+          es.forEach((e) => {
+            if (e.isIntersecting && e.intersectionRatio >= SEEN_VIS) {
+              vis.add(e.target);
+              arm(e.target);
+            } else {
+              vis.delete(e.target);
+              disarm(e.target);
+            }
+          }),
+        { root: feed, threshold: [SEEN_VIS] },
+      );
+    nodes.forEach((n) => {
+      if (
+        n.dataset.end ||
+        n.classList.contains("empty") ||
+        n.classList.contains("sk")
+      )
+        return;
+      seenIO.observe(n);
+    });
+  }
+  function seenReset() {
+    if (seenIO) seenIO.disconnect();
+    cstate.forEach((c) => {
+      clearTimeout(c.a);
+      clearTimeout(c.b);
+    });
+    cstate.clear();
+    vis.clear();
+  }
+  function markSeen(s, why) {
+    if (!s) return false;
+    if (!seenAdd(s)) return false;
+    UnseenPoolStore.evict(s);
+    const c = cardOf(s);
+    if (c) {
+      c.classList.add("is-seen-now");
+      const st = cstate.get(c);
+      if (st) {
+        st.seen = true;
+        clearTimeout(st.a);
+        st.a = 0;
+        settle(c);
       }
-      LS.set("pulse_daily", d);
-      renderDaily();
-    }, 1200);
+    }
+    if (StreakStore.bump().goalDone) celebrate();
+    refreshStats();
+    scheduleChips();
+    if (unseenInView() < BATCH_MIN) maybeTopUp();
+    return true;
   }
+  function celebrate() {
+    const st = StreakStore.status();
+    toast(
+      `⚡ Daily Pulse Complete! Streak locked at ${st.streak} day${st.streak === 1 ? "" : "s"}`,
+      null,
+      null,
+      2800,
+    );
+    buzz(20);
+    const p = $("#streak");
+    p.classList.remove("pop");
+    void p.offsetWidth;
+    p.classList.add("pop");
+  }
+
+  /* -- header pills -- */
+  function refreshStats() {
+    const u = $("#unseen"),
+      saved = state.view.type === "saved";
+    const n = unseenInView();
+    u.hidden = saved;
+    u.textContent = `${n} unseen ${n === 1 ? "story" : "stories"}`;
+    const st = StreakStore.status(),
+      el = $("#streak");
+    const pct = Math.round(Math.min(1, st.today / st.goal) * 100);
+    el.hidden = false;
+    el.innerHTML = `🔥 ${st.streak}d<i class="ring" style="--p:${pct}"></i><span>${Math.min(st.today, st.goal)}/${st.goal}</span>`;
+    el.classList.toggle("risk", st.atRisk);
+    el.title = st.locked
+      ? `Streak locked for today • best ${st.best}d • goal ${st.today}/${st.goal}`
+      : `Read a story today to ${st.streak ? "keep" : "start"} your streak`;
+  }
+
+  /* -- unseen category rings -- */
+  const loadedCats = new Set();
+  let counts = {};
+  function catCounts() {
+    const out = {},
+      v = state.view;
+    CATS.forEach((c) => {
+      const pool = new Map();
+      const add = (l) =>
+        l.forEach((s) => {
+          if (s && !pool.has(cid(s))) pool.set(cid(s), s);
+        });
+      let known = loadedCats.has(c.id);
+      if (c.local) {
+        if (!state.city) return;
+        const cached = cacheGet("local:" + state.city.toLowerCase());
+        add(cached);
+        known = known || cached.length > 0;
+        if (
+          v.type === "query" &&
+          v.kind === "city" &&
+          String(v.q).toLowerCase() === state.city.toLowerCase()
+        )
+          add(state.items);
+      } else {
+        const cached = cacheGet(c.id);
+        add(cached);
+        known = known || cached.length > 0;
+        add(fallback(c.fb, "", c.id === "foryou"));
+        if (v.type === "cat" && v.cat === c.id) add(state.items);
+      }
+      let n = 0;
+      pool.forEach((s) => {
+        if (!isSeen(s)) n++;
+      });
+      out[c.id] = { n, known };
+    });
+    return out;
+  }
+  function renderChips() {
+    counts = catCounts();
+    document.querySelectorAll("#chips button").forEach((b) => {
+      const id = b.dataset.id;
+      if (id === "saved") return;
+      const base = catOf(id).label,
+        k = counts[id];
+      b.classList.remove("has-unseen", "all-seen");
+      if (k && k.n > 0) {
+        b.classList.add("has-unseen");
+        b.textContent = `${base} · ${k.n}`;
+      } else if (k && k.known) {
+        b.classList.add("all-seen");
+        b.textContent = `${base} ✓`;
+      } else b.textContent = base;
+    });
+    refreshEnd(false);
+  }
+  let chipT = 0;
+  function scheduleChips() {
+    clearTimeout(chipT);
+    chipT = setTimeout(renderChips, 150);
+  }
+  function bestOther() {
+    const v = state.view;
+    const here =
+      v.type === "cat"
+        ? v.cat
+        : v.type === "query" && v.kind === "city"
+          ? "local"
+          : "";
+    let best = null;
+    CATS.forEach((c) => {
+      const k = counts[c.id];
+      if (!k || c.id === here || k.n <= 0) return;
+      if (!best || k.n > best.n)
+        best = { id: c.id, n: k.n, label: c.label.replace(" 📍", "") };
+    });
+    return best;
+  }
+
+  /* -- "all caught up" / end-of-list card -- */
+  function endCardHTML() {
+    if (state.view.type === "saved")
+      return `<div class="pulse-caught-up-card"><div class="pcu-ring">♥</div><h2>That’s your whole vault</h2><p>${state.savedList.length} saved ${state.savedList.length === 1 ? "story" : "stories"}.</p><button data-action="jump-cat" data-id="foryou">Back to For You</button></div>`;
+    if (topBusy)
+      return '<div class="pulse-caught-up-card pulse-caught-up"><div class="pcu-ring">…</div><h2>Finding fresh stories</h2><p>Pulling in more unseen news.</p></div>';
+    const left = unseenInView(),
+      st = StreakStore.status();
+    const stats = `<div class="pcu-stats"><span><b>${Math.min(st.today, st.goal)}/${st.goal}</b> daily goal</span><span><b>🔥 ${st.streak}d</b> ${st.locked ? "streak locked" : "read 1 to keep it"}</span></div>`;
+    const b = bestOther();
+    return `<div class="pulse-caught-up-card pulse-caught-up"><div class="pcu-ring">✓</div><h2>You’re all caught up</h2><p>${left > 0 ? "You are at the end of the stream. New stories will appear as they arrive." : "No unseen stories in this view."}</p>${stats}${b ? `<button data-action="jump-cat" data-id="${esc(b.id)}">Jump to ${esc(b.label)} (${b.n} Fresh ${b.n === 1 ? "Story" : "Stories"})</button>` : ""}<button class="alt" data-action="live-wire">Check Live Wire</button></div>`;
+  }
+  function endCard() {
+    if (state.view.type !== "saved" && unseenInView() === 0)
+      counts = catCounts();
+    return `<article class="news-card empty" data-end="1">${endCardHTML()}</article>`;
+  }
+  function refreshEnd(fresh) {
+    const e = feed.querySelector("[data-end]");
+    if (!e || !e.querySelector(".pulse-caught-up-card")) return;
+    if (fresh && state.view.type !== "saved" && unseenInView() === 0)
+      counts = catCounts();
+    e.innerHTML = endCardHTML();
+  }
+  function onActive(i) {
+    rehydrate(i);
+    preloadNext();
+    if (i === state.items.length) refreshEnd(true);
+  }
+
+  /* -- Check Live Wire: re-pull the freshest snapshot + live sources, bypassing caches -- */
+  let nsT = 0;
+  async function liveWire() {
+    toast("Checking Live Wire…");
+    Object.keys(dead).forEach((k) => delete dead[k]);
+    NOSTORE = true;
+    clearTimeout(nsT);
+    nsT = setTimeout(() => {
+      NOSTORE = false;
+    }, 20000);
+    try {
+      const r = await fetch("./data/fallback-feed.json", { cache: "no-store" });
+      if (r.ok) {
+        const j = await r.json();
+        if (j && Array.isArray(j.stories) && j.stories.length)
+          window.PULSE_FALLBACK = j;
+        UnseenPoolStore.add(fallback("top", "", true));
+      }
+    } catch {}
+    load();
+  }
+
+  /* -- Saved vault as a feed tab (saved items stay visible here even when seen) -- */
+  function showSaved() {
+    navTouched = true;
+    state.req++;
+    state.view = { type: "saved" };
+    state.loading = false;
+    state.shown = true;
+    state.instant = false;
+    state.degraded = false;
+    state.moreQ = "";
+    state.more = 0;
+    stopTTS();
+    markChip("saved");
+    setPill("");
+    setLive(false);
+    seenReset();
+    const list = state.savedList.map((x) =>
+      Object.assign({}, x, { bullets: x.bullets || [], cl: x.cl || "Saved" }),
+    );
+    state.items = list;
+    state.active = 0;
+    if (!list.length) {
+      feed.innerHTML =
+        '<article class="news-card empty" data-end="1" data-i="0"><div class="pulse-caught-up-card"><div class="pcu-ring">♥</div><h2>Your vault is empty</h2><p>Double-tap any story to pulse it and keep it here.</p><button data-action="jump-cat" data-id="foryou">Back to For You</button></div></article>';
+      feed.scrollTop = 0;
+      $("#prog").style.width = "0";
+      syncRail();
+    } else {
+      uniq(state.items, 0);
+      addCards(0, list.length, true);
+      feed.scrollTop = 0;
+      setActive(0, true);
+    }
+    refreshStats();
+    scheduleChips();
+  }
+
+  /* -- one place that mirrors saved state everywhere -- */
+  function syncCards(nodes) {
+    (nodes || feed.querySelectorAll(".news-card[data-i]")).forEach((c) => {
+      const s = c.dataset.end ? null : itemOf(c);
+      c.classList.toggle("is-saved", !!s && isSaved(s));
+    });
+  }
+
+  /* -- double-tap to pulse (save) -- */
+  const HEART =
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff4d4d"/><stop offset="1" stop-color="#ff7a45"/></linearGradient></defs><path fill="url(#pbg)" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>';
+  function burst(card) {
+    if (!card) return;
+    const b = document.createElement("div");
+    b.className = "pulse-burst";
+    b.innerHTML = HEART;
+    card.appendChild(b);
+    const rm = () => b.remove();
+    b.addEventListener("animationend", rm, { once: true });
+    setTimeout(rm, 900);
+  }
+  function onDoubleTap(card) {
+    const s = itemOf(card);
+    if (!s) return;
+    burst(card);
+    buzz(15);
+    if (!isSaved(s)) {
+      addSaved(s);
+      toast("Saved to bookmarks • ", "View →", openSaved);
+    }
+  }
+  function bindDoubleTap() {
+    let down = null,
+      last = { t: 0, x: 0, y: 0 };
+    feed.addEventListener(
+      "pointerdown",
+      (e) => {
+        down = { t: e.timeStamp, x: e.clientX, y: e.clientY, moved: false };
+      },
+      { passive: true },
+    );
+    feed.addEventListener(
+      "pointermove",
+      (e) => {
+        if (
+          down &&
+          !down.moved &&
+          Math.hypot(e.clientX - down.x, e.clientY - down.y) > 10
+        )
+          down.moved = true;
+      },
+      { passive: true },
+    );
+    feed.addEventListener("pointercancel", () => {
+      down = null;
+    });
+    feed.addEventListener("pointerup", (e) => {
+      const d = down;
+      down = null;
+      if (!d || e.button > 0) return;
+      if (
+        d.moved ||
+        Math.hypot(e.clientX - d.x, e.clientY - d.y) > 10 ||
+        e.timeStamp - d.t > 350
+      ) {
+        last.t = 0;
+        return;
+      }
+      const tgt = e.target;
+      if (
+        !tgt ||
+        !tgt.closest ||
+        tgt.closest("a, button, input, [data-no-dbltap]")
+      )
+        return;
+      const card = tgt.closest(".news-card");
+      if (
+        !card ||
+        card.dataset.end ||
+        card.classList.contains("empty") ||
+        card.classList.contains("sk")
+      )
+        return;
+      if (
+        e.timeStamp - last.t < 320 &&
+        Math.hypot(e.clientX - last.x, e.clientY - last.y) < 40
+      ) {
+        last.t = 0;
+        onDoubleTap(card);
+      } else last = { t: e.timeStamp, x: e.clientX, y: e.clientY };
+    });
+  }
+
+  /* -- zero-flash scrolling: warm the next 3 unseen cards' images -- */
+  const preSeen = new Set(),
+    preKeep = [];
+  function preloadNext() {
+    let n = 0;
+    for (let i = state.active + 1; i < state.items.length && n < 3; i++) {
+      const s = state.items[i];
+      if (!s || isSeen(s)) continue;
+      n++;
+      if (!s.img || preSeen.has(s.img)) continue;
+      preSeen.add(s.img);
+      const im = new Image();
+      im.referrerPolicy = "no-referrer";
+      im.decoding = "async";
+      im.src = s.img;
+      preKeep.push(im);
+      if (preKeep.length > 12) preKeep.shift();
+    }
+  }
+
+  function bindEngagement() {
+    bindDoubleTap();
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) {
+        cstate.forEach((c) => {
+          clearTimeout(c.a);
+          clearTimeout(c.b);
+          c.a = c.b = 0;
+        });
+        flushAll();
+      } else {
+        vis.forEach(arm);
+        refreshStats();
+      }
+    });
+    window.addEventListener("pagehide", flushAll);
+    window.addEventListener("storage", (e) => {
+      if (e.key !== "pulse_seen_v1") return;
+      SeenStore.reload();
+      refreshStats();
+      scheduleChips();
+    });
+    $("#rd-ext").addEventListener("click", () => {
+      const s = state.rd;
+      if (!s) return;
+      markSeen(s, "source");
+    });
+  }
+  /* ---------- endless unseen stream: lock set, sentinel, harvester ---------- */
+  const FEED_MIN = 20,
+    BATCH_MIN = 10,
+    BATCH_MAX = 15;
+  // renderedStreamSet: URL id + headline signature of every card in the stream.
+  const rendered = new Set();
+  const keyPair = (s) => [cid(s), "t:" + tsig(s)];
+  const keySet = (list) => {
+    const x = new Set();
+    list.forEach((s) => keyPair(s).forEach((k) => x.add(k)));
+    return x;
+  };
+  function rebuildRendered() {
+    rendered.clear();
+    state.items.forEach((s) => keyPair(s).forEach((k) => rendered.add(k)));
+  }
+  // Dual lock: drop anything seen, already rendered, or duplicated inside the batch (by URL id OR headline sig).
+  function lockFilter(list, ex) {
+    const batch = new Set();
+    return list.filter((s) => {
+      if (!s || isSeen(s)) return false;
+      const [a, b] = keyPair(s);
+      if (batch.has(a) || batch.has(b) || (ex && (ex.has(a) || ex.has(b))))
+        return false;
+      batch.add(a);
+      batch.add(b);
+      return true;
+    });
+  }
+
+  /* -- bottom sentinel (800px lookahead) -- */
+  let sentIO = null;
+  function placeSentinel() {
+    const old = document.getElementById("stream-sentinel");
+    if (old) old.remove();
+    const el = document.createElement("div");
+    el.id = "stream-sentinel";
+    el.setAttribute("aria-hidden", "true");
+    feed.appendChild(el);
+    if (!sentIO)
+      sentIO = new IntersectionObserver(
+        (es) => {
+          if (es.some((e) => e.isIntersecting)) maybeTopUp(true);
+        },
+        { root: feed, rootMargin: "800px 0px 800px 0px" },
+      );
+    sentIO.disconnect();
+    sentIO.observe(el);
+  }
+
+  /* -- DOM windowing: far-above cards become empty placeholders of the same height -- */
+  function trimDom() {
+    if (state.items.length < 60) return;
+    const lim = state.active - 25;
+    feed.querySelectorAll(".news-card[data-i]:not(.ghost)").forEach((c) => {
+      if (c.dataset.end || +c.dataset.i >= lim) return;
+      c.classList.add("ghost");
+      c.classList.remove("active");
+      c.innerHTML = "";
+    });
+  }
+  function rehydrate(i) {
+    for (
+      let k = Math.max(0, i - 3);
+      k <= i + 3 && k < state.items.length;
+      k++
+    ) {
+      const c = feed.querySelector(`.news-card[data-i="${k}"]`);
+      if (!c || !c.classList.contains("ghost")) continue;
+      const t = document.createElement("div");
+      t.innerHTML = cardHTML(state.items[k], k);
+      c.innerHTML = t.firstElementChild.innerHTML;
+      c.classList.remove("ghost");
+      bindImgs([c]);
+      syncCards([c]);
+      if (isSeen(state.items[k])) c.classList.add("is-seen-now");
+    }
+  }
+
+  /* -- harvester stages: each one only feeds the pool -- */
+  const CAT_LABEL = {
+    top: "For You",
+    india: "India",
+    world: "World",
+    tech: "Tech",
+    business: "Business",
+    sports: "Sports",
+    science: "Science",
+    entertainment: "Entertainment",
+    health: "Health",
+  };
+  const catLabel = (id) => CAT_LABEL[id] || "News";
+  // Pool filler: strictly on-topic first, then anything else (so a feed is never starved or empty).
+  function poolFill(cat, n, ex) {
+    const out = UnseenPoolStore.pick(cat, n, ex, cat !== "foryou");
+    if (out.length < n && cat !== "foryou") {
+      const ex2 = new Set(ex);
+      out.forEach((s) => keyPair(s).forEach((k) => ex2.add(k)));
+      out.push(...UnseenPoolStore.pick(cat, n - out.length, ex2, false));
+    }
+    return out;
+  }
+  // Other categories (caches + snapshot); the pool ranks them by affinity.
+  async function harvestLocal() {
+    const all = [];
+    CATS.forEach((c) => {
+      if (!c.local) all.push(...cacheGet(c.id));
+    });
+    all.push(...fallback("top", "", true));
+    UnseenPoolStore.add(all);
+  }
+  const SUB_CAT = {
+    worldnews: "world",
+    news: "world",
+    technology: "tech",
+    programming: "tech",
+    science: "science",
+    space: "science",
+    business: "business",
+    economics: "business",
+    sports: "sports",
+    entertainment: "entertainment",
+    movies: "entertainment",
+    music: "entertainment",
+    health: "health",
+    india: "india",
+    indianews: "india",
+  };
+  const SUBTOPICS = {
+    top: [
+      "breaking news",
+      "world news",
+      "technology",
+      "business economy",
+      "science discovery",
+      "india news",
+    ],
+    tech: [
+      "artificial intelligence",
+      "cybersecurity",
+      "semiconductors",
+      "startup funding",
+      "smartphones",
+      "robotics",
+    ],
+    business: [
+      "stock market",
+      "inflation economy",
+      "banking",
+      "trade tariffs",
+      "energy prices",
+      "startups",
+    ],
+    world: [
+      "diplomacy summit",
+      "climate policy",
+      "middle east",
+      "europe politics",
+      "asia pacific",
+      "united nations",
+    ],
+    science: [
+      "space exploration",
+      "medical research",
+      "climate science",
+      "astronomy",
+      "biotechnology",
+      "physics",
+    ],
+    sports: [
+      "cricket",
+      "football",
+      "tennis",
+      "olympics",
+      "formula 1",
+      "hockey",
+    ],
+    india: [
+      "india politics",
+      "india economy",
+      "india infrastructure",
+      "india education",
+      "india health",
+      "india technology",
+    ],
+    entertainment: [
+      "movies box office",
+      "streaming series",
+      "music album",
+      "celebrity news",
+      "awards season",
+      "bollywood",
+    ],
+    health: [
+      "public health",
+      "nutrition",
+      "mental health",
+      "medical breakthrough",
+      "fitness",
+      "disease outbreak",
+    ],
+  };
+  const WINDOWS = ["1d", "3d", "7d", "14d"];
+  const HARVEST = {
+    top: {
+      cat: "top",
+      rd: "worldnews+technology+science+business",
+      apis: ["hn", "sf", "dev"],
+    },
+    india: { cat: "india", rd: "india+indianews", apis: [] },
+    world: { cat: "world", rd: "worldnews", apis: [] },
+    business: { cat: "business", rd: "business+economics", apis: [] },
+    sports: { cat: "sports", rd: "sports", apis: [] },
+    entertainment: {
+      cat: "entertainment",
+      rd: "entertainment+movies+music",
+      apis: [],
+    },
+    health: { cat: "health", rd: "health", apis: [] },
+    science: { cat: "science", rd: "science+space", apis: ["sf"] },
+    tech: { cat: "tech", rd: "technology+programming", apis: ["hn", "dev"] },
+  };
+  const harvestKey = () => {
+    const v = state.view;
+    return v.type === "cat" && HARVEST[v.cat] ? v.cat : "top";
+  };
+  // Reddit JSON: direct first; on any failure / non-200 retry through the CORS proxy.
+  async function redditPage(sub, after) {
+    const url = `https://www.reddit.com/r/${sub}/hot.json?limit=30&after=${encodeURIComponent(after)}`;
+    try {
+      return await tfetch(url, 4000, "json");
+    } catch {}
+    try {
+      const j = await tfetch(
+        `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`,
+        5000,
+        "json",
+      );
+      return JSON.parse(j.contents);
+    } catch {
+      return null;
+    }
+  }
+  const trending = () => {
+    const m = new Map();
+    UnseenPoolStore.all()
+      .slice(0, 60)
+      .forEach((s) =>
+        String(s.title)
+          .toLowerCase()
+          .split(/[^a-z]+/)
+          .filter((w) => w.length >= 6 && !STOP.has(w))
+          .forEach((w) => m.set(w, (m.get(w) || 0) + 1)),
+      );
+    return [...m.entries()]
+      .filter((e) => e[1] >= 2)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 5)
+      .map((e) => e[0]);
+  };
+  const buildGroups = (groups) =>
+    Object.keys(groups).flatMap((cat) =>
+      build(groups[cat], catLabel(cat), cat, ""),
+    );
+  // One source list per category, rotated each cycle. Every source advances its own cursor.
+  function cycleSources(key) {
+    const H = HARVEST[key] || HARVEST.top,
+      subs = SUBTOPICS[key] || SUBTOPICS.top;
+    const cur = (k, d) => +CursorStore.get(k + "_" + key) || d;
+    const rssSrc = {
+      async run() {
+        const si = cur("sub", 0),
+          wi = cur("win", 0) % WINDOWS.length;
+        CursorStore.set("sub_" + key, si + 1);
+        if ((si + 1) % subs.length === 0) this.widen();
+        const tr = trending();
+        const q =
+          (si % 3 === 2 && tr.length
+            ? tr[si % tr.length]
+            : subs[si % subs.length]) +
+          " when:" +
+          WINDOWS[wi];
+        const url = `https://news.google.com/rss/search?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en`;
+        return build(await rss(url), catLabel(H.cat), H.cat, "");
+      },
+      widen() {
+        CursorStore.set("win_" + key, (cur("win", 0) + 1) % WINDOWS.length);
+      },
+    };
+    const bingSrc = {
+      async run() {
+        const bi = cur("bing", 0);
+        CursorStore.set("bing_" + key, bi + 1);
+        return build(
+          await rss(bingURL(subs[bi % subs.length])),
+          catLabel(H.cat),
+          H.cat,
+          "",
+        );
+      },
+    };
+    const rdSrc = {
+      async run() {
+        const j = await redditPage(
+          H.rd,
+          String(CursorStore.get("rd_" + key) || ""),
+        );
+        if (!j || !j.data || !Array.isArray(j.data.children)) return [];
+        CursorStore.set("rd_" + key, j.data.after || "");
+        const groups = {};
+        j.data.children.forEach((c) => {
+          const x = c && c.data;
+          if (!x || !x.title || x.over_18 || x.stickied) return;
+          const pv =
+            x.preview &&
+            x.preview.images &&
+            x.preview.images[0] &&
+            x.preview.images[0].source &&
+            x.preview.images[0].source.url;
+          const cat =
+            key === "top"
+              ? SUB_CAT[String(x.subreddit).toLowerCase()] || "world"
+              : H.cat;
+          (groups[cat] = groups[cat] || []).push({
+            title: x.title,
+            link: x.is_self
+              ? "https://www.reddit.com" + x.permalink
+              : x.url_overridden_by_dest || x.url,
+            pubDate: new Date((x.created_utc || 0) * 1000).toISOString(),
+            source: "r/" + x.subreddit,
+            desc: x.is_self ? x.selftext || "" : "",
+            img: pv ? pv.replace(/&amp;/g, "&") : "",
+          });
+        });
+        return buildGroups(groups);
+      },
+    };
+    const API = {
+      hn: async () => {
+        const p = +CursorStore.get("hn") || 0;
+        const j = await tfetch(
+          `https://hn.algolia.com/api/v1/search_by_date?tags=story&hitsPerPage=30&page=${p}`,
+          4000,
+          "json",
+        );
+        if (!j || !Array.isArray(j.hits)) return [];
+        CursorStore.set("hn", p >= 40 ? 0 : p + 1);
+        return build(
+          j.hits
+            .filter((x) => x.title)
+            .map((x) => {
+              let dom = "";
+              try {
+                dom = x.url
+                  ? new URL(x.url).hostname.replace(/^www\./, "")
+                  : "";
+              } catch {}
+              return {
+                title: x.title,
+                link:
+                  x.url || "https://news.ycombinator.com/item?id=" + x.objectID,
+                pubDate: x.created_at,
+                source: dom || "Hacker News",
+                desc: x.story_text || "",
+                img: "",
+              };
+            }),
+          catLabel("tech"),
+          "tech",
+          "",
+        );
+      },
+      sf: async () => {
+        const o = +CursorStore.get("sf") || 0;
+        const j = await tfetch(
+          `https://api.spaceflightnewsapi.net/v4/articles/?limit=30&offset=${o}`,
+          4000,
+          "json",
+        );
+        if (!j || !Array.isArray(j.results)) return [];
+        CursorStore.set("sf", o >= 600 ? 0 : o + 30);
+        return build(
+          j.results.map((a) => ({
+            title: a.title,
+            link: a.url,
+            pubDate: a.published_at,
+            source: a.news_site || "Spaceflight News",
+            desc: a.summary || "",
+            img: a.image_url || "",
+          })),
+          catLabel("science"),
+          "science",
+          "",
+        );
+      },
+      dev: async () => {
+        const p = +CursorStore.get("dev") || 1;
+        const j = await tfetch(
+          `https://dev.to/api/articles?per_page=30&page=${p}`,
+          4000,
+          "json",
+        );
+        if (!Array.isArray(j)) return [];
+        CursorStore.set("dev", p >= 40 ? 1 : p + 1);
+        return build(
+          j.map((a) => ({
+            title: a.title,
+            link: a.url,
+            pubDate: a.published_at,
+            source: "DEV Community",
+            desc: a.description || "",
+            img: a.social_image || a.cover_image || "",
+          })),
+          catLabel("tech"),
+          "tech",
+          "",
+        );
+      },
+    };
+    const list = [
+      rssSrc,
+      rdSrc,
+      ...H.apis.map((n) => ({ run: API[n] })),
+      bingSrc,
+      rssSrc,
+    ];
+    const rot = (+CursorStore.get("rot") || 0) % list.length;
+    CursorStore.set("rot", rot + 1);
+    return list.slice(rot).concat(list.slice(0, rot));
+  }
+  // Walks sources until ~a batch of FRESH (unseen + not-rendered + new-to-pool) stories is found;
+  // a source that yields none advances its cursor/window and the next source runs in the same cycle.
+  async function harvestCategory(my) {
+    let fresh = 0;
+    const srcs = cycleSources(harvestKey());
+    for (let i = 0; i < srcs.length && i < 8; i++) {
+      if (my !== state.req || fresh >= BATCH_MIN) break;
+      let items = [];
+      try {
+        items = await srcs[i].run();
+      } catch {}
+      const added = UnseenPoolStore.add(lockFilter(items, rendered));
+      if (!added && srcs[i].widen) srcs[i].widen();
+      fresh += added;
+    }
+  }
+
+  /* -- the engine: append 10-15 deduplicated unseen stories without touching scroll -- */
+  let topBusy = false,
+    topCool = 0;
+  function maybeTopUp(force) {
+    if (
+      state.view.type === "saved" ||
+      topBusy ||
+      !state.shown ||
+      Date.now() < topCool
+    )
+      return;
+    if (!force && unseenInView() >= BATCH_MIN) return;
+    topUp();
+  }
+  async function topUp() {
+    if (topBusy) return;
+    const v = state.view,
+      my = state.req,
+      start = state.items.length;
+    const have = () => state.items.length - start;
+    topBusy = true;
+    refreshEnd(false);
+    // Both locks (seen + already-mounted) are enforced in pick() and again in mergeNew().
+    const fromPool = (relaxed) => {
+      if (v.type !== "cat" || my !== state.req) return;
+      const n = BATCH_MAX - have();
+      const cand = UnseenPoolStore.pick(
+        v.cat,
+        n,
+        rendered,
+        !relaxed && v.cat !== "foryou",
+      );
+      if (!cand.length) return;
+      const b = state.items.length;
+      mergeNew(cand);
+      const got = new Set(state.items.slice(b));
+      cand.forEach((s) => {
+        if (!got.has(s)) UnseenPoolStore.reject(s);
+      });
+    };
+    try {
+      fromPool();
+      if (have() < BATCH_MIN && state.moreQ && state.more < 1 && !state.loading)
+        await loadMore();
+      if (v.type === "cat") {
+        for (let r = 0; r < 3 && have() < BATCH_MIN && my === state.req; r++) {
+          await harvestCategory(my);
+          fromPool();
+        }
+        if (have() < BATCH_MIN && my === state.req) {
+          await harvestLocal();
+          fromPool(true);
+        }
+      }
+    } catch {}
+    topBusy = false;
+    topCool = have() ? 0 : Date.now() + 15000;
+    refreshEnd(true);
+    if (my === state.req && have() > 0 && unseenInView() < BATCH_MIN)
+      setTimeout(() => maybeTopUp(), 400);
+  }
+
+  // Background pre-population of the reservoir from the other categories.
+  const warmed = new Set();
+  async function warmPool() {
+    for (const c of CATS) {
+      if (UnseenPoolStore.size >= 140) break;
+      if (c.local || warmed.has(c.id)) continue;
+      if (state.view.type === "cat" && state.view.cat === c.id) continue;
+      warmed.add(c.id);
+      try {
+        const [a, b] = await Promise.all([saurav(c), topicRss(c)]);
+        UnseenPoolStore.add(build(a.concat(b), catLabel(c.id), c.fb, ""));
+      } catch {}
+      await new Promise((r) => setTimeout(r, 1500));
+    }
+    scheduleChips();
+  }
+
   function readFull() {
     const s = cur();
     if (!s) return;
+    state.rd = s;
+    if (!readBumped.has(cid(s))) {
+      readBumped.add(cid(s));
+      AffinityStore.bump(s, 3);
+    }
+    markSeen(s, "read");
     $("#rd-title").textContent = s.title;
     $("#rd-meta").textContent = [s.src, ago(s.ts)].filter(Boolean).join(" · ");
     $("#rd-body").innerHTML =
@@ -1488,10 +3110,7 @@
   const go = (d) =>
     feed.scrollBy({ top: d * feed.clientHeight, behavior: "smooth" });
   function setCat(id) {
-    if (id === "saved") {
-      openSaved();
-      return;
-    }
+    if (id === "saved") return showSaved();
     const c = catOf(id);
     navTouched = true;
     if (c.local) {
@@ -1578,11 +3197,13 @@
       case "saved-del":
         state.savedList = state.savedList.filter((x) => x.id !== a.dataset.id);
         persistSaved();
-        return renderSaved();
+        renderSaved();
+        return state.view.type === "saved" ? showSaved() : undefined;
       case "saved-clear":
         state.savedList = [];
         persistSaved();
-        return renderSaved();
+        renderSaved();
+        return state.view.type === "saved" ? showSaved() : undefined;
       case "save":
         return save();
       case "listen":
@@ -1619,6 +3240,10 @@
         return geoAnswer(true);
       case "geo-no":
         return geoAnswer(false);
+      case "jump-cat":
+        return setCat(a.dataset.id);
+      case "live-wire":
+        return liveWire();
     }
   });
   document.addEventListener("keydown", (e) => {
@@ -1665,7 +3290,11 @@
   renderCityChips();
   setPill("");
   updateSavedUI();
-  renderDaily();
+  UnseenPoolStore.add(fallback("top", "", true));
+  refreshStats();
+  scheduleChips();
+  bindEngagement();
+  setTimeout(warmPool, 4000);
   $("#loc-grid").addEventListener("click", (e) => {
     const b = e.target.closest("button");
     if (b) {
@@ -1735,5 +3364,16 @@
     setQuery,
     state,
     _setActive: (i) => setActive(i),
+    SeenStore,
+    UnseenPoolStore,
+    CursorStore,
+    isSeen,
+    tsig,
+    titleSig,
+    _topUp: () => topUp(),
+    SavedStore,
+    StreakStore,
+    AffinityStore,
+    getArticleId,
   };
 })();

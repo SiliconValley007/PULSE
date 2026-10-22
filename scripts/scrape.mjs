@@ -69,6 +69,32 @@ const FEEDS = [
   [GN("site:reuters.com when:2d"), "world", "Reuters"],
   [GN("site:reuters.com business when:2d"), "business", "Reuters"],
   [GN("site:reuters.com technology when:2d"), "tech", "Reuters"],
+  ["https://feeds.bbci.co.uk/news/rss.xml", "top", "BBC News"],
+  [
+    "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml",
+    "entertainment",
+    "BBC News",
+  ],
+  [
+    "https://www.thehindu.com/entertainment/feeder/default.rss",
+    "entertainment",
+    "The Hindu",
+  ],
+  ["https://variety.com/feed/", "entertainment", "Variety"],
+  [
+    "https://www.hollywoodreporter.com/feed/",
+    "entertainment",
+    "The Hollywood Reporter",
+  ],
+  [GN("entertainment movies when:2d"), "entertainment", null],
+  ["https://feeds.bbci.co.uk/news/health/rss.xml", "health", "BBC News"],
+  [
+    "https://www.thehindu.com/sci-tech/health/feeder/default.rss",
+    "health",
+    "The Hindu",
+  ],
+  ["https://www.who.int/rss-feeds/news-english.xml", "health", "WHO"],
+  [GN("health medicine when:2d"), "health", null],
 ];
 
 const POOL = {
@@ -135,6 +161,22 @@ const POOL = {
     "1532094349884-543bc11b234d",
     "1446776811953-b23d57bd21aa",
     "1581093458791-9d15482442f7",
+  ],
+  entertainment: [
+    "1489599849927-2ee91cede3ba",
+    "1536440136628-849c177e76a1",
+    "1514525253161-7a46d19cd819",
+    "1470229722913-7c0e2dbbafd3",
+    "1478720568477-152d9b164e26",
+    "1485846234645-a62644f84728",
+  ],
+  health: [
+    "1505751172876-fa1923c5c528",
+    "1576091160399-112ba8d25d1d",
+    "1490645935967-10de6ba17061",
+    "1571019613454-1cb2f99b2d8b",
+    "1584515933487-779824d29309",
+    "1579684385127-1ef15d508118",
   ],
 };
 const hash = (s) => {
@@ -256,6 +298,8 @@ const CATW = {
   business: "business",
   sports: "sports",
   science: "science",
+  entertainment: "entertainment",
+  health: "health",
 };
 const norm1 = (t) =>
   String(t)
@@ -303,7 +347,7 @@ function feedImage(item, desc) {
 function parse(xml, cat, label) {
   const out = [];
   const items = xml.match(/<item[\s>][\s\S]*?<\/item>/gi) || [];
-  for (const it of items.slice(0, 8)) {
+  for (const it of items.slice(0, 14)) {
     let title = strip(tag(it, "title"));
     const link = strip(tag(it, "link")) || attr(it, "link", "href");
     if (!title || !/^https?:\/\//.test(link) || BAD.test(link)) continue;
@@ -357,20 +401,71 @@ results.forEach((r, i) => {
   if (r.status === "fulfilled") stories.push(...r.value);
   else console.warn("FAIL", FEEDS[i][0], String(r.reason));
 });
+// Dedupe by id, canonical URL and normalized headline signature, then keep a
+// category-balanced deep pool (hard cap 120).
+const STOPW = new Set(
+  "a an the and or of to in on at for with by from as is are was were be been it its this that these those will would can could has have had not no but into over after before about says say said new".split(
+    " ",
+  ),
+);
+const titleSig = (t) => {
+  const w = String(t)
+    .toLowerCase()
+    .replace(/\s+[-|–—]\s+[^-|–—]{2,40}$/, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .split(" ")
+    .filter((q) => q && !STOPW.has(q));
+  return w.length >= 3 ? w.join(" ") : "";
+};
+const canonUrl = (u) => {
+  try {
+    const x = new URL(u);
+    [...x.searchParams.keys()].forEach((k) => {
+      if (/^utm_/i.test(k)) x.searchParams.delete(k);
+    });
+    x.hash = "";
+    return x.host + x.pathname.replace(/\/+$/, "") + x.search;
+  } catch {
+    return String(u);
+  }
+};
 const seen = new Set();
 stories = stories
-  .filter((s) => {
-    const k = s.title
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, " ")
-      .slice(0, 60);
-    if (seen.has(k) || seen.has(s.id)) return false;
-    seen.add(k);
-    seen.add(s.id);
-    return true;
-  })
   .sort((a, b) => b.ts - a.ts)
-  .slice(0, 90);
+  .filter((s) => {
+    const sg = titleSig(s.title);
+    const keys = [
+      "i:" + s.id,
+      "u:" + canonUrl(s.url),
+      sg
+        ? "t:" + sg
+        : "n:" +
+          s.title
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, " ")
+            .slice(0, 60),
+    ];
+    if (keys.some((k) => seen.has(k))) return false;
+    keys.forEach((k) => seen.add(k));
+    return true;
+  });
+{
+  const byCat = {};
+  stories.forEach((s) => (byCat[s.cat] = byCat[s.cat] || []).push(s));
+  const cats = Object.keys(byCat),
+    picked = [];
+  for (let i = 0; picked.length < 120; i++) {
+    let any = false;
+    for (const c of cats) {
+      if (!byCat[c][i]) continue;
+      any = true;
+      picked.push(byCat[c][i]);
+      if (picked.length >= 120) break;
+    }
+    if (!any) break;
+  }
+  stories = picked.sort((a, b) => b.ts - a.ts);
+}
 
 // OpenGraph pass for items with no image or a thin description (pool of 6).
 const need = stories.filter(
@@ -389,20 +484,6 @@ await pool(need, 6, async (s) => {
 });
 console.log(`OG-enriched candidates: ${need.length}`);
 
-const tops = [];
-for (const c of [
-  "india",
-  "world",
-  "tech",
-  "business",
-  "sports",
-  "science",
-  "local",
-]) {
-  const s = stories.find((x) => x.cat === c);
-  if (s) tops.push({ ...s, id: s.id + "t", cat: "top" });
-}
-stories = [...tops, ...stories];
 // Never leave a blank card and never repeat an image on adjacent cards.
 stories.forEach((s, i) => {
   if (!s.img) s.img = stock(s.cat, s.title);
