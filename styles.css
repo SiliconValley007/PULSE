@@ -570,6 +570,9 @@ h2 {
   font-weight: 900;
   letter-spacing: 0.16em;
 }
+#ctx[hidden] {
+  display: none;
+}
 #ctx {
   font-size: 12px;
   font-weight: 600;
@@ -791,7 +794,6 @@ h2 {
 .dpill[hidden] {
   display: none;
 }
-#unseen,
 #streak {
   white-space: nowrap;
 }
@@ -851,56 +853,10 @@ h2 {
   width: max-content;
   max-width: 90%;
 }
-.chips button.has-unseen {
-  border-color: var(--pulse-accent-2);
-  box-shadow:
-    0 0 0 1px rgba(90, 160, 255, 0.35),
-    0 0 14px rgba(47, 107, 255, 0.55);
-}
-.chips button.has-unseen::before {
-  content: "";
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin-right: 6px;
-  vertical-align: middle;
-  border-radius: 50%;
-  background: var(--pulse-accent-2);
-  box-shadow: 0 0 6px var(--pulse-accent-2);
-}
-.chips button.has-unseen.on {
-  box-shadow: 0 0 14px rgba(255, 255, 255, 0.35);
-}
-.chips button.has-unseen.on::before {
-  background: var(--pulse-accent);
-  box-shadow: none;
-}
-.chips button.all-seen:not(.on) {
-  opacity: 0.5;
-}
 .news-card:not(.empty) {
   -webkit-user-select: none;
   user-select: none;
   -webkit-touch-callout: none;
-}
-.news-card.is-seen-now .meta::after {
-  content: "✓";
-  display: grid;
-  place-items: center;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  font-size: 12px;
-  font-weight: 800;
-  background: rgba(47, 107, 255, 0.4);
-  border: 1px solid var(--pulse-accent-2);
-  animation: seen-in 0.35s ease-out;
-}
-@keyframes seen-in {
-  from {
-    opacity: 0;
-    transform: scale(0.5);
-  }
 }
 .pulse-burst {
   position: absolute;
@@ -1015,9 +971,6 @@ h2 {
   color: #fff;
   background: rgba(255, 77, 77, 0.55);
   border: 1px solid var(--pulse-hot);
-}
-.news-card.is-seen-now .meta::after {
-  order: 99;
 }
 #stream-sentinel {
   flex: none;

@@ -70,6 +70,20 @@ const FEEDS = [
   [GN("site:reuters.com business when:2d"), "business", "Reuters"],
   [GN("site:reuters.com technology when:2d"), "tech", "Reuters"],
   ["https://feeds.bbci.co.uk/news/rss.xml", "top", "BBC News"],
+  [GN("site:timesofindia.indiatimes.com india when:2d"), "india", null],
+  [
+    "https://www.thehindu.com/news/national/feeder/default.rss",
+    "india",
+    "The Hindu",
+  ],
+  ["https://indianexpress.com/section/india/feed/", "india", "The Indian Express"],
+  [
+    "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml",
+    "india",
+    "Hindustan Times",
+  ],
+  [GN("site:deccanherald.com india when:2d"), "india", null],
+  ["https://www.livemint.com/rss/news", "india", "Mint"],
   [
     "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml",
     "entertainment",
@@ -439,11 +453,7 @@ stories = stories
       "u:" + canonUrl(s.url),
       sg
         ? "t:" + sg
-        : "n:" +
-          s.title
-            .toLowerCase()
-            .replace(/[^a-z0-9]+/g, " ")
-            .slice(0, 60),
+        : "n:" + s.title.toLowerCase().replace(/[^a-z0-9]+/g, " ").slice(0, 60),
     ];
     if (keys.some((k) => seen.has(k))) return false;
     keys.forEach((k) => seen.add(k));

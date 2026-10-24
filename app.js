@@ -290,72 +290,24 @@
 
   // Fast topic inference for generic "top" stories: source host first, then keywords.
   const SRC_CAT = [
-    [
-      "sports",
-      /espn|cricbuzz|cricinfo|skysports|sportstar|goal\.com|olympics|bleacherreport/,
-    ],
-    [
-      "tech",
-      /techcrunch|verge|wired|arstechnica|engadget|gadgets360|9to5|zdnet|cnet|tomshardware|androidauthority|hackernews|ycombinator/,
-    ],
-    [
-      "business",
-      /livemint|mint|economictimes|moneycontrol|businessstandard|bloomberg|ft\.com|cnbc|marketwatch|financialexpress|forbes|wsj/,
-    ],
-    [
-      "science",
-      /nature\.com|space\.com|sciencedaily|newscientist|sciencenews|phys\.org|isro|nasa/,
-    ],
-    [
-      "world",
-      /aljazeera|dw\.com|bbc\.com\/news\/world|france24|apnews|reuters/,
-    ],
-    [
-      "entertainment",
-      /variety|hollywoodreporter|deadline|billboard|rollingstone|pinkvilla|filmfare|bollywoodhungama|ew\.com/,
-    ],
-    [
-      "health",
-      /webmd|healthline|statnews|medicalnewstoday|who\.int|everydayhealth|healthshots/,
-    ],
-    [
-      "india",
-      /ndtv|thehindu|hindustantimes|indianexpress|timesofindia|news18|indiatoday|deccan|theprint|scroll\.in/,
-    ],
+    ["sports", /espn|cricbuzz|cricinfo|skysports|sportstar|goal\.com|olympics|bleacherreport/],
+    ["tech", /techcrunch|verge|wired|arstechnica|engadget|gadgets360|9to5|zdnet|cnet|tomshardware|androidauthority|hackernews|ycombinator/],
+    ["business", /livemint|mint|economictimes|moneycontrol|businessstandard|bloomberg|ft\.com|cnbc|marketwatch|financialexpress|forbes|wsj/],
+    ["science", /nature\.com|space\.com|sciencedaily|newscientist|sciencenews|phys\.org|isro|nasa/],
+    ["world", /aljazeera|dw\.com|bbc\.com\/news\/world|france24|apnews|reuters/],
+    ["entertainment", /variety|hollywoodreporter|deadline|billboard|rollingstone|pinkvilla|filmfare|bollywoodhungama|ew\.com/],
+    ["health", /webmd|healthline|statnews|medicalnewstoday|who\.int|everydayhealth|healthshots/],
+    ["india", /ndtv|thehindu|hindustantimes|indianexpress|timesofindia|news18|indiatoday|deccan|theprint|scroll\.in/],
   ];
   const KW_CAT = [
-    [
-      "sports",
-      /\b(cricket|ipl|bcci|wicket|batter|bowler|innings|football|fifa|tennis|olympic|olympics|grand slam|formula 1|f1|nba|nfl|medal|tournament|league|world cup|champions? trophy|coach|striker|goalkeeper|stadium|match)\b/g,
-    ],
-    [
-      "tech",
-      /\b(ai|artificial intelligence|openai|chatgpt|google|apple|iphone|android|microsoft|nvidia|semiconductor|chip|chips|software|startup|cyber|hacker|robot|smartphone|laptop|tesla|spacex|app|gadget|data breach|cloud|algorithm|tech)\b/g,
-    ],
-    [
-      "business",
-      /\b(sensex|nifty|stock|stocks|shares|market|markets|rbi|bank|banks|inflation|gdp|economy|economic|rupee|dollar|ipo|profit|revenue|earnings|tax|gst|trade|tariff|merger|acquisition|investors?|fund|rate cut|interest rates?)\b/g,
-    ],
-    [
-      "science",
-      /\b(nasa|isro|space|scientists?|research|researchers|study|climate|vaccine|planet|telescope|species|quantum|physics|lunar|moon|mars|astronomers?|fossil|genome|discovery|asteroid)\b/g,
-    ],
-    [
-      "world",
-      /\b(ukraine|russia|gaza|israel|hamas|iran|china|beijing|washington|white house|un|nato|president|prime minister|embassy|sanctions|ceasefire|treaty|europe|eu|pakistan|bangladesh|taliban|summit)\b/g,
-    ],
-    [
-      "entertainment",
-      /\b(movie|movies|film|box office|actor|actress|bollywood|hollywood|netflix|series|album|singer|concert|trailer|oscars?|grammys?|celebrity|streaming)\b/g,
-    ],
-    [
-      "health",
-      /\b(health|hospital|doctors?|disease|virus|vaccine|cancer|diabetes|obesity|nutrition|diet|mental health|wellness|outbreak|patients?|medicine|symptoms?)\b/g,
-    ],
-    [
-      "india",
-      /\b(india|indian|modi|bjp|congress|lok sabha|rajya sabha|supreme court|delhi|mumbai|kolkata|chennai|bengaluru|bangalore|hyderabad|jharkhand|ranchi|jamshedpur|bihar|uttar pradesh|maharashtra|kerala|gujarat)\b/g,
-    ],
+    ["sports", /\b(cricket|ipl|bcci|wicket|batter|bowler|innings|football|fifa|tennis|olympic|olympics|grand slam|formula 1|f1|nba|nfl|medal|tournament|league|world cup|champions? trophy|coach|striker|goalkeeper|stadium|match)\b/g],
+    ["tech", /\b(ai|artificial intelligence|openai|chatgpt|google|apple|iphone|android|microsoft|nvidia|semiconductor|chip|chips|software|startup|cyber|hacker|robot|smartphone|laptop|tesla|spacex|app|gadget|data breach|cloud|algorithm|tech)\b/g],
+    ["business", /\b(sensex|nifty|stock|stocks|shares|market|markets|rbi|bank|banks|inflation|gdp|economy|economic|rupee|dollar|ipo|profit|revenue|earnings|tax|gst|trade|tariff|merger|acquisition|investors?|fund|rate cut|interest rates?)\b/g],
+    ["science", /\b(nasa|isro|space|scientists?|research|researchers|study|climate|vaccine|planet|telescope|species|quantum|physics|lunar|moon|mars|astronomers?|fossil|genome|discovery|asteroid)\b/g],
+    ["world", /\b(ukraine|russia|gaza|israel|hamas|iran|china|beijing|washington|white house|un|nato|president|prime minister|embassy|sanctions|ceasefire|treaty|europe|eu|pakistan|bangladesh|taliban|summit)\b/g],
+    ["entertainment", /\b(movie|movies|film|box office|actor|actress|bollywood|hollywood|netflix|series|album|singer|concert|trailer|oscars?|grammys?|celebrity|streaming)\b/g],
+    ["health", /\b(health|hospital|doctors?|disease|virus|vaccine|cancer|diabetes|obesity|nutrition|diet|mental health|wellness|outbreak|patients?|medicine|symptoms?)\b/g],
+    ["india", /\b(india|indian|modi|bjp|congress|lok sabha|rajya sabha|supreme court|delhi|mumbai|kolkata|chennai|bengaluru|bangalore|hyderabad|jharkhand|ranchi|jamshedpur|bihar|uttar pradesh|maharashtra|kerala|gujarat)\b/g],
   ];
   const inferCategory = (item) => {
     const it = item || {};
@@ -365,11 +317,7 @@
     } catch {}
     const who = (String(it.src || "") + " " + host).toLowerCase();
     for (const [c, re] of SRC_CAT) if (re.test(who)) return c;
-    const text = (
-      String(it.title || "") +
-      " " +
-      String(it.summary || "")
-    ).toLowerCase();
+    const text = (String(it.title || "") + " " + String(it.summary || "")).toLowerCase();
     let best = "",
       top = 0;
     for (const [c, re] of KW_CAT) {
@@ -456,7 +404,7 @@
 
   // Persistent reservoir of unseen stories (cap 150) for instant backfill.
   const UnseenPoolStore = (() => {
-    const KEY = "pulse_pool_v1",
+    const KEY = "pulse_pool_v2",
       CAP = 150,
       MAXAGE = 14 * 864e5;
     const rej = new Set();
@@ -478,13 +426,11 @@
     });
     const keys = (s) => [cid(s), "t:" + tsig(s)];
     const ok = (s) =>
-      s &&
-      s.title &&
-      s.url &&
-      s.ts &&
-      Date.now() - s.ts <= MAXAGE &&
-      !isSeen(s);
+      s && s.title && s.url && s.ts && Date.now() - s.ts <= MAXAGE && !isSeen(s);
     let items = [];
+    try {
+      localStorage.removeItem("pulse_pool_v1");
+    } catch {}
     {
       const v = LS.get(KEY, []);
       const have = new Set();
@@ -583,15 +529,20 @@
   })();
 
   /* ---------- config ---------- */
-  const GL = "hl=en-IN&gl=IN&ceid=IN:en";
+  // Google News locale from the user's country (defaults to IN when unknown): hl=en-US&gl=US&ceid=US:en
+  const localeParams = (code) => {
+    const cc = String(code || "IN").toUpperCase();
+    return `hl=en-${cc}&gl=${cc}&ceid=${cc}:en`;
+  };
+  const GL = () => localeParams(state.cc);
   const topicURL = (t) =>
     t
-      ? `https://news.google.com/rss/headlines/section/topic/${t}?${GL}`
-      : `https://news.google.com/rss?${GL}`;
+      ? `https://news.google.com/rss/headlines/section/topic/${t}?${GL()}`
+      : `https://news.google.com/rss?${GL()}`;
   const searchURL = (q) =>
-    `https://news.google.com/rss/search?q=${encodeURIComponent(q + " when:7d")}&${GL}`;
+    `https://news.google.com/rss/search?q=${encodeURIComponent(q + " when:7d")}&${GL()}`;
   const bingURL = (q) =>
-    `https://www.bing.com/news/search?q=${encodeURIComponent(q)}&setmkt=en-IN&format=rss`;
+    `https://www.bing.com/news/search?q=${encodeURIComponent(q)}&setmkt=en-${String(state.cc || "IN").toUpperCase()}&format=rss`;
   const CATS = [
     {
       id: "foryou",
@@ -677,14 +628,16 @@
     },
   ];
   const QUICK = [
-    "Jamshedpur",
-    "Ranchi",
-    "Patna",
-    "Kolkata",
-    "Delhi",
-    "Bangalore",
     "Mumbai",
+    "Delhi",
+    "Bengaluru",
+    "Kolkata",
     "London",
+    "New York",
+    "Austin, Texas",
+    "Toronto",
+    "Sydney",
+    "Singapore",
   ];
   const POOL = {
     top: [
@@ -800,6 +753,10 @@
     autoAdv: false,
     ttsTok: 0,
     city: "",
+    region: "",
+    country: "",
+    cc: "",
+    netDown: false,
   };
   // A city is only trusted if the user chose it (marker key). Anything stored by older builds as a default is discarded.
   const SRC_KEY = "pulse_city_src";
@@ -815,9 +772,26 @@
       return "";
     }
   };
-  const citySet = (c) => {
+  const regionGet = () => {
+    try {
+      return localStorage.getItem("pulse_user_state") || "";
+    } catch {
+      return "";
+    }
+  };
+  const geoKeyGet = (k) => {
+    try {
+      return localStorage.getItem(k) || "";
+    } catch {
+      return "";
+    }
+  };
+  const citySet = (c, st, country, cc) => {
     try {
       localStorage.setItem("pulse_user_city", c);
+      localStorage.setItem("pulse_user_state", st || "");
+      localStorage.setItem("pulse_user_country", country || "");
+      localStorage.setItem("pulse_user_cc", String(cc || "").toUpperCase());
       localStorage.setItem(SRC_KEY, "user");
     } catch {}
   };
@@ -827,7 +801,19 @@
     );
   } catch {}
   state.savedList = SavedStore.load();
+  // One-time purge of pre-v12 local caches (may hold other-state / national stories).
+  try {
+    if (!localStorage.getItem("pulse_purge_v12")) {
+      Object.keys(localStorage)
+        .filter((k) => k.startsWith("pulse.cache.local:"))
+        .forEach((k) => localStorage.removeItem(k));
+      localStorage.setItem("pulse_purge_v12", "1");
+    }
+  } catch {}
   state.city = cityGet();
+  state.region = state.city ? regionGet() : "";
+  state.country = state.city ? geoKeyGet("pulse_user_country") : "";
+  state.cc = state.city ? geoKeyGet("pulse_user_cc") : "";
   let navTouched = false;
   let retries = 0;
   const catOf = (id) => CATS.find((c) => c.id === id) || CATS[0];
@@ -946,27 +932,32 @@
   /* ---------- network ---------- */
   // Hosts that hard-fail (HTTP error / CORS / network) are skipped for 3 minutes so the console never fills with repeats.
   const dead = {};
+  const netStat = { ok: 0, err: 0, skip: 0, fails: 0 };
   function tfetch(u, ms, type) {
     let host = "";
     try {
       host = new URL(u).hostname;
     } catch {}
-    if (dead[host] > Date.now()) return Promise.reject(new Error("skipped"));
+    if (dead[host] > Date.now()) {
+      netStat.skip++;
+      return Promise.reject(new Error("skipped"));
+    }
     const c = new AbortController();
     let timedOut = false;
     const t = setTimeout(() => {
       timedOut = true;
       c.abort();
     }, ms || 3000);
-    return fetch(u, {
-      signal: c.signal,
-      cache: NOSTORE ? "no-store" : "default",
-    })
+    return fetch(u, { signal: c.signal, cache: NOSTORE ? "no-store" : "default" })
       .then((r) => {
         if (!r.ok) throw new Error("HTTP " + r.status);
+        netStat.ok++;
+        netStat.fails = 0;
         return type === "json" ? r.json() : r.text();
       })
       .catch((e) => {
+        netStat.err++;
+        netStat.fails++;
         if (!timedOut) dead[host] = Date.now() + 180000;
         throw e;
       })
@@ -1146,6 +1137,7 @@
   };
 
   // ---- freshness gate + summary sanitizer ----
+  const AGE_MS = 14 * 864e5;
   const TITLE_YEAR = /\b(19\d\d|20[01]\d|202[0-5])\b/;
   const fresh = (s) => {
     const n = Date.now();
@@ -1231,7 +1223,7 @@
       isNaN(ts) ||
       ts <= 0 ||
       ts > nowT + 300000 ||
-      nowT - ts > 14 * 864e5 ||
+      nowT - ts > AGE_MS ||
       TITLE_YEAR.test(title)
     )
       return null;
@@ -1307,43 +1299,71 @@
       });
   }
   const cacheGet = (cat) =>
-    (LS.get("pulse.cache." + cat, []) || [])
-      .filter((s) => s && s.title && s.url && !BAD.test(s.url) && fresh(s))
-      .map(stamp);
+    (LS.get("pulse.cache." + cat, []) || []).filter(
+      (s) => s && s.title && s.url && !BAD.test(s.url) && fresh(s),
+    ).map(stamp);
   const cacheSet = (cat, items) =>
     LS.set(
       "pulse.cache." + cat,
-      items.slice(0, 30).map((s) => ({
-        id: s.id,
-        ocat: s.ocat,
-        title: s.title,
-        url: s.url,
-        src: s.src,
-        ts: s.ts,
-        img: s.img,
-        stock: s.stock,
-        cat: s.cat,
-        cl: s.cl,
-        summary: s.summary,
-        gen: s.gen,
-        bullets: s.bullets,
-      })),
+      items
+        .slice(0, 30)
+        .map((s) => ({
+          id: s.id,
+          ocat: s.ocat,
+          title: s.title,
+          url: s.url,
+          src: s.src,
+          ts: s.ts,
+          img: s.img,
+          stock: s.stock,
+          cat: s.cat,
+          cl: s.cl,
+          summary: s.summary,
+          gen: s.gen,
+          bullets: s.bullets,
+        })),
     );
-  async function region(city) {
+  // Resolves { state, country, countryCode } for ANY city worldwide.
+  const geoTried = new Set();
+  async function geocode(name, hint) {
+    const q = String(name || "").trim(),
+      h = String(hint || "").trim().toLowerCase();
+    try {
+      const j = await tfetch(
+        `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(q)}&count=10&language=en&format=json`,
+        2500,
+        "json",
+      );
+      const rs = (j && j.results) || [];
+      const r =
+        (h &&
+          rs.find((x) =>
+            [x.admin1, x.country, x.country_code].some((v) => String(v || "").toLowerCase() === h),
+          )) ||
+        rs[0];
+      if (r)
+        return {
+          state: r.admin1 || "",
+          country: r.country || "",
+          countryCode: String(r.country_code || "").toUpperCase(),
+        };
+    } catch {}
     try {
       const r = await tfetch(
-        `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(city)}&format=json&addressdetails=1&limit=1`,
+        `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(h ? q + ", " + hint : q)}&format=json&addressdetails=1&limit=1`,
         2500,
         "json",
       );
       const a = (r[0] && r[0].address) || {};
-      return {
-        state: a.state || a.state_district || a.region || "",
-        country: a.country || "",
-      };
-    } catch {
-      return { state: "", country: "" };
-    }
+      if (a.state || a.country)
+        return {
+          state: a.state || a.state_district || a.region || "",
+          country: a.country || "",
+          countryCode: String(a.country_code || "").toUpperCase(),
+        };
+    } catch {}
+    const st = STATE_OF[q.toLowerCase()] || "";
+    return { state: st, country: st ? "India" : "", countryCode: st ? "IN" : "" };
   }
   // Runs source jobs in parallel; calls onItems with each batch as soon as it arrives.
   function gather(jobs, my, cl, cat, onItems, loc) {
@@ -1415,7 +1435,7 @@
   }
   function onItems(my, b, total) {
     if (my !== state.req) return;
-    UnseenPoolStore.add(b);
+    if (state.view.type === "cat") UnseenPoolStore.add(b);
     if (state.degraded) {
       state.degraded = false;
       state.instant = false;
@@ -1460,10 +1480,7 @@
         im.src = m.img;
       }
     });
-    const add = spread(
-      dedupe(prepFeed(b, rendered), state.items),
-      state.items.slice(-2),
-    );
+    const add = spread(dedupe(prepFeed(b, rendered), state.items), state.items.slice(-2));
     if (!add.length) return;
     const from = state.items.length;
     state.items = state.items.concat(add);
@@ -1473,7 +1490,6 @@
     trimDom();
     setActive(state.active, true);
     refreshStats();
-    scheduleChips();
   }
   // Guaranteed result: live India feed (saurav.tech) or the bundled snapshot, clearly badged. Never a dead screen.
   async function degrade(my, v, indiaP) {
@@ -1509,13 +1525,14 @@
     state.degraded = true;
     state.shown = true;
     state.instant = false;
-    setPill(`📍 ${q} (Showing India & Regional Feed)`);
+    setPill(state.liveBadge);
     setLive(live);
     render(items);
-    toast("Live local proxies busy — showing top India & regional stories");
+    toast("Live sources busy — showing top stories");
   }
   async function load() {
     if (state.view.type === "saved") return showSaved();
+    state.netDown = false;
     const my = ++state.req;
     const v = state.view,
       isCat = v.type === "cat",
@@ -1538,7 +1555,9 @@
       if (!pre.length)
         pre = fallback(c.fb, label, c.id === "foryou").filter(feedOK);
     } else if (city)
-      pre = cacheGet("local:" + v.q.toLowerCase()).filter(feedOK);
+      pre = cacheGet("local:" + v.q.toLowerCase())
+        .filter(feedOK)
+        .filter(localMatcher(v.q));
     if (isCat && pre.length < FEED_MIN)
       pre = pre.concat(poolFill(v.cat, FEED_MIN - pre.length, keySet(pre)));
     if (pre.length) {
@@ -1565,8 +1584,6 @@
       if (total.length) {
         setLive(true);
         cacheSet(v.cat, total);
-        loadedCats.add(v.cat);
-        scheduleChips();
         retries = 0;
         return;
       }
@@ -1597,50 +1614,20 @@
       });
       return;
     }
-    const q = v.q,
-      qq = city ? `"${q}"` : q;
-    state.moreQ = qq;
-    state.moreCity = city;
+    if (city) return loadCity(my, v.q, cb);
+    const q = v.q;
+    state.moreQ = q;
+    state.moreCity = false;
     const indiaP = indiaGeneral();
     const timer = setTimeout(() => {
       if (my === state.req && !state.shown) degrade(my, v, indiaP);
     }, 3000);
-    total = await gather(queryJobs(qq), my, q, "local", cb, city ? q : "");
-    if (total.length < 3 && city && my === state.req) {
-      let place = STATE_OF[q.toLowerCase()] || "";
-      if (!place) {
-        const rg = await region(q);
-        place = rg.state || rg.country;
-      }
-      if (place && my === state.req) {
-        state.liveBadge = total.length
-          ? `📍 ${q} (+ ${place} News)`
-          : `📍 ${q} (Showing ${place} News)`;
-        if (state.shown && !state.degraded && total.length)
-          setPill(state.liveBadge);
-        state.moreQ = `"${place}"`;
-        state.moreCity = false;
-        const more = await gather(
-          queryJobs(`"${place}"`),
-          my,
-          place,
-          "local",
-          cb,
-          place,
-        );
-        total = total.concat(more);
-      }
-    }
+    total = await gather(queryJobs(q), my, q, "local", cb, "");
     clearTimeout(timer);
     if (my !== state.req) return;
     state.loading = false;
     if (total.length) {
       setLive(true);
-      if (city) {
-        cacheSet("local:" + q.toLowerCase(), total);
-        loadedCats.add("local");
-        scheduleChips();
-      }
       return;
     }
     await degrade(my, v, indiaP);
@@ -1757,7 +1744,6 @@
     feed.scrollTop = 0;
     setActive(0, true);
     refreshStats();
-    scheduleChips();
     maybeTopUp();
   }
   function setActive(i, force) {
@@ -1780,7 +1766,7 @@
       speakCurrent();
     }
     if (n && i >= n - 3) {
-      loadMore();
+      if (state.view.kind !== "city") loadMore();
       maybeTopUp();
     }
   }
@@ -1872,10 +1858,12 @@
       ctx = onLocal ? "📍 " + v.q : "Search • " + v.q;
     else if (v.type === "saved") ctx = "Saved • Your Vault";
     else ctx = CTX[v.cat] || "Top Stories";
-    $("#ctx").textContent = ctx;
+    const ce = $("#ctx");
+    ce.textContent = onLocal ? "" : ctx;
+    ce.hidden = onLocal;
     const b = $("#location-badge");
     b.hidden = !onLocal;
-    b.textContent = "📍 " + (onLocal ? v.q : state.city || "Set City") + " ✏️";
+    b.textContent = "📍 " + (onLocal ? v.q : state.city || "Set City");
     b.title = "Change city";
   }
   function renderCityChips() {
@@ -2018,7 +2006,7 @@
   function advance() {
     if (state.active >= state.items.length - 1) {
       stopTTS();
-      toast("You’re all caught up");
+      maybeTopUp(true);
       return;
     }
     const from = state.active;
@@ -2093,8 +2081,14 @@
   }
   // Every list headed for the feed passes through here: drop seen, rank For You.
   function prepFeed(list, ex) {
-    const real = lockFilter(list, ex);
     const v = state.view;
+    if (v.type === "query" && v.kind === "city") {
+      list = list.filter((s) => isLocalStory(s, locOf(v.q)));
+      list.forEach((s) => {
+        s.cl = v.q.toUpperCase();
+      });
+    }
+    const real = lockFilter(list, ex);
     return v.type === "cat" && v.cat === "foryou" ? rankForYou(real) : real;
   }
   const itemOf = (el) => state.items[+el.dataset.i];
@@ -2103,7 +2097,10 @@
     return i < 0 ? null : feed.querySelector(`.news-card[data-i="${i}"]`);
   };
   const unseenInView = () =>
-    state.items.reduce((n, s) => n + (!isSeen(s) ? 1 : 0), 0);
+    state.items.reduce(
+      (n, s) => n + (!isSeen(s) ? 1 : 0),
+      0,
+    );
 
   /* -- viewport tracking: >=60% visible for 1.5s => seen; 4s => affinity -- */
   let seenIO = null;
@@ -2179,11 +2176,7 @@
         { root: feed, threshold: [SEEN_VIS] },
       );
     nodes.forEach((n) => {
-      if (
-        n.dataset.end ||
-        n.classList.contains("empty") ||
-        n.classList.contains("sk")
-      )
+      if (n.dataset.end || n.classList.contains("empty") || n.classList.contains("sk"))
         return;
       seenIO.observe(n);
     });
@@ -2203,7 +2196,6 @@
     UnseenPoolStore.evict(s);
     const c = cardOf(s);
     if (c) {
-      c.classList.add("is-seen-now");
       const st = cstate.get(c);
       if (st) {
         st.seen = true;
@@ -2214,7 +2206,6 @@
     }
     if (StreakStore.bump().goalDone) celebrate();
     refreshStats();
-    scheduleChips();
     if (unseenInView() < BATCH_MIN) maybeTopUp();
     return true;
   }
@@ -2235,11 +2226,6 @@
 
   /* -- header pills -- */
   function refreshStats() {
-    const u = $("#unseen"),
-      saved = state.view.type === "saved";
-    const n = unseenInView();
-    u.hidden = saved;
-    u.textContent = `${n} unseen ${n === 1 ? "story" : "stories"}`;
     const st = StreakStore.status(),
       el = $("#streak");
     const pct = Math.round(Math.min(1, st.today / st.goal) * 100);
@@ -2251,136 +2237,28 @@
       : `Read a story today to ${st.streak ? "keep" : "start"} your streak`;
   }
 
-  /* -- unseen category rings -- */
-  const loadedCats = new Set();
-  let counts = {};
-  function catCounts() {
-    const out = {},
-      v = state.view;
-    CATS.forEach((c) => {
-      const pool = new Map();
-      const add = (l) =>
-        l.forEach((s) => {
-          if (s && !pool.has(cid(s))) pool.set(cid(s), s);
-        });
-      let known = loadedCats.has(c.id);
-      if (c.local) {
-        if (!state.city) return;
-        const cached = cacheGet("local:" + state.city.toLowerCase());
-        add(cached);
-        known = known || cached.length > 0;
-        if (
-          v.type === "query" &&
-          v.kind === "city" &&
-          String(v.q).toLowerCase() === state.city.toLowerCase()
-        )
-          add(state.items);
-      } else {
-        const cached = cacheGet(c.id);
-        add(cached);
-        known = known || cached.length > 0;
-        add(fallback(c.fb, "", c.id === "foryou"));
-        if (v.type === "cat" && v.cat === c.id) add(state.items);
-      }
-      let n = 0;
-      pool.forEach((s) => {
-        if (!isSeen(s)) n++;
-      });
-      out[c.id] = { n, known };
-    });
-    return out;
-  }
-  function renderChips() {
-    counts = catCounts();
-    document.querySelectorAll("#chips button").forEach((b) => {
-      const id = b.dataset.id;
-      if (id === "saved") return;
-      const base = catOf(id).label,
-        k = counts[id];
-      b.classList.remove("has-unseen", "all-seen");
-      if (k && k.n > 0) {
-        b.classList.add("has-unseen");
-        b.textContent = `${base} · ${k.n}`;
-      } else if (k && k.known) {
-        b.classList.add("all-seen");
-        b.textContent = `${base} ✓`;
-      } else b.textContent = base;
-    });
-    refreshEnd(false);
-  }
-  let chipT = 0;
-  function scheduleChips() {
-    clearTimeout(chipT);
-    chipT = setTimeout(renderChips, 150);
-  }
-  function bestOther() {
-    const v = state.view;
-    const here =
-      v.type === "cat"
-        ? v.cat
-        : v.type === "query" && v.kind === "city"
-          ? "local"
-          : "";
-    let best = null;
-    CATS.forEach((c) => {
-      const k = counts[c.id];
-      if (!k || c.id === here || k.n <= 0) return;
-      if (!best || k.n > best.n)
-        best = { id: c.id, n: k.n, label: c.label.replace(" 📍", "") };
-    });
-    return best;
-  }
-
-  /* -- "all caught up" / end-of-list card -- */
+  /* -- end of stream: always a loading shimmer while the harvester replenishes -- */
   function endCardHTML() {
     if (state.view.type === "saved")
-      return `<div class="pulse-caught-up-card"><div class="pcu-ring">♥</div><h2>That’s your whole vault</h2><p>${state.savedList.length} saved ${state.savedList.length === 1 ? "story" : "stories"}.</p><button data-action="jump-cat" data-id="foryou">Back to For You</button></div>`;
-    if (topBusy)
-      return '<div class="pulse-caught-up-card pulse-caught-up"><div class="pcu-ring">…</div><h2>Finding fresh stories</h2><p>Pulling in more unseen news.</p></div>';
-    const left = unseenInView(),
-      st = StreakStore.status();
-    const stats = `<div class="pcu-stats"><span><b>${Math.min(st.today, st.goal)}/${st.goal}</b> daily goal</span><span><b>🔥 ${st.streak}d</b> ${st.locked ? "streak locked" : "read 1 to keep it"}</span></div>`;
-    const b = bestOther();
-    return `<div class="pulse-caught-up-card pulse-caught-up"><div class="pcu-ring">✓</div><h2>You’re all caught up</h2><p>${left > 0 ? "You are at the end of the stream. New stories will appear as they arrive." : "No unseen stories in this view."}</p>${stats}${b ? `<button data-action="jump-cat" data-id="${esc(b.id)}">Jump to ${esc(b.label)} (${b.n} Fresh ${b.n === 1 ? "Story" : "Stories"})</button>` : ""}<button class="alt" data-action="live-wire">Check Live Wire</button></div>`;
+      return `<div class="pulse-caught-up-card pulse-caught-up"><div class="pcu-ring">♥</div><h2>That’s your whole vault</h2><p>${state.savedList.length} saved ${state.savedList.length === 1 ? "story" : "stories"}.</p><button data-action="jump-cat" data-id="foryou">Back to For You</button></div>`;
+    if (state.netDown)
+      return '<div class="pulse-caught-up-card"><h2>Connection problem</h2><p>Live news sources could not be reached.</p><button data-action="retry-net">Tap to retry connection</button></div>';
+    return '<div class="bar b0" style="opacity:.2"></div><div class="bar b1"></div><div class="bar b2"></div><div class="bar b3"></div><div class="bar b4"></div>';
   }
   function endCard() {
-    if (state.view.type !== "saved" && unseenInView() === 0)
-      counts = catCounts();
-    return `<article class="news-card empty" data-end="1">${endCardHTML()}</article>`;
+    const saved = state.view.type === "saved";
+    return `<article class="news-card ${saved || state.netDown ? "empty" : "sk"}" data-end="1">${endCardHTML()}</article>`;
   }
-  function refreshEnd(fresh) {
+  function refreshEnd() {
     const e = feed.querySelector("[data-end]");
-    if (!e || !e.querySelector(".pulse-caught-up-card")) return;
-    if (fresh && state.view.type !== "saved" && unseenInView() === 0)
-      counts = catCounts();
+    if (!e || state.view.type === "saved") return;
+    e.className = "news-card " + (state.netDown ? "empty" : "sk");
     e.innerHTML = endCardHTML();
   }
   function onActive(i) {
     rehydrate(i);
     preloadNext();
-    if (i === state.items.length) refreshEnd(true);
-  }
-
-  /* -- Check Live Wire: re-pull the freshest snapshot + live sources, bypassing caches -- */
-  let nsT = 0;
-  async function liveWire() {
-    toast("Checking Live Wire…");
-    Object.keys(dead).forEach((k) => delete dead[k]);
-    NOSTORE = true;
-    clearTimeout(nsT);
-    nsT = setTimeout(() => {
-      NOSTORE = false;
-    }, 20000);
-    try {
-      const r = await fetch("./data/fallback-feed.json", { cache: "no-store" });
-      if (r.ok) {
-        const j = await r.json();
-        if (j && Array.isArray(j.stories) && j.stories.length)
-          window.PULSE_FALLBACK = j;
-        UnseenPoolStore.add(fallback("top", "", true));
-      }
-    } catch {}
-    load();
+    if (i === state.items.length) maybeTopUp(true);
   }
 
   /* -- Saved vault as a feed tab (saved items stay visible here even when seen) -- */
@@ -2417,7 +2295,6 @@
       setActive(0, true);
     }
     refreshStats();
-    scheduleChips();
   }
 
   /* -- one place that mirrors saved state everywhere -- */
@@ -2464,11 +2341,7 @@
     feed.addEventListener(
       "pointermove",
       (e) => {
-        if (
-          down &&
-          !down.moved &&
-          Math.hypot(e.clientX - down.x, e.clientY - down.y) > 10
-        )
+        if (down && !down.moved && Math.hypot(e.clientX - down.x, e.clientY - down.y) > 10)
           down.moved = true;
       },
       { passive: true },
@@ -2480,33 +2353,16 @@
       const d = down;
       down = null;
       if (!d || e.button > 0) return;
-      if (
-        d.moved ||
-        Math.hypot(e.clientX - d.x, e.clientY - d.y) > 10 ||
-        e.timeStamp - d.t > 350
-      ) {
+      if (d.moved || Math.hypot(e.clientX - d.x, e.clientY - d.y) > 10 || e.timeStamp - d.t > 350) {
         last.t = 0;
         return;
       }
       const tgt = e.target;
-      if (
-        !tgt ||
-        !tgt.closest ||
-        tgt.closest("a, button, input, [data-no-dbltap]")
-      )
-        return;
+      if (!tgt || !tgt.closest || tgt.closest("a, button, input, [data-no-dbltap]")) return;
       const card = tgt.closest(".news-card");
-      if (
-        !card ||
-        card.dataset.end ||
-        card.classList.contains("empty") ||
-        card.classList.contains("sk")
-      )
+      if (!card || card.dataset.end || card.classList.contains("empty") || card.classList.contains("sk"))
         return;
-      if (
-        e.timeStamp - last.t < 320 &&
-        Math.hypot(e.clientX - last.x, e.clientY - last.y) < 40
-      ) {
+      if (e.timeStamp - last.t < 320 && Math.hypot(e.clientX - last.x, e.clientY - last.y) < 40) {
         last.t = 0;
         onDoubleTap(card);
       } else last = { t: e.timeStamp, x: e.clientX, y: e.clientY };
@@ -2549,11 +2405,15 @@
       }
     });
     window.addEventListener("pagehide", flushAll);
+    window.addEventListener("online", () => {
+      if (!state.netDown) return;
+      Object.keys(dead).forEach((k) => delete dead[k]);
+      maybeTopUp(true);
+    });
     window.addEventListener("storage", (e) => {
       if (e.key !== "pulse_seen_v1") return;
       SeenStore.reload();
       refreshStats();
-      scheduleChips();
     });
     $("#rd-ext").addEventListener("click", () => {
       const s = state.rd;
@@ -2623,11 +2483,7 @@
     });
   }
   function rehydrate(i) {
-    for (
-      let k = Math.max(0, i - 3);
-      k <= i + 3 && k < state.items.length;
-      k++
-    ) {
+    for (let k = Math.max(0, i - 3); k <= i + 3 && k < state.items.length; k++) {
       const c = feed.querySelector(`.news-card[data-i="${k}"]`);
       if (!c || !c.classList.contains("ghost")) continue;
       const t = document.createElement("div");
@@ -2636,7 +2492,6 @@
       c.classList.remove("ghost");
       bindImgs([c]);
       syncCards([c]);
-      if (isSeen(state.items[k])) c.classList.add("is-seen-now");
     }
   }
 
@@ -2690,95 +2545,24 @@
     indianews: "india",
   };
   const SUBTOPICS = {
-    top: [
-      "breaking news",
-      "world news",
-      "technology",
-      "business economy",
-      "science discovery",
-      "india news",
-    ],
-    tech: [
-      "artificial intelligence",
-      "cybersecurity",
-      "semiconductors",
-      "startup funding",
-      "smartphones",
-      "robotics",
-    ],
-    business: [
-      "stock market",
-      "inflation economy",
-      "banking",
-      "trade tariffs",
-      "energy prices",
-      "startups",
-    ],
-    world: [
-      "diplomacy summit",
-      "climate policy",
-      "middle east",
-      "europe politics",
-      "asia pacific",
-      "united nations",
-    ],
-    science: [
-      "space exploration",
-      "medical research",
-      "climate science",
-      "astronomy",
-      "biotechnology",
-      "physics",
-    ],
-    sports: [
-      "cricket",
-      "football",
-      "tennis",
-      "olympics",
-      "formula 1",
-      "hockey",
-    ],
-    india: [
-      "india politics",
-      "india economy",
-      "india infrastructure",
-      "india education",
-      "india health",
-      "india technology",
-    ],
-    entertainment: [
-      "movies box office",
-      "streaming series",
-      "music album",
-      "celebrity news",
-      "awards season",
-      "bollywood",
-    ],
-    health: [
-      "public health",
-      "nutrition",
-      "mental health",
-      "medical breakthrough",
-      "fitness",
-      "disease outbreak",
-    ],
+    top: ["breaking news", "world news", "technology", "business economy", "science discovery", "india news", "politics", "economy", "health", "sports", "entertainment", "environment"],
+    tech: ["artificial intelligence", "cybersecurity", "semiconductors", "startup funding", "smartphones", "robotics", "cloud computing", "electric vehicles", "gadgets", "space technology", "data privacy", "software"],
+    business: ["stock market", "inflation economy", "banking", "trade tariffs", "energy prices", "startups", "real estate", "banks rbi", "ipo listings", "commodities", "corporate earnings", "jobs economy"],
+    world: ["diplomacy summit", "climate policy", "middle east", "europe politics", "asia pacific", "united nations", "elections", "conflict", "trade deals", "refugees", "human rights", "global economy"],
+    science: ["space exploration", "medical research", "climate science", "astronomy", "biotechnology", "physics", "climate change", "genetics", "ocean research", "particle physics", "archaeology", "vaccines"],
+    sports: ["cricket", "football", "tennis", "olympics", "formula 1", "hockey", "badminton", "athletics", "kabaddi", "chess", "baseball", "basketball"],
+    india: ["india politics", "india economy", "india infrastructure", "india education", "india health", "india technology", "india cities", "india agriculture", "india railways", "india courts", "india elections", "india startups"],
+    entertainment: ["movies box office", "streaming series", "music album", "celebrity news", "awards season", "bollywood", "tv shows", "ott releases", "concerts", "film festivals", "hollywood", "regional cinema"],
+    health: ["public health", "nutrition", "mental health", "medical breakthrough", "fitness", "disease outbreak", "cancer research", "heart health", "covid", "pharma", "diabetes", "women health"],
   };
   const WINDOWS = ["1d", "3d", "7d", "14d"];
   const HARVEST = {
-    top: {
-      cat: "top",
-      rd: "worldnews+technology+science+business",
-      apis: ["hn", "sf", "dev"],
-    },
+    top: { cat: "top", rd: "worldnews+technology+science+business", apis: ["hn", "sf", "dev"] },
     india: { cat: "india", rd: "india+indianews", apis: [] },
     world: { cat: "world", rd: "worldnews", apis: [] },
     business: { cat: "business", rd: "business+economics", apis: [] },
     sports: { cat: "sports", rd: "sports", apis: [] },
-    entertainment: {
-      cat: "entertainment",
-      rd: "entertainment+movies+music",
-      apis: [],
-    },
+    entertainment: { cat: "entertainment", rd: "entertainment+movies+music", apis: [] },
     health: { cat: "health", rd: "health", apis: [] },
     science: { cat: "science", rd: "science+space", apis: ["sf"] },
     tech: { cat: "tech", rd: "technology+programming", apis: ["hn", "dev"] },
@@ -2822,9 +2606,7 @@
       .map((e) => e[0]);
   };
   const buildGroups = (groups) =>
-    Object.keys(groups).flatMap((cat) =>
-      build(groups[cat], catLabel(cat), cat, ""),
-    );
+    Object.keys(groups).flatMap((cat) => build(groups[cat], catLabel(cat), cat, ""));
   // One source list per category, rotated each cycle. Every source advances its own cursor.
   function cycleSources(key) {
     const H = HARVEST[key] || HARVEST.top,
@@ -2837,12 +2619,7 @@
         CursorStore.set("sub_" + key, si + 1);
         if ((si + 1) % subs.length === 0) this.widen();
         const tr = trending();
-        const q =
-          (si % 3 === 2 && tr.length
-            ? tr[si % tr.length]
-            : subs[si % subs.length]) +
-          " when:" +
-          WINDOWS[wi];
+        const q = (si % 3 === 2 && tr.length ? tr[si % tr.length] : subs[si % subs.length]) + " when:" + WINDOWS[wi];
         const url = `https://news.google.com/rss/search?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en`;
         return build(await rss(url), catLabel(H.cat), H.cat, "");
       },
@@ -2854,41 +2631,23 @@
       async run() {
         const bi = cur("bing", 0);
         CursorStore.set("bing_" + key, bi + 1);
-        return build(
-          await rss(bingURL(subs[bi % subs.length])),
-          catLabel(H.cat),
-          H.cat,
-          "",
-        );
+        return build(await rss(bingURL(subs[bi % subs.length])), catLabel(H.cat), H.cat, "");
       },
     };
     const rdSrc = {
       async run() {
-        const j = await redditPage(
-          H.rd,
-          String(CursorStore.get("rd_" + key) || ""),
-        );
+        const j = await redditPage(H.rd, String(CursorStore.get("rd_" + key) || ""));
         if (!j || !j.data || !Array.isArray(j.data.children)) return [];
         CursorStore.set("rd_" + key, j.data.after || "");
         const groups = {};
         j.data.children.forEach((c) => {
           const x = c && c.data;
           if (!x || !x.title || x.over_18 || x.stickied) return;
-          const pv =
-            x.preview &&
-            x.preview.images &&
-            x.preview.images[0] &&
-            x.preview.images[0].source &&
-            x.preview.images[0].source.url;
-          const cat =
-            key === "top"
-              ? SUB_CAT[String(x.subreddit).toLowerCase()] || "world"
-              : H.cat;
+          const pv = x.preview && x.preview.images && x.preview.images[0] && x.preview.images[0].source && x.preview.images[0].source.url;
+          const cat = key === "top" ? SUB_CAT[String(x.subreddit).toLowerCase()] || "world" : H.cat;
           (groups[cat] = groups[cat] || []).push({
             title: x.title,
-            link: x.is_self
-              ? "https://www.reddit.com" + x.permalink
-              : x.url_overridden_by_dest || x.url,
+            link: x.is_self ? "https://www.reddit.com" + x.permalink : x.url_overridden_by_dest || x.url,
             pubDate: new Date((x.created_utc || 0) * 1000).toISOString(),
             source: "r/" + x.subreddit,
             desc: x.is_self ? x.selftext || "" : "",
@@ -2901,92 +2660,42 @@
     const API = {
       hn: async () => {
         const p = +CursorStore.get("hn") || 0;
-        const j = await tfetch(
-          `https://hn.algolia.com/api/v1/search_by_date?tags=story&hitsPerPage=30&page=${p}`,
-          4000,
-          "json",
-        );
+        const j = await tfetch(`https://hn.algolia.com/api/v1/search_by_date?tags=story&hitsPerPage=30&page=${p}`, 4000, "json");
         if (!j || !Array.isArray(j.hits)) return [];
         CursorStore.set("hn", p >= 40 ? 0 : p + 1);
         return build(
-          j.hits
-            .filter((x) => x.title)
-            .map((x) => {
-              let dom = "";
-              try {
-                dom = x.url
-                  ? new URL(x.url).hostname.replace(/^www\./, "")
-                  : "";
-              } catch {}
-              return {
-                title: x.title,
-                link:
-                  x.url || "https://news.ycombinator.com/item?id=" + x.objectID,
-                pubDate: x.created_at,
-                source: dom || "Hacker News",
-                desc: x.story_text || "",
-                img: "",
-              };
-            }),
-          catLabel("tech"),
-          "tech",
-          "",
+          j.hits.filter((x) => x.title).map((x) => {
+            let dom = "";
+            try {
+              dom = x.url ? new URL(x.url).hostname.replace(/^www\./, "") : "";
+            } catch {}
+            return { title: x.title, link: x.url || "https://news.ycombinator.com/item?id=" + x.objectID, pubDate: x.created_at, source: dom || "Hacker News", desc: x.story_text || "", img: "" };
+          }),
+          catLabel("tech"), "tech", "",
         );
       },
       sf: async () => {
         const o = +CursorStore.get("sf") || 0;
-        const j = await tfetch(
-          `https://api.spaceflightnewsapi.net/v4/articles/?limit=30&offset=${o}`,
-          4000,
-          "json",
-        );
+        const j = await tfetch(`https://api.spaceflightnewsapi.net/v4/articles/?limit=30&offset=${o}`, 4000, "json");
         if (!j || !Array.isArray(j.results)) return [];
         CursorStore.set("sf", o >= 600 ? 0 : o + 30);
         return build(
-          j.results.map((a) => ({
-            title: a.title,
-            link: a.url,
-            pubDate: a.published_at,
-            source: a.news_site || "Spaceflight News",
-            desc: a.summary || "",
-            img: a.image_url || "",
-          })),
-          catLabel("science"),
-          "science",
-          "",
+          j.results.map((a) => ({ title: a.title, link: a.url, pubDate: a.published_at, source: a.news_site || "Spaceflight News", desc: a.summary || "", img: a.image_url || "" })),
+          catLabel("science"), "science", "",
         );
       },
       dev: async () => {
         const p = +CursorStore.get("dev") || 1;
-        const j = await tfetch(
-          `https://dev.to/api/articles?per_page=30&page=${p}`,
-          4000,
-          "json",
-        );
+        const j = await tfetch(`https://dev.to/api/articles?per_page=30&page=${p}`, 4000, "json");
         if (!Array.isArray(j)) return [];
         CursorStore.set("dev", p >= 40 ? 1 : p + 1);
         return build(
-          j.map((a) => ({
-            title: a.title,
-            link: a.url,
-            pubDate: a.published_at,
-            source: "DEV Community",
-            desc: a.description || "",
-            img: a.social_image || a.cover_image || "",
-          })),
-          catLabel("tech"),
-          "tech",
-          "",
+          j.map((a) => ({ title: a.title, link: a.url, pubDate: a.published_at, source: "DEV Community", desc: a.description || "", img: a.social_image || a.cover_image || "" })),
+          catLabel("tech"), "tech", "",
         );
       },
     };
-    const list = [
-      rssSrc,
-      rdSrc,
-      ...H.apis.map((n) => ({ run: API[n] })),
-      bingSrc,
-      rssSrc,
-    ];
+    const list = [rssSrc, rdSrc, ...H.apis.map((n) => ({ run: API[n] })), bingSrc, rssSrc];
     const rot = (+CursorStore.get("rot") || 0) % list.length;
     CursorStore.set("rot", rot + 1);
     return list.slice(rot).concat(list.slice(0, rot));
@@ -2997,7 +2706,7 @@
     let fresh = 0;
     const srcs = cycleSources(harvestKey());
     for (let i = 0; i < srcs.length && i < 8; i++) {
-      if (my !== state.req || fresh >= BATCH_MIN) break;
+      if (my !== state.req || fresh >= BATCH_MIN || Date.now() > deadline) break;
       let items = [];
       try {
         items = await srcs[i].run();
@@ -3008,9 +2717,228 @@
     }
   }
 
+  /* ---------- strict local isolation: Google News RSS scoped to city/state only ---------- */
+  const reEsc = (x) => String(x).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const wordRe = (w) =>
+    new RegExp("(^|[^a-z0-9])" + reEsc(String(w).toLowerCase()) + "([^a-z0-9]|$)");
+  const wreCache = new Map();
+  const wre = (w) => {
+    let r = wreCache.get(w);
+    if (!r) wreCache.set(w, (r = wordRe(w)));
+    return r;
+  };
+  // Sibling regions per country: used to reject "Austin, Minnesota" when the user is in Austin, Texas.
+  const REGIONS = {
+    IN: ["Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chhattisgarh","Goa","Gujarat","Haryana","Himachal Pradesh","Jharkhand","Karnataka","Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttar Pradesh","Uttarakhand","West Bengal","Delhi","Jammu and Kashmir","Ladakh","Chandigarh","Puducherry"],
+    US: ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"],
+    CA: ["Alberta","British Columbia","Manitoba","New Brunswick","Newfoundland and Labrador","Nova Scotia","Ontario","Prince Edward Island","Quebec","Saskatchewan"],
+    AU: ["New South Wales","Victoria","Queensland","Western Australia","South Australia","Tasmania","Northern Territory","Australian Capital Territory"],
+    GB: ["England","Scotland","Wales","Northern Ireland"],
+  };
+  const sibCache = new Map();
+  const sibRe = (loc) => {
+    const cc = String(loc.countryCode || "").toUpperCase(),
+      key = loc.city + "|" + (loc.state || "") + "|" + cc;
+    if (!sibCache.has(key)) {
+      const own = String(loc.state || "").toLowerCase();
+      const sibs = (REGIONS[cc] || []).filter((r) => r.toLowerCase() !== own);
+      sibCache.set(
+        key,
+        sibs.length
+          ? new RegExp(
+              "(^|[^a-z0-9])" + reEsc(loc.city.toLowerCase()) + "[\\s,(\\-–]{1,4}(" + sibs.map((r) => reEsc(r.toLowerCase())).join("|") + ")([^a-z0-9]|$)",
+            )
+          : null,
+      );
+    }
+    return sibCache.get(key);
+  };
+  // Generated filler summaries mention the city by construction, so only real text counts.
+  const textOf = (s) =>
+    (String(s.title || "") + " " + (s.gen ? "" : String(s.summary || ""))).toLowerCase();
+  const matchesState = (s, loc) => !!s && !!loc.state && wre(loc.state).test(textOf(s));
+  // City mention counts unless it is explicitly qualified with a sibling region ("Austin, Minnesota").
+  const matchesCity = (s, loc) => {
+    if (!s || !loc.city || !wre(loc.city).test(textOf(s))) return false;
+    if (matchesState(s, loc)) return true;
+    const re = sibRe(loc);
+    return !(re && re.test(textOf(s)));
+  };
+  const isLocalStory = (s, loc) => matchesCity(s, loc) || matchesState(s, loc);
+  const locOf = (city) => ({
+    city,
+    state: state.region,
+    country: state.country,
+    countryCode: state.cc,
+  });
+  const localMatcher = (city) => (s) => isLocalStory(s, locOf(city));
+  // Ranked Indian city sources, best to worst. Every query is capped at 14 days.
+  const gnUrl = (q) =>
+    `https://news.google.com/rss/search?q=${encodeURIComponent(q)}&${GL()}`;
+  const slugify = (x) =>
+    String(x)
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+  // Ranked sources (best -> worst), each capped at 14 days, all via Google News India RSS.
+  function localSources(loc) {
+    const { city, state: st } = loc,
+      cc = String(loc.countryCode || "").toUpperCase();
+    const c = `"${city}"`,
+      cs = st ? `${c} OR "${st}"` : c;
+    const inPubs =
+      cc === "IN"
+        ? [
+            { id: "toi-city", q: `site:timesofindia.indiatimes.com/city/${slugify(city)} when:14d` },
+            { id: "toi7", q: `site:timesofindia.indiatimes.com ${c} when:7d` },
+            { id: "hindu14", q: `site:thehindu.com ${cs} when:14d` },
+            { id: "ie14", q: `site:indianexpress.com ${cs} when:14d` },
+            { id: "ht14", q: `site:hindustantimes.com ${cs} when:14d` },
+            {
+              id: "misc14",
+              q: `(site:deccanherald.com OR site:deccanchronicle.com OR site:livemint.com OR site:business-standard.com OR site:ndtv.com OR site:news18.com) ${st ? `(${c} OR "${st}")` : c} when:14d`,
+            },
+          ]
+        : [];
+    return [
+      ...inPubs,
+      { id: "u7", q: `${c} when:7d` },
+      ...(st ? [{ id: "ucs14", q: `${c} "${st}" when:14d` }] : []),
+      { id: "u14", q: `${c} when:14d` },
+    ];
+  }
+  const FACETS = [
+    ["rail", "railways OR infrastructure OR transport OR metro"],
+    ["weather", "weather OR monsoon OR rain OR storm"],
+    ["edu", "education OR school OR university"],
+    ["law", "police OR court"],
+    ["biz", "business OR industry OR economy"],
+    ["sports", "sports"],
+    ["admin", "administration OR government OR civic"],
+  ];
+  // Broader <=14d facets: city-or-state first, then state/region-wide.
+  function localCascade(loc) {
+    const { city, state: st } = loc;
+    const scope = st ? `("${city}" OR "${st}")` : `"${city}"`;
+    return [
+      ...FACETS.map(([id, t]) => ({ id: "c-" + id, q: `${scope} ${t} when:14d` })),
+      ...(st ? FACETS.map(([id, t]) => ({ id: "s-" + id, q: `"${st}" ${t} when:14d` })) : []),
+    ];
+  }
+  const fetchLocalSrc = (src) => rss(src.url || gnUrl(src.q));
+  const srcDry = new Map();
+  let localQ = [];
+  async function loadCity(my, q, cb) {
+    localQ = [];
+    state.moreQ = "";
+    state.moreCity = false;
+    // Resolve state/country for ANY typed city before building locale-specific queries.
+    if ((!state.region || !state.cc || !state.country) && !geoTried.has(q.toLowerCase())) {
+      geoTried.add(q.toLowerCase());
+      const g = await Promise.race([
+        geocode(q, state.geoHint),
+        new Promise((r) => setTimeout(() => r(null), 4000)),
+      ]);
+      if (my !== state.req) return;
+      if (g && state.view.q === q) {
+        if (!state.region) state.region = g.state;
+        if (!state.country) state.country = g.country;
+        if (!state.cc) state.cc = g.countryCode;
+        citySet(q, state.region, state.country, state.cc);
+      }
+    }
+    const loc = locOf(q);
+    const ok = (s) => matchesCity(s, loc);
+    const picks = localSources(loc).slice(0, 4);
+    const total = await gather(
+      picks.map((p) => ({ p: fetchLocalSrc(p), filter: ok })),
+      my,
+      q,
+      "local",
+      cb,
+      q,
+    );
+    if (my !== state.req) return;
+    state.loading = false;
+    if (total.length) {
+      setLive(true);
+      cacheSet("local:" + q.toLowerCase(), total);
+      maybeTopUp(true);
+      return;
+    }
+    if (state.shown) {
+      setLive(false);
+      maybeTopUp(true);
+      return;
+    }
+    state.items = [];
+    state.shown = true;
+    setLive(false);
+    render([]);
+  }
+  // Endless Local: rotate city/state-scoped facets + time windows until a batch of fresh stories is found.
+  async function harvestCity(my) {
+    const city = state.view.q,
+      loc = locOf(city),
+      ok = localMatcher(city);
+    const isCity = (x) => matchesCity(x, loc);
+    let cityGot = lockFilter(localQ.filter(isCity), rendered),
+      stateGot = lockFilter(localQ.filter((x) => !isCity(x)), rendered);
+    localQ = [];
+    const alive = () => my === state.req && Date.now() <= deadline;
+    const pass = async (src) => {
+      const dk = city.toLowerCase() + "|" + loc.countryCode + "|" + src.id;
+      if ((srcDry.get(dk) || 0) > Date.now()) return;
+      const ok0 = netStat.ok;
+      const items = build(await fetchLocalSrc(src), city, "local", city).filter(ok);
+      const f = lockFilter(items, new Set([...rendered, ...keySet(cityGot), ...keySet(stateGot)]));
+      // only a *successful* answer with nothing new makes a source sit out (never a failure)
+      if (!f.length && netStat.ok > ok0) srcDry.set(dk, Date.now() + 10 * 60000);
+      f.forEach((x) => (isCity(x) ? cityGot : stateGot).push(x));
+    };
+    for (const src of localSources(loc)) {
+      if (cityGot.length >= BATCH_MIN || !alive()) break;
+      await pass(src);
+    }
+    // <5 unseen city matches -> cascade (same cycle) to broader <=14d facets and admit state-level stories.
+    const cascade = cityGot.length < 5;
+    if (cascade)
+      for (const src of localCascade(loc)) {
+        if (cityGot.length + stateGot.length >= BATCH_MIN || !alive()) break;
+        await pass(src);
+      }
+    if (my !== state.req) return;
+    const pool = cascade ? cityGot.concat(stateGot) : cityGot;
+    const fresh = pool.slice(0, BATCH_MAX);
+    localQ = lockFilter(cityGot.concat(stateGot).filter((x) => !fresh.includes(x)), keySet(fresh));
+    if (fresh.length) mergeNew(fresh);
+  }
+
   /* -- the engine: append 10-15 deduplicated unseen stories without touching scroll -- */
+  let deadline = 0;
+  const guard = (p) =>
+    Promise.race([p, new Promise((r) => setTimeout(r, Math.max(0, deadline - Date.now())))]);
   let topBusy = false,
-    topCool = 0;
+    topCool = 0,
+    retryT = 0,
+    emptyStreak = 0,
+    primaryAt = 0;
+  // Re-pull the live primary feeds for the active tab (bypassing HTTP caches) into the pool.
+  async function refreshPrimary(my) {
+    const v = state.view;
+    if (v.type !== "cat" || Date.now() - primaryAt < 45000) return;
+    primaryAt = Date.now();
+    const c = catOf(v.cat);
+    NOSTORE = true;
+    try {
+      const raws = await Promise.all([saurav(c), topicRss(c), searchRss(c.q, true)]);
+      if (my === state.req)
+        UnseenPoolStore.add(build(raws.flat(), c.label.replace(" 📍", ""), c.fb, ""));
+    } catch {
+    } finally {
+      NOSTORE = false;
+    }
+  }
   function maybeTopUp(force) {
     if (
       state.view.type === "saved" ||
@@ -3029,7 +2957,10 @@
       start = state.items.length;
     const have = () => state.items.length - start;
     topBusy = true;
-    refreshEnd(false);
+    deadline = Date.now() + 8000; // hard cap per harvest cycle
+    const ok0 = netStat.ok,
+      e0 = netStat.err,
+      k0 = netStat.skip;
     // Both locks (seen + already-mounted) are enforced in pick() and again in mergeNew().
     const fromPool = (relaxed) => {
       if (v.type !== "cat" || my !== state.req) return;
@@ -3049,23 +2980,61 @@
       });
     };
     try {
-      fromPool();
-      if (have() < BATCH_MIN && state.moreQ && state.more < 1 && !state.loading)
-        await loadMore();
+      if (v.type === "query" && v.kind === "city") await guard(harvestCity(my));
+      else fromPool();
+      if (
+        v.kind !== "city" &&
+        have() < BATCH_MIN &&
+        state.moreQ &&
+        state.more < 1 &&
+        !state.loading
+      )
+        await guard(loadMore());
+      if (v.type === "cat" && have() < BATCH_MIN && my === state.req) {
+        await guard(refreshPrimary(my));
+        fromPool();
+      }
       if (v.type === "cat") {
-        for (let r = 0; r < 3 && have() < BATCH_MIN && my === state.req; r++) {
-          await harvestCategory(my);
+        for (let r = 0; r < 3 && have() < BATCH_MIN && my === state.req && Date.now() < deadline; r++) {
+          await guard(harvestCategory(my));
           fromPool();
         }
-        if (have() < BATCH_MIN && my === state.req) {
-          await harvestLocal();
+        if (have() < BATCH_MIN && my === state.req && Date.now() < deadline) {
+          await guard(harvestLocal());
           fromPool(true);
         }
       }
     } catch {}
     topBusy = false;
-    topCool = have() ? 0 : Date.now() + 15000;
-    refreshEnd(true);
+    const got = have();
+    // Retry UI only when offline, or EVERY real request threw. HTTP 200 with nothing fresh is not an error.
+    const oks = netStat.ok - ok0,
+      errs = netStat.err - e0;
+    const skips = netStat.skip - k0;
+    const down =
+      !got &&
+      ((typeof navigator !== "undefined" && navigator.onLine === false) ||
+        (oks === 0 && netStat.fails > 0 && (errs > 0 || skips > 0)));
+    // Requests were only skipped by the dead-host cooldown: forgive it so the next cycle really tries.
+    if (!got && oks === 0 && errs === 0 && skips > 0)
+      Object.keys(dead).forEach((k) => delete dead[k]);
+    if (state.netDown !== down && my === state.req) {
+      state.netDown = down;
+      refreshEnd();
+    }
+    topCool = got ? 0 : Date.now() + 15000;
+    clearTimeout(retryT);
+    if (got) emptyStreak = 0;
+    else {
+      emptyStreak++;
+      retryT = setTimeout(() => maybeTopUp(true), 16000);
+      if (!state.items.length && emptyStreak >= 3 && my === state.req && v.kind === "city" && !down)
+        showEmpty({
+          h: `No recent news for “${v.q}”`,
+          p: "No local stories were found right now. Try again shortly or choose another city.",
+          city: false,
+        });
+    }
     if (my === state.req && have() > 0 && unseenInView() < BATCH_MIN)
       setTimeout(() => maybeTopUp(), 400);
   }
@@ -3073,6 +3042,7 @@
   // Background pre-population of the reservoir from the other categories.
   const warmed = new Set();
   async function warmPool() {
+    if (state.view.kind === "city") return;
     for (const c of CATS) {
       if (UnseenPoolStore.size >= 140) break;
       if (c.local || warmed.has(c.id)) continue;
@@ -3084,7 +3054,6 @@
       } catch {}
       await new Promise((r) => setTimeout(r, 1500));
     }
-    scheduleChips();
   }
 
   function readFull() {
@@ -3127,15 +3096,36 @@
     markChip(id);
     load();
   }
-  function setCity(name) {
+  function setCity(name, st, country, cc) {
     name = String(name || "")
       .trim()
-      .slice(0, 60);
+      .slice(0, 80);
+    if (!name) return;
+    let hint = "";
+    if (name.includes(",")) {
+      // "Austin, Texas" -> city + state/country hint
+      const parts = name.split(",").map((x) => x.trim());
+      name = parts[0];
+      hint = parts.slice(1).join(", ");
+    }
     if (!name) return;
     navTouched = true;
     retries = 0;
+    const same = name.toLowerCase() === (state.city || "").toLowerCase();
+    state.region =
+      String(st || "").trim().slice(0, 60) ||
+      (same ? state.region : "") ||
+      STATE_OF[name.toLowerCase()] ||
+      "";
+    state.country = String(country || "") || (same ? state.country : "");
+    state.cc = String(cc || "").toUpperCase() || (same ? state.cc : "");
+    if (!state.cc && STATE_OF[name.toLowerCase()] === state.region && state.region) {
+      state.cc = "IN";
+      state.country = state.country || "India";
+    }
+    state.geoHint = hint;
     state.city = name;
-    citySet(name);
+    citySet(name, state.region, state.country, state.cc);
     state.view = { type: "query", q: name, kind: "city" };
     markChip("local");
     closeModals();
@@ -3175,7 +3165,7 @@
             a.county ||
             a.state_district ||
             a.state;
-          if (c) setCity(c);
+          if (c) setCity(c, a.state || "", a.country || "", a.country_code || "");
           else toast("Couldn't resolve your city");
         } catch {
           toast("Couldn't resolve your city");
@@ -3242,8 +3232,14 @@
         return geoAnswer(false);
       case "jump-cat":
         return setCat(a.dataset.id);
-      case "live-wire":
-        return liveWire();
+      case "retry-net":
+        Object.keys(dead).forEach((k) => delete dead[k]);
+        state.netDown = false;
+        refreshEnd();
+        topCool = 0;
+        return maybeTopUp(true);
+
+
     }
   });
   document.addEventListener("keydown", (e) => {
@@ -3292,7 +3288,6 @@
   updateSavedUI();
   UnseenPoolStore.add(fallback("top", "", true));
   refreshStats();
-  scheduleChips();
   bindEngagement();
   setTimeout(warmPool, 4000);
   $("#loc-grid").addEventListener("click", (e) => {
@@ -3316,17 +3311,25 @@
     try {
       const j = await tfetch("https://ipwho.is/", 2000, "json");
       if (j && j.success !== false && j.city)
-        return { city: String(j.city), country: String(j.country || "") };
+        return {
+          city: String(j.city),
+          country: String(j.country || ""),
+          region: String(j.region || ""),
+          cc: String(j.country_code || ""),
+        };
     } catch {}
     return null;
   }
   let geoT;
-  function showGeoPrompt(city) {
+  function showGeoPrompt(city, region, country, cc) {
     const g = $("#geo");
     if (!g) return;
     $("#geo-txt").textContent =
       `Detected location: ${city}. Switch local feed?`;
     g.dataset.city = city;
+    g.dataset.region = region || "";
+    g.dataset.country = country || "";
+    g.dataset.cc = cc || "";
     g.hidden = false;
     clearTimeout(geoT);
     geoT = setTimeout(() => {
@@ -3338,7 +3341,7 @@
       c = g.dataset.city || "";
     g.hidden = true;
     clearTimeout(geoT);
-    if (yes) setCity(c);
+    if (yes) setCity(c, g.dataset.region || "", g.dataset.country || "", g.dataset.cc || "");
     else {
       try {
         localStorage.setItem("pulse_geo_dismissed", c);
@@ -3356,7 +3359,7 @@
       try {
         dis = localStorage.getItem("pulse_geo_dismissed") || "";
       } catch {}
-      if (c && dis !== c) showGeoPrompt(c);
+      if (c && dis !== c) showGeoPrompt(c, g.region, g.country, g.cc);
     });
   }
   window.PulseApp = {

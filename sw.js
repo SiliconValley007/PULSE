@@ -1,4 +1,4 @@
-const CACHE_NAME = "pulse-v10";
+const CACHE_NAME = "pulse-v15";
 const ASSETS = [
   "./",
   "./index.html",
@@ -59,9 +59,7 @@ self.addEventListener("fetch", (event) => {
       } catch (err) {
         const m =
           (await c.match(event.request)) ||
-          (isFeed
-            ? await c.match(url.pathname, { ignoreSearch: true })
-            : null) ||
+          (isFeed ? await c.match(url.pathname, { ignoreSearch: true }) : null) ||
           (event.request.mode === "navigate"
             ? await c.match("./index.html")
             : null);
