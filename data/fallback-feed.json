@@ -1,20 +1,585 @@
 {
-  "updated": "2026-10-24T22:45:54.255Z",
+  "updated": "2026-10-25T01:59:40.367Z",
   "count": 120,
   "isSeed": false,
   "stories": [
+    {
+      "id": "fi1yev",
+      "title": "US midterm elections: Obama slams Trump over Iran war, White House renovation, 'Saddam opened a Cheesecake Factory'",
+      "url": "https://www.livemint.com/news/us-news/us-midterm-elections-obama-slams-trump-over-iran-war-white-house-renovation-saddam-opened-a-cheesecake-factory-11792892327106.html",
+      "src": "Mint",
+      "dom": "livemint.com",
+      "ts": 1792893416000,
+      "img": "https://www.livemint.com/lm-img/img/2026/10/25/1600x900/logo/Obama_Trump_1792892763374_tsa2_1792892763482_mkWB_43e9c7d7-1fce-4e18-b750-19b7b7e92faa_EQHR.jpg",
+      "cat": "india",
+      "bullets": [
+        "Campaigning for Democrats ahead of the November 3 midterms, he accused the administration of corruption, cruelty and incompetence."
+      ],
+      "summary": "Barack Obama attacked Donald Trump over White House renovations, high prices and the Iran war at rallies in Ohio and Michigan. Campaigning for Democrats ahead of the November 3 midterms, he accused the administration of corruption, cruelty and incompetence.",
+      "fullText": "Barack Obama attacked Donald Trump over White House renovations, high prices and the Iran war at rallies in Ohio and Michigan. Campaigning for Democrats ahead of the November 3 midterms, he accused the administration of corruption, cruelty and incompetence."
+    },
+    {
+      "id": "1v1jzxf",
+      "title": "‘Haiku’ OTT release date: Where to watch Aegan, Sridevi Apalla’s Tamil romance after theatrical run - Rep",
+      "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQQ0NVQmpueGhHR3YyeldIb0J3SkdoblQtNER3UURUbkZ3a3ZOTk9za2ZoazlXVDd4dzh0YzdhU2VyY0ZrZkJvdEMxZjVXRWVoMGlmRGtPeUUzZ0dCSFh0b3RWOHdZS01wbWNjOFBHNi11YlQzVUtCYjhzZXJaOGF3cXlIYVlnNFNGLW5JRFYxRVFMWFl3elFkdkpfNWc2RXIwWWNIRjdtdFpnOHdhX2M2aTdxeXl6a1hwTVhJMmMta2tidTZfUFIzLUpzVnVtbXNTWnF3cUVKQlBHTHYyRF8xd0lvbUNZRm1YOXd5Q09nLXphM3Jzdi1SUGN3ZWVBa1pET1dSVDJiLXJENVRzSHZpakd6RDdtTTRmMDlTWWduYndXZ9IBpwJBVV95cUxPWkxQZlZzUWJFUFhyMkZmUDBlQVFDRW5WUFEyaXlsNkV2QjJLUG9tVmdCQmlWdE1yQUhacW9SOHFGTkNSVy10bGNRRmZWYVhpQ25vUlRpNmtUV2hYdkFPY1JqTmg4VV9jNk9UV1JadGRZVXZBY1BVZGpaSmEwSTVMSHAzZmZCVWFyUzV0ZGtEeE52dDNiN3hjV1gySUNmeUdKcml6bjlMd0Z4dllvVjRzVHZyQWJNejBpWmF5bDlnZHVhWjNPOHZ3c19HdmtsOFRXTWZrZmM3QXBsRTRMaU9HcVJhcU1hRFV3UF9zb1hka2gzZmZxVzNzdERlWTlzQnl0RUhiNXJWbHpnTkNRRmdyMTR0SkpfZXVDS1NsU3M5c3pZTWVzTVpZ?oc=5",
+      "src": "The Times of India",
+      "dom": "news.google.com",
+      "ts": 1792892700000,
+      "img": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=720&h=1280&q=70",
+      "cat": "entertainment",
+      "bullets": [],
+      "summary": "Breaking entertainment coverage reported by The Times of India. Tap Read for the full story.",
+      "fullText": ""
+    },
+    {
+      "id": "1fbx6fl",
+      "title": "Meghan broke contact with father in letter citing abuse claims",
+      "url": "https://www.bbc.co.uk/news/articles/cqzjxg7l19yxo?at_medium=RSS&at_campaign=rss",
+      "src": "BBC News",
+      "dom": "bbc.co.uk",
+      "ts": 1792892659000,
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e831/live/b27def00-cff9-11f1-b0ff-614e4f91e969.jpg",
+      "cat": "top",
+      "bullets": [],
+      "summary": "Sources close to the duchess said she warned her father last year that he would never meet his grandchildren.",
+      "fullText": "Sources close to the duchess said she warned her father last year that he would never meet his grandchildren."
+    },
+    {
+      "id": "1r4ss18",
+      "title": "iPhone, Jeans, Toothpaste: Gujarat Delivery Agent Steals Rs 4-Lakh Parcels",
+      "url": "https://www.ndtv.com/india-news/delivery-agent-stole-rs-4-lakh-worth-of-parcels-instead-of-delivering-them-in-gujarat-12231786#publisher=newsstand",
+      "src": "NDTV",
+      "dom": "ndtv.com",
+      "ts": 1792892505000,
+      "img": "https://c.ndtvimg.com/2021-11/3h2bfuj4_man-using-phone-generic-pixabay_625x300_13_November_21.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
+      "cat": "top",
+      "bullets": [],
+      "summary": "The seized property, valued at Rs 4,60,512, included 13 mobile phones, Bluetooth devices, a smartwatch, wristwatches, perfumes, personal care products, clothing and electronic accessories.",
+      "fullText": "The seized property, valued at Rs 4,60,512, included 13 mobile phones, Bluetooth devices, a smartwatch, wristwatches, perfumes, personal care products, clothing and electronic accessories."
+    },
+    {
+      "id": "1p3teuz",
+      "title": "7 killed as diesel truck explodes during fuel transfer in Andhra Pradesh",
+      "url": "https://www.hindustantimes.com/india-news/7-killed-as-diesel-truck-explodes-during-fuel-transfer-in-andhra-pradesh-101792889212080.html",
+      "src": "Hindustan Times",
+      "dom": "hindustantimes.com",
+      "ts": 1792892264000,
+      "img": "https://www.hindustantimes.com/ht-img/img/2026/10/25/1600x900/logo/ap_blast_1792889764885_pLPb_1792889774926_OXNN_1d99f703-c664-4e53-a88c-89ad97eb56ab_cUBp.jpg",
+      "cat": "india",
+      "bullets": [],
+      "summary": "An accidental fire during a fuel transfer triggered a blast in Peechumamidi village, destroying three vehicles.",
+      "fullText": "An accidental fire during a fuel transfer triggered a blast in Peechumamidi village, destroying three vehicles."
+    },
+    {
+      "id": "3gm45l",
+      "title": "Students like new tenancy freedoms - but landlords warn of higher rents",
+      "url": "https://www.bbc.co.uk/news/articles/cqx29lnzr48po?at_medium=RSS&at_campaign=rss",
+      "src": "BBC News",
+      "dom": "bbc.co.uk",
+      "ts": 1792892140000,
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d88c/live/95ab8c80-cee0-11f1-a701-fddedf244c16.jpg",
+      "cat": "top",
+      "bullets": [],
+      "summary": "The Renters' Rights Act gives greater flexibility to leave a tenancy but the changes have posed challenges for student landlords.",
+      "fullText": "The Renters' Rights Act gives greater flexibility to leave a tenancy but the changes have posed challenges for student landlords."
+    },
+    {
+      "id": "1smx7sb",
+      "title": "IMD weather alert: Bay of Bengal depression to intensify today, ‘very severe’ cyclone to hit Andhra on Oct 28",
+      "url": "https://www.livemint.com/news/india/imd-weather-alert-bay-of-bengal-depression-to-intensify-today-very-severe-cyclone-to-hit-andhra-on-oct-28-11792890131647.html",
+      "src": "Mint",
+      "dom": "livemint.com",
+      "ts": 1792891960000,
+      "img": "https://www.livemint.com/lm-img/img/2026/10/25/1600x900/logo/PTI07-27-2026-000471A-0_1792890546789_PqwT_1792890582755_OwJT_d6d55da4-6cfe-4ef7-9453-77988504b833_cF3n.jpg",
+      "cat": "india",
+      "bullets": [],
+      "summary": "According to the latest IMD update, the weather system is very likely to move nearly southwards today, intensify into a Deep Depression, and then gradually recurve west-northwestwards over the Eastcentral and adjoining Southeast Bay of Bengal by October 26 morning.",
+      "fullText": "According to the latest IMD update, the weather system is very likely to move nearly southwards today, intensify into a Deep Depression, and then gradually recurve west-northwestwards over the Eastcentral and adjoining Southeast Bay of Bengal by October 26 morning."
+    },
     {
       "id": "2l9ybt",
       "title": "Storm Boelo amber warnings kick in as parts of UK brace for 80mph gusts",
       "url": "https://www.bbc.co.uk/news/articles/cmr4ydglq9r3o?at_medium=RSS&at_campaign=rss",
       "src": "BBC News",
       "dom": "bbc.co.uk",
-      "ts": 1792881876000,
+      "ts": 1792891920000,
       "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7559/live/33cbd240-cfb2-11f1-9012-0172b9f73a72.jpg",
       "cat": "top",
       "bullets": [],
       "summary": "Scotland, parts of northern England and Northern Ireland are forecast to be hit with the strongest winds from the country's second storm in as many days.",
       "fullText": "Scotland, parts of northern England and Northern Ireland are forecast to be hit with the strongest winds from the country's second storm in as many days."
+    },
+    {
+      "id": "rsg0bm",
+      "title": "Andhra braces for very severe cyclonic storm; Odisha activates disaster mitigation machinery | LIVE",
+      "url": "https://www.thehindu.com/news/national/cyclone-andhra-pradesh-odisha-live-updates-october-25-2026/article71622459.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1792891814000,
+      "img": "https://th-i.thgim.com/public/incoming/v7nnma/article71622463.ece/alternates/LANDSCAPE_1200/003AClouds.jpg",
+      "cat": "india",
+      "bullets": [],
+      "summary": "Follow the Hindu&#039;s LIVE updates as IMD warns of heavy rainfall in T.N., Andhra Pradesh, and Odisha with a deep depression in the Bay of Bengal set to intensify into a cyclone",
+      "fullText": "Follow the Hindu&#039;s LIVE updates as IMD warns of heavy rainfall in T.N., Andhra Pradesh, and Odisha with a deep depression in the Bay of Bengal set to intensify into a cyclone"
+    },
+    {
+      "id": "1cmpngs",
+      "title": "Ukraine says Starshield back to normal after week-long disruption, Elon Musk accuses Kyiv of violating Starlink’s terms",
+      "url": "https://www.livemint.com/news/world/ukraine-says-starshield-back-to-normal-after-week-long-disruption-elon-musk-accuses-kyiv-of-violating-starlink-s-terms-11792890450707.html",
+      "src": "Mint",
+      "dom": "livemint.com",
+      "ts": 1792891338000,
+      "img": "https://www.livemint.com/lm-img/img/2026/10/25/1600x900/logo/Starlink_Battlefield_Systems_Online_1792890922610_kpht_1792890947267_gvQn_ae4c0883-86a8-49a2-9965-fab19cb29e0f_FVCf.png",
+      "cat": "india",
+      "bullets": [
+        "The previous week’s speed cap had disrupted military operations.",
+        "Musk said it was imposed after Ukraine used Starlink for offensive drone strikes."
+      ],
+      "summary": "Starlink and Starshield speeds in Ukraine returned to normal by Saturday, improving frontline logistics and communications. The previous week’s speed cap had disrupted military operations. Musk said it was imposed after Ukraine used Starlink for offensive drone strikes.",
+      "fullText": "Starlink and Starshield speeds in Ukraine returned to normal by Saturday, improving frontline logistics and communications. The previous week’s speed cap had disrupted military operations. Musk said it was imposed after Ukraine used Starlink for offensive drone strikes."
+    },
+    {
+      "id": "1vvsp74",
+      "title": "SAG-AFTRA Extends Duncan Crabtree-Ireland&#8217;s Contract and Adds CEO to Title",
+      "url": "https://variety.com/2026/film/news/sag-aftra-duncan-crabtree-ireland-contract-extension-1236930503/",
+      "src": "Variety",
+      "dom": "variety.com",
+      "ts": 1792891254000,
+      "img": "https://variety.com/wp-content/uploads/2026/01/duncan-crabtree-ireland-sean-astin.jpeg",
+      "cat": "entertainment",
+      "bullets": [
+        "Crabtree-Ireland&#8217;s contract was set to expire in 2028, but will now run through June 20, 2032.",
+        "The financial terms of the agreement were not disclosed."
+      ],
+      "summary": "The SAG-AFTRA board voted Saturday to extend the contract of Duncan Crabtree-Ireland, the union&#8217;s national executive director, for four years and to add CEO to his title. Crabtree-Ireland&#8217;s contract was set to expire in 2028, but will now run through June 20, 2032. The financial terms of the agreement were not disclosed. He was paid [&#8230;]",
+      "fullText": "The SAG-AFTRA board voted Saturday to extend the contract of Duncan Crabtree-Ireland, the union&#8217;s national executive director, for four years and to add CEO to his title. Crabtree-Ireland&#8217;s contract was set to expire in 2028, but will now run through June 20, 2032. The financial terms of the agreement were not disclosed. He was paid [&#8230;]"
+    },
+    {
+      "id": "1ybra8i",
+      "title": "Andhra Pradesh braces for very severe cyclonic storm; landfall likely between Bapatla and Vizag on October 28",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-braces-for-very-severe-cyclonic-storm-landfall-likely-between-bapatla-and-vizag-on-october-28/article71621095.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1792891004000,
+      "img": "https://th-i.thgim.com/public/incoming/ef9fij/article71621316.ece/alternates/LANDSCAPE_1200/10215_24_10_2026_17_18_19_1_IMG_20261024_WA0027.JPG",
+      "cat": "india",
+      "bullets": [],
+      "summary": "Wind speed may go up to 130 kmph, say weather experts; IMD issues red alert for 13 districts on Otober 27 and 28",
+      "fullText": "Wind speed may go up to 130 kmph, say weather experts; IMD issues red alert for 13 districts on Otober 27 and 28"
+    },
+    {
+      "id": "1rq5l2f",
+      "title": "Antarctica miracle: How India established its first scientific base in the frozen continent",
+      "url": "https://www.thehindu.com/news/cities/bangalore/antarctica-miracle-how-india-established-its-first-scientific-base-in-the-frozen-continent/article71618910.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1792890971000,
+      "img": "https://th-i.thgim.com/public/life-and-style/40chgb/article71618918.ece/alternates/LANDSCAPE_1200/Miracle%20in%20Antarctica%203%20lead%20pic.jpg",
+      "cat": "local",
+      "bullets": [],
+      "summary": "An interview with Sourabha Rao, the producer of Miracle in Antarctica, which tells the story of Dakshin Gangotri, on covering how it was built, the challenges encountered, and why the expedition remains relevant more than four decades later",
+      "fullText": "An interview with Sourabha Rao, the producer of Miracle in Antarctica, which tells the story of Dakshin Gangotri, on covering how it was built, the challenges encountered, and why the expedition remains relevant more than four decades later"
+    },
+    {
+      "id": "17dctqp",
+      "title": "Saudi Says Shrapnel Fell In Mecca, Medina After Houthi Attack",
+      "url": "https://www.ndtv.com/world-news/saudi-says-shrapnel-fell-in-mecca-medina-after-houthi-attack-12231192#publisher=newsstand",
+      "src": "NDTV",
+      "dom": "ndtv.com",
+      "ts": 1792890835000,
+      "img": "https://c.ndtvimg.com/mecca-mosque_625x300_1528570649754.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
+      "cat": "top",
+      "bullets": [],
+      "summary": "This comes hours after the agency warned of \"potential danger\" for four of its western provinces, including Mecca.",
+      "fullText": "This comes hours after the agency warned of \"potential danger\" for four of its western provinces, including Mecca."
+    },
+    {
+      "id": "lgpphi",
+      "title": "&#8216;I Play Rocky&#8217; Star Anthony Ippolito on Becoming Sylvester Stallone and Acting With a Dog: &#8216;He Wasn&#8217;t a Huge Fan of Me&#8217;",
+      "url": "https://variety.com/2026/film/columns/i-play-rocky-anthony-ippolito-sylvester-stallone-dog-1236930482/",
+      "src": "Variety",
+      "dom": "variety.com",
+      "ts": 1792890616000,
+      "img": "https://variety.com/wp-content/uploads/2025/10/I-play-Rocky-Anthony-Ippolito.jpg",
+      "cat": "entertainment",
+      "bullets": [
+        "“It had its moments for sure.",
+        "I was being tested,” Ippolito told me Saturday at the AFI Fest “I Play Rocky” screening in [&#8230;]"
+      ],
+      "summary": "Anthony Ippolito had to do more than nail Sylvester Stallone’s signature voice to play him in “I Play Rocky.” He also had to transform his skinny physique to one with bulging muscles. “It had its moments for sure. I was being tested,” Ippolito told me Saturday at the AFI Fest “I Play Rocky” screening in [&#8230;]",
+      "fullText": "Anthony Ippolito had to do more than nail Sylvester Stallone’s signature voice to play him in “I Play Rocky.” He also had to transform his skinny physique to one with bulging muscles. “It had its moments for sure. I was being tested,” Ippolito told me Saturday at the AFI Fest “I Play Rocky” screening in [&#8230;]"
+    },
+    {
+      "id": "e06t76",
+      "title": "Kamal Haasan - SU Arun Kumar film to be titled 'Sandiyar'; first look planned for actor's birthday - Repo",
+      "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxNaUd4ZzRqWk5oUmRReWNXbEkxZXBGMmNLWUJUX2NSYmJYUEswYXdHeE9acmpnYzNxLTE1N2tvRTRiOTJRUnJfbWhwMy1XUlN2S1FnYkhSNUFkbEctTXltZVIxZ1pFVl9XXzVvLUxJUU1wNl9tZ0NNQ2I1ZFFmdzYxeW16OXRXMndzeTg4eU1CTWpTVmtQb2ZzOUJUZkhWUjh1bVJRZU9DWmtkbTRxbnN4d2tlVE1WVmZEYU5mNDV6eUpoN0xOVDdCczlObkZHYlhoRGFKaEQ0TWJZOFQ1bll4cndGWXlUeWU0OWtENno5WjBZTWk4YURYYzVoLVVDQnpJdTh4NWNvdm5aT2t5YWlibXM4YzUtbjF5dVN6QmtUa9IBpAJBVV95cUxQQ2hTenQtV2V6dnliR3lLN3g5VVdPMW5sS0V4aWJYYkI4QnRmVFFjcTlKWHo5U0ZUV2tIWGRvUnZUa3g3bEtCRlp5bEw1TWdsZm92WnlQWjRyZk9Yb1MwNGIteWYyOWltQndHN3dxZmRBcUt2c1VjQ09TNTJxUkI3b25kd01scW5SdWtxUVREM0REaDd3WFd3ZDdhOUFlMFRkT1lvalVsYTAtVG1KUXd6bGxkY3BnREZVLUVCcm8wY1lHQkZ0WW5vaTA5VE91T01IaURNR3AwUU53OFp2ZFBTQ2dySml0WmtneWdpUUpwLUdVdG53YjRNOGRPcUh6d3A3RWlsd3BBSVBiaWl0TS1KaGJuQzAydmI3d2hqSTdOaWZxSml4?oc=5",
+      "src": "The Times of India",
+      "dom": "news.google.com",
+      "ts": 1792890420000,
+      "img": "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=720&h=1280&q=70",
+      "cat": "entertainment",
+      "bullets": [],
+      "summary": "Breaking entertainment coverage reported by The Times of India. Tap Read for the full story.",
+      "fullText": ""
+    },
+    {
+      "id": "1v75ruo",
+      "title": "Details of software used in SIR exempt from RTI, Election Commission cites 'trade secrets'",
+      "url": "https://www.hindustantimes.com/india-news/details-of-software-used-in-sir-exempt-from-rti-election-commission-cites-trade-secrets-101792887710352.html",
+      "src": "Hindustan Times",
+      "dom": "hindustantimes.com",
+      "ts": 1792890316000,
+      "img": "https://www.hindustantimes.com/ht-img/img/2026/10/25/1600x900/logo/SIR_1792890177884_X0rr_1792890177998_qTyf_109c4878-df73-47ba-8fac-7314b5f8d724_Uy31.jpg",
+      "cat": "india",
+      "bullets": [],
+      "summary": "It said no new software was developed or procured and that constituency-level electoral registration officers make decisions on voter inclusion or exclusion.",
+      "fullText": "It said no new software was developed or procured and that constituency-level electoral registration officers make decisions on voter inclusion or exclusion."
+    },
+    {
+      "id": "1mtzq1t",
+      "title": "Road Ministry seeks forensic audit of its portals after vehicle data leak",
+      "url": "https://www.thehindu.com/news/national/road-ministry-seeks-forensic-audit-of-its-portals-after-vehicle-data-leak/article71620455.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1792890302000,
+      "img": "https://th-i.thgim.com/public/incoming/hyz6z1/article71621248.ece/alternates/LANDSCAPE_1200/iStock-1307527527%201.jpg",
+      "cat": "india",
+      "bullets": [],
+      "summary": "A senior Ministry official says they have sought the intervention of the Ministry of Electronics and Information Technology to review its data-sharing policy and suggest ways to strengthen it",
+      "fullText": "A senior Ministry official says they have sought the intervention of the Ministry of Electronics and Information Technology to review its data-sharing policy and suggest ways to strengthen it"
+    },
+    {
+      "id": "1mq2f70",
+      "title": "INDIA bloc to hold ‘public impeachment proceeding’ of CEC Gyanesh Kumar, says K.C. Venugopal",
+      "url": "https://www.thehindu.com/news/national/india-bloc-public-impeachment-cec-gyanesh-kumar-amid-protest/article71621030.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1792890231000,
+      "img": "https://th-i.thgim.com/public/incoming/hi6tji/article71621054.ece/alternates/LANDSCAPE_1200/20261005428L.jpg",
+      "cat": "india",
+      "bullets": [],
+      "summary": "‘After this Public Impeachment, we will hold a Dilli Chalo March against Vote Chori culminating at Ramleela Maidan on November 1st, where at least a million concerned citizens will participate,’ said K.C. Venugopal",
+      "fullText": "‘After this Public Impeachment, we will hold a Dilli Chalo March against Vote Chori culminating at Ramleela Maidan on November 1st, where at least a million concerned citizens will participate,’ said K.C. Venugopal"
+    },
+    {
+      "id": "6xo96e",
+      "title": "Delhi's new pollution study leaves major sources unidentified, relies on outdated data",
+      "url": "https://www.hindustantimes.com/india-news/delhis-new-pollution-study-leaves-major-sources-unidentified-relies-on-outdated-data-101792886406730.html",
+      "src": "Hindustan Times",
+      "dom": "hindustantimes.com",
+      "ts": 1792890056000,
+      "img": "https://www.hindustantimes.com/ht-img/img/2026/10/25/1600x900/logo/Pollution-10_1791181624139_PhEq_1792889953881_4IHJ_a9c1bf53-b080-4efe-805f-2a946e23d2a3_cwKt.jpg",
+      "cat": "india",
+      "bullets": [],
+      "summary": "The accompanying forecast model uses an emissions estimate based on older surveys, limiting confidence until it is updated.",
+      "fullText": "The accompanying forecast model uses an emissions estimate based on older surveys, limiting confidence until it is updated."
+    },
+    {
+      "id": "gd703t",
+      "title": "IMD warns of heavy rainfall over several T.N. districts; red alert for five districts in Keralam | Updates",
+      "url": "https://www.thehindu.com/news/national/bay-of-bengal-weather-update-cyclone-alert-latest-weather-news-live-updates-october-24-2026/article71619022.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1792889313000,
+      "img": "https://th-i.thgim.com/public/news/national/co5xdi/article71619356.ece/alternates/LANDSCAPE_1200/478671ef-54da-41f1-8a7a-f6e21cc54bab.jpg",
+      "cat": "india",
+      "bullets": [
+        "Follow The Hindu for more weather updates."
+      ],
+      "summary": "IMD warns cyclonic storm is brewing, tracking towards the Andhra Pradesh and Odisha coasts. Follow The Hindu for more weather updates.",
+      "fullText": "IMD warns cyclonic storm is brewing, tracking towards the Andhra Pradesh and Odisha coasts. Follow The Hindu for more weather updates."
+    },
+    {
+      "id": "1rveikb",
+      "title": "How is Kerala planning to prevent child deaths linked to malnutrition and neglect? | Explained",
+      "url": "https://www.thehindu.com/news/national/kerala/how-is-kerala-planning-to-prevent-child-deaths-linked-to-malnutrition-and-neglect-explained/article71618979.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1792889207000,
+      "img": "https://th-i.thgim.com/public/incoming/8fzim8/article71618986.ece/alternates/LANDSCAPE_1200/6678_24-9-2017_19-31-35_TRIBAL_1.JPG",
+      "cat": "india",
+      "bullets": [
+        "Once the vulnerable children are identified and their details collected, regular follow-ups will be held"
+      ],
+      "summary": "A State-wide vulnerability mapping will be held to identity children living in vulnerable conditions that pose a risk to their health, education, and safety. Once the vulnerable children are identified and their details collected, regular follow-ups will be held",
+      "fullText": "A State-wide vulnerability mapping will be held to identity children living in vulnerable conditions that pose a risk to their health, education, and safety. Once the vulnerable children are identified and their details collected, regular follow-ups will be held"
+    },
+    {
+      "id": "1jd3dzl",
+      "title": "'Titans' box office collection day 3: Jayasurya and Vinayakan's film rises 20%; India Net reaches Rs 1.42",
+      "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxPTDhjYzhnRExZcExQcVNYRVdPLWJnN1gxNjk2aHpObGIzWVYtWVNfV2xpa2ZIX2N4UzVnWk5kc0ZIZmNRaTdvN1hmbXVKNjd3REpXM29vNGpSSHZuQ3NYbjI4YjFMaHR0TXkxdVJ6T0VXRThrdGJBVzVHNnVXOElQS01PVTI1cFlNQU1vR2owNW4tNFdsSTBDNXk4SEVGcGJQNXM2dmsxMmdSZnBNaXR6MzFMVkFubXJhNHliME9vcUJXOENXLWZ0UnpUeWpwZ19VSFlfenZMY1J4VVlycWNOR3VjT1d0RGpKTnRQSWRoV2F1LVpTQnp2cmVkQ2dheUo3cklYclMwR25FbXdmMF9LTWNzYWxwR3BtZHVrS0YzUTFrUTFqNm5r0gGsAkFVX3lxTE51ZmQ1bGZRNjdQOVg3N0l1ZGVCSHJMNkdOWDladUNIYW9nbzRPZWRPdGhmN1c2eGU5ZUM0YnVlcXcxbEV4eDNrakxDNU1DbXRrX0s1NGR6LW40alc0eklkSEdKYlY2WkF3dGxsNW15V19wbm5uWEZIUmVySDZ6bDNZYUsybE1CUGg2dzlIMzd0VUhZYTRWN2hJeXZwT3RNZGJUQnBYU0ZnSHp1YUE2bTY3N21jQndZYVViZ3c4R2xDazFGdFQ2ZlE3SFgxU3VHTnJQYTlMcTJCZkE5QWYxU3dpM3otNzRqZTdXeHJjb3pMYjJJaXdwQ2xidk9BVlE1YlFhbnYzeGZHcXNubVE0M0Z6MEc5SlZIYWM3Mk80MnEyVkZpbHlzM0ZlUndhdQ?oc=5",
+      "src": "The Times of India",
+      "dom": "news.google.com",
+      "ts": 1792888740000,
+      "img": "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=720&h=1280&q=70",
+      "cat": "entertainment",
+      "bullets": [],
+      "summary": "Breaking entertainment coverage reported by The Times of India. Tap Read for the full story.",
+      "fullText": ""
+    },
+    {
+      "id": "133yqw0",
+      "title": "Obama slams Trump’s ‘cruelty and corruption’ at Ohio rally for Democrats",
+      "url": "https://www.aljazeera.com/news/2026/10/25/obama-slams-trumps-cruelty-and-corruption-at-ohio-rally-for-democrats?traffic_source=rss",
+      "src": "Al Jazeera",
+      "dom": "aljazeera.com",
+      "ts": 1792888483000,
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6add3ebf11b8-1792884415.jpg?resize=1920%2C1440",
+      "cat": "world",
+      "bullets": [],
+      "summary": "Former US president says Trump &#039;chose to make a series of bad decisions&#039;, highlighting the US-Israel war on Iran.",
+      "fullText": "Former US president says Trump &#039;chose to make a series of bad decisions&#039;, highlighting the US-Israel war on Iran."
+    },
+    {
+      "id": "1s347td",
+      "title": "Burnham open to 'honest discussion' on EU free movement",
+      "url": "https://www.bbc.co.uk/news/articles/c8e36kyk1qx5o?at_medium=RSS&at_campaign=rss",
+      "src": "BBC News",
+      "dom": "bbc.co.uk",
+      "ts": 1792888399000,
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ae77/live/377c49c0-cff7-11f1-a701-fddedf244c16.jpg",
+      "cat": "top",
+      "bullets": [],
+      "summary": "The PM said he wants a \"factual\" and \"evidence-based debate\" about returning to free movement between Britain and Europe.",
+      "fullText": "The PM said he wants a \"factual\" and \"evidence-based debate\" about returning to free movement between Britain and Europe."
+    },
+    {
+      "id": "1b67u3o",
+      "title": "Violence breaks out across Europe after another day of protests",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/25/10-25-sv-europe-protests-wrap?traffic_source=rss",
+      "src": "Al Jazeera",
+      "dom": "aljazeera.com",
+      "ts": 1792887828000,
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792887750.jpg?resize=1634%2C1080&quality=80",
+      "cat": "world",
+      "bullets": [],
+      "summary": "Police clashed with demonstrators in France, Italy and Spain over rising living costs and cuts to public services.",
+      "fullText": "Police clashed with demonstrators in France, Italy and Spain over rising living costs and cuts to public services."
+    },
+    {
+      "id": "1g17qvk",
+      "title": "'Jailer 2' box office collection day 10: Rajinikanth's film rises 66.6%; India Net reaches Rs 373 cr; wor",
+      "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxNMml4UDVITUw2M2F0U1NETG5BUE9RV0o5ZC1NYTNYNWFJRjhYWUx1REtmbGNvaGh2VDU2c3dTVmJIcFg5YjZvcUVqTVNONDZwX1YtNnltNGt1V3ota3hIVUEyT3hSdXRTMk15bkxvZ2dCLUpBaU4tR2d4bUI0NU9OODRnQm91VDhvRUtZMFNNYVFZbnhMLU0tam40N1lmZGlPcjAwcVl5U3VUNmN1cEwyZV9jVk1XZnR5enpjbF9Hd3ZPbDRKLS1fNG1QUkphbzVjeFhtWkRDY3JQSkJ1NTlUdkRDNUk4MjJOc1hnM180WXVJODdTRUZhT2JWeXVZRkxnUUlIb2hqOElWbHpKc3U1Y05jdjRpR0FVMjlhS2Y5ZTlqQTBPVlBvSFoyMHpGamtyckgzeE56YnBZYTFfNTBuOVY2Z3LSAcoCQVVfeXFMUExoaG92Ym9ON2l4enJUdEdFOEVEdlB1b2oxclozcC1uV0pBOGlFQVpUSVp6YTNkQmhFajdKcWFCdng5Rlg1N0tBT3lEY1lUaUJXa0h5N0JPNno5cnlZYTNIVkVkWkFkTmRzTGZvRVRNNHZ1WmpxeEVja3JZMlpGaTE3YllDYWFvbUIzb2pIdE9rSkVCTzFUTUNzcXlOdnJXcWJHeWM3Q1FyNTJaZ3BFbjB4eUJNcG9JLTdkMEhRQVk2R0xxU0JUQm02dzJ3MXkxTkRxdFZPS0ZsSUVIWW5ySEI3cW1lNnJGQWVMMUZfekpWUXQ1OEtHTFFvdlFYaV9DcVNXM0NNX1BIRUFzRlVYSHkzV25pNjNucW5DQTQ2a094b2c5NHRpdjB5S0w2cDduSC15eXRiLTF5cUU3WHEydEwyR2dVYjVMaXpR?oc=5",
+      "src": "The Times of India",
+      "dom": "news.google.com",
+      "ts": 1792886700000,
+      "img": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=720&h=1280&q=70",
+      "cat": "entertainment",
+      "bullets": [],
+      "summary": "Breaking entertainment coverage reported by The Times of India. Tap Read for the full story.",
+      "fullText": ""
+    },
+    {
+      "id": "1bflsxb",
+      "title": "Nathan Fielder Negotiated a ‘Kill Switch’ on ‘You Can See Everything,’ Says Lance Oppenheim: ‘If We Didn’t Find Something, We Could Just Throw It All Away’",
+      "url": "https://variety.com/2026/film/news/nathan-fielder-you-can-see-everything-lance-oppenheim-1236916862/",
+      "src": "Variety",
+      "dom": "variety.com",
+      "ts": 1792886508000,
+      "img": "https://variety.com/wp-content/uploads/2026/09/You-Can-See-everything.jpg",
+      "cat": "entertainment",
+      "bullets": [],
+      "summary": "“You Can See Everything” might be the buzziest film of the moment, but before the Elizabeth Holmes-focused documentary made it to theaters, co-director Lance Oppenheim has admitted that fellow director Nathan Fielder was so skeptical about being able to weave a unique enough narrative that he negotiated a “kill switch” with A24 before they began [&#8230;]",
+      "fullText": "“You Can See Everything” might be the buzziest film of the moment, but before the Elizabeth Holmes-focused documentary made it to theaters, co-director Lance Oppenheim has admitted that fellow director Nathan Fielder was so skeptical about being able to weave a unique enough narrative that he negotiated a “kill switch” with A24 before they began [&#8230;]"
+    },
+    {
+      "id": "gn2h34",
+      "title": "Iran war live: Trump hints at possible Sunday Iran attack or deal reached",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/10/25/iran-war-live-trump-hints-at-possible-sunday-iran-attack-or-deal-reached?traffic_source=rss",
+      "src": "Al Jazeera",
+      "dom": "aljazeera.com",
+      "ts": 1792886400000,
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/AFP__20261024__D4BY63U__v1__HighRes__UsPoliticsTrumpVote-1792880838.jpg?resize=1920%2C1440",
+      "cat": "world",
+      "bullets": [],
+      "summary": "Trump says US is considering a possible attack on Iran as soon as Sunday, or it could reach a major deal with Tehran.",
+      "fullText": "Trump says US is considering a possible attack on Iran as soon as Sunday, or it could reach a major deal with Tehran."
+    },
+    {
+      "id": "a712st",
+      "title": "Voters in Brazil to choose between Lula and Bolsonaro's son",
+      "url": "https://www.bbc.co.uk/news/articles/cxp8g21j4648o?at_medium=RSS&at_campaign=rss",
+      "src": "BBC News",
+      "dom": "bbc.co.uk",
+      "ts": 1792885802000,
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cc2d/live/5e5c94f0-cffc-11f1-b444-6fb1f13f8d87.jpg",
+      "cat": "top",
+      "bullets": [],
+      "summary": "Flávio Bolsonaro, the son of Brazil's jailed former president, is presenting a strong challenge to Lula, 80, who is seeking a fourth term in office.",
+      "fullText": "Flávio Bolsonaro, the son of Brazil's jailed former president, is presenting a strong challenge to Lula, 80, who is seeking a fourth term in office."
+    },
+    {
+      "id": "1bxwcp8",
+      "title": "Inde Navarrette Teases Her Rogue Southern Accent for New ‘X-Men’ Film: “Sugar!”",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNS093QUFDNXFKbUZjWmhfaEw2OC1KLUxiR2g4Ri1hMVFnMUxlX1Q5dDdycF9Fc3FqbUJZcVdRNnFKYjY2TFZfb2RTR1E5bS1NUERQRnFfWEZabVg5ZVJQNDRVbUl1ay1ZbkhyeFNONnBtdm5ET3g1T1VYVnV0aE9fSHVBVjBqZ05wUWtyZy1lUGd5SFFkLVhFZVdrd2ZWaGNieXNOak9hRHlsRkVRbnZ4bzBB?oc=5",
+      "src": "The Hollywood Reporter",
+      "dom": "news.google.com",
+      "ts": 1792884781000,
+      "img": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=720&h=1280&q=70",
+      "cat": "entertainment",
+      "bullets": [],
+      "summary": "Breaking entertainment coverage reported by The Hollywood Reporter. Tap Read for the full story.",
+      "fullText": ""
+    },
+    {
+      "id": "1x3b4la",
+      "title": "Inde Navarrette Teases Her Rogue Southern Accent for New &#8216;X-Men&#8217; Film: &#8220;Sugar!&#8221;",
+      "url": "https://www.hollywoodreporter.com/movies/movie-news/inde-navarrette-rogue-southern-accent-x-men-film-1236739602/",
+      "src": "The Hollywood Reporter",
+      "dom": "hollywoodreporter.com",
+      "ts": 1792884746000,
+      "img": "https://www.hollywoodreporter.com/wp-content/uploads/2026/10/GettyImages-2290534845-e1792882970481.jpg?w=1440&#038;h=810&#038;crop=1",
+      "cat": "entertainment",
+      "bullets": [
+        "X), Samara Weaving (Emma Frost), Inde Navarrette (Rogue), Maya Boyd (Storm), Asa Germann (Angel) and Adam Driver (Mr."
+      ],
+      "summary": "She&#039;ll star in the MCU reboot alongside Sadie Sink (Jean Grey), Kit Connor (Cyclops), Christopher Abbott (Prof. X), Samara Weaving (Emma Frost), Inde Navarrette (Rogue), Maya Boyd (Storm), Asa Germann (Angel) and Adam Driver (Mr. Sinister).",
+      "fullText": "She&#039;ll star in the MCU reboot alongside Sadie Sink (Jean Grey), Kit Connor (Cyclops), Christopher Abbott (Prof. X), Samara Weaving (Emma Frost), Inde Navarrette (Rogue), Maya Boyd (Storm), Asa Germann (Angel) and Adam Driver (Mr. Sinister)."
+    },
+    {
+      "id": "pu9a6h",
+      "title": "Painkillers, Antibiotics and Kidney Health: CDSCO Advisory Explained",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWF9XX21hNXZPaHNMSlZPNjR5R1ZTUnkzSUZzRm4yMms0YlFiZTdaa2dSZEJqYzVtMGpBT1V0RGlodXRwdnpiVDhmVXFXV1lWTkFzTXdIYm15bU55M1lYeE1LSjQ3dVdKeGZCbUppUmVtdzhzZWppWlJIQmhpbEl5TDhOXzByaHZkaThfZ2g3SEtQWl85OWc?oc=5",
+      "src": "www.nationpathindia.com",
+      "dom": "news.google.com",
+      "ts": 1792883858000,
+      "img": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=720&h=1280&q=70",
+      "cat": "health",
+      "bullets": [],
+      "summary": "Breaking health coverage reported by www.nationpathindia.com. Tap Read for the full story.",
+      "fullText": ""
+    },
+    {
+      "id": "5234ol",
+      "title": "Rosebank: Life on the oil field at the centre of a political storm",
+      "url": "https://www.bbc.co.uk/news/articles/cqy8ljkle97ro?at_medium=RSS&at_campaign=rss",
+      "src": "BBC News",
+      "dom": "bbc.co.uk",
+      "ts": 1792883718000,
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/60a5/live/584f1ed0-cfb0-11f1-9012-0172b9f73a72.jpg",
+      "cat": "business",
+      "bullets": [],
+      "summary": "Scotland editor James Cook finds out what life is like on board a ship in an untapped oil field awaiting its fate.",
+      "fullText": "Scotland editor James Cook finds out what life is like on board a ship in an untapped oil field awaiting its fate."
+    },
+    {
+      "id": "mgfwwr",
+      "title": "Chinese medical team provides free outreach services for residents in Zanzibar",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPV2V0el81SjdoMGZzbVJGRkdEMkR3YjdqS2w3d0FyRUpST1R5d3hIRXJYMndhWEtOZ3ZTZHFja2tfckswR3FxbzNXV1Q4Qld3NE1STHNlOXIySjZoOXliUkNFdjZTRGFEd3JoUlFYajg2N3BJWmM5NXo1MTRMcElwMw?oc=5",
+      "src": "China Daily Global Edition",
+      "dom": "news.google.com",
+      "ts": 1792883535000,
+      "img": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=720&h=1280&q=70",
+      "cat": "health",
+      "bullets": [],
+      "summary": "Breaking health coverage reported by China Daily Global Edition. Tap Read for the full story.",
+      "fullText": ""
+    },
+    {
+      "id": "avu9ww",
+      "title": "Trump lauds Melania over Russia-Ukraine localised ceasefire deal",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/24/trump-lauds-melania-over-russia-ukraine-localised-ceasefire-deal?traffic_source=rss",
+      "src": "Al Jazeera",
+      "dom": "aljazeera.com",
+      "ts": 1792883296000,
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/cms-wide-thumb-trump-lauds-melania-1792883240.png?resize=1920%2C1080&quality=80",
+      "cat": "world",
+      "bullets": [],
+      "summary": "Donald Trump praised First Lady as &#039;better than professionals&#039; after a localised Russia-Ukraine ceasefire in Oleshky.",
+      "fullText": "Donald Trump praised First Lady as &#039;better than professionals&#039; after a localised Russia-Ukraine ceasefire in Oleshky."
+    },
+    {
+      "id": "1eoaqfo",
+      "title": "Why the charts are full of old songs - and so are your playlists",
+      "url": "https://www.bbc.co.uk/news/articles/c6kg50nnj0x4o?at_medium=RSS&at_campaign=rss",
+      "src": "BBC News",
+      "dom": "bbc.co.uk",
+      "ts": 1792883141000,
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f863/live/cc5e7710-ce04-11f1-bc2e-018d645d8d21.jpg",
+      "cat": "top",
+      "bullets": [],
+      "summary": "The chart is full is full of old music and classic songs are dominating streaming services. But why?",
+      "fullText": "The chart is full is full of old music and classic songs are dominating streaming services. But why?"
+    },
+    {
+      "id": "t5bc0s",
+      "title": "The bitter row over military service that could shape Israel's future",
+      "url": "https://www.bbc.co.uk/news/articles/cmvg7w0x742do?at_medium=RSS&at_campaign=rss",
+      "src": "BBC News",
+      "dom": "bbc.co.uk",
+      "ts": 1792883001000,
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c8e2/live/495ec3b0-ced1-11f1-b441-2b33b063138f.jpg",
+      "cat": "top",
+      "bullets": [
+        "But will they now bring down the Netanyahu government?"
+      ],
+      "summary": "The ultra-Orthodox community is resisting being drafted into the Israeli army. But will they now bring down the Netanyahu government?",
+      "fullText": "The ultra-Orthodox community is resisting being drafted into the Israeli army. But will they now bring down the Netanyahu government?"
+    },
+    {
+      "id": "1hpnmdv",
+      "title": "Why the King's Caribbean tour could be 'biggest risk of his reign'",
+      "url": "https://www.bbc.co.uk/news/articles/ckzd6gvg1r2jo?at_medium=RSS&at_campaign=rss",
+      "src": "BBC News",
+      "dom": "bbc.co.uk",
+      "ts": 1792882989000,
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cf6c/live/d973bcb0-cefb-11f1-accf-3309656ad0bb.jpg",
+      "cat": "top",
+      "bullets": [],
+      "summary": "The meticulously-planned visit takes in three countries in nine days - but is not without jeopardy.",
+      "fullText": "The meticulously-planned visit takes in three countries in nine days - but is not without jeopardy."
+    },
+    {
+      "id": "8rfmbp",
+      "title": "From Russian cages to Irish sanctuary: The five-year rescue journey of Bu and Tyapa",
+      "url": "https://www.bbc.co.uk/news/articles/cx62y9j1zyjvo?at_medium=RSS&at_campaign=rss",
+      "src": "BBC News",
+      "dom": "bbc.co.uk",
+      "ts": 1792882971000,
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d401/live/1df179f0-ce56-11f1-a166-e30097724580.png",
+      "cat": "science",
+      "bullets": [],
+      "summary": "For Bu and Tyapa, the five-year journey from Russia to the Irish countryside was anything but straightforward.",
+      "fullText": "For Bu and Tyapa, the five-year journey from Russia to the Irish countryside was anything but straightforward."
+    },
+    {
+      "id": "uf0c8j",
+      "title": "Palestinian families displaced as Israeli forces demolish Hebron homes",
+      "url": "https://www.bbc.co.uk/news/articles/cqd09k1k7532o?at_medium=RSS&at_campaign=rss",
+      "src": "BBC News",
+      "dom": "bbc.co.uk",
+      "ts": 1792882926000,
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3b86/live/6920a5d0-cfba-11f1-9012-0172b9f73a72.jpg",
+      "cat": "world",
+      "bullets": [],
+      "summary": "The crackdown follows the killing of two Israeli soldiers by two Palestinian gunmen on Friday - and comes just days ahead of Israel's election.",
+      "fullText": "The crackdown follows the killing of two Israeli soldiers by two Palestinian gunmen on Friday - and comes just days ahead of Israel's election."
+    },
+    {
+      "id": "j8ogec",
+      "title": "Ukraine depends on Starlink - can Europe plug the gap?",
+      "url": "https://www.bbc.co.uk/news/articles/c65yn97xe7ypo?at_medium=RSS&at_campaign=rss",
+      "src": "BBC News",
+      "dom": "bbc.co.uk",
+      "ts": 1792882808000,
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7151/live/1593e210-cfa6-11f1-aadb-297fd0a130b9.jpg",
+      "cat": "top",
+      "bullets": [],
+      "summary": "Ukraine needs another satellite internet service, but a decent alternative to Elon Musk's network doesn't exist - yet.",
+      "fullText": "Ukraine needs another satellite internet service, but a decent alternative to Elon Musk's network doesn't exist - yet."
+    },
+    {
+      "id": "1y7gg50",
+      "title": "A shark went astray and captured Korea's heart - will she finally make it back to sea?",
+      "url": "https://www.bbc.co.uk/news/articles/c9zrdknlmpdlo?at_medium=RSS&at_campaign=rss",
+      "src": "BBC News",
+      "dom": "bbc.co.uk",
+      "ts": 1792882723000,
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/82c2/live/fb2fe4e0-cef7-11f1-b441-2b33b063138f.jpg",
+      "cat": "top",
+      "bullets": [],
+      "summary": "More than a million people flocked to Busan to catch a glimpse of the female dusky shark they called Bukangi.",
+      "fullText": "More than a million people flocked to Busan to catch a glimpse of the female dusky shark they called Bukangi."
     },
     {
       "id": "1b382p7",
@@ -30,17 +595,69 @@
       "fullText": "Heavy rain and strong winds are expected during the second named storm to hit in two days, with gusts of up to 80mph forecast."
     },
     {
-      "id": "1cp43dm",
-      "title": "The Papers: 'Cops didn't share letter' and Burnham 'open' to EU free movement",
-      "url": "https://www.bbc.co.uk/news/articles/cmqln4vq1dn1o?at_medium=RSS&at_campaign=rss",
-      "src": "BBC News",
-      "dom": "bbc.co.uk",
-      "ts": 1792881101000,
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/13ad/live/ce63d6b0-cff6-11f1-a701-fddedf244c16.jpg",
-      "cat": "top",
+      "id": "fzkfeu",
+      "title": "Gunmen kill at least 10 people in eastern Nigeria, police say",
+      "url": "https://www.aljazeera.com/news/2026/10/24/gunmen-kill-at-least-10-people-in-eastern-nigeria-police-say?traffic_source=rss",
+      "src": "Al Jazeera",
+      "dom": "aljazeera.com",
+      "ts": 1792881345000,
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6add2796635cf-1792878486.jpg?resize=1920%2C1440",
+      "cat": "world",
       "bullets": [],
-      "summary": "The latest on claims agianst the father of the Duchess of Sussex and comments from the PM on EU free movement feature on Sunday's front pages.",
-      "fullText": "The latest on claims agianst the father of the Duchess of Sussex and comments from the PM on EU free movement feature on Sunday's front pages."
+      "summary": "Nigerian police say a large group carried out the attack on Binnari village in Taraba State.",
+      "fullText": "Nigerian police say a large group carried out the attack on Binnari village in Taraba State."
+    },
+    {
+      "id": "3mn93q",
+      "title": "How have Democrats’ policies shifted since the last major US election?",
+      "url": "https://www.aljazeera.com/economy/2026/10/24/how-have-democrats-policies-shifted-since-the-last-major-us-election?traffic_source=rss",
+      "src": "Al Jazeera",
+      "dom": "aljazeera.com",
+      "ts": 1792880917000,
+      "img": "https://www.aljazeera.com/wp-content/uploads/2024/07/2023-05-16T204100Z_1454706077_RC2WZ0ATGSU9_RTRMADP_3_USA-DEBT-1721708842.jpg?resize=1920%2C1440",
+      "cat": "world",
+      "bullets": [],
+      "summary": "From trans rights to Israel&#039;s war on Gaza, the party&#039;s candidates have responded to voter shifts on a slew of issues.",
+      "fullText": "From trans rights to Israel&#039;s war on Gaza, the party&#039;s candidates have responded to voter shifts on a slew of issues."
+    },
+    {
+      "id": "1roes9",
+      "title": "North Korea's Kim Jong Un returns from China after war memorial visit, state media says",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNUmFRMDdLSEpoaWR3LVZkWTlFQy1DYjJiU3JObElYXzRHWkFDaXQ0YXFZaGpyQ2pSeWN1UTV3UUFnZjA3bzRLbk1YQXJqa1E0OWk0eEttYzVrNlRRNzZvRnhVMXNUYTBSZTh2MXJROXNobTdxRThFaFRoc2hyaGMtZFlDUE1mUUZZMG13SEt3WHZYNGJ5WlpfWDloU2hkMnVCUFUtbEZxQWZYdnBhS25mbnZZUHlmS0JjOWtTWXNNbDFHRXlUOWUyLTdCOHhLYzFKZjdWRGxxTUdmZDQ?oc=5",
+      "src": "Reuters",
+      "dom": "news.google.com",
+      "ts": 1792880640000,
+      "img": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=720&h=1280&q=70",
+      "cat": "world",
+      "bullets": [],
+      "summary": "Breaking world coverage reported by Reuters. Tap Read for the full story.",
+      "fullText": ""
+    },
+    {
+      "id": "4py9tx",
+      "title": "Lindt got chocolate price hikes wrong, chairman says after CEO's ouster",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMXRJYXhTRHZJa181V2drYml1R21wTVF5YTdyZGVUSVJEUzN6QmhsLTFtdkpjRlAycnRyNFdtaGtEa3JrRS0xVzFtdDV2OF9UNWgwU2NwQTN0aXp3MURnS2FvcGJSVVhFcmhfd2lTZjhKQ1NIYjFtYkpVLXZCNWRfcXFRaS1ZUGNmQm0wV20tMXQ5MlczTF93UHNKNUxLc2xrdnJuSlBIcFlWRkhRdWloaTRCQjA5WWpuLW5JaXVCbm8yMU1DRGVXaTVR?oc=5",
+      "src": "Reuters",
+      "dom": "news.google.com",
+      "ts": 1792880531000,
+      "img": "https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=720&h=1280&q=70",
+      "cat": "world",
+      "bullets": [],
+      "summary": "Breaking world coverage reported by Reuters. Tap Read for the full story.",
+      "fullText": ""
+    },
+    {
+      "id": "faop2w",
+      "title": "‘Ramayana’: Early review of Ranbir Kapoor and Yash starrer goes VIRAL; film earns praise for 'emotional'",
+      "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxOU0huem9oODJZQWhOelpVSEduUDROeUtobjVOMkV0aHdvbFI2SkJMVG9KMDVzZWVXa3RJVW5qMTdGVTdZaUFOQWlLX3BNbWpWd0UwZm1wbkhGYkVHZEhianVEVWQzSGdtRV9NMDVnWEdGSkszYS1JM2FkV2hkSndNNGR3a1ZQaHFLb3owamtTMkk1enh6YlozSnN4VUpoNlhYZ0Q0M19ncGVCclhfTzZ2T2xKODhvcDZYcWZJanFKRzl0Y0FxdHV5dHlEa2h1RVZ4WF96Y29BdWk3dUp1SHcwX0NJOHF3MlFlWXdkazFYaU5la3BRdUNXZHNtRnltaEs3Z0FHaXJpTzlyaXF2MkFtbzNRMVNYMGVPVGdOSTlZOXZrV2QwNlBCRUgtUjEyUFZCQlM2MzMxYzhhLUtOazlCSEk5c3PSAcoCQVVfeXFMT01NTFFDSU1xNWFKc1Zxa1VZOGJEYjRweEF0aWlBVW5CLUMyZGM2TVNNa2xuZjhUcWpOQ0pxSWpNRlJGT25sVmc4cnl4WktjVE9yUW5XRGhTaWFySjdnMWwzYk9vcGVYV3huY3JLaklzSHZvdUJ1MWtNWl9zR0pfQUlxd2RqR003MmtNVkFkdG0xUVNUVmxsRndMMjBpSk9xWEJramRfQ0pfTTBSVUF2WDhQa0xqSU1wR1dGNDYwb1ZFcWh2OVVHMEh2UXVqZ2VJX2gzR1E5QkVDeEo5ZzBTS0QtNlkxUTB4ZkxRc3dFRlBSdW9TLUtKX1piajkzTDh5dFY0bVdiV0VuZ3RtRjVIWjRFdng1ZEFVcEdXZl85Y1dOVG1nbXFqaHRCckdmQnMwMk0xSmE1dVVpU2Jjb0tCS1NWWDNLNjJLenVB?oc=5",
+      "src": "The Times of India",
+      "dom": "news.google.com",
+      "ts": 1792880160000,
+      "img": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=720&h=1280&q=70",
+      "cat": "entertainment",
+      "bullets": [],
+      "summary": "Breaking entertainment coverage reported by The Times of India. Tap Read for the full story.",
+      "fullText": ""
     },
     {
       "id": "1ps7y4u",
@@ -58,6 +675,19 @@
       "fullText": "“Saturday Night Live U.K.’s” Weekend Update isn’t afraid to tackle the most controversial topics, as the show proved again this weekend when co-host Paddy Young directly referenced the allegations that emerged this past week regarding Meghan Markle’s father. “In royal news, it&#8217;s been a big 24 hours for Meghan Markle, whose dad has been accused [&#8230;]"
     },
     {
+      "id": "1rvvjv2",
+      "title": "Iran has ramped up efforts to target US personnel, intelligence memo warns",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPSnBGckdpTkdaSnNZeFIyenI0MVVDMHd6R2ZDcTlUX3I4OWNNMlRjd0FTXzhCY09zakU1MWx2RzBpRW1QYTRxY2M3UWpBZHR3S1JlNjQ0WlIyRlh3ZnhNaVZ0OVcwU21YMjUyVVF0RXB0VXFLMWpGdEVtak1DUktTdUdLWmQyWGRFQ0xmb2Z3WG1nSHdfVUxlbUlsc2RJRmNmWVRHS1Qtd0RCVU92d2t1S19HbjlFVzdoREJONTRNYk1iZw?oc=5",
+      "src": "Reuters",
+      "dom": "news.google.com",
+      "ts": 1792879612000,
+      "img": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=720&h=1280&q=70",
+      "cat": "world",
+      "bullets": [],
+      "summary": "Breaking world coverage reported by Reuters. Tap Read for the full story.",
+      "fullText": ""
+    },
+    {
       "id": "10cu5vj",
       "title": "Cynthia Erivo Plays Glinda in &#8216;Nigerian Wicked&#8217; Sketch on &#8216;SNL U.K.&#8217;: &#8216;She Wants a BBL That Defies Gravity&#8217;",
       "url": "https://variety.com/2026/tv/global/cynthia-erivo-glinda-nigerian-wicked-snl-uk-1236930402/",
@@ -69,35 +699,6 @@
       "bullets": [],
       "summary": "Cynthia Erivo spoofed &#8220;Wicked&#8221; during her stint hosting &#8220;SNL U.K.,&#8221; this time taking on the role of Glinda in &#8220;Nigerian Wicked.&#8221; Alongside Ayoade Bamgboye as Elphaba, Erivo — sporting a blonde wig and pink velour tracksuit — starred in a lo-fi, melodramatic version of the Oscar-nominated musical in which the two enemies-turned-friends go off to [&#8230;]",
       "fullText": "Cynthia Erivo spoofed &#8220;Wicked&#8221; during her stint hosting &#8220;SNL U.K.,&#8221; this time taking on the role of Glinda in &#8220;Nigerian Wicked.&#8221; Alongside Ayoade Bamgboye as Elphaba, Erivo — sporting a blonde wig and pink velour tracksuit — starred in a lo-fi, melodramatic version of the Oscar-nominated musical in which the two enemies-turned-friends go off to [&#8230;]"
-    },
-    {
-      "id": "15ln7vo",
-      "title": "Netflix is removing 52 titles: 6 must-watch films to stream before they leave the platform – See here",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNMnBqa1N5bW0yZEZoWjZ4UC1GcFR3YU45b0l6UFRiYmQ3OE1nX1lRM0xGSlNNUmRpeWY0c29VSVNCanpNR3BiVHgtbFRjcmlwanBIVTdFSExxSzl3Y3JEQXdRUkpZbUNhNE8yQXQ4TlN6YUZkbFlKX2Y3THBLRGtTUUxEdVRxQVlPU1NlUFd6RHYwQXFrVFFONXlNMFZtUjlJRzZwZTV3Wld2Wl8tX2Vza1dnZUF3bFA2bzlMTXV0cUh0cEl4SDA3cF9PcEtUMjhVdUxmSVpWMjJtVkEtUGNUaFllY00tbzNVRnFfdUd30gHzAUFVX3lxTE50MFhMV3NUeG5aUGgtcElkbk03dmxHVUk5UFBBaUNRcmxibFB5Y3I2Z1Q4RDZ3N3AzMDhNcXBLcnF1MlplSnh2WFBsUC14RzJ3UlpOZU5GcHYtZDdMdVR6ekljYkFkb0VaWURvLXgyLUNKWHB3SG5IdjNCV2JLaGRMZEpUMW5pUENfSmh2Z2RqZlN0b3RXM0huRm9YLXZKbVFIS1FrcWNmZ3NicnNpME53aFVjZmxlWkJ2c25COTJWWlJYWTQ4aVZlejhxUUZnUWFNYVJzVDgzUXZjUFUyeUlmZXhOSDItQWRCQlA3N0xCWE8taw?oc=5",
-      "src": "Livemint",
-      "dom": "news.google.com",
-      "ts": 1792878788000,
-      "img": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "entertainment",
-      "bullets": [],
-      "summary": "Breaking entertainment coverage reported by Livemint. Tap Read for the full story.",
-      "fullText": ""
-    },
-    {
-      "id": "179ojth",
-      "title": "Shia LaBeouf Would Trash-Talk ‘Lizzie McGuire’ While Filming ‘Even Stevens,’ Says Christy Carlson Romano: ‘He Wanted to Be the Number One Show’",
-      "url": "https://variety.com/2026/tv/news/shia-labeouf-lizzie-mcguire-even-stevens-christy-carlson-romano-1236930410/",
-      "src": "Variety",
-      "dom": "variety.com",
-      "ts": 1792878775000,
-      "img": "https://variety.com/wp-content/uploads/2026/10/mcdlimc-wd004-lizzie-mcguire-hilary-duff-2001-2004-walt-disn-1000x667-1.jpg",
-      "cat": "entertainment",
-      "bullets": [
-        "“Hilary had no clue about that.",
-        "I’m sure she was doing her own thing, but he [&#8230;]"
-      ],
-      "summary": "Christy Carlson Romano, who first broke out on the sitcom “Even Stevens,” has revealed that co-star Shia LaBeouf used to trash-talk competing Disney Channel show “Lizzie McGuire” and that he was “definitely beefing” with the show’s star, Hilary Duff. “Hilary had no clue about that. I’m sure she was doing her own thing, but he [&#8230;]",
-      "fullText": "Christy Carlson Romano, who first broke out on the sitcom “Even Stevens,” has revealed that co-star Shia LaBeouf used to trash-talk competing Disney Channel show “Lizzie McGuire” and that he was “definitely beefing” with the show’s star, Hilary Duff. “Hilary had no clue about that. I’m sure she was doing her own thing, but he [&#8230;]"
     },
     {
       "id": "xzx0kq",
@@ -126,99 +727,6 @@
       "fullText": ""
     },
     {
-      "id": "1ijraup",
-      "title": "Cynthia Erivo Imagines Competing on &#8216;The Great British Bake Off&#8217; in &#8216;SNL U.K.&#8217; Opening Monologue: &#8216;I&#8217;ve Got a Soggy Bottom and I&#8217;m Freaking Stressed!&#8217;",
-      "url": "https://variety.com/2026/tv/global/cynthia-erivo-monologue-snl-uk-british-bake-off-1236930011/",
-      "src": "Variety",
-      "dom": "variety.com",
-      "ts": 1792877572000,
-      "img": "https://variety.com/wp-content/uploads/2026/10/cynthia-erivo-1000.jpg",
-      "cat": "entertainment",
-      "bullets": [],
-      "summary": "In her opening “Saturday Night Live U.K.&#8221; monologue, Cynthia Erivo admitted that despite being an almost-EGOT – with an Emmy, Grammy and Tony to her name – there’s one accolade she’s still hankering after: no, not an Oscar but “the Hollywood handshake.” Erivo, who is hosting this weekend’s episode, was referring of course to Paul [&#8230;]",
-      "fullText": "In her opening “Saturday Night Live U.K.&#8221; monologue, Cynthia Erivo admitted that despite being an almost-EGOT – with an Emmy, Grammy and Tony to her name – there’s one accolade she’s still hankering after: no, not an Oscar but “the Hollywood handshake.” Erivo, who is hosting this weekend’s episode, was referring of course to Paul [&#8230;]"
-    },
-    {
-      "id": "11ikwxx",
-      "title": "Iran blames US for deal failure, urges new try amid fear of new attacks",
-      "url": "https://www.aljazeera.com/news/2026/10/24/iran-blames-us-for-deal-failure-urges-new-try-amid-fear-of-new-attacks?traffic_source=rss",
-      "src": "Al Jazeera",
-      "dom": "aljazeera.com",
-      "ts": 1792877411000,
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/AP26271650639081-1791496832.jpg?resize=1920%2C1440",
-      "cat": "world",
-      "bullets": [],
-      "summary": "Tehran warns that even limited strikes would trigger a response &#039;several times greater&#039;.",
-      "fullText": "Tehran warns that even limited strikes would trigger a response &#039;several times greater&#039;."
-    },
-    {
-      "id": "s1gndy",
-      "title": "&#8216;SNL U.K.&#8217; Cold Open Spoofs Andy Burnham on &#8216;Gogglebox,&#8217; Prince William on &#8216;The Graham Norton Show,&#8217; &#8216;The Celebrity Traitors&#8217; and More",
-      "url": "https://variety.com/2026/tv/global/snl-uk-cold-open-prince-william-graham-norton-show-1236930390/",
-      "src": "Variety",
-      "dom": "variety.com",
-      "ts": 1792877307000,
-      "img": "https://variety.com/wp-content/uploads/2026/10/snl-prince-william-graham-norton.jpg",
-      "cat": "entertainment",
-      "bullets": [
-        "&#8220;You know what my favorite [&#8230;]"
-      ],
-      "summary": "&#8220;SNL U.K.&#8221; ran down the week in TV during its cold open, through the lens of Prime Minister Andy Burnham&#8217;s recent appearance on &#8220;Celebrity Gogglebox.&#8221; Burnham, played by George Fouracres, featured on the show with Liverpool Mayor Steven Rotheram (Emma Sidi) to discuss their favorite television moments of the week. &#8220;You know what my favorite [&#8230;]",
-      "fullText": "&#8220;SNL U.K.&#8221; ran down the week in TV during its cold open, through the lens of Prime Minister Andy Burnham&#8217;s recent appearance on &#8220;Celebrity Gogglebox.&#8221; Burnham, played by George Fouracres, featured on the show with Liverpool Mayor Steven Rotheram (Emma Sidi) to discuss their favorite television moments of the week. &#8220;You know what my favorite [&#8230;]"
-    },
-    {
-      "id": "5m8ihr",
-      "title": "Jeff Garlin Considered Suicide After Tumultuous &#8216;Goldbergs&#8217; Exit",
-      "url": "https://www.hollywoodreporter.com/news/general-news/jeff-garlin-suicidal-goldbergs-exit-1236739584/",
-      "src": "The Hollywood Reporter",
-      "dom": "hollywoodreporter.com",
-      "ts": 1792876305000,
-      "img": "https://www.hollywoodreporter.com/wp-content/uploads/2026/10/GettyImages-2279023345.jpg?crop=0px%2C269px%2C5000px%2C2797px&#038;resize=1440%2C810",
-      "cat": "entertainment",
-      "bullets": [],
-      "summary": "The actor, who left the ABC comedy after an HR investigation stemming from multiple complaints about his behavior on set, says he reached out to his &#039;Curb Your Enthusiasm&#039; onscreen wife Susie Essman to alert her to his plans.",
-      "fullText": "The actor, who left the ABC comedy after an HR investigation stemming from multiple complaints about his behavior on set, says he reached out to his &#039;Curb Your Enthusiasm&#039; onscreen wife Susie Essman to alert her to his plans."
-    },
-    {
-      "id": "44nrmd",
-      "title": "Almost 1,000 arrested as clashes follow another day of mass protests across France",
-      "url": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
-      "src": "BBC News",
-      "dom": "bbc.co.uk",
-      "ts": 1792876167000,
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3d00/live/edf93830-cffb-11f1-b444-6fb1f13f8d87.jpg",
-      "cat": "world",
-      "bullets": [],
-      "summary": "Officials have so far managed to avoid a repeat of last weekend's rioting and looting as hundreds of thousands took part in demonstrations.",
-      "fullText": "Officials have so far managed to avoid a repeat of last weekend's rioting and looting as hundreds of thousands took part in demonstrations."
-    },
-    {
-      "id": "c0zxb2",
-      "title": "Houthis launch attacks on Saudi Arabia and Yemen’s Aden",
-      "url": "https://www.aljazeera.com/news/2026/10/24/houthis-launch-attacks-on-saudi-arabia-and-yemens-aden?traffic_source=rss",
-      "src": "Al Jazeera",
-      "dom": "aljazeera.com",
-      "ts": 1792876131000,
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6add101a4bf1-1792872474.jpg?resize=1920%2C1439",
-      "cat": "world",
-      "bullets": [],
-      "summary": "Houthi missiles reportedly struck a number of targets in Yemen, including Aden&#039;s airport and a coastguard base.",
-      "fullText": "Houthi missiles reportedly struck a number of targets in Yemen, including Aden&#039;s airport and a coastguard base."
-    },
-    {
-      "id": "zorasf",
-      "title": "Life convicts can avail 40 days of annual leave in two instalments, rules Madras High Court",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/life-convicts-can-avail-40-days-of-annual-leave-in-two-instalments-rules-madras-high-court/article71619647.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1792875985000,
-      "img": "https://th-i.thgim.com/public/todays-paper/tp-miscellaneous/tp-others/5qsx8x/article71618183.ece/alternates/LANDSCAPE_1200/Madras-High-CouG1SGMUQDN.3.jpg.jpg",
-      "cat": "india",
-      "bullets": [],
-      "summary": "Justices Anita Sumanth and Sunder Mohan hold that prison authorities cannot compel the convicts to avail the leave only once a year",
-      "fullText": "Justices Anita Sumanth and Sunder Mohan hold that prison authorities cannot compel the convicts to avail the leave only once a year"
-    },
-    {
       "id": "1sh1n4d",
       "title": "‘Modification in pavement goes unnoticed in Nanganallur ‘",
       "url": "https://www.thehindu.com/news/cities/chennai/httpscuecsappthehinducoincue-webmainurihttps2f2fcuecsappthehinducoin2fwebservice2fescenic2fcontent2f71620084ampmimetypex-ece2fstoryampextra7b22package2222b8c80ddd-bedb-45b6-8cb7-a42b937073f4227dampfil/article71620084.ece",
@@ -232,19 +740,6 @@
       "fullText": "Readers Write: B. Ramachandran notes that on a section of Sixth Main Road, from a confectionery to Independence Day Park in Nanganallur, the pavement has been fitted with ramps to facilitate easy parking and vehicle movement."
     },
     {
-      "id": "1fq1822",
-      "title": "Train slams into crane that collapsed onto railway line in Brazil",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/24/train-slams-into-crane-that-collapsed-onto-railway-line-in-brazil?traffic_source=rss",
-      "src": "Al Jazeera",
-      "dom": "aljazeera.com",
-      "ts": 1792875775000,
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792875658.jpg?resize=1536%2C1080&quality=80",
-      "cat": "world",
-      "bullets": [],
-      "summary": "Video shows the moment a train collided with a crane that had fallen onto railway tracks in Brazil.",
-      "fullText": "Video shows the moment a train collided with a crane that had fallen onto railway tracks in Brazil."
-    },
-    {
       "id": "gy4v4d",
       "title": "‘Widen Pammal Road’",
       "url": "https://www.thehindu.com/news/cities/chennai/httpscuecsappthehinducoincue-webmainurihttps2f2fcuecsappthehinducoin2fwebservice2fescenic2fcontent2f71620016ampmimetypex-ece2fstoryampextra7b22package22229cbd20a7-a74a-48f0-ad53-c67a9398c9d5227dampfil/article71620016.ece",
@@ -256,19 +751,6 @@
       "bullets": [],
       "summary": "Readers Write: Rajagopal J K, a reader, says the road has not been widened in the past four decades and is in dire need of this exercise",
       "fullText": "Readers Write: Rajagopal J K, a reader, says the road has not been widened in the past four decades and is in dire need of this exercise"
-    },
-    {
-      "id": "7bebvf",
-      "title": "How to watch every ‘Rambo’ movie in order, from ‘First Blood’ to ‘Last Blood’",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA1Z0hzNVFheUtub1FjQnZpdTF3NUFyUFFFREVZQ3FnY2xWR1l0UmVKTjB0VGdOa0hYV0dwQXFuNWMwOUFmSlJWNTVYLWxXcWpGbGFkT1dEZjlzcTFMUExaR0pzS0x0M0lLUFE?oc=5",
-      "src": "Entertainment Weekly",
-      "dom": "news.google.com",
-      "ts": 1792875600000,
-      "img": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "entertainment",
-      "bullets": [],
-      "summary": "Breaking entertainment coverage reported by Entertainment Weekly. Tap Read for the full story.",
-      "fullText": ""
     },
     {
       "id": "1pukj86",
@@ -301,47 +783,6 @@
       "fullText": "Graham Anthony says his mum Margaret Owen was asking for help \"and sometimes screaming in pain\"."
     },
     {
-      "id": "1cn69kd",
-      "title": "Another alleged hooch tragedy claims over 10 in Madhya Pradesh district; administration denies",
-      "url": "https://www.thehindu.com/news/national/madhya-pradesh/another-alleged-hooch-tragedy-claims-over-10-in-madhya-pradesh-district-administration-denies/article71620685.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1792875186000,
-      "img": "https://th-i.thgim.com/public/incoming/suxiaa/article71621374.ece/alternates/LANDSCAPE_1200/iStock-1248195891.jpg",
-      "cat": "india",
-      "bullets": [],
-      "summary": "Highlighting the mass deaths in various tragedies across Madhya Pradesh in the past year, Congress leader Jitu Patwari said the State had become the “biggest den of mass deaths”",
-      "fullText": "Highlighting the mass deaths in various tragedies across Madhya Pradesh in the past year, Congress leader Jitu Patwari said the State had become the “biggest den of mass deaths”"
-    },
-    {
-      "id": "1hg4pgu",
-      "title": "Severe hunger stalks people in Gaza as bakeries close down",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/24/severe-hunger-stalks-people-in-gaza-as-bakeries-close-down?traffic_source=rss",
-      "src": "Al Jazeera",
-      "dom": "aljazeera.com",
-      "ts": 1792875175000,
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792875168.jpg?resize=1333%2C1080&quality=80",
-      "cat": "world",
-      "bullets": [],
-      "summary": "Bakeries across Gaza are struggling to find flour to make bread for people desperate for food.",
-      "fullText": "Bakeries across Gaza are struggling to find flour to make bread for people desperate for food."
-    },
-    {
-      "id": "pu1uyg",
-      "title": "‘Young Sheldon’ Star Emily Osment Requested an Intimacy Coordinator Because of &#8216;Uncomfortable&#8217; Age Gap With Montana Jordan: &#8216;He Was a Baby!&#8217;",
-      "url": "https://variety.com/2026/tv/news/young-sheldon-emily-osment-requested-intimacy-coordinator-1236930355/",
-      "src": "Variety",
-      "dom": "variety.com",
-      "ts": 1792875000000,
-      "img": "https://variety.com/wp-content/uploads/2025/05/EmilyOsment-WithGeorgie-kitchen.jpg",
-      "cat": "entertainment",
-      "bullets": [
-        "In Jessica Radloff’s new book chronicling the making of the series, titled “Young Sheldon: The (Juicier-Than-Meemaw’s-Brisket) Inside Story of the Hit Comedy,” she explains Osment’s discomfort shooting [&#8230;]"
-      ],
-      "summary": "There may not have been sex scenes in “Young Sheldon,” but star Emily Osment still requested an intimacy coordinator because of her &#8220;concern&#8221; around co-star Montana Jordan&#8217;s age. In Jessica Radloff’s new book chronicling the making of the series, titled “Young Sheldon: The (Juicier-Than-Meemaw’s-Brisket) Inside Story of the Hit Comedy,” she explains Osment’s discomfort shooting [&#8230;]",
-      "fullText": "There may not have been sex scenes in “Young Sheldon,” but star Emily Osment still requested an intimacy coordinator because of her &#8220;concern&#8221; around co-star Montana Jordan&#8217;s age. In Jessica Radloff’s new book chronicling the making of the series, titled “Young Sheldon: The (Juicier-Than-Meemaw’s-Brisket) Inside Story of the Hit Comedy,” she explains Osment’s discomfort shooting [&#8230;]"
-    },
-    {
       "id": "1pmyae5",
       "title": "An electronic health record tool for exercise prescription may reduce fall rate among older adults",
       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUUk2cWpPQ3l4SDNHejFuZ2tZWTFPeHNhSG5TS3hhRkZVeXE5WlFJamNSQ1F6djV6WjVZWEJ4bEdNWDc4cVFGTW5nXzhnZmc1YVRMNWk2WHRRM3hON1FxY24wdVdVanowSFctNm1xMjRFTEQ1TFRlOXR3bTZPMjNGR3NmZHVwdW1GbDRiMjF6TjJnQ0EwQ3VKQUc3bkFpbGNnS0o3QV9HeWFDTENsWVlVdGlKZ2l2NmNUSnRjQmxIRVdMWkFOcFB1NVl5RQ?oc=5",
@@ -366,88 +807,6 @@
       "bullets": [],
       "summary": "Elon Musk reportedly ordered SpaceX to throttle Ukraine&#039;s Starlink access.",
       "fullText": "Elon Musk reportedly ordered SpaceX to throttle Ukraine&#039;s Starlink access."
-    },
-    {
-      "id": "a3dail",
-      "title": "The writer and the perjurer: What the Archer trial tells India",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQV25ZOG5MMGVKUXpSb2JKejdmWHlDbzMybjB3c2NFQW4xNmRJT2tHLVV3eDRWYWtZLXkxalRQVzF6TlZMQTBrZ2N5WDZrOWRrbHh5dENzWS1Hd09nZTdTSjE1eG1kbVFjcHFhU244MTZ3ZlpfUGJYX0VUdm41YkpXaDVCVFYybWVGVU5kS0NxU1pXbEFkekxPWW5LWTFnb0R1U3pWdG15YTVWZ9IBugFBVV95cUxPNVFsQTA5RWFHRlRWckRWTk5HSi16SktkWjZHQmpKVEhKQkZiOXB0QUVRdHZDaVhnRDVYY0NZa2dqZ0xKeWRlaG1SV1JtSGVNRE5hV2c3WkpIYUNocWxpSF96Q21BSURDYjVDNksySER5Ymh5YXJUYWQyMVZ3cHBrdGxGUGMwbmpmb3BqMTRrWGRmWlM3eHZFRGk4aVB1bHBtV05jN3NwLXk4UDVWdzlZR3JkNDZEY3RJYlE?oc=5",
-      "src": "Deccan Herald",
-      "dom": "news.google.com",
-      "ts": 1792874727000,
-      "img": "https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "india",
-      "bullets": [],
-      "summary": "Breaking India coverage reported by Deccan Herald. Tap Read for the full story.",
-      "fullText": ""
-    },
-    {
-      "id": "gd703t",
-      "title": "IMD warns of heavy rainfall over several T.N. districts; red alert for five districts in Keralam | Live",
-      "url": "https://www.thehindu.com/news/national/bay-of-bengal-weather-update-cyclone-alert-latest-weather-news-live-updates-october-24-2026/article71619022.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1792874434000,
-      "img": "https://th-i.thgim.com/public/news/national/co5xdi/article71619356.ece/alternates/LANDSCAPE_1200/478671ef-54da-41f1-8a7a-f6e21cc54bab.jpg",
-      "cat": "india",
-      "bullets": [
-        "Follow The Hindu for more weather updates."
-      ],
-      "summary": "IMD warns cyclonic storm is brewing, tracking towards the Andhra Pradesh and Odisha coasts. Follow The Hindu for more weather updates.",
-      "fullText": "IMD warns cyclonic storm is brewing, tracking towards the Andhra Pradesh and Odisha coasts. Follow The Hindu for more weather updates."
-    },
-    {
-      "id": "68h3eq",
-      "title": "Violent clashes as Albanian government cracks down on protests",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/24/aje-onl-nf_clashes-as-albanian-pm-cracks-down-on-protests-241026?traffic_source=rss",
-      "src": "Al Jazeera",
-      "dom": "aljazeera.com",
-      "ts": 1792874348000,
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792874338.jpg?resize=1920%2C1080&quality=80",
-      "cat": "world",
-      "bullets": [],
-      "summary": "Protesters in Albania have fought running battles with police, on a 12th day of anti-government protests.",
-      "fullText": "Protesters in Albania have fought running battles with police, on a 12th day of anti-government protests."
-    },
-    {
-      "id": "3e977d",
-      "title": "Could Israel’s military crackdown influence Tuesday’s election?",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/10/24/could-israels-military-crackdown-influence-tuesdays-election?traffic_source=rss",
-      "src": "Al Jazeera",
-      "dom": "aljazeera.com",
-      "ts": 1792874222000,
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792873054.jpg?resize=1920%2C1080&quality=80",
-      "cat": "world",
-      "bullets": [],
-      "summary": "Israel preparing a full lockdown of occupied West Bank after Hebron gunfight.",
-      "fullText": "Israel preparing a full lockdown of occupied West Bank after Hebron gunfight."
-    },
-    {
-      "id": "2sdvaq",
-      "title": "Navarrete vs. Foster Livestream: Where to Watch the Title Fight Online",
-      "url": "https://www.hollywoodreporter.com/tv/tv-news/watch-navarrete-vs-foster-dazn-boxing-live-stream-oct-2026-1236739576/",
-      "src": "The Hollywood Reporter",
-      "dom": "hollywoodreporter.com",
-      "ts": 1792873948000,
-      "img": "https://www.hollywoodreporter.com/wp-content/uploads/2026/10/Navarrete-vs.-Foster-Livestream-Where-to-Watch-the-Title-Fight-Online-MAIN.jpg?w=1296&#038;h=730&#038;crop=1",
-      "cat": "entertainment",
-      "bullets": [],
-      "summary": "The super featherweight unification bout between Emanuel Navarrete and O&#039;Shaquie Foster takes place on Saturday, October 24 in San Antonio, Texas.",
-      "fullText": "The super featherweight unification bout between Emanuel Navarrete and O&#039;Shaquie Foster takes place on Saturday, October 24 in San Antonio, Texas."
-    },
-    {
-      "id": "15os8q5",
-      "title": "Happy 20th Birthday, &#8216;Debut&#8217;! A Revealing Look Back at Taylor Swift&#8217;s First Album, Via a Previously Unpublished Q&#038;A: &#8216;I Want to Be Here for the Next 20 Years&#8217;",
-      "url": "https://variety.com/2026/music/news/taylor-swift-interview-debut-album-20th-anniversary-1236930352/",
-      "src": "Variety",
-      "dom": "variety.com",
-      "ts": 1792873359000,
-      "img": "https://variety.com/wp-content/uploads/2026/10/GettyImages-74151804-e1792873081924.jpg",
-      "cat": "entertainment",
-      "bullets": [
-        "It would take at least a few years before anyone really thought of this as a monumental or transformative event — for country music, and then for pop,…"
-      ],
-      "summary": "Today, Oct. 24, 2026, marks the 20th anniversary of the release of Taylor Swift&#8217;s self-titled debut album. It would take at least a few years before anyone really thought of this as a monumental or transformative event — for country music, and then for pop, and then for pop culture as we knew and continue [&#8230;]",
-      "fullText": "Today, Oct. 24, 2026, marks the 20th anniversary of the release of Taylor Swift&#8217;s self-titled debut album. It would take at least a few years before anyone really thought of this as a monumental or transformative event — for country music, and then for pop, and then for pop culture as we knew and continue [&#8230;]"
     },
     {
       "id": "145acci",
@@ -476,114 +835,17 @@
       "fullText": "Elon Musk limited Ukraine’s access to the military-grade network of Starlink after Trum pcriticised Kyiv’s strikes on Russia’s energy infrastructure"
     },
     {
-      "id": "1flugcn",
+      "id": "10jqscm",
       "title": "The ROI of sustainability in healthcare",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPR1ZFUk1rWU1zbUxKUDgtckg1dWRDQ3RnZmpfWWlUTE8tTENncHlQWEZwWTU3NW03WFNHOWlxU25oel9OWlNFMnRVY3BIdHVHT252Rk9xMlBvRUZXd1FFWEtJNzR6SUl1Z1FDX3lIWGdCNGV2cjRyRExfLUdJMFNxTw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNcVAtRW1VaTdIZkRqUWhTVkZlZk4xdTRxYXY0aHd4bTE0TDRsU3k0WnNpYVd4elZmdjBiNGNtQThhU1k3TjJadGNtdTRaV0hTMWtxZURNSUp6SEYzSjRpS2tTUHBHLV9BVlQ1Z3Rwd3V6cGxBdjlLOW9YekE1WEZQVw?oc=5",
       "src": "Siemens Healthineers",
       "dom": "news.google.com",
-      "ts": 1792872537000,
+      "ts": 1792871787000,
       "img": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=720&h=1280&q=70",
       "cat": "health",
       "bullets": [],
       "summary": "Breaking health coverage reported by Siemens Healthineers. Tap Read for the full story.",
       "fullText": ""
-    },
-    {
-      "id": "xxgteh",
-      "title": "Amid outcry, poll body orders re-poll at three polling stations under Agra Teachers MLC seat",
-      "url": "https://www.thehindu.com/news/national/uttar-pradesh/amid-outcry-poll-body-orders-re-poll-at-three-polling-stations-under-agra-teachers-mlc-seat/article71620432.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1792872408000,
-      "img": "https://th-i.thgim.com/public/incoming/dmdubg/article71621372.ece/alternates/LANDSCAPE_1200/PTI10_23_2026_000052B.jpg",
-      "cat": "india",
-      "bullets": [],
-      "summary": "The recent developments come amid SP candidate from Agra Division, Teacher’s seat, Akash Agarwal, who has alleged extreme harassment of his supporters during the Uttar Pradesh Legislative Council elections on the seat",
-      "fullText": "The recent developments come amid SP candidate from Agra Division, Teacher’s seat, Akash Agarwal, who has alleged extreme harassment of his supporters during the Uttar Pradesh Legislative Council elections on the seat"
-    },
-    {
-      "id": "4hqoe5",
-      "title": "Arsenal join Man City at Premier League summit, Spurs shock Chelsea 2-0",
-      "url": "https://www.aljazeera.com/sports/2026/10/24/arsenal-join-man-city-at-premier-league-summit-spurs-shock-chelsea-2-0?traffic_source=rss",
-      "src": "Al Jazeera",
-      "dom": "aljazeera.com",
-      "ts": 1792872209000,
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6add0878e959-1792870520.jpg?resize=1920%2C1440",
-      "cat": "world",
-      "bullets": [],
-      "summary": "Gunners capitalise on City&#039;s first loss of the season, while Spurs get second league win at Stamford Bridge in 36 years.",
-      "fullText": "Gunners capitalise on City&#039;s first loss of the season, while Spurs get second league win at Stamford Bridge in 36 years."
-    },
-    {
-      "id": "4b6h4t",
-      "title": "Here&#8217;s Where to Watch Emanuel Navarrete vs. O&#8217;Shaquie Foster Junior Lightweight Titles Boxing Match Live Online",
-      "url": "https://variety.com/2026/shopping/news/how-to-watch-navarrete-vs-foster-boxing-live-online-1236918612/",
-      "src": "Variety",
-      "dom": "variety.com",
-      "ts": 1792872000000,
-      "img": "https://variety.com/wp-content/uploads/2026/10/WBC-Boxing-OShaquie-Foster-Getty-VR-Featured.jpg",
-      "cat": "entertainment",
-      "bullets": [
-        "In the junior lightweight championship main event, Mexican boxer Emanuel Navarrete takes on American O&#8217;Shaquie Foster with Navarrete&#8217;s WBO and IBF titles and Foster&#8217;s WBC title on the…",
-        "The bout is scheduled for 12 rounds."
-      ],
-      "summary": "This weekend, promoters Top Rank Boxing travels to San Antonio for prime title bout between two world-class fighters. In the junior lightweight championship main event, Mexican boxer Emanuel Navarrete takes on American O&#8217;Shaquie Foster with Navarrete&#8217;s WBO and IBF titles and Foster&#8217;s WBC title on the line. The bout is scheduled for 12 rounds. On [&#8230;]",
-      "fullText": "This weekend, promoters Top Rank Boxing travels to San Antonio for prime title bout between two world-class fighters. In the junior lightweight championship main event, Mexican boxer Emanuel Navarrete takes on American O&#8217;Shaquie Foster with Navarrete&#8217;s WBO and IBF titles and Foster&#8217;s WBC title on the line. The bout is scheduled for 12 rounds. On [&#8230;]"
-    },
-    {
-      "id": "1ybra8i",
-      "title": "Andhra Pradesh braces for very severe cyclonic storm; landfall likely between Bapatla and Vizag on October 28",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-braces-for-very-severe-cyclonic-storm-landfall-likely-between-bapatla-and-vizag-on-october-28/article71621095.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1792871453000,
-      "img": "https://th-i.thgim.com/public/incoming/ef9fij/article71621316.ece/alternates/LANDSCAPE_1200/10215_24_10_2026_17_18_19_1_IMG_20261024_WA0027.JPG",
-      "cat": "india",
-      "bullets": [],
-      "summary": "Wind speed may go up to 130 kmph, say weather experts; IMD issues red alert for 13 districts on Otober 27 and 28",
-      "fullText": "Wind speed may go up to 130 kmph, say weather experts; IMD issues red alert for 13 districts on Otober 27 and 28"
-    },
-    {
-      "id": "ahxeaa",
-      "title": "Social security, welfare fund board pensions in Keralam to be distributed from October 26",
-      "url": "https://www.thehindu.com/news/national/kerala/social-security-welfare-fund-board-pensions-in-keralam-to-be-distributed-from-october-26/article71620933.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1792870834000,
-      "img": "https://th-i.thgim.com/public/incoming/tp1pu1/article71621369.ece/alternates/LANDSCAPE_1200/PO01_Pension.jpg",
-      "cat": "india",
-      "bullets": [],
-      "summary": "The Keralam government has sanctioned ₹1,081 crore for the distribution of the social security pensions and the welfare fund board pensions",
-      "fullText": "The Keralam government has sanctioned ₹1,081 crore for the distribution of the social security pensions and the welfare fund board pensions"
-    },
-    {
-      "id": "pivs7h",
-      "title": "Kerala Police book social media influencer Darren for ‘communally divisive hate speech’ on Instagram",
-      "url": "https://www.thehindu.com/news/national/kerala/kerala-police-indict-social-media-influencer-darren-for-communally-divisive-hate-speech-on-instagram/article71619795.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1792870680000,
-      "img": "https://th-i.thgim.com/public/incoming/m9qwnp/article71620122.ece/alternates/LANDSCAPE_1200/2019-05-20T161221Z_724302619_RC1582C590C0_RTRMADP_3_USA-TRUMP-INSTAGRAM.JPG",
-      "cat": "india",
-      "bullets": [
-        "Krishnan Kumar, says she seconded Darren’s post as a ‘sad reality’ without watching the full video; Darren also criticised UDF govt.",
-        "for ‘accepting funding from Arab countries to aid promote Islam’ in Keralam; Satheesan, Pinarayi slam the video"
-      ],
-      "summary": "Social media influencer Diya Krishna, daughter of BJP leader and NTDFC chairperson G. Krishnan Kumar, says she seconded Darren’s post as a ‘sad reality’ without watching the full video; Darren also criticised UDF govt. for ‘accepting funding from Arab countries to aid promote Islam’ in Keralam; Satheesan, Pinarayi slam the video",
-      "fullText": "Social media influencer Diya Krishna, daughter of BJP leader and NTDFC chairperson G. Krishnan Kumar, says she seconded Darren’s post as a ‘sad reality’ without watching the full video; Darren also criticised UDF govt. for ‘accepting funding from Arab countries to aid promote Islam’ in Keralam; Satheesan, Pinarayi slam the video"
-    },
-    {
-      "id": "wewsgw",
-      "title": "Watch: BBC in Paris as police charge protesters and use tear gas during unrest",
-      "url": "https://www.bbc.co.uk/news/videos/cm89zqw9lx1do?at_medium=RSS&at_campaign=rss",
-      "src": "BBC News",
-      "dom": "bbc.co.uk",
-      "ts": 1792870655000,
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f4f2/live/c78fb360-cfe5-11f1-b441-2b33b063138f.jpg",
-      "cat": "top",
-      "bullets": [],
-      "summary": "Europe correspondent Nick Beake reports from Paris where mostly peaceful protests turned into unrest after nightfall.",
-      "fullText": "Europe correspondent Nick Beake reports from Paris where mostly peaceful protests turned into unrest after nightfall."
     },
     {
       "id": "k44yeu",
@@ -651,19 +913,6 @@
       "fullText": "Delhi gov repairs lights, boosts security at Astha Kunj Park after teen rape, installing 445 lights, CCTV, gates, and enhanced patrols."
     },
     {
-      "id": "1ss002q",
-      "title": "Six election officials removed in U.P. after SP flags voter list errors",
-      "url": "https://www.thehindu.com/news/national/uttar-pradesh/six-election-officials-removed-in-up-after-sp-flags-voter-list-errors/article71621307.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1792870321000,
-      "img": "https://www.thehindu.com/theme/images/og-image.png",
-      "cat": "india",
-      "bullets": [],
-      "summary": "UP election officials remove five BLOs and a computer assistant after voter list errors in Azamgarh; action also against senior officials.",
-      "fullText": "UP election officials remove five BLOs and a computer assistant after voter list errors in Azamgarh; action also against senior officials."
-    },
-    {
       "id": "13x3z5x",
       "title": "SRM Medical College holds national geriatric summit",
       "url": "https://www.thehindu.com/news/cities/chennai/srm-medical-college-holds-national-geriatric-summit/article71619667.ece",
@@ -677,6 +926,19 @@
       "fullText": "National Geriatric Summit \"Age Well India\" in Chennai emphasizes prevention, policy, and strengthening geriatric care and services."
     },
     {
+      "id": "1df8ggx",
+      "title": "Workers clear drains without adequate safety gear in Chennai",
+      "url": "https://www.thehindu.com/news/cities/chennai/workers-clear-drains-without-adequate-safety-gear-in-chennai/article71621020.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1792870294000,
+      "img": "https://th-i.thgim.com/public/news/cities/chennai/igxso/article71621132.ece/alternates/LANDSCAPE_1200/HU6ci68aQAAW8Qz.jpg",
+      "cat": "local",
+      "bullets": [],
+      "summary": "The concern comes in the wake of the deaths of two workers who allegedly inhaled toxic gas while cleaning GCC’s 20-foot-deep stormwater drainage sump in Kodungaiyur",
+      "fullText": "The concern comes in the wake of the deaths of two workers who allegedly inhaled toxic gas while cleaning GCC’s 20-foot-deep stormwater drainage sump in Kodungaiyur"
+    },
+    {
       "id": "1jegf3x",
       "title": "Healthcare challenges require collaborative, technology-ledsolutions, says Health Secretary",
       "url": "https://www.thehindu.com/news/cities/chennai/healthcare-challenges-require-collaborative-technology-ledsolutions-says-health-secretary/article71619284.ece",
@@ -684,212 +946,10 @@
       "dom": "thehindu.com",
       "ts": 1792870242000,
       "img": "https://th-i.thgim.com/public/incoming/3ywd1g/article71620097.ece/alternates/LANDSCAPE_1200/2501_24_10_2026_12_15_55_1_DSC_6983.JPEG",
-      "cat": "india",
+      "cat": "local",
       "bullets": [],
       "summary": "Tamil Nadu Health Secretary calls for private-sector collaboration and tech-led innovation to tackle non-communicable diseases and ensure accessible, scalable care.",
       "fullText": "Tamil Nadu Health Secretary calls for private-sector collaboration and tech-led innovation to tackle non-communicable diseases and ensure accessible, scalable care."
-    },
-    {
-      "id": "17mardm",
-      "title": "BJP says textbooks meet quality norms; AAP seeks lab testing",
-      "url": "https://www.thehindu.com/news/cities/Delhi/bjp-says-textbooks-meet-quality-norms-aap-seeks-lab-testing/article71620239.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1792870214000,
-      "img": "https://www.thehindu.com/theme/images/og-image.png",
-      "cat": "local",
-      "bullets": [],
-      "summary": "BJP defends NCERT textbook procurement as compliant; AAP seeks lab tests amid allegations of substandard printing and paper quality.",
-      "fullText": "BJP defends NCERT textbook procurement as compliant; AAP seeks lab tests amid allegations of substandard printing and paper quality."
-    },
-    {
-      "id": "100cvz7",
-      "title": "Chhath ghats must remain clean and well-organised: Delhi CM",
-      "url": "https://www.thehindu.com/news/cities/Delhi/chhath-ghats-must-remain-clean-and-well-organised-delhi-cm/article71620854.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1792870211000,
-      "img": "https://th-i.thgim.com/public/incoming/opet8b/article71621349.ece/alternates/LANDSCAPE_1200/20261024062L.jpg",
-      "cat": "local",
-      "bullets": [],
-      "summary": "Delhi CM inspects Chhath ghat site, vows timely completion, better facilities, lighting, and strict waste management for a clean, organised festival.",
-      "fullText": "Delhi CM inspects Chhath ghat site, vows timely completion, better facilities, lighting, and strict waste management for a clean, organised festival."
-    },
-    {
-      "id": "srazbp",
-      "title": "Association questions DPH over gag order for govt. doctors",
-      "url": "https://www.thehindu.com/news/cities/chennai/association-questions-dph-over-gag-order-for-govt-doctors/article71619941.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1792870209000,
-      "img": "https://www.thehindu.com/theme/images/og-image.png",
-      "cat": "local",
-      "bullets": [
-        "354 reviews, promotions, and maternity benefits."
-      ],
-      "summary": "SDPGA questions DPH gag order on government doctors, citing delays in G.O. 354 reviews, promotions, and maternity benefits.",
-      "fullText": "SDPGA questions DPH gag order on government doctors, citing delays in G.O. 354 reviews, promotions, and maternity benefits."
-    },
-    {
-      "id": "atzwx4",
-      "title": "AI is changing the cyber threat landscape. Is India ready?",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPYW5Bdkp4RFE2TzM2Sl9VejVQRDVUc2E2S21TMHBCek1VMjFuZmRRMDVuS0p1OHRZaEI4dFQ0bllHSDdtb3ZpMWFtQUF3cUI3cld5czVlZUUxWGl1REt6NkxSUlFYeU40c09pWW1OMENTaUZ3dnFkekNVeEpqbThlV0FpQ1V2OHlhQTliUFVqM2FLUkx6dGVEbXRNaXBVZ3cza3NyclZfNNIBtwFBVV95cUxNWW9RTzJXNzE5ZlhBdkQwc2RiWEp3cVZYN2RMYUR4ZUUzMUpIY1NTRWppQjlCMDJOZGpZS3A5dHZmZC1FbjRnNS1HdTZLSzhmZDVOMFBWY2sybUc4WHNPdzFobXVqY0hBbW5ubHZIb0tXVzFNOExnQ29ZX2pWbkZoT1AxdkRkLW5lYWJrRzBXZ1hCNGlFbVM3cHA1d2tyS0tyTW1nWVhJMHc1bFFhU1ptMnJvbVZkeDQ?oc=5",
-      "src": "Deccan Herald",
-      "dom": "news.google.com",
-      "ts": 1792870073000,
-      "img": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "india",
-      "bullets": [],
-      "summary": "Breaking India coverage reported by Deccan Herald. Tap Read for the full story.",
-      "fullText": ""
-    },
-    {
-      "id": "1c3nyu0",
-      "title": "Residents flag safety risk as silt removed from canals piles up along city roads",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/residents-flag-safety-risk-as-silt-removed-from-canals-piles-up-along-city-roads/article71608743.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1792869687000,
-      "img": "https://th-i.thgim.com/public/news/national/tamil-nadu/ngxrmx/article71608785.ece/alternates/LANDSCAPE_1200/Screenshot%202026-10-21%20224322.png",
-      "cat": "india",
-      "bullets": [
-        "Priya had earlier said that leaving silt unattended on roadsides would defeat the purpose of desilting"
-      ],
-      "summary": "Residents complain of rats and snake skins found in sludge after desilting work; Mayor R. Priya had earlier said that leaving silt unattended on roadsides would defeat the purpose of desilting",
-      "fullText": "Residents complain of rats and snake skins found in sludge after desilting work; Mayor R. Priya had earlier said that leaving silt unattended on roadsides would defeat the purpose of desilting"
-    },
-    {
-      "id": "1blibfz",
-      "title": "Palace, Siblings And A 'Kansa Mama' Jibe: Jagan Reddy-Sister Row Over Wedding",
-      "url": "https://www.ndtv.com/india-news/chandrababu-naidus-kansa-mama-jab-at-jagan-reddy-over-wedding-venue-row-with-sister-12230479#publisher=newsstand",
-      "src": "NDTV",
-      "dom": "ndtv.com",
-      "ts": 1792869234000,
-      "img": "https://c.ndtvimg.com/2024-03/4qol01pg_jagan-naidu_650x400_10_March_24.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
-      "cat": "top",
-      "bullets": [
-        "The wedding is planned for November 25, with a reception in Hyderabad on December 5.",
-        "Sharmila personally invited several guests to the Bengaluru event."
-      ],
-      "summary": "Anjili Reddy is set to marry Dr Somala Raghuram Reddy. The wedding is planned for November 25, with a reception in Hyderabad on December 5. Sharmila personally invited several guests to the Bengaluru event.",
-      "fullText": "Anjili Reddy is set to marry Dr Somala Raghuram Reddy. The wedding is planned for November 25, with a reception in Hyderabad on December 5. Sharmila personally invited several guests to the Bengaluru event."
-    },
-    {
-      "id": "1qhu2ep",
-      "title": "Vanessa Trump says she is cancer-free six months after revealing diagnosis",
-      "url": "https://www.bbc.co.uk/news/articles/cm1dwzvn6227o?at_medium=RSS&at_campaign=rss",
-      "src": "BBC News",
-      "dom": "bbc.co.uk",
-      "ts": 1792869171000,
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/aa13/live/eb525690-cfb8-11f1-9012-0172b9f73a72.jpg",
-      "cat": "world",
-      "bullets": [],
-      "summary": "The ex-wife of Donald Trump Jr, with whom she shares five children, announced in May that she had been diagnosed with breast cancer.",
-      "fullText": "The ex-wife of Donald Trump Jr, with whom she shares five children, announced in May that she had been diagnosed with breast cancer."
-    },
-    {
-      "id": "7r6ywa",
-      "title": "India Issues Fresh Advisory For Umrah Pilgrims In Saudi Arabia",
-      "url": "https://www.ndtv.com/india-news/india-issues-fresh-advisory-for-umrah-pilgrims-in-saudi-arabia-12231410#publisher=newsstand",
-      "src": "NDTV",
-      "dom": "ndtv.com",
-      "ts": 1792869128000,
-      "img": "https://c.ndtvimg.com/2026-10/r0r0bnu8_riyadh-generic-afp_650x400_08_October_26.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
-      "cat": "top",
-      "bullets": [],
-      "summary": "The mission also said it remained in regular contact with Saudi Arabia's Ministry of Hajj and Umrah and Ministry of Foreign Affairs to address difficulties caused by the flight disruptions, particularly issues concerning visa validity and delayed departures.",
-      "fullText": "The mission also said it remained in regular contact with Saudi Arabia's Ministry of Hajj and Umrah and Ministry of Foreign Affairs to address difficulties caused by the flight disruptions, particularly issues concerning visa validity and delayed departures."
-    },
-    {
-      "id": "hnr36",
-      "title": "Same Name Appears 10 Times On Voter Roll. 5 UP Poll Officials Get Notices",
-      "url": "https://www.ndtv.com/india-news/same-name-appears-10-times-on-azamgarh-voter-roll-5-up-poll-officials-get-notices-12231409#publisher=newsstand",
-      "src": "NDTV",
-      "dom": "ndtv.com",
-      "ts": 1792869110000,
-      "img": "https://c.ndtvimg.com/2026-10/6g0uj48c_voter-roll-_625x300_07_October_26.jpeg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
-      "cat": "top",
-      "bullets": [],
-      "summary": "The Samajwadi Party had alleged that the name of a person was registered 10 times in the electoral roll of Azamgarh constituency.",
-      "fullText": "The Samajwadi Party had alleged that the name of a person was registered 10 times in the electoral roll of Azamgarh constituency."
-    },
-    {
-      "id": "1kisu9j",
-      "title": "Thousands of Israelis rally against Netanyahu gov’t days before election",
-      "url": "https://www.aljazeera.com/news/2026/10/24/thousands-of-israelis-rally-against-netanyahu-govt-days-before-election?traffic_source=rss",
-      "src": "Al Jazeera",
-      "dom": "aljazeera.com",
-      "ts": 1792869108000,
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6adceee49503-1792863972.jpg?resize=1920%2C1440",
-      "cat": "world",
-      "bullets": [],
-      "summary": "Opposition figures join Tel Aviv protesters demanding an independent October 7 inquiry.",
-      "fullText": "Opposition figures join Tel Aviv protesters demanding an independent October 7 inquiry."
-    },
-    {
-      "id": "1vn2492",
-      "title": "Defence Secretary Rajesh Kumar Singh Gets One-Year Extension",
-      "url": "https://www.ndtv.com/india-news/defence-secretary-rajesh-kumar-singh-gets-one-year-extension-12231401#publisher=newsstand",
-      "src": "NDTV",
-      "dom": "ndtv.com",
-      "ts": 1792868907000,
-      "img": "https://c.ndtvimg.com/2025-06/jfghujo_rajesh-kumar-singh_625x300_11_June_25.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
-      "cat": "top",
-      "bullets": [],
-      "summary": "The Appointments Committee of the Cabinet (ACC) approved the extension of Singh beyond his scheduled tenure ending on October 31, 2026.",
-      "fullText": "The Appointments Committee of the Cabinet (ACC) approved the extension of Singh beyond his scheduled tenure ending on October 31, 2026."
-    },
-    {
-      "id": "1ao1i1m",
-      "title": "Painting, Flooring, Roof Repairs: Civic Body Lists Works That Need No Building Permit",
-      "url": "https://www.ndtv.com/delhi-news/painting-flooring-roof-repairs-these-works-need-no-permits-in-new-delhi-ndmc-12231389#publisher=newsstand",
-      "src": "NDTV",
-      "dom": "ndtv.com",
-      "ts": 1792868878000,
-      "img": "https://i.ndtvimg.com/i/2015-09/ndmc_650x400_71442498006.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
-      "cat": "top",
-      "bullets": [],
-      "summary": "The civic body has clarified that several repair and renovation works can be carried out without prior permission, but property owners must follow building and safety rules.",
-      "fullText": "The civic body has clarified that several repair and renovation works can be carried out without prior permission, but property owners must follow building and safety rules."
-    },
-    {
-      "id": "17dctqp",
-      "title": "Saudi Says Shrapnel Fell In Mecca, Medina After Houthi Attack",
-      "url": "https://www.ndtv.com/world-news/saudi-says-shrapnel-fell-in-mecca-medina-after-houthi-attack-12231192#publisher=newsstand",
-      "src": "NDTV",
-      "dom": "ndtv.com",
-      "ts": 1792868646000,
-      "img": "https://c.ndtvimg.com/mecca-mosque_625x300_1528570649754.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
-      "cat": "top",
-      "bullets": [],
-      "summary": "This comes hours after the agency warned of \"potential danger\" for four of its western provinces, including Mecca.",
-      "fullText": "This comes hours after the agency warned of \"potential danger\" for four of its western provinces, including Mecca."
-    },
-    {
-      "id": "44xeaa",
-      "title": "Probe Agency ED Moves Top Court Against Quashing Of NewsClick Case",
-      "url": "https://www.ndtv.com/india-news/probe-agency-ed-moves-top-court-against-quashing-of-case-against-newsclick-12231393#publisher=newsstand",
-      "src": "NDTV",
-      "dom": "ndtv.com",
-      "ts": 1792868563000,
-      "img": "https://c.ndtvimg.com/2023-10/d81a9rd8_prabir-purkayastha_650x400_03_October_23.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
-      "cat": "top",
-      "bullets": [],
-      "summary": "The agency contended that high court quashed its case without examining the money laundering case, and there was an inordinate delay of five months in the pronouncement of the judgment.",
-      "fullText": "The agency contended that high court quashed its case without examining the money laundering case, and there was an inordinate delay of five months in the pronouncement of the judgment."
-    },
-    {
-      "id": "hu59fy",
-      "title": "Delhi Man Arrested Over 'Sting Op' Video Targeting Siddaramaiah",
-      "url": "https://www.ndtv.com/india-news/delhi-man-arrested-over-sting-op-video-targeting-siddaramaiah-12231394#publisher=newsstand",
-      "src": "NDTV",
-      "dom": "ndtv.com",
-      "ts": 1792868537000,
-      "img": "https://c.ndtvimg.com/2023-12/1stgbbq_siddaramaiah_625x300_29_December_23.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
-      "cat": "top",
-      "bullets": [],
-      "summary": "Siddaramaiah had on Friday termed the alleged sting operation targeting him as \"totally concocted\", saying it was intended to blackmail him and demanded a fair investigation to bring out the truth and identify those behind it.",
-      "fullText": "Siddaramaiah had on Friday termed the alleged sting operation targeting him as \"totally concocted\", saying it was intended to blackmail him and demanded a fair investigation to bring out the truth and identify those behind it."
     },
     {
       "id": "gft9mw",
@@ -918,17 +978,17 @@
       "fullText": ""
     },
     {
-      "id": "r3w257",
-      "title": "Repolling At 3 Booths In Agra Tomorrow For Legislative Council Polls",
-      "url": "https://www.ndtv.com/india-news/repolling-at-3-booths-in-agra-tomorrow-for-legislative-council-polls-12231370#publisher=newsstand",
-      "src": "NDTV",
-      "dom": "ndtv.com",
-      "ts": 1792867449000,
-      "img": "https://i.ndtvimg.com/i/2017-02/voting-generic_650x400_81488189947.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
-      "cat": "top",
+      "id": "uuprvh",
+      "title": "Anthropic PB admits to having an Indian subsidiary, contradicts earlier stand in court",
+      "url": "https://www.thehindu.com/news/national/karnataka/anthropic-pb-admits-to-having-an-indian-subsidiary-contradicts-earlier-stand-in-court-caught-lying-in-indian-court/article71607673.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1792866791000,
+      "img": "https://th-i.thgim.com/public/incoming/hw2yag/article71621310.ece/alternates/LANDSCAPE_1200/Mulla%20Anthropic.jpeg",
+      "cat": "business",
       "bullets": [],
-      "summary": "The voting that took place at these specific polling stations on October 23 has been declared void under Section 58A(2)(a) of the Representation of the People Act, 1951, a press release issued by the Chief Electoral Officer's office said.",
-      "fullText": "The voting that took place at these specific polling stations on October 23 has been declared void under Section 58A(2)(a) of the Representation of the People Act, 1951, a press release issued by the Chief Electoral Officer's office said."
+      "summary": "This violates corporate ethics, says founder of Belagavi-based company who has filed the complaint",
+      "fullText": "This violates corporate ethics, says founder of Belagavi-based company who has filed the complaint"
     },
     {
       "id": "c042j9",
@@ -957,16 +1017,16 @@
       "fullText": ""
     },
     {
-      "id": "13yg2k5",
-      "title": "Massive study identifies genetic variants associated with five major personality traits - News-Medical",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQYk14VXpOMjRCWWpabHdyRUtNcnkzRlJmTEo5MmYyZmtBUkRJS1QzQzVqejdMd01KLS1kYTU4a3VlanZXSThsbl9lRmRxRTZ2YldGcXJZSy1CR1RkX1JiN2FJQ0tTaU5FeE90MEJqdlFybGhyc0F4YzkzWHVQS2hsRktpeE9DVTc2SEN3THYwQnd6cGtJUXljR2x2U3U3bTMtUFRrM2gwVnYxMW5OQzRlbnBicmVhY0syaEkyVURsWXU1WUx6Zms4cXN3WHhPM0Fn?oc=5",
-      "src": "News-Medical",
+      "id": "h06wbj",
+      "title": "Assessing Clinico-Social Case Discussions Among Undergraduate Medical Students: A Comparative Study of Structured and Conventional Methods",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQQ1BZbEhWLWk5MVU2bHBEekJVVld3OVlrWjVSWUhaSVdLRWowUnN3WEFCUGdPNDJPc2dKd3RhbjgySHR5S28xYlVjUFNRVkxDQ3RIMWNaZ0s4S3ItM0VmZmNHNmNTWGVjQ3p5R2V3aGpJbnRyQThLb1NmTnJ1c21QM0NqOGcySlphYjJQUVd1bEdTVHJPS3lrMkhMYWRwc3MxX3ZkQ1VkTTIzWmFGUkdjUVZyNGRXZ2hGTllhWnBHclRkbjNLdTZ0Wm42cTJXVVB5d09rdkVVeThuWXU3aVFXTXkzdDlBaWJXWWZ1Sm52dnBqUDN0Rk5qU09rc3lUNG5KT2VTS25MVQ?oc=5",
+      "src": "Cureus",
       "dom": "news.google.com",
-      "ts": 1792862760000,
-      "img": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=720&h=1280&q=70",
+      "ts": 1792863189000,
+      "img": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=720&h=1280&q=70",
       "cat": "health",
       "bullets": [],
-      "summary": "Breaking health coverage reported by News-Medical. Tap Read for the full story.",
+      "summary": "Breaking health coverage reported by Cureus. Tap Read for the full story.",
       "fullText": ""
     },
     {
@@ -1009,19 +1069,6 @@
       "fullText": "“Total income rose to ₹6,382 crore in the quarter under review from ₹5,224 crore in the same period a year ago,” AU Small Finance Bank said in a regulatory filing"
     },
     {
-      "id": "vl80st",
-      "title": "Assessing Clinico-Social Case Discussions Among Undergraduate Medical Students: A Comparative Study of Structured and Conventional Methods",
-      "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQUjdPQk50SUl3cFhFTTdXTzJJZ2dGOXpRdFRUSG5pZXF6aWE4ZGg1RUV1T3FVazB0VVlOb2ZudWRfV1dzUjZNbzdvQnd5YjlqamFqaDU1b1ZGekJUMWFqM2xWb3U3TnFFc1N5R1g1T3hHakdXb2FfVU5FMTMwX1BuRFJvOG1PYkhOSW9QUEV2LUhnN3RUZk04US1WNmViRFA1WklnaXhrdVQtOUp4b3FhYU9qXzF5cjVwcDV5cFJfNVNDY2NvWEMzSEJ0X2l2Y1FjMzJHcHE5d3R5Mk9oVFNZWmRzTXAteTc1NmtjTTVtdkpqZXZLZG5xRUVQYWppLUtjWXhpWXZoblZROE5wREgxWDNDRE1QRTJNdW1IWnJTRHo?oc=5",
-      "src": "Cureus",
-      "dom": "news.google.com",
-      "ts": 1792860496000,
-      "img": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "health",
-      "bullets": [],
-      "summary": "Breaking health coverage reported by Cureus. Tap Read for the full story.",
-      "fullText": ""
-    },
-    {
       "id": "1670mdj",
       "title": "ISRO will not be privatised, says chairperson Narayanan",
       "url": "https://www.thehindu.com/news/cities/chennai/isro-will-not-be-privatised-says-chairperson-narayanan/article71620020.ece",
@@ -1048,17 +1095,17 @@
       "fullText": "Instacart might sell itself to a larger competitor."
     },
     {
-      "id": "13d61c3",
-      "title": "LDF Silver Jubilee medical camp benefits over 1000 patients",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPYmhnVE9hZnZ3V09xcnBzUlk0SUpDR1Z5YmpkRWEtWF9FT2E4MWx1YXRhcGdHZFdnanNJMmw5aTRpQkZqeEprRjVYY1FpbGdGYncyYjhsSzFITVM0QUltYTV0aU9aVEVzc25DTzJYNVVuQ2owUFJnSGFscFZaZHgtM3ZhS0xzdVktTVp6ZndR?oc=5",
-      "src": "MorungExpress",
-      "dom": "news.google.com",
-      "ts": 1792859151000,
-      "img": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "health",
+      "id": "2gfb14",
+      "title": "Ultra Gas targeting to add 15 LNG retail stations by end of fiscal: CEO",
+      "url": "https://www.thehindu.com/business/Industry/ultra-gas-to-invest-900-crore-in-100-lng-stations-by-fy29/article71612101.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1792859012000,
+      "img": "https://th-i.thgim.com/public/news/national/6uzizd/article71612115.ece/alternates/LANDSCAPE_1200/0W0A7199.JPG.jpeg",
+      "cat": "business",
       "bullets": [],
-      "summary": "Breaking health coverage reported by MorungExpress. Tap Read for the full story.",
-      "fullText": ""
+      "summary": "Speaking to The Hindu, Maqsood Shaikh, CEO and Managing Director of Ultra Gas, emphasised that a dedicated policy for LNG-based transportation is an imperative for the fuel segment to grow.",
+      "fullText": "Speaking to The Hindu, Maqsood Shaikh, CEO and Managing Director of Ultra Gas, emphasised that a dedicated policy for LNG-based transportation is an imperative for the fuel segment to grow."
     },
     {
       "id": "elswm0",
@@ -1478,19 +1525,6 @@
       "fullText": "Kotak Mahindra Bank has announced an impressive 26% year-on-year increase in consolidated profit after tax for the second quarter, highlighting strong financial performance. Their standalone profit after tax surged by 29% compared to last year’s figures. Additionally, net interest income saw a rise of 16% year-on-year, hitting Rs 8,459 crore. Customer assets also grew significantly, reaching Rs 6,99,250 crore, while the capital adequacy ratio remains robust at 22."
     },
     {
-      "id": "l296ov",
-      "title": "Data suggests broad-based increase in food prices: RBI Bulletin",
-      "url": "https://www.thehindu.com/business/Economy/data-suggests-broad-based-increase-in-food-prices-rbi-bulletin/article71616686.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1792829973000,
-      "img": "https://th-i.thgim.com/public/incoming/j1zram/article71619422.ece/alternates/LANDSCAPE_1200/_DSC1046A.JPG",
-      "cat": "business",
-      "bullets": [],
-      "summary": "Inflation in rural areas was found to be higher than in urban areas; headline CPI inflation edged up over the months and showed signs of greater generalisation across commodities",
-      "fullText": "Inflation in rural areas was found to be higher than in urban areas; headline CPI inflation edged up over the months and showed signs of greater generalisation across commodities"
-    },
-    {
       "id": "1xupnay",
       "title": "Ashoke Sen becomes first Indian physicist to receive Oskar Klein Medal",
       "url": "https://www.thehindu.com/news/national/ashoke-sen-becomes-first-indian-physicist-to-receive-oskar-klein-medal/article71619342.ece",
@@ -1504,35 +1538,17 @@
       "fullText": "Mr. Sen is internationally recognised for his pioneering work on S-duality, the precise counting of black hole entropy and string field theory, which have helped shape modern string theory"
     },
     {
-      "id": "1sl1687",
-      "title": "FIIs dump Indian stocks for 10th straight week as markets slide: Is the worst over or more pain ahead?",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/fiis-dump-indian-stocks-for-10th-straight-week-as-markets-slide-is-the-worst-over-or-more-pain-ahead/articleshow/135165684.cms",
-      "src": "Economic Times",
-      "dom": "economictimes.indiatimes.com",
-      "ts": 1792829474000,
-      "img": "https://img.etimg.com/thumb/msid-135165778,width-1200,height-900,imgsize-1976064,overlay-etmarkets/articleshow.jpg",
-      "cat": "business",
-      "bullets": [
-        "The Bank Nifty fell 2.8%, while the Nifty Midcap 100 and Nifty Smallcap 100 plunged 5.6% and 7.3%, respectively, as selling pressure intensified beyond frontline stocks."
-      ],
-      "summary": "The Nifty 50 declined in all four sessions of the holiday-shortened week, hitting an intraweek low of 22,372 on Friday before closing 2.4% lower at 22,600. The Bank Nifty fell 2.8%, while the Nifty Midcap 100 and Nifty Smallcap 100 plunged 5.6% and 7.3%, respectively, as selling pressure intensified beyond frontline stocks.",
-      "fullText": "The Nifty 50 declined in all four sessions of the holiday-shortened week, hitting an intraweek low of 22,372 on Friday before closing 2.4% lower at 22,600. The Bank Nifty fell 2.8%, while the Nifty Midcap 100 and Nifty Smallcap 100 plunged 5.6% and 7.3%, respectively, as selling pressure intensified beyond frontline stocks."
-    },
-    {
-      "id": "7zdzsb",
-      "title": "Smallcap mutual funds attract 44% of equity inflows despite stretched valuations. Should investors be cautious?",
-      "url": "https://economictimes.indiatimes.com/mf/mf-news/smallcap-mutual-funds-attract-44-of-equity-inflows-despite-stretched-valuations-should-investors-be-cautious/articleshow/135165538.cms",
-      "src": "Economic Times",
-      "dom": "economictimes.indiatimes.com",
-      "ts": 1792829096000,
-      "img": "https://img.etimg.com/thumb/msid-135165675,width-1200,height-900,imgsize-2140208,overlay-etwealthmutualfunds/articleshow.jpg",
-      "cat": "business",
-      "bullets": [
-        "Last month, small and mid-cap funds garnered Rs 16,873 crore, accounting for 44% of the total equity fund inflows.",
-        "Despite a drop in equity fund assets, overall inflows have seen a 31% uptick, indicating healthy market dynamics."
-      ],
-      "summary": "Investor confidence in small and mid-cap stocks is strong, with rising valuations when compared to large caps. Last month, small and mid-cap funds garnered Rs 16,873 crore, accounting for 44% of the total equity fund inflows. Despite a drop in equity fund assets, overall inflows have seen a 31% uptick, indicating healthy market dynamics.",
-      "fullText": "Investor confidence in small and mid-cap stocks is strong, with rising valuations when compared to large caps. Last month, small and mid-cap funds garnered Rs 16,873 crore, accounting for 44% of the total equity fund inflows. Despite a drop in equity fund assets, overall inflows have seen a 31% uptick, indicating healthy market dynamics."
+      "id": "1gbek8m",
+      "title": "SpaceX's satellite connection renewed at over 400 km/h, Ukraine's defence minister says",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNSXVjYlFFT3ozOHNzcTB4bUsyc1l6OEM1MlVHMFB2MlB4T1NCMzF2bks4b2lvLTYtaXMyeXlMMDZFSXlfeGZaaVRqZWlQcUktWGdGZjVGWnZZdWY4T1lBMVZYdy1pc2RKdkh1eVpDeGZtTkIxbDRSZWxaQ25lMEdBZ2ZldFVHNUlzNzZTMC1DdDlkcXBsbkhCVnY2RHRhdkQ5cUk2Wlh5SzN0anR0OENzeWhxOWZwQXFwZXRKbE9kYXJHQQ?oc=5",
+      "src": "Reuters",
+      "dom": "news.google.com",
+      "ts": 1792829469000,
+      "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=720&h=1280&q=70",
+      "cat": "tech",
+      "bullets": [],
+      "summary": "Breaking tech coverage reported by Reuters. Tap Read for the full story.",
+      "fullText": ""
     },
     {
       "id": "mmn9pk",
@@ -1546,19 +1562,6 @@
       "bullets": [],
       "summary": "While most people are preparing to stay indoors as another storm approaches, others are getting ready to head straight into it.",
       "fullText": "While most people are preparing to stay indoors as another storm approaches, others are getting ready to head straight into it."
-    },
-    {
-      "id": "senshi",
-      "title": "China's Chery expects overseas-manufactured vehicles to top 50% of exports, exec says",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQZHk5ZHpHczUxaXlFNzU2WEpmd0RwZWlmcUlPSlIzTTMtZElTcV9OR3U1OUYyblNndl9DZzFSekswOE85SS1Qb2VIeng4WkVXN1hRX3VpMlI3TC1SZ1BzMUpOY05kR2VmUWFLdU5TTHFKQ0Q5NjZPZkNuek9STzR1TEJyZC10dUF1eW5qeU5CanFlb3lnRUl2cVJreWdPQ2hadTRPOVNNazU1T0tZa0haTmtrX212OUVLVTNQQUxSSUwyalVmNk14NllPUzRoSHhfR3ZNdDBDX01GUQ?oc=5",
-      "src": "Reuters",
-      "dom": "news.google.com",
-      "ts": 1792819426000,
-      "img": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "tech",
-      "bullets": [],
-      "summary": "Breaking tech coverage reported by Reuters. Tap Read for the full story.",
-      "fullText": ""
     },
     {
       "id": "yo10au",
@@ -1601,19 +1604,6 @@
       "bullets": [],
       "summary": "Breaking tech coverage reported by Reuters. Tap Read for the full story.",
       "fullText": ""
-    },
-    {
-      "id": "fnxb79",
-      "title": "Storm Austen brings power cuts and travel disruption as more wind and rain forecast",
-      "url": "https://www.bbc.co.uk/news/articles/cxj0l193y0l8o?at_medium=RSS&at_campaign=rss",
-      "src": "BBC News",
-      "dom": "bbc.co.uk",
-      "ts": 1792789847000,
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/69ed/live/357e0110-ceec-11f1-bdca-23c64447299f.jpg",
-      "cat": "science",
-      "bullets": [],
-      "summary": "A second storm, Storm Boelo, is expected to hit Scotland, Northern Ireland and northern England on Saturday bringing more wild weather.",
-      "fullText": "A second storm, Storm Boelo, is expected to hit Scotland, Northern Ireland and northern England on Saturday bringing more wild weather."
     }
   ]
 }
