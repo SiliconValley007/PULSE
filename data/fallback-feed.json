@@ -1,20 +1,893 @@
 {
-  "updated": "2026-11-09T23:37:37.813Z",
+  "updated": "2026-11-10T04:57:25.112Z",
   "count": 120,
   "isSeed": false,
   "stories": [
     {
-      "id": "d8bxbe",
-      "title": "Judge denies motion to dismiss Lindsay Clancy's murder case",
-      "url": "https://www.bbc.co.uk/news/articles/ck1l3le7q29vo?at_medium=RSS&at_campaign=rss",
-      "src": "BBC News",
-      "dom": "bbc.co.uk",
-      "ts": 1794266933000,
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f13d/live/216524b0-dc7f-11f1-ba95-5f07efd49f42.jpg",
+      "id": "1jp9ni9",
+      "title": "Outcry as J&K Bank implements reservation policy pushed by ex-chairman and VHP trustee R.K. Chhibber",
+      "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/outcry-as-jk-bank-implements-reservation-policy-pushed-by-ex-chairman-and-vhp-trustee-rk-chhibber/article71683483.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1794286456000,
+      "img": "https://th-i.thgim.com/public/incoming/vjl2b6/article70435955.ece/alternates/LANDSCAPE_1200/6751_8-6-2019_16-40-40_3_06-JK-BANK-SGR-08-06-2019.JPG",
+      "cat": "india",
+      "bullets": [],
+      "summary": "The bank has decided to fill 1,400 vacancies, including 323 probationary officers and 1,033 posts for banking associates, as per the new reservation policy",
+      "fullText": "The bank has decided to fill 1,400 vacancies, including 323 probationary officers and 1,033 posts for banking associates, as per the new reservation policy"
+    },
+    {
+      "id": "1n2gzxh",
+      "title": "What is the bar licence controversy in Keralam | Explained",
+      "url": "https://www.thehindu.com/news/national/kerala/what-is-the-bar-licence-controversy-in-keralam-explained/article71683232.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1794286411000,
+      "img": "https://th-i.thgim.com/public/news/national/kerala/sl0f5w/article71684995.ece/alternates/LANDSCAPE_1200/cm.jpg",
+      "cat": "india",
+      "bullets": [
+        "Liju has signaled a review of licence-granting procedures"
+      ],
+      "summary": "Congress-led UDF govt in Keralam has barred the issuance of new liquor licences, including bars and wine and beer parlours, until a formal alcohol policy is unveiled, a move that follows the removal of Excise Commissioner Seeram Sambasiva Rao. Excise Minister M. Liju has signaled a review of licence-granting procedures",
+      "fullText": "Congress-led UDF govt in Keralam has barred the issuance of new liquor licences, including bars and wine and beer parlours, until a formal alcohol policy is unveiled, a move that follows the removal of Excise Commissioner Seeram Sambasiva Rao. Excise Minister M. Liju has signaled a review of licence-granting procedures"
+    },
+    {
+      "id": "1e2wcsu",
+      "title": "Indian Student, 21, Got Flat Tyre On Dubai Road. Speeding Car Killed Her",
+      "url": "https://www.ndtv.com/world-news/indian-student-21-got-flat-tyre-on-dubai-road-speeding-car-killed-her-12306298#publisher=newsstand",
+      "src": "NDTV",
+      "dom": "ndtv.com",
+      "ts": 1794286138000,
+      "img": "https://c.ndtvimg.com/2026-11/pv9ivsdc_dubai-woman-accident_625x300_10_November_26.jpg?im=FitAndFill,algorithm=dnn,width=1280,height=720",
+      "cat": "top",
+      "bullets": [],
+      "summary": "The family said they have been told that the driver of the speeding vehicle has been arrested and a probe is underway in the case.",
+      "fullText": "The family said they have been told that the driver of the speeding vehicle has been arrested and a probe is underway in the case."
+    },
+    {
+      "id": "hyi37r",
+      "title": "Strait of Hormuz LNG traffic hits highest in October since Iran war began",
+      "url": "https://www.thehindu.com/business/Economy/strait-of-hormuz-lng-traffic-hits-highest-in-october-since-iran-war-began/article71684981.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1794286133000,
+      "img": "https://th-i.thgim.com/public/hindi/editorial/9ugbut/article71684992.ece/alternates/LANDSCAPE_1200/StraitofHormuz.jpg",
+      "cat": "business",
+      "bullets": [],
+      "summary": "October exports ‌were ⁠the highest since February when the war ⁠started and were up from September’s corresponding tally of 23 vessels exiting the strait",
+      "fullText": "October exports ‌were ⁠the highest since February when the war ⁠started and were up from September’s corresponding tally of 23 vessels exiting the strait"
+    },
+    {
+      "id": "1egnl8l",
+      "title": "'Like Gods...': How North Korean Defectors See Kim Jong Un's Daughter As His Heir",
+      "url": "https://www.ndtv.com/world-news/like-gods-how-north-korean-defectors-see-kim-jong-uns-daughter-as-his-heir-12306307#publisher=newsstand",
+      "src": "NDTV",
+      "dom": "ndtv.com",
+      "ts": 1794286060000,
+      "img": "https://c.ndtvimg.com/2023-02/b98sojco_kim-jong-un-daughter-afp_625x300_09_February_23.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
+      "cat": "top",
+      "bullets": [],
+      "summary": "The question of who will become North Korea's next leader is crucial because that person will face a huge challenge - governing an impoverished, nuclear-armed nation whose 26 million people have little political freedom.",
+      "fullText": "The question of who will become North Korea's next leader is crucial because that person will face a huge challenge - governing an impoverished, nuclear-armed nation whose 26 million people have little political freedom."
+    },
+    {
+      "id": "3izfwg",
+      "title": "Yamuna River Cruise: Delhi to get its first recreational cruise service between Sonia Vihar and Jagatpur",
+      "url": "https://www.livemint.com/news/india/yamuna-river-cruise-delhi-to-get-its-first-recreational-cruise-service-between-sonia-vihar-and-jagatpur-11794283564988.html",
+      "src": "Mint",
+      "dom": "livemint.com",
+      "ts": 1794285885000,
+      "img": "https://www.livemint.com/lm-img/img/2026/11/10/1600x900/logo/Yamuna_Cruise_1794285845514_xoFi_1794285851550_JsUk_a3dcd1cf-e508-4361-be1c-d6f0938130e1_glnd.png",
+      "cat": "india",
+      "bullets": [
+        "Union Minister Sarbananda Sonowal will inaugurate the electric-powered cruise along the Sonia Vihar-Jagatpur stretch to promote river-based tourism."
+      ],
+      "summary": "Delhi will get its first recreational Yamuna cruise service on Tuesday, November 10. Union Minister Sarbananda Sonowal will inaugurate the electric-powered cruise along the Sonia Vihar-Jagatpur stretch to promote river-based tourism.",
+      "fullText": "Delhi will get its first recreational Yamuna cruise service on Tuesday, November 10. Union Minister Sarbananda Sonowal will inaugurate the electric-powered cruise along the Sonia Vihar-Jagatpur stretch to promote river-based tourism."
+    },
+    {
+      "id": "73u6ru",
+      "title": "Nine Shigella cases confirmed in Malappuram; Health dept. steps up preventive measures",
+      "url": "https://www.thehindu.com/news/national/kerala/nine-shigella-cases-confirmed-in-malappuram-health-dept-steps-up-preventive-measures/article71682966.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1794285787000,
+      "img": "https://www.thehindu.com/theme/images/og-image.png",
+      "cat": "india",
+      "bullets": [
+        "The family health centre at Elamkulam, near Perinthalmanna, formed a special squad to conduct house-to-house surveillance and create awareness about the infection."
+      ],
+      "summary": "Cleaning operations, including super-chlorination of wells and houses in the affected areas, are under way. The family health centre at Elamkulam, near Perinthalmanna, formed a special squad to conduct house-to-house surveillance and create awareness about the infection.",
+      "fullText": "Cleaning operations, including super-chlorination of wells and houses in the affected areas, are under way. The family health centre at Elamkulam, near Perinthalmanna, formed a special squad to conduct house-to-house surveillance and create awareness about the infection."
+    },
+    {
+      "id": "f76b26",
+      "title": "Keralam cardiologists seek review of order banning re-use of single-use medical devices",
+      "url": "https://www.thehindu.com/news/national/kerala/cardiologists-seek-review-of-dghs-order-banning-re-use-of-single-use-medical-devices-to-reduce-angioplasty-costs/article71683041.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1794285774000,
+      "img": "https://th-i.thgim.com/public/incoming/mp6yge/article71683402.ece/alternates/LANDSCAPE_1200/Urologists-workGH2GOMJI2.3.jpg.jpg",
+      "cat": "india",
+      "bullets": [
+        "Permitting the regulated re-use of select interventional devices, wherever scientifically proven safe, could help reduce costs, say doctors"
+      ],
+      "summary": "With an increasing proportion of the population requiring advanced cardiac interventions, making complex procedures affordable has become a challenge. Permitting the regulated re-use of select interventional devices, wherever scientifically proven safe, could help reduce costs, say doctors",
+      "fullText": "With an increasing proportion of the population requiring advanced cardiac interventions, making complex procedures affordable has become a challenge. Permitting the regulated re-use of select interventional devices, wherever scientifically proven safe, could help reduce costs, say doctors"
+    },
+    {
+      "id": "1kqc3wg",
+      "title": "Made To Wait At Temple, Devotees Throw Slippers At Screen Showing DK Shivakumar Praying",
+      "url": "https://www.ndtv.com/karnataka-news/made-to-wait-for-prayers-at-hasanamba-temple-devotees-throw-slippers-at-screen-showing-dk-shivakumar-12306279#publisher=newsstand",
+      "src": "NDTV",
+      "dom": "ndtv.com",
+      "ts": 1794285733000,
+      "img": "https://c.ndtvimg.com/2026-11/iaq64m5k_dk-shivakumar_625x300_10_November_26.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
+      "cat": "top",
+      "bullets": [],
+      "summary": "Videos of the brief protest including some people throwing slippers have been shared widely on social media",
+      "fullText": "Videos of the brief protest including some people throwing slippers have been shared widely on social media"
+    },
+    {
+      "id": "1s3ln8r",
+      "title": "Oxford Museum Returns 39 Colonial-Era Human Remains To Naga People In India",
+      "url": "https://www.ndtv.com/world-news/oxford-museum-returns-39-colonial-era-human-remains-to-naga-people-in-india-12306280#publisher=newsstand",
+      "src": "NDTV",
+      "dom": "ndtv.com",
+      "ts": 1794285634000,
+      "img": "https://c.ndtvimg.com/2026-11/lpscr8uk_oxford_625x300_10_November_26.jpeg",
+      "cat": "top",
+      "bullets": [],
+      "summary": "The handover at the Pitt Rivers Museum came as part of a broader trend among Western museums reassessing how they acquired exhibits from other cultures, particularly human remains, and in some cases returning them.",
+      "fullText": "The handover at the Pitt Rivers Museum came as part of a broader trend among Western museums reassessing how they acquired exhibits from other cultures, particularly human remains, and in some cases returning them."
+    },
+    {
+      "id": "dql1eh",
+      "title": "Three killed, one injured as ‘speeding’ SUV hits motorcycle in UP’s Kannauj: Police",
+      "url": "https://www.hindustantimes.com/india-news/three-killed-one-injured-as-speeding-suv-hits-motorcycle-in-up-s-kannauj-police-101794285456055.html",
+      "src": "Hindustan Times",
+      "dom": "hindustantimes.com",
+      "ts": 1794285626000,
+      "img": "https://www.hindustantimes.com/ht-img/img/2026/11/10/1600x900/logo/UP_Police_1728711533065_1794285566944_H7eI_ed84ec5c-d170-47ca-bbe2-fd9bafd28d79_PD2R.jpg",
+      "cat": "india",
+      "bullets": [],
+      "summary": "Eyewitnesses said the impact was so severe that all four men were thrown 15-20 metres away, and the motorcycle was completely mangled.",
+      "fullText": "Eyewitnesses said the impact was so severe that all four men were thrown 15-20 metres away, and the motorcycle was completely mangled."
+    },
+    {
+      "id": "145o831",
+      "title": "NMC cautions students against fake medical colleges, asks them to verify approvals",
+      "url": "https://www.thehindu.com/news/national/nmc-cautions-students-against-fake-medical-colleges-asks-them-to-verify-approvals/article71682538.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1794285477000,
+      "img": "https://th-i.thgim.com/public/news/national/bcwrc0/article71682969.ece/alternates/LANDSCAPE_1200/iStock-1468904894.jpg",
+      "cat": "india",
+      "bullets": [],
+      "summary": "The advisory follows the Supreme Court taking cognisance of the issue in an ongoing case in which the court directed regulatory bodies, including the National Medical Commission, to caution students and parents against dealing with unauthorised educational institutions",
+      "fullText": "The advisory follows the Supreme Court taking cognisance of the issue in an ongoing case in which the court directed regulatory bodies, including the National Medical Commission, to caution students and parents against dealing with unauthorised educational institutions"
+    },
+    {
+      "id": "hjkc1v",
+      "title": "Jensen Huang&#8217;s alleged honeypot scandal has inspired some top-notch memes",
+      "url": "https://techcrunch.com/2026/11/09/jensen-huangs-alleged-honeypot-scandal-has-inspired-some-top-notch-memes/",
+      "src": "TechCrunch",
+      "dom": "techcrunch.com",
+      "ts": 1794285255000,
+      "img": "https://techcrunch.com/wp-content/uploads/2026/11/bortonia-getty.jpg?resize=1200,1200",
+      "cat": "tech",
+      "bullets": [],
+      "summary": "The internet is having a field day with Nvidia&#039;s Jensen Huang&#039;s alleged honeypot scandal.",
+      "fullText": "The internet is having a field day with Nvidia&#039;s Jensen Huang&#039;s alleged honeypot scandal."
+    },
+    {
+      "id": "oqfri7",
+      "title": "Mystery of a missing sewage treatment plant tells the tale of the lake in Krishnakanth Park",
+      "url": "https://www.thehindu.com/news/national/telangana/mystery-of-a-missing-sewage-treatment-plant-tells-the-tale-of-the-lake-in-krishnakanth-park/article71683447.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1794284952000,
+      "img": "https://th-i.thgim.com/public/incoming/bagggi/article71684888.ece/alternates/LANDSCAPE_1200/_DSC8187.JPG",
+      "cat": "india",
+      "bullets": [],
+      "summary": "Currently restricted to about three acres and divided into three separate ponds with interconnecting canals, the water body is now set to be increased to 12 acres",
+      "fullText": "Currently restricted to about three acres and divided into three separate ponds with interconnecting canals, the water body is now set to be increased to 12 acres"
+    },
+    {
+      "id": "1r7chbv",
+      "title": "India's water management initiatives a model for developing nations: World Bank official",
+      "url": "https://www.hindustantimes.com/india-news/indias-water-management-initiatives-a-model-for-developing-nations-world-bank-official-101794284734986.html",
+      "src": "Hindustan Times",
+      "dom": "hindustantimes.com",
+      "ts": 1794284734000,
+      "img": "https://www.hindustantimes.com/ht-img/img/2025/06/30/1600x900/logo/ht-generic_india1_1751287243850_1751287256749.jpg",
+      "cat": "india",
+      "bullets": [],
+      "summary": "India&#x27;s water management initiatives a model for developing nations: World Bank official | India News",
+      "fullText": "India&#x27;s water management initiatives a model for developing nations: World Bank official | India News"
+    },
+    {
+      "id": "12e8l9i",
+      "title": "On CCTV, Bengal Rape-Murder Accused Seen On Cycle With 12-Year-Old Victim",
+      "url": "https://www.ndtv.com/india-news/on-cctv-bengal-rape-murder-accused-seen-on-cycle-with-12-year-old-victim-dinajpur-rape-case-12306202#publisher=newsstand",
+      "src": "NDTV",
+      "dom": "ndtv.com",
+      "ts": 1794284699000,
+      "img": "https://c.ndtvimg.com/2026-11/c2nio98o_rape_625x300_10_November_26.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
+      "cat": "top",
+      "bullets": [],
+      "summary": "The footage, accessed by NDTV, showed the accused, wearing a pink shirt and black pants, riding the cycle, while the victim sat behind him.",
+      "fullText": "The footage, accessed by NDTV, showed the accused, wearing a pink shirt and black pants, riding the cycle, while the victim sat behind him."
+    },
+    {
+      "id": "gk9owx",
+      "title": "Anger as ICE agents make arrest in New Jersey grocery store",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/10/anger-as-ice-agents-make-arrest-in-new-jersey-grocery-store?traffic_source=rss",
+      "src": "Al Jazeera",
+      "dom": "aljazeera.com",
+      "ts": 1794284616000,
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794284604.jpg?resize=1918%2C1080&quality=80",
       "cat": "world",
       "bullets": [],
-      "summary": "The ruling means the case can move forward, possibly with reduced charges in a new trial.",
-      "fullText": "The ruling means the case can move forward, possibly with reduced charges in a new trial."
+      "summary": "ICE agents stormed a New Jersey store before being confronted by a crowd demanding they leave, as they escort a man out.",
+      "fullText": "ICE agents stormed a New Jersey store before being confronted by a crowd demanding they leave, as they escort a man out."
+    },
+    {
+      "id": "1k9m9qt",
+      "title": "Panchgaon tops pollution chart with AQI of 365, Delhi ranks eleventh",
+      "url": "https://www.livemint.com/news/panchgaon-tops-pollution-chart-with-aqi-of-365-delhi-ranks-eleventh-emission-air-quality-11794278697261.html",
+      "src": "Mint",
+      "dom": "livemint.com",
+      "ts": 1794284278000,
+      "img": "https://www.livemint.com/lm-img/img/2026/11/10/1600x900/logo/PTI11-09-2026-000153A-0_1794281061583_htse_1794281076929_7lDP_78589750-9d98-4244-a8f0-ff42ef45f6e3_2KKn.jpg",
+      "cat": "india",
+      "bullets": [],
+      "summary": "Panchgaon recorded an AQI of 365, the highest among listed cities, while several Delhi neighbourhoods crossed 350 as GRAP Stage 3 restrictions remained in force.",
+      "fullText": "Panchgaon recorded an AQI of 365, the highest among listed cities, while several Delhi neighbourhoods crossed 350 as GRAP Stage 3 restrictions remained in force."
+    },
+    {
+      "id": "17hc18c",
+      "title": "Five, including four minor girls, die after drowning in lake in Tamil Nadu's Tiruvannamalai",
+      "url": "https://www.hindustantimes.com/india-news/five-including-four-minor-girls-die-after-drowning-in-lake-in-tamil-nadus-tiruvannamalai-101794283123407.html",
+      "src": "Hindustan Times",
+      "dom": "hindustantimes.com",
+      "ts": 1794284252000,
+      "img": "https://www.hindustantimes.com/ht-img/img/2026/11/10/1600x900/logo/ANI-20261109458-0_1794281814257_LE0J_1794281853893_1794284132040_nsIN_1794284132186_bHX7_04c6da1d-58ff-4bc5-9f3f-27a666b0eccc_lRgn.jpg",
+      "cat": "india",
+      "bullets": [],
+      "summary": "Police said the victims include three sisters, aged between 13 and 16; the caretaker of the Children Home for Girls; and another girl from the school, aged 16.",
+      "fullText": "Police said the victims include three sisters, aged between 13 and 16; the caretaker of the Children Home for Girls; and another girl from the school, aged 16."
+    },
+    {
+      "id": "bhze9w",
+      "title": "Anti-Cancer Drug Prices Fall, But Patients In Smaller Cities May Still Pay More. Here's Why",
+      "url": "https://www.ndtv.com/business-news/anti-cancer-drug-medicine-prices-fall-small-city-patients-struggle-for-access-12306075#publisher=newsstand",
+      "src": "NDTV",
+      "dom": "ndtv.com",
+      "ts": 1794284086000,
+      "img": "https://c.ndtvimg.com/2026-10/9tc1hu1_cancer-drug-price-cut-govt-caps-trade-margins-at-30-revises-prices-of-543-drug-brands_625x300_28_October_26.jpg?im=FaceCrop,algorithm=dnn,width=1280,height=720",
+      "cat": "top",
+      "bullets": [],
+      "summary": "After the reduction in cancer drug prices, the next challenge is ensuring that patients can access these medicines without travelling long distances.",
+      "fullText": "After the reduction in cancer drug prices, the next challenge is ensuring that patients can access these medicines without travelling long distances."
+    },
+    {
+      "id": "wyuczf",
+      "title": "Ex-BJD Rajya Sabha MP surrenders in abduction, murder case after top court cancels bail",
+      "url": "https://www.hindustantimes.com/india-news/exbjd-rajya-sabha-mp-surrenders-in-abduction-murder-case-after-top-court-cancels-bail-the-high-court-had-earlier-granted-them-regular-bail-but-the-101794283452483.html",
+      "src": "Hindustan Times",
+      "dom": "hindustantimes.com",
+      "ts": 1794283995000,
+      "img": "https://www.hindustantimes.com/ht-img/img/2026/11/10/1600x900/logo/bail_1794283546911_24Ax_1794283547057_VW3Y_8e0810a2-5119-45c2-8ff4-5c1411ef3d85_7pEU.jpeg",
+      "cat": "india",
+      "bullets": [
+        "His charred body was found floating in a dam in Andhra Pradesh."
+      ],
+      "summary": "Bhagirathi Mandangi was abducted and murdered on December 15, 2010. His charred body was found floating in a dam in Andhra Pradesh.",
+      "fullText": "Bhagirathi Mandangi was abducted and murdered on December 15, 2010. His charred body was found floating in a dam in Andhra Pradesh."
+    },
+    {
+      "id": "1az54ph",
+      "title": "POSH Act needs effective implementation, greater awareness in private sector: NCW chief",
+      "url": "https://www.hindustantimes.com/india-news/posh-act-needs-effective-implementation-greater-awareness-in-private-sector-ncw-chief-101794283972673.html",
+      "src": "Hindustan Times",
+      "dom": "hindustantimes.com",
+      "ts": 1794283972000,
+      "img": "https://www.hindustantimes.com/ht-img/img/2025/08/06/1600x900/logo/Untitled_design_1754465014585_1754465103581.png",
+      "cat": "india",
+      "bullets": [],
+      "summary": "Breaking India coverage reported by Hindustan Times. Tap Read for the full story.",
+      "fullText": ""
+    },
+    {
+      "id": "kagnge",
+      "title": "IND vs NZ third ODI: Rain delays play as India wins toss, elects to bowl against New Zealand",
+      "url": "https://www.thehindu.com/sport/cricket/india-vs-new-zealand-third-odi-in-hamilton-on-november-10-2026/article71684940.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1794283893000,
+      "img": "https://th-i.thgim.com/public/sport/cricket/5aednw/article71684941.ece/alternates/LANDSCAPE_1200/IndvsNZ.jpg",
+      "cat": "sports",
+      "bullets": [
+        "India plays the same XI while New Zealand made one change"
+      ],
+      "summary": "India tour of New Zealand: New Zealand vs India third ODI in Hamilton. India plays the same XI while New Zealand made one change",
+      "fullText": "India tour of New Zealand: New Zealand vs India third ODI in Hamilton. India plays the same XI while New Zealand made one change"
+    },
+    {
+      "id": "q2kd7o",
+      "title": "Trump says more US attacks on Iran 'highly unlikely'",
+      "url": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o?at_medium=RSS&at_campaign=rss",
+      "src": "BBC News",
+      "dom": "bbc.co.uk",
+      "ts": 1794283756000,
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6017/live/b94816e0-dca5-11f1-b441-2b33b063138f.jpg",
+      "cat": "world",
+      "bullets": [],
+      "summary": "The president says the US is keeping \"status quo\" with Iran but remains “locked and loaded” should the situation in the Middle East change.",
+      "fullText": "The president says the US is keeping \"status quo\" with Iran but remains “locked and loaded” should the situation in the Middle East change."
+    },
+    {
+      "id": "igfxgg",
+      "title": "Nordstrom&#8217;s 2026 Holiday Gift Guide Is Live: Our 26 Favorite Finds Under $100",
+      "url": "https://www.hollywoodreporter.com/lifestyle/shopping/nordstrom-gift-guide-2026-holiday-gift-sets-ideas-under-100-1236751125/",
+      "src": "The Hollywood Reporter",
+      "dom": "hollywoodreporter.com",
+      "ts": 1794283391000,
+      "img": "https://www.hollywoodreporter.com/wp-content/uploads/2026/11/Nordstroms-2026-Holiday-Gift-Guide-Is-Here-Our-26-Favorite-Finds-Under-100-MAIN.jpg?w=1296&#038;h=730&#038;crop=1",
+      "cat": "entertainment",
+      "bullets": [],
+      "summary": "Retailer-exclusive beauty bundles, seasonal scents from Diptyque, Uggs for the whole family and more of this year&#039;s top trending presents that won&#039;t break the bank.",
+      "fullText": "Retailer-exclusive beauty bundles, seasonal scents from Diptyque, Uggs for the whole family and more of this year&#039;s top trending presents that won&#039;t break the bank."
+    },
+    {
+      "id": "1awm29p",
+      "title": "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
+      "url": "https://www.bbc.co.uk/news/articles/cqg7x7dpvym8o?at_medium=RSS&at_campaign=rss",
+      "src": "BBC News",
+      "dom": "bbc.co.uk",
+      "ts": 1794283093000,
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f773/live/9c28e680-dc95-11f1-a701-fddedf244c16.jpg",
+      "cat": "world",
+      "bullets": [],
+      "summary": "The US president said he spoke with Jensen Huang on Monday and asked him about the affair with the alleged spy.",
+      "fullText": "The US president said he spoke with Jensen Huang on Monday and asked him about the affair with the alleged spy."
+    },
+    {
+      "id": "wmpfdd",
+      "title": "Telangana Agriculture University Vice-Chancellor Accused Of Sexual Harassment",
+      "url": "https://www.ndtv.com/telangana-news/telangana-agriculture-university-vice-chancellor-accused-of-sexual-harassment-12306120#publisher=newsstand",
+      "src": "NDTV",
+      "dom": "ndtv.com",
+      "ts": 1794282621000,
+      "img": "https://c.ndtvimg.com/2026-11/ice9qa7s_professor-jayashankar-telangana-state-agricultural-university_625x300_10_November_26.jpeg",
+      "cat": "top",
+      "bullets": [],
+      "summary": "The assistant professor on November 7 held a press conference and alleged that Vice-Chancellor made inappropriate personal remarks, pressured her to leave her husband working abroad and subsequently transferred her to Nizamabad after she refused his alleged advances.",
+      "fullText": "The assistant professor on November 7 held a press conference and alleged that Vice-Chancellor made inappropriate personal remarks, pressured her to leave her husband working abroad and subsequently transferred her to Nizamabad after she refused his alleged advances."
+    },
+    {
+      "id": "1vcz1bp",
+      "title": "High Court Gets Bomb Threat Over Diljit Dosanjh's Indore Concert",
+      "url": "https://www.ndtv.com/india-news/gwalior-bench-of-madhya-pradesh-high-court-gets-bomb-threat-over-diljit-dosanjhs-indore-concert-12306103#publisher=newsstand",
+      "src": "NDTV",
+      "dom": "ndtv.com",
+      "ts": 1794282108000,
+      "img": "https://c.ndtvimg.com/2026-11/skapu4a_diljit-doshanj_625x300_10_November_26.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
+      "cat": "top",
+      "bullets": [],
+      "summary": "The IP address of the person who sent the email appears to be linked to a foreign network, the police said",
+      "fullText": "The IP address of the person who sent the email appears to be linked to a foreign network, the police said"
+    },
+    {
+      "id": "o1hlyb",
+      "title": "&#8216;Ramayana&#8217; Makes History as First Indian Film to Top U.K., Ireland Box Office as &#8216;Godzilla Minus Zero&#8217; Debuts in Third",
+      "url": "https://variety.com/2026/film/box-office/ramayana-godzilla-minus-zero-uk-ireland-box-office-1236943753/",
+      "src": "Variety",
+      "dom": "variety.com",
+      "ts": 1794281116000,
+      "img": "https://variety.com/wp-content/uploads/2026/11/Ramayana-Godzilla.jpg",
+      "cat": "entertainment",
+      "bullets": [
+        "and Ireland box office, collecting £2.1 million ($2.8 million) to lead a crowded slate of new releases and push Anime Ltd.&#8217;s &#8220;Godzilla Minus Zero&#8221; into third place.",
+        "The previous box office ceiling [&#8230;]"
+      ],
+      "summary": "Sony&#8217;s animated mythological adventure &#8220;Ramayana: Rise of a Legend&#8221; made history by becoming the first Indian feature ever to debut atop the U.K. and Ireland box office, collecting £2.1 million ($2.8 million) to lead a crowded slate of new releases and push Anime Ltd.&#8217;s &#8220;Godzilla Minus Zero&#8221; into third place. The previous box office ceiling [&#8230;]",
+      "fullText": "Sony&#8217;s animated mythological adventure &#8220;Ramayana: Rise of a Legend&#8221; made history by becoming the first Indian feature ever to debut atop the U.K. and Ireland box office, collecting £2.1 million ($2.8 million) to lead a crowded slate of new releases and push Anime Ltd.&#8217;s &#8220;Godzilla Minus Zero&#8221; into third place. The previous box office ceiling [&#8230;]"
+    },
+    {
+      "id": "1sb3d3m",
+      "title": "Saudi Arabia downs missiles fired at Riyadh after Houthi attack on pipeline",
+      "url": "https://www.aljazeera.com/news/2026/11/10/saudi-arabia-downs-missiles-fired-at-riyadh-after-houthi-attack-on-pipeline?traffic_source=rss",
+      "src": "Al Jazeera",
+      "dom": "aljazeera.com",
+      "ts": 1794280671000,
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/AP26287636573938-1794279573.jpg?resize=1920%2C1440",
+      "cat": "world",
+      "bullets": [],
+      "summary": "Saudi forces intercept two missiles fired towards Riyadh, hours after reporting damage to key East-West pipeline.",
+      "fullText": "Saudi forces intercept two missiles fired towards Riyadh, hours after reporting damage to key East-West pipeline."
+    },
+    {
+      "id": "1es158f",
+      "title": "Newly-elected Democrats react to Hegseth impeachment bid",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/10/newly-elected-democrats-react-to-hegseth-impeachment-bid?traffic_source=rss",
+      "src": "Al Jazeera",
+      "dom": "aljazeera.com",
+      "ts": 1794280604000,
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794280529.jpg?resize=1620%2C1080&quality=80",
+      "cat": "world",
+      "bullets": [],
+      "summary": "Newly-elected Democrats say holding Defense Secretary Pete Hegseth accountable, will be a priority in the next Congress.",
+      "fullText": "Newly-elected Democrats say holding Defense Secretary Pete Hegseth accountable, will be a priority in the next Congress."
+    },
+    {
+      "id": "1xt3fig",
+      "title": "Sex, Lies And Spy's Oldest Trick: A Look At Infamous 'Honey-Trap' Cases Amid Nvidia CEO Row",
+      "url": "https://www.ndtv.com/world-news/sex-lies-and-spys-oldest-trick-a-look-at-infamous-honey-trap-cases-amid-nvidia-ceo-jensen-huang-row-12306024#publisher=newsstand",
+      "src": "NDTV",
+      "dom": "ndtv.com",
+      "ts": 1794280199000,
+      "img": "https://c.ndtvimg.com/2026-11/hnlgelic_nvidia-ceo-jensen-huang-and-lover-alice-_625x300_09_November_26.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
+      "cat": "top",
+      "bullets": [],
+      "summary": "The latest controversy to ripple through the tech world centres on Nvidia chief Jensen Huang and his affair with a woman accused by Washington of working for Chinese intelligence, which Beijing denies.",
+      "fullText": "The latest controversy to ripple through the tech world centres on Nvidia chief Jensen Huang and his affair with a woman accused by Washington of working for Chinese intelligence, which Beijing denies."
+    },
+    {
+      "id": "rmmjod",
+      "title": "Russell Brand's ex Jemima Goldsmith accuses him of violence and abuse against her",
+      "url": "https://www.bbc.co.uk/news/articles/c95ynylr8j6xo?at_medium=RSS&at_campaign=rss",
+      "src": "BBC News",
+      "dom": "bbc.co.uk",
+      "ts": 1794279582000,
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fc6f/live/9dd1bab0-dc78-11f1-b23d-9526db010e6c.jpg",
+      "cat": "top",
+      "bullets": [],
+      "summary": "Goldsmith accuses the disgraced entertainer of \"violence, coercive control and abuse\" while the two were together.",
+      "fullText": "Goldsmith accuses the disgraced entertainer of \"violence, coercive control and abuse\" while the two were together."
+    },
+    {
+      "id": "19u3146",
+      "title": "Trump Asked Nvidia CEO If He Knew Alice Huang Was A Spy. His Reply",
+      "url": "https://www.ndtv.com/world-news/trump-says-nvidia-ceo-jensen-huang-had-no-idea-woman-he-had-affair-with-was-chinese-spy-alice-huang-12305877#publisher=newsstand",
+      "src": "NDTV",
+      "dom": "ndtv.com",
+      "ts": 1794279505000,
+      "img": "https://c.ndtvimg.com/2026-11/dcb46cco_jensen-huang-and-trump_625x300_10_November_26.jpeg",
+      "cat": "top",
+      "bullets": [],
+      "summary": "Trump also danced around the question of when he personally was aware of intelligence linking the chip boss to Alice Huang, a Chinese executive who had allegedly been funneling information to Beijing.",
+      "fullText": "Trump also danced around the question of when he personally was aware of intelligence linking the chip boss to Alice Huang, a Chinese executive who had allegedly been funneling information to Beijing."
+    },
+    {
+      "id": "14e9cem",
+      "title": "Julia Garner Says Madonna Biopic Status Changes ‘Every Hour,’ But She’d ‘Love for the Movie to Get Made’",
+      "url": "https://variety.com/2026/film/news/julia-garner-madonna-biopic-status-1236943732/",
+      "src": "Variety",
+      "dom": "variety.com",
+      "ts": 1794279214000,
+      "img": "https://variety.com/wp-content/uploads/2026/11/GettyImages-2227966452.jpg",
+      "cat": "entertainment",
+      "bullets": [
+        "During a recent interview with CBS, the actress was asked about the film’s status, to which she responded: “I don’t know.",
+        "Every hour it changes, in a way.” “It’s not up to me."
+      ],
+      "summary": "Julia Garner has given an ambiguous update on the long-delayed Madonna biopic, which has made little progress since its 2020 announcement. During a recent interview with CBS, the actress was asked about the film’s status, to which she responded: “I don’t know. Every hour it changes, in a way.” “It’s not up to me. I [&#8230;]",
+      "fullText": "Julia Garner has given an ambiguous update on the long-delayed Madonna biopic, which has made little progress since its 2020 announcement. During a recent interview with CBS, the actress was asked about the film’s status, to which she responded: “I don’t know. Every hour it changes, in a way.” “It’s not up to me. I [&#8230;]"
+    },
+    {
+      "id": "1ypy81w",
+      "title": "Vellore Shooting Adds To Tamil Nadu's Law And Order Debate After Diwali Killings",
+      "url": "https://www.ndtv.com/india-news/vellore-shooting-adds-to-tamil-nadus-law-and-order-debate-after-diwali-2026-killings-12305962#publisher=newsstand",
+      "src": "NDTV",
+      "dom": "ndtv.com",
+      "ts": 1794279127000,
+      "img": "https://c.ndtvimg.com/2026-11/cobrbmtg_vellore-shooting_625x300_10_November_26.jpeg",
+      "cat": "top",
+      "bullets": [],
+      "summary": "The shooting comes amid a growing political confrontation over law and order in Tamil Nadu, following multiple murders reported across the state on Diwali on November 8.",
+      "fullText": "The shooting comes amid a growing political confrontation over law and order in Tamil Nadu, following multiple murders reported across the state on Diwali on November 8."
+    },
+    {
+      "id": "1smh7q3",
+      "title": "Harare demolitions leave families homeless after years of building",
+      "url": "https://www.aljazeera.com/news/2026/11/10/harare-demolitions-leave-families-homeless-after-years-of-building?traffic_source=rss",
+      "src": "Al Jazeera",
+      "dom": "aljazeera.com",
+      "ts": 1794278899000,
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/The-cabin-being-used-by-Nhete-after-the-demolitions-1794243719.jpg?resize=1920%2C1440",
+      "cat": "world",
+      "bullets": [],
+      "summary": "Residents who say they legally bought land have seen their homes demolished.",
+      "fullText": "Residents who say they legally bought land have seen their homes demolished."
+    },
+    {
+      "id": "1ux3gr0",
+      "title": "Russia, Ukraine and US to meet as Zelenskyy claims battlefield successes",
+      "url": "https://www.aljazeera.com/news/2026/11/10/russia-ukraine-and-us-to-meet-as-zelenskyy-claims-battlefield-successes?traffic_source=rss",
+      "src": "Al Jazeera",
+      "dom": "aljazeera.com",
+      "ts": 1794278714000,
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6af26ebf-1794272959.jpg?resize=1920%2C1440",
+      "cat": "world",
+      "bullets": [],
+      "summary": "Zelenskyy claims Russia &#039;suffering record losses&#039; as Trump says US seeing &#039;strong inclination&#039; to end war in Ukraine.",
+      "fullText": "Zelenskyy claims Russia &#039;suffering record losses&#039; as Trump says US seeing &#039;strong inclination&#039; to end war in Ukraine."
+    },
+    {
+      "id": "mib1wv",
+      "title": "Steve Buscemi Reveals Which Show He Refuses to Appear on: &#8220;I Don&#8217;t Care How Much You Paid Me&#8221;",
+      "url": "https://www.hollywoodreporter.com/business/digital/steve-buscemi-refuses-appear-hot-ones-1236751410/",
+      "src": "The Hollywood Reporter",
+      "dom": "hollywoodreporter.com",
+      "ts": 1794278346000,
+      "img": "https://www.hollywoodreporter.com/wp-content/uploads/2026/11/Steve-Buscemi-getty-H-2026.png?w=1296&#038;h=730&#038;crop=1",
+      "cat": "entertainment",
+      "bullets": [],
+      "summary": "Here&#039;s a hint: the &#039;Wild Horse Nine&#039; actor doesn&#039;t do spicy food.",
+      "fullText": "Here&#039;s a hint: the &#039;Wild Horse Nine&#039; actor doesn&#039;t do spicy food."
+    },
+    {
+      "id": "242a60",
+      "title": "LISTEN: &#8216;Roland Martin Unfiltered&#8217; Rides Midterm Elections Momentum After Historic Vote",
+      "url": "https://variety.com/2026/tv/news/roland-martin-unfiltered-midterm-election-strictly-business-1236943709/",
+      "src": "Variety",
+      "dom": "variety.com",
+      "ts": 1794278224000,
+      "img": "https://variety.com/wp-content/uploads/2026/11/Screenshot-2026-11-09-at-6.02.10-PM.png",
+      "cat": "entertainment",
+      "bullets": [
+        "Martin&#8217;s daily political news and commentary roundtable program went on a barnstorming tour over the three weeks leading [&#8230;]"
+      ],
+      "summary": "On today&#8217;s episode of Variety&#8216;s &#8220;Strictly Business&#8221; podcast, digital news entrepreneur Roland Martin discusses the growth of his &#8220;Roland Martin Unfiltered&#8221; program and how it gained momentum during the buildup to this last week&#8217;s historic midterm elections. Martin&#8217;s daily political news and commentary roundtable program went on a barnstorming tour over the three weeks leading [&#8230;]",
+      "fullText": "On today&#8217;s episode of Variety&#8216;s &#8220;Strictly Business&#8221; podcast, digital news entrepreneur Roland Martin discusses the growth of his &#8220;Roland Martin Unfiltered&#8221; program and how it gained momentum during the buildup to this last week&#8217;s historic midterm elections. Martin&#8217;s daily political news and commentary roundtable program went on a barnstorming tour over the three weeks leading [&#8230;]"
+    },
+    {
+      "id": "1tyuxzh",
+      "title": "Oil Price Today (November 10): Crude oil falls below $92 as Trump says Iran war is effectively over. What lies ahead?",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-november-10-crude-oil-falls-below-92-as-trump-says-iran-war-is-effectively-over-what-lies-ahead/articleshow/135696913.cms",
+      "src": "Economic Times",
+      "dom": "economictimes.indiatimes.com",
+      "ts": 1794277429000,
+      "img": "https://img.etimg.com/thumb/msid-135696952,width-1200,height-900,imgsize-88536,overlay-etmarkets/articleshow.jpg",
+      "cat": "business",
+      "bullets": [
+        "US West Texas Intermediate (WTI) crude futures slipped 79 cents, or 0.91%, to $86 a barrel.",
+        "Brent settled down 5.85% in the previous session after sliding to its lowest since August 31."
+      ],
+      "summary": "Crude oil price: Brent crude futures fell 81 cents, or 0.88%, to drop below $92 a barrel. US West Texas Intermediate (WTI) crude futures slipped 79 cents, or 0.91%, to $86 a barrel. Brent settled down 5.85% in the previous session after sliding to its lowest since August 31.",
+      "fullText": "Crude oil price: Brent crude futures fell 81 cents, or 0.88%, to drop below $92 a barrel. US West Texas Intermediate (WTI) crude futures slipped 79 cents, or 0.91%, to $86 a barrel. Brent settled down 5.85% in the previous session after sliding to its lowest since August 31."
+    },
+    {
+      "id": "yc3f9x",
+      "title": "How the American French Film Festival Is Bringing French Cinema to 3,000 Los Angeles High School Students With Packed Screenings of &#8216;In Waves&#8217;",
+      "url": "https://variety.com/2026/film/global/american-french-film-festival-high-school-students-in-waves-1236943707/",
+      "src": "Variety",
+      "dom": "variety.com",
+      "ts": 1794276682000,
+      "img": "https://variety.com/wp-content/uploads/2026/11/TAFFF2026_Day3_004-1.jpeg",
+      "cat": "entertainment",
+      "bullets": [
+        "This milestone edition brought around 3,000 students to the DGA theater for five packed screenings of [&#8230;]"
+      ],
+      "summary": "The American French Film Festival, which celebrated its 30th anniversary this year, has been on a journey to cultivate a new generation of French movie lovers for two decades with its educational program for Los Angeles high school students. This milestone edition brought around 3,000 students to the DGA theater for five packed screenings of [&#8230;]",
+      "fullText": "The American French Film Festival, which celebrated its 30th anniversary this year, has been on a journey to cultivate a new generation of French movie lovers for two decades with its educational program for Los Angeles high school students. This milestone edition brought around 3,000 students to the DGA theater for five packed screenings of [&#8230;]"
+    },
+    {
+      "id": "c1oa9l",
+      "title": "Cameroon sets date for twice-delayed legislative and local elections",
+      "url": "https://www.aljazeera.com/news/2026/11/10/cameroon-sets-date-for-twice-delayed-legislative-and-local-elections?traffic_source=rss",
+      "src": "Al Jazeera",
+      "dom": "aljazeera.com",
+      "ts": 1794276239000,
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6af24eb8c85bd-1794264760.jpg?resize=1200%2C675",
+      "cat": "world",
+      "bullets": [],
+      "summary": "President Paul Biya, the world&#039;s oldest leader, sets February 7 for Cameroon&#039;s delayed legislative and local polls.",
+      "fullText": "President Paul Biya, the world&#039;s oldest leader, sets February 7 for Cameroon&#039;s delayed legislative and local polls."
+    },
+    {
+      "id": "pxpni8",
+      "title": "Israel’s Shin Bet finds no evidence of foreign election interference",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/10/israels-shin-bet-finds-no-evidence-of-foreign-election-interference?traffic_source=rss",
+      "src": "Al Jazeera",
+      "dom": "aljazeera.com",
+      "ts": 1794275999000,
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794275941.jpg?resize=1620%2C1080&quality=80",
+      "cat": "world",
+      "bullets": [],
+      "summary": "Israel&#039;s internal security service has found no evidence of foreign interference in last month’s election.",
+      "fullText": "Israel&#039;s internal security service has found no evidence of foreign interference in last month’s election."
+    },
+    {
+      "id": "14x4gxv",
+      "title": "Poll finds Americans less likely to back pro-war candidates by 3-1 margin",
+      "url": "https://www.aljazeera.com/news/2026/11/10/poll-finds-voters-preferred-candidates-who-opposed-iran-war-by-3-1-margin?traffic_source=rss",
+      "src": "Al Jazeera",
+      "dom": "aljazeera.com",
+      "ts": 1794275807000,
+      "img": "https://www.aljazeera.com/wp-content/uploads/2026/07/14166504-1784710839.jpg?resize=1920%2C1440",
+      "cat": "world",
+      "bullets": [],
+      "summary": "Americans say the US should prioritise avoiding higher prices over achieving Trump&#039;s military goals in Iran.",
+      "fullText": "Americans say the US should prioritise avoiding higher prices over achieving Trump&#039;s military goals in Iran."
+    },
+    {
+      "id": "u5wgyn",
+      "title": "David Schwimmer Reunites With Ross&#8217; Iconic Red Sweater From &#8216;Friends&#8217; in New Ad",
+      "url": "https://www.hollywoodreporter.com/lifestyle/lifestyle-news/david-schwimmer-reunites-ross-red-sweater-friends-ad-1236751395/",
+      "src": "The Hollywood Reporter",
+      "dom": "hollywoodreporter.com",
+      "ts": 1794275733000,
+      "img": "https://www.hollywoodreporter.com/wp-content/uploads/2025/02/GettyImages-2152962835.jpg?crop=0px%2C205px%2C5000px%2C2798px&#038;resize=1440%2C810",
+      "cat": "entertainment",
+      "bullets": [],
+      "summary": "The campaign is for the clothing and lifestyle brand Quince.",
+      "fullText": "The campaign is for the clothing and lifestyle brand Quince."
+    },
+    {
+      "id": "cary6b",
+      "title": "Qantas to outsource 850 local jobs with most roles moving to India",
+      "url": "https://www.bbc.co.uk/news/articles/cry838v4qzvyo?at_medium=RSS&at_campaign=rss",
+      "src": "BBC News",
+      "dom": "bbc.co.uk",
+      "ts": 1794275722000,
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/47eb/live/926fac30-dca6-11f1-86c1-89409a3a3bd9.jpg",
+      "cat": "world",
+      "bullets": [],
+      "summary": "The Australian airline said the move was aimed at modernising its IT systems and noted the impact of AI.",
+      "fullText": "The Australian airline said the move was aimed at modernising its IT systems and noted the impact of AI."
+    },
+    {
+      "id": "1srcsqr",
+      "title": "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
+      "url": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro?at_medium=RSS&at_campaign=rss",
+      "src": "BBC News",
+      "dom": "bbc.co.uk",
+      "ts": 1794274729000,
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0303/live/c8a877f0-dc7e-11f1-93e1-3b657b665bcf.png",
+      "cat": "world",
+      "bullets": [],
+      "summary": "The effort will likely fail, but Representative Thomas Massie wants to push Trump to fire Hegseth before Democrats can launch their own impeachment process next year.",
+      "fullText": "The effort will likely fail, but Representative Thomas Massie wants to push Trump to fire Hegseth before Democrats can launch their own impeachment process next year."
+    },
+    {
+      "id": "11l2lyt",
+      "title": "Rupee among Asia's top performing currencies as AI trade cools",
+      "url": "https://economictimes.indiatimes.com/markets/forex/rupee-among-asias-top-3-as-india-turns-ai-hedge/articleshow/135696371.cms",
+      "src": "Economic Times",
+      "dom": "economictimes.indiatimes.com",
+      "ts": 1794274604000,
+      "img": "https://img.etimg.com/thumb/msid-135696409,width-1200,height-900,imgsize-54276,overlay-etmarkets/articleshow.jpg",
+      "cat": "business",
+      "bullets": [
+        "A notable decline in crude oil prices has also positively impacted the rupee's performance.",
+        "Experts believe the Reserve Bank of India will manage the currency's appreciation to rebuild its foreign exchange reserves.",
+        "Recent interventions in the currency market have capped further gains in the rupee."
+      ],
+      "summary": "The Indian rupee has gained considerable strength in FY27, aided by increased foreign portfolio investor inflows. A notable decline in crude oil prices has also positively impacted the rupee's performance. Experts believe the Reserve Bank of India will manage the currency's appreciation to rebuild its foreign exchange reserves. Recent interventions in the currency market have capped further gains in the…",
+      "fullText": "The Indian rupee has gained considerable strength in FY27, aided by increased foreign portfolio investor inflows. A notable decline in crude oil prices has also positively impacted the rupee's performance. Experts believe the Reserve Bank of India will manage the currency's appreciation to rebuild its foreign exchange reserves. Recent interventions in the currency market have capped further gains in the rupee."
+    },
+    {
+      "id": "b2d94w",
+      "title": "Stock Market Holiday 2026: Are NSE, BSE closed today on account of Diwali-Balipratipada? Check remaining holidays for the year",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stock-market-holiday-2026-are-nse-bse-closed-today-on-account-of-diwali-balipratipada-check-remaining-holidays-for-the-year/articleshow/135695905.cms",
+      "src": "Economic Times",
+      "dom": "economictimes.indiatimes.com",
+      "ts": 1794274200000,
+      "img": "https://img.etimg.com/thumb/msid-135695922,width-1200,height-900,imgsize-235576,overlay-etmarkets/articleshow.jpg",
+      "cat": "business",
+      "bullets": [
+        "However, trading will continue on the Multi-Commodity Exchange that evening.",
+        "After an initial spike, both indices faced a slight decrease during the recent Muhurat Trading.",
+        "Notably, the market capitalization has enjoyed a robust increase recently, with further holidays causing closures on November 24 and December 25."
+      ],
+      "summary": "Stock market open or close today: The Bombay Stock Exchange and the National Stock Exchange will not operate on November 10 in celebration of Diwali-Balipratipada. However, trading will continue on the Multi-Commodity Exchange that evening. After an initial spike, both indices faced a slight decrease during the recent Muhurat Trading. Notably, the market capitalization has enjoyed a robust increase recently,…",
+      "fullText": "Stock market open or close today: The Bombay Stock Exchange and the National Stock Exchange will not operate on November 10 in celebration of Diwali-Balipratipada. However, trading will continue on the Multi-Commodity Exchange that evening. After an initial spike, both indices faced a slight decrease during the recent Muhurat Trading. Notably, the market capitalization has enjoyed a robust increase recently, with further holidays causing closures on November 24 and December 25."
+    },
+    {
+      "id": "lrggen",
+      "title": "French Judo Legend Teddy Riner Announces 2027 Presidential Bid, Drawing Praise From Emmanuel Macron",
+      "url": "https://variety.com/2026/film/global/french-judo-legend-teddy-riner-2027-presidential-bid-macron-1236943664/",
+      "src": "Variety",
+      "dom": "variety.com",
+      "ts": 1794274108000,
+      "img": "https://variety.com/wp-content/uploads/2022/02/Teddy-Riner.jpg",
+      "cat": "entertainment",
+      "bullets": [
+        "The athlete, who has never held political office but is one of France’s most recognizable and popular sporting figures, portrayed himself [&#8230;]"
+      ],
+      "summary": "French judo superstar Teddy Riner, a five-time Olympic gold medalist and multiple world champion, has announced that he is running for president of France in 2027 in a fiery speech posted on social media. The athlete, who has never held political office but is one of France’s most recognizable and popular sporting figures, portrayed himself [&#8230;]",
+      "fullText": "French judo superstar Teddy Riner, a five-time Olympic gold medalist and multiple world champion, has announced that he is running for president of France in 2027 in a fiery speech posted on social media. The athlete, who has never held political office but is one of France’s most recognizable and popular sporting figures, portrayed himself [&#8230;]"
+    },
+    {
+      "id": "1ugykff",
+      "title": "Anthropic reportedly plans to move forward with IPO plans",
+      "url": "https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans/",
+      "src": "TechCrunch",
+      "dom": "techcrunch.com",
+      "ts": 1794274032000,
+      "img": "https://techcrunch.com/wp-content/uploads/2026/11/Dario-Amodei.jpg?w=1024",
+      "cat": "tech",
+      "bullets": [],
+      "summary": "The AI company is expected to set its valuation range this week, the Wall Street Journal reported.",
+      "fullText": "The AI company is expected to set its valuation range this week, the Wall Street Journal reported."
+    },
+    {
+      "id": "16iedn2",
+      "title": "Q2 Earnings Scorecard: Which sectors outperformed and which fell behind?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/corporate-india-keeps-bottom-line-strong-with-price-hikes-and-premiumisation-as-costs-rise/articleshow/135696251.cms",
+      "src": "Economic Times",
+      "dom": "economictimes.indiatimes.com",
+      "ts": 1794273316000,
+      "img": "https://img.etimg.com/thumb/msid-135696250,width-1200,height-900,imgsize-4265881,overlay-etmarkets/articleshow.jpg",
+      "cat": "business",
+      "bullets": [
+        "In contrast, sectors such as IT and pharmaceuticals showed weakness amid inflationary pressures.",
+        "Automobile sector leaders like Maruti Suzuki and Bajaj Auto reported significant growth in sales and exports.",
+        "L&T's orders surged, while the cement sector faced challenges with fluctuating prices."
+      ],
+      "summary": "The September quarter results indicate strong revenue and profit growth in sectors like automobiles and banking. In contrast, sectors such as IT and pharmaceuticals showed weakness amid inflationary pressures. Automobile sector leaders like Maruti Suzuki and Bajaj Auto reported significant growth in sales and exports. L&T's orders surged, while the cement sector faced challenges with fluctuating prices.",
+      "fullText": "The September quarter results indicate strong revenue and profit growth in sectors like automobiles and banking. In contrast, sectors such as IT and pharmaceuticals showed weakness amid inflationary pressures. Automobile sector leaders like Maruti Suzuki and Bajaj Auto reported significant growth in sales and exports. L&T's orders surged, while the cement sector faced challenges with fluctuating prices."
+    },
+    {
+      "id": "zeqxpf",
+      "title": "Johnny Depp Premieres &#8216;Ebenezer&#8217; in London, Kim Kardashian Wears Gucci to LACMA Art+Film and More Celeb Red Carpet Photos: November 2026",
+      "url": "https://variety.com/gallery/jceleb-red-carpet-photos-november-2026/",
+      "src": "Variety",
+      "dom": "variety.com",
+      "ts": 1794272540000,
+      "img": "https://variety.com/wp-content/uploads/2026/11/Ebenezer-Global-Premiere-1000.jpg",
+      "cat": "entertainment",
+      "bullets": [
+        "In New York City, Kim Kardashian, Sarah Paulson, Teyana Taylor, Niecy Nash-Betts and Glenn [&#8230;]"
+      ],
+      "summary": "November began with a slew of award season FYC screenings and Q&#38;As in Los Angeles, including a round of appearances from Jordan Firstman in support of his feature “Club Kid” and an Angelina Jolie-hosted “Wild Horse Nine” premiere in Los Angeles. In New York City, Kim Kardashian, Sarah Paulson, Teyana Taylor, Niecy Nash-Betts and Glenn [&#8230;]",
+      "fullText": "November began with a slew of award season FYC screenings and Q&#38;As in Los Angeles, including a round of appearances from Jordan Firstman in support of his feature “Club Kid” and an Angelina Jolie-hosted “Wild Horse Nine” premiere in Los Angeles. In New York City, Kim Kardashian, Sarah Paulson, Teyana Taylor, Niecy Nash-Betts and Glenn [&#8230;]"
+    },
+    {
+      "id": "13gmjsu",
+      "title": "One year after Red Fort blast, victims’ families struggle with grief, financial hardship",
+      "url": "https://www.thehindu.com/news/cities/Delhi/one-year-after-red-fort-blast-victims-families-struggle-with-grief-financial-hardship/article71683725.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1794272442000,
+      "img": "https://th-i.thgim.com/public/incoming/n7h64v/article71683987.ece/alternates/LANDSCAPE_1200/PTI11_09_2026_000277B.jpg",
+      "cat": "local",
+      "bullets": [],
+      "summary": "Families of those killed in the November 10, 2025, blast say they are still struggling to cope with their loss, while survivors continue to face health problems and financial difficulties; some allege that the government’s compensation and support have fallen short of their needs",
+      "fullText": "Families of those killed in the November 10, 2025, blast say they are still struggling to cope with their loss, while survivors continue to face health problems and financial difficulties; some allege that the government’s compensation and support have fallen short of their needs"
+    },
+    {
+      "id": "kwdwig",
+      "title": "Ariana Grande on First Time Meeting Ben Stiller: &#8220;Directing Me in an Orgy Scene in ‘Zoolander 2’”",
+      "url": "https://www.hollywoodreporter.com/movies/movie-news/ariana-grande-first-met-ben-stiller-orgy-scene-zoolander-2-1236751314/",
+      "src": "The Hollywood Reporter",
+      "dom": "hollywoodreporter.com",
+      "ts": 1794272383000,
+      "img": "https://www.hollywoodreporter.com/wp-content/uploads/2026/11/Stiller-Grande-Fallon-publicity-H-2026.png?w=1296&#038;h=730&#038;crop=1",
+      "cat": "entertainment",
+      "bullets": [],
+      "summary": "Grande and Stiller have since reunited in &#039;Focker-in-Law,&#039; which releases Nov. 25.",
+      "fullText": "Grande and Stiller have since reunited in &#039;Focker-in-Law,&#039; which releases Nov. 25."
+    },
+    {
+      "id": "8hyrlt",
+      "title": "Amazon Debuts $30 Streaming Bundle That Includes Starz, BritBox, AMC+, MGM+ and PBS Masterpiece In One Place",
+      "url": "https://variety.com/2026/shopping/news/amazon-prime-video-streaming-bundle-deal-2026-amc-mgm-starz-1236942849/",
+      "src": "Variety",
+      "dom": "variety.com",
+      "ts": 1794271914000,
+      "img": "https://variety.com/wp-content/uploads/2026/11/GettyImages-2251232288.jpg",
+      "cat": "entertainment",
+      "bullets": [
+        "Available now through the Prime Channels hub page, the deal gets you access to AMC+ Premium, BritBox Standard, MGM+, PBS Masterpiece and Starz for just $29.99/month.",
+        "Priced individually, the monthly [&#8230;]"
+      ],
+      "summary": "Amazon Prime Video is kicking off the holidays with a new streaming bundle deal that gets you five popular streaming services for under $30 total. Available now through the Prime Channels hub page, the deal gets you access to AMC+ Premium, BritBox Standard, MGM+, PBS Masterpiece and Starz for just $29.99/month. Priced individually, the monthly [&#8230;]",
+      "fullText": "Amazon Prime Video is kicking off the holidays with a new streaming bundle deal that gets you five popular streaming services for under $30 total. Available now through the Prime Channels hub page, the deal gets you access to AMC+ Premium, BritBox Standard, MGM+, PBS Masterpiece and Starz for just $29.99/month. Priced individually, the monthly [&#8230;]"
+    },
+    {
+      "id": "1jqs1k3",
+      "title": "Foreign investors keep faith in 83 stocks despite prolonged India selloff",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/fpis-keep-faith-in-83-stocks-despite-28-billion-selloff/articleshow/135696068.cms",
+      "src": "Economic Times",
+      "dom": "economictimes.indiatimes.com",
+      "ts": 1794271913000,
+      "img": "https://img.etimg.com/thumb/msid-135696085,width-1200,height-900,imgsize-30234,overlay-etmarkets/articleshow.jpg",
+      "cat": "business",
+      "bullets": [
+        "Despite foreign investors selling nearly $28 billion of Indian stocks, some companies saw increased holdings.",
+        "Large-cap firms like Lupin and SAIL attracted more interest from FPIs during this period.",
+        "Recent concerns over crude oil prices and inflation impacted the sentiment of foreign investors towards Indian equities."
+      ],
+      "summary": "Foreign portfolio investors have favored 83 companies, including LIC, ONGC, and Indian Bank, over the past four quarters. Despite foreign investors selling nearly $28 billion of Indian stocks, some companies saw increased holdings. Large-cap firms like Lupin and SAIL attracted more interest from FPIs during this period. Recent concerns over crude oil prices and inflation impacted the sentiment of foreign…",
+      "fullText": "Foreign portfolio investors have favored 83 companies, including LIC, ONGC, and Indian Bank, over the past four quarters. Despite foreign investors selling nearly $28 billion of Indian stocks, some companies saw increased holdings. Large-cap firms like Lupin and SAIL attracted more interest from FPIs during this period. Recent concerns over crude oil prices and inflation impacted the sentiment of foreign investors towards Indian equities."
+    },
+    {
+      "id": "8rawel",
+      "title": "&#8216;De Gaulle,&#8217; &#8216;La Gradiva&#8217; and &#8216;Alice: Pioneer Of Cinema&#8217; Among American French Film Fest Winners- Film News in Brief",
+      "url": "https://variety.com/2026/film/news/film-news-in-brief-nov-9-2026-1236943218/",
+      "src": "Variety",
+      "dom": "variety.com",
+      "ts": 1794271695000,
+      "img": "https://variety.com/wp-content/uploads/2026/05/de-gaulle.jpg",
+      "cat": "entertainment",
+      "bullets": [
+        "The films were voted on by audiences attending the festival, members of the Los Angeles Film Critics Association, a jury of entertainment professionals and a student jury consisting…"
+      ],
+      "summary": "The American French Film Festival announced the winners of this year’s awards during the closing ceremony on Nov. 8. The films were voted on by audiences attending the festival, members of the Los Angeles Film Critics Association, a jury of entertainment professionals and a student jury consisting of high school and college-age participants from the [&#8230;]",
+      "fullText": "The American French Film Festival announced the winners of this year’s awards during the closing ceremony on Nov. 8. The films were voted on by audiences attending the festival, members of the Los Angeles Film Critics Association, a jury of entertainment professionals and a student jury consisting of high school and college-age participants from the [&#8230;]"
+    },
+    {
+      "id": "wve6ia",
+      "title": "Global brokerages turn bullish on Indian equities as market rebounds",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/brokerages-turn-bullish-on-india-as-inflows-fuel-rally/articleshow/135696007.cms",
+      "src": "Economic Times",
+      "dom": "economictimes.indiatimes.com",
+      "ts": 1794271555000,
+      "img": "https://img.etimg.com/thumb/msid-135696060,width-1200,height-900,imgsize-118260,overlay-etmarkets/articleshow.jpg",
+      "cat": "business",
+      "bullets": [
+        "They cite improving earnings prospects and attractive valuations as key factors for this optimism.",
+        "Recent foreign fund inflows and reduced oil prices further support this positive sentiment.",
+        "Citigroup anticipates significant growth in the Nifty 50 by the end of 2027."
+      ],
+      "summary": "Global brokerages HSBC, Citigroup, and Jefferies have upgraded their outlook on Indian equities. They cite improving earnings prospects and attractive valuations as key factors for this optimism. Recent foreign fund inflows and reduced oil prices further support this positive sentiment. Citigroup anticipates significant growth in the Nifty 50 by the end of 2027. Overall, Indian equities are poised for a…",
+      "fullText": "Global brokerages HSBC, Citigroup, and Jefferies have upgraded their outlook on Indian equities. They cite improving earnings prospects and attractive valuations as key factors for this optimism. Recent foreign fund inflows and reduced oil prices further support this positive sentiment. Citigroup anticipates significant growth in the Nifty 50 by the end of 2027. Overall, Indian equities are poised for a sharp recovery in the coming years."
+    },
+    {
+      "id": "1pyinzn",
+      "title": "Kochi Corporation plans water security assessment to strengthen city’s resilience",
+      "url": "https://www.thehindu.com/news/national/kerala/kochi-corporation-plans-water-security-assessment-to-strengthen-citys-resilience/article71682168.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1794270847000,
+      "img": "https://th-i.thgim.com/public/incoming/qsw364/article71683913.ece/alternates/LANDSCAPE_1200/After-nod-for-AGMQGMS9MP.3.jpg.jpg",
+      "cat": "local",
+      "bullets": [],
+      "summary": "The project, which will be implemented with technical support from the Kerala Water Authority, is expected to be completed in six months",
+      "fullText": "The project, which will be implemented with technical support from the Kerala Water Authority, is expected to be completed in six months"
+    },
+    {
+      "id": "qsvqj7",
+      "title": "Demand grows for alternative greenfield road corridors to Infopark in Kochi",
+      "url": "https://www.thehindu.com/news/national/kerala/demand-grows-for-alternative-greenfield-road-corridors-to-infopark-in-kochi/article71682589.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1794270807000,
+      "img": "https://th-i.thgim.com/public/incoming/ict617/article71683843.ece/alternates/LANDSCAPE_1200/Road01.jpg",
+      "cat": "local",
+      "bullets": [],
+      "summary": "IT professionals flag safety concerns over narrow, potholed roads and traffic snarls, and call for parallel roads through vacant plots to improve connectivity to Infopark",
+      "fullText": "IT professionals flag safety concerns over narrow, potholed roads and traffic snarls, and call for parallel roads through vacant plots to improve connectivity to Infopark"
+    },
+    {
+      "id": "3yb1lr",
+      "title": "The superpower battle over energy – and what it means for your bills",
+      "url": "https://www.bbc.co.uk/news/articles/cw62y2z53pg1o?at_medium=RSS&at_campaign=rss",
+      "src": "BBC News",
+      "dom": "bbc.co.uk",
+      "ts": 1794269308000,
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9b1f/live/f53bf9d0-dc57-11f1-b441-2b33b063138f.jpg",
+      "cat": "science",
+      "bullets": [],
+      "summary": "A tug-of-war between China and the US could have a big impact on energy costs, but who will win?",
+      "fullText": "A tug-of-war between China and the US could have a big impact on energy costs, but who will win?"
+    },
+    {
+      "id": "e93wie",
+      "title": "What we know so far about Jensen Huang's affair with suspected Chinese spy",
+      "url": "https://www.bbc.co.uk/news/articles/ckgel338xql3o?at_medium=RSS&at_campaign=rss",
+      "src": "BBC News",
+      "dom": "bbc.co.uk",
+      "ts": 1794268282000,
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2521/live/6ba67640-dc03-11f1-b441-2b33b063138f.jpg",
+      "cat": "business",
+      "bullets": [],
+      "summary": "The billionaire tech executive finds himself mired in a personal and national security scandal.",
+      "fullText": "The billionaire tech executive finds himself mired in a personal and national security scandal."
     },
     {
       "id": "1b44200",
@@ -25,91 +898,9 @@
       "ts": 1794266917000,
       "img": "https://techcrunch.com/wp-content/uploads/2026/11/Jensen-Huang.jpg?w=1024",
       "cat": "tech",
-      "bullets": [
-        "2025 New York Times report described Alice Huang&#039;s business dealings with Jensen Huang, Wired reported."
-      ],
-      "summary": "The PR firm was enlisted shortly after an Oct. 2025 New York Times report described Alice Huang&#039;s business dealings with Jensen Huang, Wired reported.",
-      "fullText": "The PR firm was enlisted shortly after an Oct. 2025 New York Times report described Alice Huang&#039;s business dealings with Jensen Huang, Wired reported."
-    },
-    {
-      "id": "1awm29p",
-      "title": "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
-      "url": "https://www.bbc.co.uk/news/articles/cqg7x7dpvym8o?at_medium=RSS&at_campaign=rss",
-      "src": "BBC News",
-      "dom": "bbc.co.uk",
-      "ts": 1794266429000,
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d9ed/live/459f3140-dc93-11f1-b244-e54544344237.jpg",
-      "cat": "world",
       "bullets": [],
-      "summary": "The US president said he spoke with Jensen Huang on Monday and asked him about the affair with the alleged spy.",
-      "fullText": "The US president said he spoke with Jensen Huang on Monday and asked him about the affair with the alleged spy."
-    },
-    {
-      "id": "xhtbca",
-      "title": "Return of patriarch: Farooq steps in as NC old guard reasserts influence to check Omar",
-      "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/return-of-patriarch-farooq-steps-in-as-nc-old-guard-reasserts-influence-to-check-omar/article71683985.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1794266386000,
-      "img": "https://th-i.thgim.com/public/incoming/gvslw4/article71683984.ece/alternates/LANDSCAPE_1200/PTI10_27_2026_000084A.jpg",
-      "cat": "india",
-      "bullets": [
-        "It has brought the 89-year-old party patriarch, Farooq Abdullah, back into the saddle to steer the party and shape how the government functions, after he had nearly faded…"
-      ],
-      "summary": "The stand-off between the 17 MLAs of the ruling National Conference (NC) and Kashmir’s first political family, the Abdullahs, has had a rare consequence. It has brought the 89-year-old party patriarch, Farooq Abdullah, back into the saddle to steer the party and shape how the government functions, after he had nearly faded from affairs run entirely by Chief Minister Omar…",
-      "fullText": "The stand-off between the 17 MLAs of the ruling National Conference (NC) and Kashmir’s first political family, the Abdullahs, has had a rare consequence. It has brought the 89-year-old party patriarch, Farooq Abdullah, back into the saddle to steer the party and shape how the government functions, after he had nearly faded from affairs run entirely by Chief Minister Omar Abdullah."
-    },
-    {
-      "id": "1vzim89",
-      "title": "Five AI models tackled 227 pharmacy exam questions. Here's where they struggled - News-Medical",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPcDB4UUtCNnB2a0o4M0JOUVhwVURDOEFTdFFvU0NCWlR6U3ltN3dWeGdLdHM3QzNXR0haZ1FXVVdVZlBUR3FXZV9aOEEyQm5QQVJWYjZsRFNlVEFXcmN1RHBFclN2WmlybTlaMWZGYnYxXy1hdElOUzRIVW1wNVVWQWNFeXNLUDNCWEN4U0puU2I2c0JUWVdEdWlkbUZGTXdZYnpIODkxYURndWU3VVVKS0c5UmNwR2RtVHJWY3Z4V201MFk?oc=5",
-      "src": "News-Medical",
-      "dom": "news.google.com",
-      "ts": 1794266160000,
-      "img": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "health",
-      "bullets": [],
-      "summary": "Breaking health coverage reported by News-Medical. Tap Read for the full story.",
-      "fullText": ""
-    },
-    {
-      "id": "1170tsc",
-      "title": "US Supreme Court allows border wall in Big Bend National Park to proceed",
-      "url": "https://www.aljazeera.com/news/2026/11/9/us-supreme-court-allows-border-wall-in-big-bend-national-park-to-proceed?traffic_source=rss",
-      "src": "Al Jazeera",
-      "dom": "aljazeera.com",
-      "ts": 1794266119000,
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-03T005837Z_737004234_RC2R7NAH97N9_RTRMADP_3_USA-MIGRATION-BIG-BEND-1792629816.jpg?resize=1920%2C1440",
-      "cat": "world",
-      "bullets": [],
-      "summary": "Lawsuit had sought to block border wall construction in national park by targeting waivers that sidestep protections.",
-      "fullText": "Lawsuit had sought to block border wall construction in national park by targeting waivers that sidestep protections."
-    },
-    {
-      "id": "1yja3x4",
-      "title": "Trump defends Nvidia’s Huang after calling about spy scandal",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/trump-defends-nvidias-huang-after-calling-about-spy-scandal?traffic_source=rss",
-      "src": "Al Jazeera",
-      "dom": "aljazeera.com",
-      "ts": 1794266024000,
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794266011.jpg?resize=1918%2C1080&quality=80",
-      "cat": "world",
-      "bullets": [],
-      "summary": "Trump told reporters he believes Nvidia’s CEO Jensen Huang had no idea his alleged mistress was a suspected Chinese spy.",
-      "fullText": "Trump told reporters he believes Nvidia’s CEO Jensen Huang had no idea his alleged mistress was a suspected Chinese spy."
-    },
-    {
-      "id": "r8mnes",
-      "title": "Man Utd expected to sack head coach Carrick",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cmy0r041ed0po?at_medium=RSS&at_campaign=rss",
-      "src": "BBC News",
-      "dom": "bbc.co.uk",
-      "ts": 1794266011000,
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9dcf/live/306777b0-dc8e-11f1-8a0c-79d3a3fe49e0.jpg",
-      "cat": "top",
-      "bullets": [],
-      "summary": "Michael Carrick's Manchester United reign appears close to an end following the club's worst start to a domestic campaign in 40 years.",
-      "fullText": "Michael Carrick's Manchester United reign appears close to an end following the club's worst start to a domestic campaign in 40 years."
+      "summary": "The PR firm was enlisted shortly after an October 2025 New York Times report described Alice Huang&#039;s business dealings with Jensen Huang, Wired reported.",
+      "fullText": "The PR firm was enlisted shortly after an October 2025 New York Times report described Alice Huang&#039;s business dealings with Jensen Huang, Wired reported."
     },
     {
       "id": "65ysyt",
@@ -119,26 +910,10 @@
       "dom": "thehindu.com",
       "ts": 1794265714000,
       "img": "https://th-i.thgim.com/public/incoming/jhqori/article71397834.ece/alternates/LANDSCAPE_1200/IMG_vbk-HANDCUFF-arrest_2_1_46C98QUC.jpg",
-      "cat": "india",
+      "cat": "local",
       "bullets": [],
       "summary": "Several leaders of the Trinamool Congress have been arrested after the BJP came to power in May 2026, which includes five former Ministers",
       "fullText": "Several leaders of the Trinamool Congress have been arrested after the BJP came to power in May 2026, which includes five former Ministers"
-    },
-    {
-      "id": "9ow46k",
-      "title": "Bong Joon Ho on Restoring &#8216;The Host&#8217; and Why It Still Resonates 20 Years On: &#8216;We Are Repeating Our Mistakes&#8217;",
-      "url": "https://variety.com/2026/film/news/bong-joon-ho-the-host-restoration-20-years-1236943560/",
-      "src": "Variety",
-      "dom": "variety.com",
-      "ts": 1794265706000,
-      "img": "https://variety.com/wp-content/uploads/2026/11/Bong-Joon-Ho-The-Host.jpg",
-      "cat": "entertainment",
-      "bullets": [
-        "Magnolia Pictures will return the remastered film to theaters nationwide on Nov.",
-        "21 and 23 will include an exclusive conversation between Bong and [&#8230;]"
-      ],
-      "summary": "Bong Joon Ho has revisited “The Host” for a 20th-anniversary 4K restoration, and the Oscar-winning director says the 2006 monster movie’s satire of official misinformation feels newly pertinent. Magnolia Pictures will return the remastered film to theaters nationwide on Nov. 20. Screenings on Nov. 21 and 23 will include an exclusive conversation between Bong and [&#8230;]",
-      "fullText": "Bong Joon Ho has revisited “The Host” for a 20th-anniversary 4K restoration, and the Oscar-winning director says the 2006 monster movie’s satire of official misinformation feels newly pertinent. Magnolia Pictures will return the remastered film to theaters nationwide on Nov. 20. Screenings on Nov. 21 and 23 will include an exclusive conversation between Bong and [&#8230;]"
     },
     {
       "id": "15dc55u",
@@ -152,19 +927,6 @@
       "bullets": [],
       "summary": "The payment comes ahead of a planned major overhaul of Scotland's NHS which could see the number of health boards cut dramatically.",
       "fullText": "The payment comes ahead of a planned major overhaul of Scotland's NHS which could see the number of health boards cut dramatically."
-    },
-    {
-      "id": "xwpzu8",
-      "title": "Nvidia, CEO Jensen Huang Sued Over Disclosures Related To Suspected Chinese Spy",
-      "url": "https://www.ndtv.com/world-news/nvidia-ceo-jensen-huang-sued-over-disclosures-related-to-suspected-chinese-spy-12305655#publisher=newsstand",
-      "src": "NDTV",
-      "dom": "ndtv.com",
-      "ts": 1794265451000,
-      "img": "https://c.ndtvimg.com/2026-11/r7e4b25c_jensen-huang-on-way-out-the-1958-psychology-theory-that-could-save-nvidia-ceos-job_625x300_09_November_26.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
-      "cat": "top",
-      "bullets": [],
-      "summary": "Nvidia and Chief Executive Jensen Huang were sued on Monday in a proposed class action accusing them of defrauding shareholders by concealing Huang's ties with a suspected Chinese spy.",
-      "fullText": "Nvidia and Chief Executive Jensen Huang were sued on Monday in a proposed class action accusing them of defrauding shareholders by concealing Huang's ties with a suspected Chinese spy."
     },
     {
       "id": "1mxb3su",
@@ -182,64 +944,6 @@
       "fullText": "Exclusive: Wyndham left a hardcoded credential in its customer app, allowing anyone to access customer data. The hotel giant wouldn&#039;t say if it has the ability to check for any past unauthorized access."
     },
     {
-      "id": "kn0fy9",
-      "title": "Sean Penn, Ava DuVernay and Laura Poitras Turn Out For San Francisco’s Doc Stories",
-      "url": "https://variety.com/2026/film/news/sean-penn-ava-duvernay-laura-poitras-doc-stories-1236943431/",
-      "src": "Variety",
-      "dom": "variety.com",
-      "ts": 1794265326000,
-      "img": "https://variety.com/wp-content/uploads/2026/11/PennSean_HaneyMarcus_byPamelaGentile.jpg",
-      "cat": "entertainment",
-      "bullets": [
-        "But SFFILM’s Doc Stories has a way of attracting high-profile supporters.",
-        "On Saturday, Penn was at the fest’s Vogue Theatre in San Francisco to introduce James Marcus Haney’s “Black Sunflowers,” a documentary about a generation of young Ukrainians coming…"
-      ],
-      "summary": "Sean Penn isn’t exactly a fixture on the regional documentary festival circuit. But SFFILM’s Doc Stories has a way of attracting high-profile supporters. On Saturday, Penn was at the fest’s Vogue Theatre in San Francisco to introduce James Marcus Haney’s “Black Sunflowers,” a documentary about a generation of young Ukrainians coming of age amid martial [&#8230;]",
-      "fullText": "Sean Penn isn’t exactly a fixture on the regional documentary festival circuit. But SFFILM’s Doc Stories has a way of attracting high-profile supporters. On Saturday, Penn was at the fest’s Vogue Theatre in San Francisco to introduce James Marcus Haney’s “Black Sunflowers,” a documentary about a generation of young Ukrainians coming of age amid martial [&#8230;]"
-    },
-    {
-      "id": "4egr7y",
-      "title": "Tom Brady and Jim Harbaugh Exec Produce &#8216;The Team: Michigan Football,&#8217; Set to Debut on Fox This Month (EXCLUSIVE)",
-      "url": "https://variety.com/2026/tv/news/tom-brady-jim-harbaugh-the-team-michigan-football-fox-1236942904/",
-      "src": "Variety",
-      "dom": "variety.com",
-      "ts": 1794265200000,
-      "img": "https://variety.com/wp-content/uploads/2026/11/GettyImages-508199414.jpg",
-      "cat": "entertainment",
-      "bullets": [
-        "Shadow Lion is behind the series, which is also executive produced by Tom Brady and Jim Harbaugh.",
-        "The two-part series premieres on Friday, Nov."
-      ],
-      "summary": "Fox Sports has greenlighted the two-part documentary “The Team: Michigan Football,” which centers on Michigan&#8217;s college football program and its two championship eras. Shadow Lion is behind the series, which is also executive produced by Tom Brady and Jim Harbaugh. The two-part series premieres on Friday, Nov. 27, at 7 p.m. ET on Fox — [&#8230;]",
-      "fullText": "Fox Sports has greenlighted the two-part documentary “The Team: Michigan Football,” which centers on Michigan&#8217;s college football program and its two championship eras. Shadow Lion is behind the series, which is also executive produced by Tom Brady and Jim Harbaugh. The two-part series premieres on Friday, Nov. 27, at 7 p.m. ET on Fox — [&#8230;]"
-    },
-    {
-      "id": "1jp9ni9",
-      "title": "Outcry as J&K Bank implements reservation policy pushed by ex-chairman and VHP trustee R.K. Chhibber",
-      "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/outcry-as-jk-bank-implements-reservation-policy-pushed-by-ex-chairman-and-vhp-trustee-rk-chhibber/article71683483.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1794265043000,
-      "img": "https://www.thehindu.com/theme/images/og-image.png",
-      "cat": "india",
-      "bullets": [],
-      "summary": "The bank has decided to fill 1400 vacancies, including 323 probationary officers and 1033 posts for banking associates, as per the new reservation policy",
-      "fullText": "The bank has decided to fill 1400 vacancies, including 323 probationary officers and 1033 posts for banking associates, as per the new reservation policy"
-    },
-    {
-      "id": "1sxbbak",
-      "title": "Phones to be banned from pupils' bags or pockets under stricter rules for schools in England",
-      "url": "https://www.bbc.co.uk/news/articles/c51kdk422w8jo?at_medium=RSS&at_campaign=rss",
-      "src": "BBC News",
-      "dom": "bbc.co.uk",
-      "ts": 1794264669000,
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/47b9/live/31f56850-dc5a-11f1-8fe6-5becaee5408f.jpg",
-      "cat": "top",
-      "bullets": [],
-      "summary": "The government says it is strengthening its guidance for schools in England, which came into force in June.",
-      "fullText": "The government says it is strengthening its guidance for schools in England, which came into force in June."
-    },
-    {
       "id": "1rbaep6",
       "title": "A short seller flagged Nvidia CEO&#8217;s ties to a suspected Chinese spy six months before the scandal",
       "url": "https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal/",
@@ -253,86 +957,6 @@
       "fullText": "Six months before Nvidia&#039;s spy scandal erupted, Culper Research was already questioning Jensen Huang&#039;s unusually close relationship with a Chinese executive."
     },
     {
-      "id": "19toxrh",
-      "title": "UK's Russell Brand sentenced to 10-and-a-half years in jail for rape, sexual assault",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbmk4dlVnT1E1bFJGb01tRkZvLVFXSkt0bTRsY2t4RzMzRDVGb2RzLUJTblJPQ1EwZFhlSUZXOTR3VlF2UTU0V29tVjd5dWwtOFZpUGNxSE1uRW5JNF94a0RmRV9SRWgyZ3dCaDNJZmR2M05ZRHMzam9EVkF0OUJ3bnloSGdkNVZZU3QyODdKei14dU9nalBDSmwxOFpCNUJHUDFTbnFLTVp2UTJfaGlPQ1htNGxvbjRB?oc=5",
-      "src": "Reuters",
-      "dom": "news.google.com",
-      "ts": 1794264314000,
-      "img": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "business",
-      "bullets": [],
-      "summary": "Breaking business coverage reported by Reuters. Tap Read for the full story.",
-      "fullText": ""
-    },
-    {
-      "id": "2t4e32",
-      "title": "‘Heated Rivalry’ Superfans Hit Theaters for Shane and Ilya on the Big Screen: ‘They Invented Chemistry’",
-      "url": "https://variety.com/2026/tv/news/heated-rivalry-fans-theaters-rerelease-1236943493/",
-      "src": "Variety",
-      "dom": "variety.com",
-      "ts": 1794263862000,
-      "img": "https://variety.com/wp-content/uploads/2025/12/heated-rivalry-shane-ilya-episode-4-1420x798-1.jpg",
-      "cat": "entertainment",
-      "bullets": [
-        "Not to see a new movie, but to celebrate the one-year anniversary of the hit HBO Max-Crave series “Heated Rivalry.” Based on Rachel Reid’s bestselling “Game Changers” books…"
-      ],
-      "summary": "A sea of women and a scattering of men packed into the Regal Sherman Oaks Galleria Sunday night for a cinematic experience. Not to see a new movie, but to celebrate the one-year anniversary of the hit HBO Max-Crave series “Heated Rivalry.” Based on Rachel Reid’s bestselling “Game Changers” books and adapted by Jacob Tierney, [&#8230;]",
-      "fullText": "A sea of women and a scattering of men packed into the Regal Sherman Oaks Galleria Sunday night for a cinematic experience. Not to see a new movie, but to celebrate the one-year anniversary of the hit HBO Max-Crave series “Heated Rivalry.” Based on Rachel Reid’s bestselling “Game Changers” books and adapted by Jacob Tierney, [&#8230;]"
-    },
-    {
-      "id": "12dgezb",
-      "title": "War On Iran Is \"Effectively Over\", Says Trump After Meeting With Qatari PM",
-      "url": "https://www.ndtv.com/world-news/iran-war-war-on-iran-is-effectively-over-says-donald-trump-after-meeting-with-qatari-pm-12305624#publisher=newsstand",
-      "src": "NDTV",
-      "dom": "ndtv.com",
-      "ts": 1794263629000,
-      "img": "https://c.ndtvimg.com/2026-11/5n8p9aro_donald-trump_625x300_10_November_26.jpeg",
-      "cat": "top",
-      "bullets": [],
-      "summary": "The president offered some of his most definitive comments about moving away from his threat to resume strikes on Iran after the US midterm elections passed.",
-      "fullText": "The president offered some of his most definitive comments about moving away from his threat to resume strikes on Iran after the US midterm elections passed."
-    },
-    {
-      "id": "1viq309",
-      "title": "Trump calls Iran war ‘effectively over’ after talks with Qatar PM",
-      "url": "https://www.aljazeera.com/news/2026/11/9/trump-calls-iran-war-effectively-over-after-talks-with-qatar-pm?traffic_source=rss",
-      "src": "Al Jazeera",
-      "dom": "aljazeera.com",
-      "ts": 1794263479000,
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6af249716f78-1794263409.jpg?resize=1920%2C1440",
-      "cat": "world",
-      "bullets": [],
-      "summary": "Iranian officials dismissed Trump&#039;s latest remarks as &#039;fake news&#039; after the US president suggested a close to the war.",
-      "fullText": "Iranian officials dismissed Trump&#039;s latest remarks as &#039;fake news&#039; after the US president suggested a close to the war."
-    },
-    {
-      "id": "16rv6c7",
-      "title": "Jessica Lange on Bringing &#8216;Long Day&#8217;s Journey Into Night&#8217; Back to the Big Screen, Returning to &#8216;American Horror Story&#8217; and Retirement Rumors",
-      "url": "https://www.hollywoodreporter.com/movies/movie-news/jessica-lange-long-days-journey-into-night-retirement-rumors-1236750103/",
-      "src": "The Hollywood Reporter",
-      "dom": "hollywoodreporter.com",
-      "ts": 1794263476000,
-      "img": "https://www.hollywoodreporter.com/wp-content/uploads/2026/11/Jessica-Lange-Awards-Chatter-Getty-H-2026.jpg?w=1296&#038;h=730&#038;crop=1",
-      "cat": "entertainment",
-      "bullets": [],
-      "summary": "The legendary stage and screen actress spoke with The Hollywood Reporter at the recent Virginia Film Festival, where she was honored with the fest&#039;s Visionary Award.",
-      "fullText": "The legendary stage and screen actress spoke with The Hollywood Reporter at the recent Virginia Film Festival, where she was honored with the fest&#039;s Visionary Award."
-    },
-    {
-      "id": "1f3cmf7",
-      "title": "Board of Peace Blames Both Israel and Hamas for Gaza Emergency",
-      "url": "https://www.livemint.com/news/world/board-of-peace-blames-both-israel-and-hamas-for-gaza-emergency-11794263162139.html",
-      "src": "Mint",
-      "dom": "livemint.com",
-      "ts": 1794263161000,
-      "img": "https://www.livemint.com/lm-img/img/2024/12/06/1600x900/logo/NEWS_1733464049847_1733464070835.jpg",
-      "cat": "india",
-      "bullets": [],
-      "summary": "The US-created Board of Peace warned on Monday of an “immediate humanitarian emergency” in the Gaza Strip following severe seasonal flooding, and blamed both Israel and Hamas for failing to honor commitments as part of a stalled peace process.",
-      "fullText": "The US-created Board of Peace warned on Monday of an “immediate humanitarian emergency” in the Gaza Strip following severe seasonal flooding, and blamed both Israel and Hamas for failing to honor commitments as part of a stalled peace process."
-    },
-    {
       "id": "19mzfma",
       "title": "The race is on to sue Nvidia",
       "url": "https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia/",
@@ -344,112 +968,6 @@
       "bullets": [],
       "summary": "Nvidia’s stock slid more than 4% after its board opened an investigation into Jensen Huang’s relationship with a suspected Chinese spy, and one securities law expert says the company’s earlier insistence that it was all “normal” could turn into a very expensive problem.",
       "fullText": "Nvidia’s stock slid more than 4% after its board opened an investigation into Jensen Huang’s relationship with a suspected Chinese spy, and one securities law expert says the company’s earlier insistence that it was all “normal” could turn into a very expensive problem."
-    },
-    {
-      "id": "19788hh",
-      "title": "US Supreme Court Allows Trump To Resume Border Wall Construction In Texas",
-      "url": "https://www.ndtv.com/world-news/us-supreme-court-allows-trump-to-resume-border-wall-construction-in-big-bend-park-in-texas-12305596#publisher=newsstand",
-      "src": "NDTV",
-      "dom": "ndtv.com",
-      "ts": 1794262602000,
-      "img": "https://c.ndtvimg.com/2026-11/vbakt288_big-bend_625x300_10_November_26.jpeg",
-      "cat": "top",
-      "bullets": [],
-      "summary": "Donald Trump has long touted building or reinforcing barriers along the US-Mexico border as a signature part of his sweeping restrictions on immigration.",
-      "fullText": "Donald Trump has long touted building or reinforcing barriers along the US-Mexico border as a signature part of his sweeping restrictions on immigration."
-    },
-    {
-      "id": "pfrb04",
-      "title": "'Baffling but brilliant' post-apocalyptic novel The End of Everything wins Booker Prize",
-      "url": "https://www.bbc.co.uk/news/articles/cw0737kv52lko?at_medium=RSS&at_campaign=rss",
-      "src": "BBC News",
-      "dom": "bbc.co.uk",
-      "ts": 1794262597000,
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/db58/live/963bf0b0-dc49-11f1-a869-656dc96bd12d.jpg",
-      "cat": "top",
-      "bullets": [],
-      "summary": "M John Harrison becomes the oldest ever winner of the prestigious literary award at the age of 81.",
-      "fullText": "M John Harrison becomes the oldest ever winner of the prestigious literary award at the age of 81."
-    },
-    {
-      "id": "6hi5x9",
-      "title": "Pope meets with clergy abuse survivors in Argentina",
-      "url": "https://www.aljazeera.com/news/2026/11/9/pope-meets-with-clergy-abuse-survivors-in-argentina?traffic_source=rss",
-      "src": "Al Jazeera",
-      "dom": "aljazeera.com",
-      "ts": 1794262477000,
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6af22a11c35e0-1794255377.jpg?resize=1920%2C1440",
-      "cat": "world",
-      "bullets": [],
-      "summary": "During private meetings with survivors, Pope Leo XIV pledged to reinforce safeguards and listen to victims.",
-      "fullText": "During private meetings with survivors, Pope Leo XIV pledged to reinforce safeguards and listen to victims."
-    },
-    {
-      "id": "4l9nhg",
-      "title": "Hungarian police reportedly detain brother of ex-PM Viktor Orban",
-      "url": "https://www.aljazeera.com/news/2026/11/9/hungarian-police-reportedly-detain-brother-of-ex-pm-viktor-orban?traffic_source=rss",
-      "src": "Al Jazeera",
-      "dom": "aljazeera.com",
-      "ts": 1794262409000,
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/04/AP26102699398202-1776023207.jpg?resize=1920%2C1440",
-      "cat": "world",
-      "bullets": [],
-      "summary": "Aron Orban reportedly detained as Hungarian authorities raid properties linked to his business associates.",
-      "fullText": "Aron Orban reportedly detained as Hungarian authorities raid properties linked to his business associates."
-    },
-    {
-      "id": "1x32pgg",
-      "title": "DC in Flux: What Happens to James Gunn’s Batman, Superman and Other Heroes After Shocking Exit?",
-      "url": "https://variety.com/lists/james-gunn-exit-dc-batman-superman-wonder-woman/",
-      "src": "Variety",
-      "dom": "variety.com",
-      "ts": 1794262399000,
-      "img": "https://variety.com/wp-content/uploads/2026/11/split-image-1000_b46042.jpg",
-      "cat": "entertainment",
-      "bullets": [
-        "After four years at the helm, it seemed like Gunn and Safran had just set the foundation for things to [&#8230;]"
-      ],
-      "summary": "James Gunn and Peter Safran are out as the CEOs and chairmen of DC Studios, leaving behind a cinematic universe full of questions about the fate of some of Hollywood’s most beloved and profitable heroes. After four years at the helm, it seemed like Gunn and Safran had just set the foundation for things to [&#8230;]",
-      "fullText": "James Gunn and Peter Safran are out as the CEOs and chairmen of DC Studios, leaving behind a cinematic universe full of questions about the fate of some of Hollywood’s most beloved and profitable heroes. After four years at the helm, it seemed like Gunn and Safran had just set the foundation for things to [&#8230;]"
-    },
-    {
-      "id": "1t3kd2x",
-      "title": "Saudi Arabia reports new attack on key East-West pipeline",
-      "url": "https://www.aljazeera.com/news/2026/11/9/saudi-arabia-reports-new-attack-on-key-east-west-pipeline?traffic_source=rss",
-      "src": "Al Jazeera",
-      "dom": "aljazeera.com",
-      "ts": 1794262252000,
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6af22326-1794253606.jpg?resize=1920%2C1440",
-      "cat": "world",
-      "bullets": [],
-      "summary": "The oil pipeline runs through the desert to the coast and is essential for bypassing the Strait of Hormuz.",
-      "fullText": "The oil pipeline runs through the desert to the coast and is essential for bypassing the Strait of Hormuz."
-    },
-    {
-      "id": "180f2xc",
-      "title": "ED attaches properties in Kashmir in ‘misuse’ of PM Employment Generation Programme scheme case",
-      "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/ed-attaches-properties-in-kashmir-in-misuse-of-pm-employment-generation-programme-scheme-case/article71683744.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1794262092000,
-      "img": "https://th-i.thgim.com/public/incoming/ewmhw5/article71667191.ece/alternates/LANDSCAPE_1200/ED-attaches-assGAMGO5SH2.3.jpg.jpg",
-      "cat": "india",
-      "bullets": [],
-      "summary": "An ED spokesman said there was misappropriation of PMEGP Scheme’s loans in criminal conspiracy with the PMEGP borrowers, bank officials of Sumbal Branch and Gamud Gadkhud Branch of J&K Bank and other unknown persons",
-      "fullText": "An ED spokesman said there was misappropriation of PMEGP Scheme’s loans in criminal conspiracy with the PMEGP borrowers, bank officials of Sumbal Branch and Gamud Gadkhud Branch of J&K Bank and other unknown persons"
-    },
-    {
-      "id": "rmmjod",
-      "title": "Brand's ex Jemima Goldsmith accuses him of violence and abuse against her",
-      "url": "https://www.bbc.co.uk/news/articles/c95ynylr8j6xo?at_medium=RSS&at_campaign=rss",
-      "src": "BBC News",
-      "dom": "bbc.co.uk",
-      "ts": 1794261989000,
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fc6f/live/9dd1bab0-dc78-11f1-b23d-9526db010e6c.jpg",
-      "cat": "top",
-      "bullets": [],
-      "summary": "She accuses the disgraced performer of \"violence, coercive control and abuse\" while the two were together.",
-      "fullText": "She accuses the disgraced performer of \"violence, coercive control and abuse\" while the two were together."
     },
     {
       "id": "1wxuydg",
@@ -467,40 +985,6 @@
       "fullText": "A thought to keep as Deepavali shopping is likely to gain momentum this week: by buying products at Mathi Experience Store in Nungambakkam, a flagship initiative of Tamil Nadu Corporation for Development of Women, one would be helping women self-help groups. Besides shopping, the store also offers scope for unwinding at a cafe that goes with it"
     },
     {
-      "id": "bxastt",
-      "title": "XYZ Films, CAA Media Finance Ink U.S. Deal With Samuel Goldwyn Films for Dark Comedy &#8216;Kill Me&#8217; Starring Charlie Day and Allison Williams (EXCLUSIVE)",
-      "url": "https://variety.com/2026/film/news/xyz-films-rights-kill-me-charlie-day-allison-williams-1236943468/",
-      "src": "Variety",
-      "dom": "variety.com",
-      "ts": 1794261649000,
-      "img": "https://variety.com/wp-content/uploads/2026/11/MixCollage-09-Nov-2026-01-44-PM-5731.jpg",
-      "cat": "entertainment",
-      "bullets": [
-        "rights to “Kill Me,” a murder mystery comedy film from writer-director Peter Warren starring Charlie Day and Allison Williams.",
-        "A theatrical release is planned for Spring 2027.",
-        "The official logline for “Kill Me” reads, “Jimmy (Day) didn&#8217;t try to kill [&#8230;]"
-      ],
-      "summary": "XYZ Films and CAA Media Finance inked a deal with Samuel Goldwyn Films for U.S. rights to “Kill Me,” a murder mystery comedy film from writer-director Peter Warren starring Charlie Day and Allison Williams. A theatrical release is planned for Spring 2027. The official logline for “Kill Me” reads, “Jimmy (Day) didn&#8217;t try to kill [&#8230;]",
-      "fullText": "XYZ Films and CAA Media Finance inked a deal with Samuel Goldwyn Films for U.S. rights to “Kill Me,” a murder mystery comedy film from writer-director Peter Warren starring Charlie Day and Allison Williams. A theatrical release is planned for Spring 2027. The official logline for “Kill Me” reads, “Jimmy (Day) didn&#8217;t try to kill [&#8230;]"
-    },
-    {
-      "id": "gmoghi",
-      "title": "Postpone panchayat, municipal elections to April-May next year: Ladakh group",
-      "url": "https://www.thehindu.com/news/national/ladakh/postpone-panchayat-municipal-elections-to-april-may-next-year-ladakh-group/article71683915.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1794261257000,
-      "img": "https://www.thehindu.com/theme/images/og-image.png",
-      "cat": "india",
-      "bullets": [
-        "We saw ‘vote chori’ in West Bengal, Bihar, Haryana, Maharashtra etc.",
-        "In entire India 13 crore voters were dropped from the voter list.",
-        "Ladakh is a small region and fraud is easy,” said Ladakh Buddhist Association (LBA) chairman Tsering Dorjey Lakrook"
-      ],
-      "summary": "“We suspect that this government is up to some mischief. We saw ‘vote chori’ in West Bengal, Bihar, Haryana, Maharashtra etc. In entire India 13 crore voters were dropped from the voter list. Ladakh is a small region and fraud is easy,” said Ladakh Buddhist Association (LBA) chairman Tsering Dorjey Lakrook",
-      "fullText": "“We suspect that this government is up to some mischief. We saw ‘vote chori’ in West Bengal, Bihar, Haryana, Maharashtra etc. In entire India 13 crore voters were dropped from the voter list. Ladakh is a small region and fraud is easy,” said Ladakh Buddhist Association (LBA) chairman Tsering Dorjey Lakrook"
-    },
-    {
       "id": "yf9rgt",
       "title": "Zoe Kleinman: Nvidia CEO's affair will cause ripples across US and beyond",
       "url": "https://www.bbc.co.uk/news/articles/cj3vqv3nee72o?at_medium=RSS&at_campaign=rss",
@@ -512,89 +996,6 @@
       "bullets": [],
       "summary": "Jensen Huang is being investigated by his own company over an extramarital affair with a woman alleged to be a Chinese spy.",
       "fullText": "Jensen Huang is being investigated by his own company over an extramarital affair with a woman alleged to be a Chinese spy."
-    },
-    {
-      "id": "140a6h8",
-      "title": "Trial date of alleged Charlie Kirk killer set for June 2028",
-      "url": "https://www.bbc.co.uk/news/articles/cq0mem8d2p3xo?at_medium=RSS&at_campaign=rss",
-      "src": "BBC News",
-      "dom": "bbc.co.uk",
-      "ts": 1794260918000,
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4fe7/live/9ee301c0-795e-11f1-b976-0b9c15b0ccfc.jpg",
-      "cat": "world",
-      "bullets": [],
-      "summary": "Tyler Robinson has pleaded not guilty to aggravated murder and six other charges in connection with the 2025 killing of the conservative activist.",
-      "fullText": "Tyler Robinson has pleaded not guilty to aggravated murder and six other charges in connection with the 2025 killing of the conservative activist."
-    },
-    {
-      "id": "bjv9ip",
-      "title": "How Plan Mexico Local-Content Points Shape Medicine Tenders",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQYkF6RUFhWklMUFE2R1VJc3NJQ0tEbWxvUzdCd1MzUUlMU0RHTndMcWZQOFN5aWZTd3p3R0dmbmw1S0lCNXQ5b3FnT3hOdVF2WjR4UjgyYnljRzVzTnlvT2VpdkFnY2puRE9rVk5KbklyM05keE53Y1ZCZ19ISzByYUdmdkk3SFBOeDFOWWpJU2lJX0JjRWptbUNIejhPZnpS?oc=5",
-      "src": "Mexico Business News",
-      "dom": "news.google.com",
-      "ts": 1794260807000,
-      "img": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "health",
-      "bullets": [],
-      "summary": "Breaking health coverage reported by Mexico Business News. Tap Read for the full story.",
-      "fullText": ""
-    },
-    {
-      "id": "197tsha",
-      "title": "US Court Sets June 2028 Trial Date In Charlie Kirk Murder Case",
-      "url": "https://www.ndtv.com/world-news/us-court-sets-2028-trial-date-for-charlie-kirk-assassination-12305512#publisher=newsstand",
-      "src": "NDTV",
-      "dom": "ndtv.com",
-      "ts": 1794260381000,
-      "img": "https://c.ndtvimg.com/2026-09/u77qn6s_tyler-robinson-in-court_625x300_02_September_26.jpeg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
-      "cat": "top",
-      "bullets": [],
-      "summary": "Robinson, 23, has pleaded not guilty to seven counts, including aggravated murder, in the shooting of Kirk as the conservative held one of his trademark debates at Utah Valley University in Orem.",
-      "fullText": "Robinson, 23, has pleaded not guilty to seven counts, including aggravated murder, in the shooting of Kirk as the conservative held one of his trademark debates at Utah Valley University in Orem."
-    },
-    {
-      "id": "1x1tjfe",
-      "title": "Skydance Q3 Profit Powered By Studios, Streaming",
-      "url": "https://variety.com/2026/tv/news/skydance-q3-profit-studios-streaming-1236943416/",
-      "src": "Variety",
-      "dom": "variety.com",
-      "ts": 1794260274000,
-      "img": "https://variety.com/wp-content/uploads/2026/02/David-Ellison-2.jpg",
-      "cat": "entertainment",
-      "bullets": [
-        "Discovery, said the Paramount part of the business generated profit of $73 million &#8212; a swing from a loss in the year-earlier period &#8212; but the results did…"
-      ],
-      "summary": "Skydance, fresh from completing its merger with Warner Bros. Discovery, said the Paramount part of the business generated profit of $73 million &#8212; a swing from a loss in the year-earlier period &#8212; but the results did not include data from its new properties, because its deal did not close until October, after the fiscal [&#8230;]",
-      "fullText": "Skydance, fresh from completing its merger with Warner Bros. Discovery, said the Paramount part of the business generated profit of $73 million &#8212; a swing from a loss in the year-earlier period &#8212; but the results did not include data from its new properties, because its deal did not close until October, after the fiscal [&#8230;]"
-    },
-    {
-      "id": "1srcsqr",
-      "title": "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
-      "url": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro?at_medium=RSS&at_campaign=rss",
-      "src": "BBC News",
-      "dom": "bbc.co.uk",
-      "ts": 1794260222000,
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0303/live/c8a877f0-dc7e-11f1-93e1-3b657b665bcf.png",
-      "cat": "world",
-      "bullets": [],
-      "summary": "The effort will likely fail, but Representative Thomas Massie wants to push Trump to fire Hegseth before Democrats can launch their own impeachment process.",
-      "fullText": "The effort will likely fail, but Representative Thomas Massie wants to push Trump to fire Hegseth before Democrats can launch their own impeachment process."
-    },
-    {
-      "id": "1hpy50k",
-      "title": "AMC Global Media Takes $2.1 Million Hit Amid ALLBLK Streamer Sale, Content Licensing Revenue Up 42% in Q3",
-      "url": "https://variety.com/2026/tv/news/amc-networks-allblk-sale-q3-earnings-1236943399/",
-      "src": "Variety",
-      "dom": "variety.com",
-      "ts": 1794259826000,
-      "img": "https://variety.com/wp-content/uploads/2026/06/TheVampireLestat-SamReid.solo_.1.jpg",
-      "cat": "entertainment",
-      "bullets": [
-        "Additionally, AMC says its Sept.",
-        "4 settlement agreement with &#8220;The Walking Dead&#8221; creator Robert Kirkman and other series producers led to a cash [&#8230;]"
-      ],
-      "summary": "AMC Global Media reported its third-quarter 2026 earnings Monday, revealing a major increase in content licensing sales and a restructuring charge of $2.1 million following the sale of its ALLBLK streaming service. Additionally, AMC says its Sept. 4 settlement agreement with &#8220;The Walking Dead&#8221; creator Robert Kirkman and other series producers led to a cash [&#8230;]",
-      "fullText": "AMC Global Media reported its third-quarter 2026 earnings Monday, revealing a major increase in content licensing sales and a restructuring charge of $2.1 million following the sale of its ALLBLK streaming service. Additionally, AMC says its Sept. 4 settlement agreement with &#8220;The Walking Dead&#8221; creator Robert Kirkman and other series producers led to a cash [&#8230;]"
     },
     {
       "id": "1espnta",
@@ -614,32 +1015,6 @@
       "fullText": "For underprivileged children, the value of a toy, even one previously used by somebody else, is huge, sometimes incalculable. And for a child battling poverty and cancer, such a gift signifies a cheerful vista beyond hospital walls. This Children’s Day, be a donor of toys and make room for childhood. Here are voluntary organisations that are looking for such donors"
     },
     {
-      "id": "2ukuvn",
-      "title": "COP31 opens amid energy crisis as activists demand climate action",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/cop31-opens-amid-energy-crisis-as-activists-demand-climate-action?traffic_source=rss",
-      "src": "Al Jazeera",
-      "dom": "aljazeera.com",
-      "ts": 1794259105000,
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794259045.jpg?resize=1920%2C1080&quality=80",
-      "cat": "world",
-      "bullets": [],
-      "summary": "COP31 has opened in Turkiye amid war-driven energy disruptions and a renewed reliance on fossil fuels.",
-      "fullText": "COP31 has opened in Turkiye amid war-driven energy disruptions and a renewed reliance on fossil fuels."
-    },
-    {
-      "id": "1utwuwx",
-      "title": "Skydance Details Cost Savings and Plans HBO Max-Paramount+ Bundle in First Post-Deal Earnings Report",
-      "url": "https://www.hollywoodreporter.com/business/business-news/skydance-first-earnings-q3-post-wb-deal-1236751164/",
-      "src": "The Hollywood Reporter",
-      "dom": "hollywoodreporter.com",
-      "ts": 1794259064000,
-      "img": "https://www.hollywoodreporter.com/wp-content/uploads/2026/10/Skydance_Media_Event.jpg?w=1440&#038;h=810&#038;crop=1",
-      "cat": "entertainment",
-      "bullets": [],
-      "summary": "The company says that a streaming bundle will launch early next year, while laying out where it expects to see synergies.",
-      "fullText": "The company says that a streaming bundle will launch early next year, while laying out where it expects to see synergies."
-    },
-    {
       "id": "cpijec",
       "title": "Six of family killed in fire at home above grocery store in Maharashtra",
       "url": "https://www.thehindu.com/news/national/maharashtra/six-of-family-killed-in-fire-at-home-above-grocery-store-in-maharashtra/article71683897.ece",
@@ -647,44 +1022,10 @@
       "dom": "thehindu.com",
       "ts": 1794258964000,
       "img": "https://www.thehindu.com/theme/images/og-image.png",
-      "cat": "india",
+      "cat": "local",
       "bullets": [],
       "summary": "A boy, who was brought downstairs to safety by his parents before they went back in an effort to rescue the others, was the sole survivor",
       "fullText": "A boy, who was brought downstairs to safety by his parents before they went back in an effort to rescue the others, was the sole survivor"
-    },
-    {
-      "id": "4jqio8",
-      "title": "&#8216;GTA 6&#8217; Presales &#8216;Far in Excess&#8217; of Expectations Ahead of Next Week&#8217;s Launch, Take-Two CEO Says",
-      "url": "https://variety.com/2026/gaming/news/gta-6-preorders-expectations-launch-1236943278/",
-      "src": "Variety",
-      "dom": "variety.com",
-      "ts": 1794258933000,
-      "img": "https://variety.com/wp-content/uploads/2026/08/GTA-6.jpg",
-      "cat": "entertainment",
-      "bullets": [
-        "&#8220;That&#8217;s a good thing.",
-        "That said, we never claim success before it occurs,&#8221; Zelnick told Variety in an interview ahead of the company&#8217;s earnings release.",
-        "&#8220;So we&#8217;re just days away from from beginning [&#8230;]"
-      ],
-      "summary": "Rockstar Games&#8217; &#8220;Grand Theft Auto VI&#8221; presales are &#8220;running far in excess of our expectations,&#8221; Take-Two Interactive CEO Strauss Zelnick said Monday. &#8220;That&#8217;s a good thing. That said, we never claim success before it occurs,&#8221; Zelnick told Variety in an interview ahead of the company&#8217;s earnings release. &#8220;So we&#8217;re just days away from from beginning [&#8230;]",
-      "fullText": "Rockstar Games&#8217; &#8220;Grand Theft Auto VI&#8221; presales are &#8220;running far in excess of our expectations,&#8221; Take-Two Interactive CEO Strauss Zelnick said Monday. &#8220;That&#8217;s a good thing. That said, we never claim success before it occurs,&#8221; Zelnick told Variety in an interview ahead of the company&#8217;s earnings release. &#8220;So we&#8217;re just days away from from beginning [&#8230;]"
-    },
-    {
-      "id": "1azv0pl",
-      "title": "US stocks: Dow rockets 1,100 points, S&P over 2% as oil slide cools inflation worries; Nvidia slumps",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-dow-rockets-1100-points-sp-over-2-as-oil-slide-cools-inflation-worries-nvidia-slumps/articleshow/135693071.cms",
-      "src": "Economic Times",
-      "dom": "economictimes.indiatimes.com",
-      "ts": 1794258868000,
-      "img": "https://img.etimg.com/thumb/msid-135693102,width-1200,height-900,imgsize-165252,overlay-etmarkets/articleshow.jpg",
-      "cat": "business",
-      "bullets": [
-        "The S&P 500 rebounded significantly after the midterm elections, with gains in nine sector indexes.",
-        "Nvidia's shares fell amid uncertainty over CEO Jensen Huang's future.",
-        "Analysts argue the stock market's prior drop was exaggerated, with investors now keenly awaiting inflation reports to gauge Federal Reserve responses."
-      ],
-      "summary": "US stocks experienced a notable upswing on Monday following a decline in oil prices that calmed inflation worries and propelled market growth. The S&P 500 rebounded significantly after the midterm elections, with gains in nine sector indexes. Nvidia's shares fell amid uncertainty over CEO Jensen Huang's future. Analysts argue the stock market's prior drop was exaggerated, with investors now keenly…",
-      "fullText": "US stocks experienced a notable upswing on Monday following a decline in oil prices that calmed inflation worries and propelled market growth. The S&P 500 rebounded significantly after the midterm elections, with gains in nine sector indexes. Nvidia's shares fell amid uncertainty over CEO Jensen Huang's future. Analysts argue the stock market's prior drop was exaggerated, with investors now keenly awaiting inflation reports to gauge Federal Reserve responses."
     },
     {
       "id": "1s3b5f9",
@@ -700,100 +1041,6 @@
       "fullText": "Nvidia shares slumped more than 8% as trading got under way in New York but recovered to stand down more than 5% in early afternoon trading"
     },
     {
-      "id": "1mctey2",
-      "title": "Skydance Plans Launch of Bundled Paramount+, HBO Max in Early 2027",
-      "url": "https://variety.com/2026/tv/news/skydance-paramount-hbo-max-launch-early-2027-streaming-1236943428/",
-      "src": "Variety",
-      "dom": "variety.com",
-      "ts": 1794258791000,
-      "img": "https://variety.com/wp-content/uploads/2026/09/David-Ellison.jpg",
-      "cat": "entertainment",
-      "bullets": [
-        "Skydance, in one of its first big announcement since completing its acquisition of Warner Bros.",
-        "Discovery, said it planned to launch Paramount+ and HBO Max as part of a [&#8230;]"
-      ],
-      "summary": "Streaming fans will soon be able to subscribe to a new bundled service that offers access to&#8221;Tulsa King&#8221; and &#8220;The White Lotus&#8221; for a single price. Skydance, in one of its first big announcement since completing its acquisition of Warner Bros. Discovery, said it planned to launch Paramount+ and HBO Max as part of a [&#8230;]",
-      "fullText": "Streaming fans will soon be able to subscribe to a new bundled service that offers access to&#8221;Tulsa King&#8221; and &#8220;The White Lotus&#8221; for a single price. Skydance, in one of its first big announcement since completing its acquisition of Warner Bros. Discovery, said it planned to launch Paramount+ and HBO Max as part of a [&#8230;]"
-    },
-    {
-      "id": "yogdhv",
-      "title": "Will Najib Razak be transferred to house arrest?",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/11/9/will-najib-razak-be-transferred-to-house-arrest?traffic_source=rss",
-      "src": "Al Jazeera",
-      "dom": "aljazeera.com",
-      "ts": 1794258782000,
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794256648.jpg?resize=1920%2C1080&quality=80",
-      "cat": "world",
-      "bullets": [],
-      "summary": "Malaysia&#039;s king and government in a standoff after attorney general disputed order allowing former PM to leave jail.",
-      "fullText": "Malaysia&#039;s king and government in a standoff after attorney general disputed order allowing former PM to leave jail."
-    },
-    {
-      "id": "1xzi26k",
-      "title": "Qatar, Saudi Want Peaceful Iran Deal, US Ready For Strikes If Needed: Trump",
-      "url": "https://www.ndtv.com/world-news/qatar-saudi-want-peaceful-iran-deal-us-ready-for-strikes-if-needed-donald-trump-12305498#publisher=newsstand",
-      "src": "NDTV",
-      "dom": "ndtv.com",
-      "ts": 1794258546000,
-      "img": "https://c.ndtvimg.com/2026-11/al90ni34_donald-trump_625x300_10_November_26.jpeg",
-      "cat": "top",
-      "bullets": [],
-      "summary": "Trump, who met Qatar's prime minister earlier on Monday, said \"Qatar would rather see a peaceful solution\" and \"Saudi Arabia would rather see a peaceful solution\" but \"we're ready to go anytime we want\" with strikes.",
-      "fullText": "Trump, who met Qatar's prime minister earlier on Monday, said \"Qatar would rather see a peaceful solution\" and \"Saudi Arabia would rather see a peaceful solution\" but \"we're ready to go anytime we want\" with strikes."
-    },
-    {
-      "id": "1fydj1z",
-      "title": "Oculis at guggenheim healthcare conference: precision medicine push By Investing.com",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxONktiamZ5UXcxbTNvS05oX1NBa2pjTm5WVWlXUEtabHpyZGJXbTFwTE5FYXJxQnNEWTk1SjhOYWdGS2NyXzlreFV6Q1FuX3k5X3g0bDhqUzNQTGoyZWk4RVNFdENpSjNuSzl1bmo1Ukt0djhVNEs1Si02RFFkZWcwc0dJVHJRS1NyZ2VjejBXTE1kYVlVRWRvQjY0QWVuUmxOM0JWaFhBS0FjZTk3akx1ZjRQSDF4bEhUWV9pVGk0Y0VhTUc4emc?oc=5",
-      "src": "Investing.com India",
-      "dom": "news.google.com",
-      "ts": 1794258270000,
-      "img": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "health",
-      "bullets": [],
-      "summary": "Breaking health coverage reported by Investing.com India. Tap Read for the full story.",
-      "fullText": ""
-    },
-    {
-      "id": "5k7e1s",
-      "title": "Republican lawmaker moves to impeach US Defense Secretary Hegseth",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/republican-lawmaker-moves-to-impeach-us-defense-secretary-hegseth?traffic_source=rss",
-      "src": "Al Jazeera",
-      "dom": "aljazeera.com",
-      "ts": 1794258251000,
-      "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794258234.jpg?resize=1920%2C1080&quality=80",
-      "cat": "world",
-      "bullets": [],
-      "summary": "Republican Congressman Thomas Massie has introduced articles of impeachment against Defense Secretary Pete Hegseth.",
-      "fullText": "Republican Congressman Thomas Massie has introduced articles of impeachment against Defense Secretary Pete Hegseth."
-    },
-    {
-      "id": "1i57ec4",
-      "title": "Americans growing more worried about jobs amid rising prices, finds NY Fed survey",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/jobs-in-us-americans-growing-more-worried-about-jobs-market-amid-rising-prices-finds-ny-fed-survey/articleshow/135692865.cms",
-      "src": "Economic Times",
-      "dom": "economictimes.indiatimes.com",
-      "ts": 1794258114000,
-      "img": "https://img.etimg.com/thumb/msid-135693023,width-1200,height-900,imgsize-70452,overlay-etmarkets/articleshow.jpg",
-      "cat": "business",
-      "bullets": [],
-      "summary": "* NY Fed survey finds rising worry over future unemployment * NY Fed poll finds little change in expected inflation * NY Fed survey reports stability in personal financial situations (Adds graphics)",
-      "fullText": "* NY Fed survey finds rising worry over future unemployment * NY Fed poll finds little change in expected inflation * NY Fed survey reports stability in personal financial situations (Adds graphics)"
-    },
-    {
-      "id": "dieg7d",
-      "title": "School of Medicine grad returns to the region that inspired her to become a doctor",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOX3pDMlVlZVFVakJsOTl5a3hhU3loUGk3aVp2YnVBVjdwNG8wTjVhY0ZDWEFTUjJhTE9aalBWd05weTNFclVjTGoxa2paVm9MZWFaakZyREY1ZmN3QUloUkRqaUM3azdSR1F1Y29FdF9kb3RyM21VOUtWYThGOE1EWE5OQzRDa0lTdjFwczEwTzhTVE52eTROQWdyNXd4VW1CeEdtLWtEblVBTXVDMEUzTnR0dzFGVlBxMUxGT0d6MXdUUUZET3dJWHpEREVUbURQdEJIbDZPMA?oc=5",
-      "src": "UC Davis Health",
-      "dom": "news.google.com",
-      "ts": 1794258104000,
-      "img": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "health",
-      "bullets": [],
-      "summary": "Breaking health coverage reported by UC Davis Health. Tap Read for the full story.",
-      "fullText": ""
-    },
-    {
       "id": "1x6kdl",
       "title": "Fervo now has $12B in orders for its geothermal power tech",
       "url": "https://techcrunch.com/2026/11/09/fervo-now-has-12b-in-orders-for-its-geothermal-power-tech/",
@@ -807,84 +1054,6 @@
       "fullText": "Geothermal company Fervo is targeting natural gas as it brings down geothermal drilling costs at its 8.4 GW resource in Utah."
     },
     {
-      "id": "j87cft",
-      "title": "New mobile health clinic unveiled in Rio Grande Valley | Newswise",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPeDZZVzJWUnltUExmUVhVMm5xSUNaYzZkVC1WRDg0S21qanpmWG5JSjlublpfNkhneDRXNC1PZWNaeENMcWg3N1BINmVUSjZrZW00VUROZ2d1eHIzdGNTRFRZSmJNUV9mOERLT3oyV001WVREOGhVcTNvRjYyNUdiMWNKVWI0elNOOTFrLUdoOEstQdIBkgFBVV95cUxPeDZZVzJWUnltUExmUVhVMm5xSUNaYzZkVC1WRDg0S21qanpmWG5JSjlublpfNkhneDRXNC1PZWNaeENMcWg3N1BINmVUSjZrZW00VUROZ2d1eHIzdGNTRFRZSmJNUV9mOERLT3oyV001WVREOGhVcTNvRjYyNUdiMWNKVWI0elNOOTFrLUdoOEstQQ?oc=5",
-      "src": "Newswise",
-      "dom": "news.google.com",
-      "ts": 1794257700000,
-      "img": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "health",
-      "bullets": [],
-      "summary": "Breaking health coverage reported by Newswise. Tap Read for the full story.",
-      "fullText": ""
-    },
-    {
-      "id": "16g6ra5",
-      "title": "Republican Launches Impeachment Against US Defence Chief Over Iran War",
-      "url": "https://www.ndtv.com/world-news/republican-launches-impeachment-against-us-defence-chief-pete-hegseth-over-iran-war-12305468#publisher=newsstand",
-      "src": "NDTV",
-      "dom": "ndtv.com",
-      "ts": 1794257275000,
-      "img": "https://c.ndtvimg.com/2026-04/qajblofg_pete-hegseth_625x300_16_April_26.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
-      "cat": "top",
-      "bullets": [],
-      "summary": "Impeachment would be a humiliating blow for Pete Hegseth and the Trump administration, but would not automatically remove him from office.",
-      "fullText": "Impeachment would be a humiliating blow for Pete Hegseth and the Trump administration, but would not automatically remove him from office."
-    },
-    {
-      "id": "9c15jt",
-      "title": "Modi, Zelenskyy discuss Ukraine peace efforts; Kyiv calls for New Delhi's role to facilitate grain exports through Black Sea",
-      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNSmp0MmppbDgzemxVdDlBTTF4WWFYMGxGSG1BZmhIdmM4bnFtMDRSVDJzRXJiaHo3ZTkyZV9Na1N4YmJaUFdzOFBLc1Y1YVNxRTdrRThjcDF1YWp5cjI4TmN3MjVuWkdodnNCSEZGcGNIaVRESmhEVkVpX3ctbGZpbExtaC1QZGpnT3MxS0phNHFMd0dVR29aZ2JkUUZjbnM0eXpBbENYb1FkdlZHTk9UaEF2UC1FMzhycGxqc0c3NXBWSjk3Q1ZHNFNFbk16SWwyZ0l1X2VaVGNGcFkyU1M4M2xtaG8zVmxxaTd5a24zNUNQRUZSYXNr?oc=5",
-      "src": "Deccan Herald",
-      "dom": "news.google.com",
-      "ts": 1794256509000,
-      "img": "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "india",
-      "bullets": [],
-      "summary": "Breaking India coverage reported by Deccan Herald. Tap Read for the full story.",
-      "fullText": ""
-    },
-    {
-      "id": "1u24tuk",
-      "title": "Fatalities mar Deepavali festivities across states",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOU3FQRWVmMnNPck5vVU81dDdKWUxYSVhma19IelNJTUxDVHAtS3drOFpiMHBGU0QxWWJKTUtEbVVmRDBKR2FERUhOTDhSWXA1cHVJYkVHTWFnZ3FMTXRoMVNPdmNJY0JNcTBkMEdXNTRFUVVicXFoa05yT0owdkZscTF1dG1iNy1kZFNtVWN2RHVMVXU4ZlBsNg?oc=5",
-      "src": "Deccan Herald",
-      "dom": "news.google.com",
-      "ts": 1794256182000,
-      "img": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "india",
-      "bullets": [],
-      "summary": "Breaking India coverage reported by Deccan Herald. Tap Read for the full story.",
-      "fullText": ""
-    },
-    {
-      "id": "kpuo6k",
-      "title": "Delhi pollution on Diwali rockets to worst in 5 years",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxORE1iZlBlX3RxakRuZXNFaGE5azhEWnZZYngtaDE1MkY5RW1VYjFOTGVZTE1vQmZ5Mzd1QmhxQW11SVQtcjVYSFJFY2dWZVlXMzBrSU9KZ1QwMlM1QlE5bm9kUDBFRlp6RW45NHJrd29ScUdYc3Z2X3VSS0dCcGU0bnotMnNUNGgwS2VQWHhPV3pIMFdyemNQVVlGSzgtbzlFd0ZmZl9HZnNWZUZHWGRYSTBta1BsNTRwZlZjZUd30gHDAUFVX3lxTE51V2k1NVdSalpNa1F0SVNWZUxWNWx5NUE4ZGw0QjN1eVNsR0c3U3A2NDVFU2J2bG9jelFtVTBpVzNXbGlNbmdWQjZqdVJYQ2VmZFNmZTR3NTJRMEUwRS1BUHBNeVNTYjBidklZSS1UUlFfaVZJX3JveDhyYTdrYV84U3I5SnEwRW51dHNMMUxENTd3My12ODMydmRCOXI3SjlxcGlBdDRzQmFsb3lNT1ptLVgwbHJDYjVxZHZxeU5IVWl0MA?oc=5",
-      "src": "The Times of India",
-      "dom": "news.google.com",
-      "ts": 1794255300000,
-      "img": "https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "india",
-      "bullets": [],
-      "summary": "Breaking India coverage reported by The Times of India. Tap Read for the full story.",
-      "fullText": ""
-    },
-    {
-      "id": "slt6ex",
-      "title": "What happened inside court as Brand was sentenced",
-      "url": "https://www.bbc.co.uk/news/videos/cq99z9mrv35lo?at_medium=RSS&at_campaign=rss",
-      "src": "BBC News",
-      "dom": "bbc.co.uk",
-      "ts": 1794255221000,
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/94fc/live/b02c65a0-dc75-11f1-bbe9-83c09cc9b23f.jpg",
-      "cat": "top",
-      "bullets": [],
-      "summary": "The BBC's Sima Kotecha was inside the court as the judge sentenced Brand to 10 years and six months in prison, after being convicted of rape and sexual assault.",
-      "fullText": "The BBC's Sima Kotecha was inside the court as the judge sentenced Brand to 10 years and six months in prison, after being convicted of rape and sexual assault."
-    },
-    {
       "id": "1vqa9x6",
       "title": "Jensen Huang pulls out of ElevenLabs Summit amid Nvidia controversy",
       "url": "https://techcrunch.com/2026/11/09/jensen-huang-pulls-out-of-elevenlabs-summit-amid-nvidia-controversy/",
@@ -896,45 +1065,6 @@
       "bullets": [],
       "summary": "The Nvidia CEO also pulled out of an Anthropic event earlier.",
       "fullText": "The Nvidia CEO also pulled out of an Anthropic event earlier."
-    },
-    {
-      "id": "13gmjsu",
-      "title": "One year after Red Fort blast, victims’ families struggle with grief, financial hardship",
-      "url": "https://www.thehindu.com/news/cities/Delhi/one-year-after-red-fort-blast-victims-families-struggle-with-grief-financial-hardship/article71683725.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1794254939000,
-      "img": "https://th-i.thgim.com/public/incoming/n7h64v/article71683987.ece/alternates/LANDSCAPE_1200/PTI11_09_2026_000277B.jpg",
-      "cat": "local",
-      "bullets": [],
-      "summary": "Families of those killed in the November 10, 2025, blast say they are still struggling to cope with their loss, while survivors continue to face health problems and financial difficulties; some allege that the government’s compensation and support have fallen short of their needs",
-      "fullText": "Families of those killed in the November 10, 2025, blast say they are still struggling to cope with their loss, while survivors continue to face health problems and financial difficulties; some allege that the government’s compensation and support have fallen short of their needs"
-    },
-    {
-      "id": "1ja9ig7",
-      "title": "UNR Med secures over $7 million from the Rural Health Transformation Program",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPcHQ3MVBtY2l2ZzJRTHJLVDc4b1BQejNrdEFkQkxCZndQa2RabmRlSmxHSGVzb2pQcHhMbnBxdkZUZ2FMVUhIM1JYTUl5bDBIYWZpRjJsdkN1RTBULVY5RGM5MDVncEFKaEg3THdIai04enc1cjJNcWZiak1jQ2J6d0h1UVNWVmpUc1lVN1NB?oc=5",
-      "src": "University of Nevada, Reno",
-      "dom": "news.google.com",
-      "ts": 1794254848000,
-      "img": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "health",
-      "bullets": [],
-      "summary": "Breaking health coverage reported by University of Nevada, Reno. Tap Read for the full story.",
-      "fullText": ""
-    },
-    {
-      "id": "qy4rce",
-      "title": "Hegseth Orders Senior Military Schools to Focus on ‘Victory’",
-      "url": "https://www.livemint.com/news/us-news/hegseth-orders-senior-military-schools-to-focus-on-victory-11794254746643.html",
-      "src": "Mint",
-      "dom": "livemint.com",
-      "ts": 1794254746000,
-      "img": "https://www.livemint.com/lm-img/img/2024/12/06/1600x900/logo/news2_1733464197434_1733464227231.jpg",
-      "cat": "india",
-      "bullets": [],
-      "summary": "Defense Secretary Pete Hegseth ordered changes to the curriculum at US senior service colleges, arguing that future admirals and generals need an education more focused on winning wars than academic theories.",
-      "fullText": "Defense Secretary Pete Hegseth ordered changes to the curriculum at US senior service colleges, arguing that future admirals and generals need an education more focused on winning wars than academic theories."
     },
     {
       "id": "1mxo94r",
@@ -978,6 +1108,19 @@
       "fullText": "YouTube will resume sharing streaming data with Billboard in 2027 after changes to the chart formula give more weight to free, ad-supported music streams."
     },
     {
+      "id": "1ejtd95",
+      "title": "Rights panel seeks report from LSGD on linking Chilavannur Bund Road with Vyttila-Aroor bypass",
+      "url": "https://www.thehindu.com/news/national/kerala/rights-panel-seeks-report-from-lsgd-on-linking-chilavannur-bund-road-with-vyttila-aroor-bypass/article71683245.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1794253172000,
+      "img": "https://th-i.thgim.com/public/incoming/wajoyr/article71683949.ece/alternates/LANDSCAPE_1200/bund_road_01.jpg",
+      "cat": "local",
+      "bullets": [],
+      "summary": "Panel directs the Local Self Government department to convene a meeting of the District Collector, GCDA secretary, and Corporation secretary within a week to decide on funding for the project",
+      "fullText": "Panel directs the Local Self Government department to convene a meeting of the District Collector, GCDA secretary, and Corporation secretary within a week to decide on funding for the project"
+    },
+    {
       "id": "1drxy8m",
       "title": "Bengaluru family murders: All seven bodies recovered",
       "url": "https://www.thehindu.com/news/cities/bangalore/bengaluru-family-murders-two-more-bodies-found-in-shiradi-ghat-all-seven-bodies-recovered/article71681705.ece",
@@ -985,23 +1128,10 @@
       "dom": "thehindu.com",
       "ts": 1794252988000,
       "img": "https://th-i.thgim.com/public/incoming/nytdvo/article71681776.ece/alternates/LANDSCAPE_1200/10505_22_7_2025_13_38_3_1_IMG_0112.JPEG",
-      "cat": "india",
+      "cat": "local",
       "bullets": [],
       "summary": "The latest breakthrough came on Monday (November 9, 2026), with the police recovering two more bodies from Shiradi Ghat, in the Western Ghats of Karnataka.",
       "fullText": "The latest breakthrough came on Monday (November 9, 2026), with the police recovering two more bodies from Shiradi Ghat, in the Western Ghats of Karnataka."
-    },
-    {
-      "id": "l863ke",
-      "title": "Ethanol blend row: Minister stands firm on claim, demands independent fuel testing",
-      "url": "https://www.thehindu.com/news/national/karnataka/ethanol-blend-row-minister-stands-firm-on-claim-demands-independent-fuel-testing/article71682523.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1794252804000,
-      "img": "https://th-i.thgim.com/public/incoming/vrayjm/article71683369.ece/alternates/LANDSCAPE_1200/IMG_1387.jpeg",
-      "cat": "india",
-      "bullets": [],
-      "summary": "It was the OMC laboratories’ failure to provide the required result that raised suspicion; the samples were then sent to NABL-accredited and ISO-certified laboratories, says Rizwan Arshad",
-      "fullText": "It was the OMC laboratories’ failure to provide the required result that raised suspicion; the samples were then sent to NABL-accredited and ISO-certified laboratories, says Rizwan Arshad"
     },
     {
       "id": "x60uc2",
@@ -1030,19 +1160,6 @@
       "fullText": "Nominal, a startup that offers an AI platform for hardware engineering and claims Anduril as a major customer, has raised another big round of financing that triples its valuation."
     },
     {
-      "id": "d615g5",
-      "title": "\"Does Haryana's Smoke Go To Pak, Punjab's To Delhi?\" AAP Hits Back At BJP",
-      "url": "https://www.ndtv.com/india-news/haryanas-smoke-goes-to-pakistan-punjabs-to-delhi-aap-hits-back-at-bjp-12303425#publisher=newsstand",
-      "src": "NDTV",
-      "dom": "ndtv.com",
-      "ts": 1794252075000,
-      "img": "https://c.ndtvimg.com/2026-11/t4s70r04_stubble-burning-in-punjab_625x300_03_November_26.jpg?im=FitAndFill,algorithm=dnn,width=1280,height=720",
-      "cat": "top",
-      "bullets": [],
-      "summary": "The latest exchange has added another dimension to the ongoing BJP-AAP confrontation, with Delhi's pollution crisis increasingly becoming a political battleground between the two parties.",
-      "fullText": "The latest exchange has added another dimension to the ongoing BJP-AAP confrontation, with Delhi's pollution crisis increasingly becoming a political battleground between the two parties."
-    },
-    {
       "id": "d2nk86",
       "title": "France blames Iran for mass-hacks targeting freezers in grocery stores and blood banks",
       "url": "https://techcrunch.com/2026/11/09/france-blames-iran-for-mass-hacks-targeting-freezers-in-grocery-stores-and-blood-banks/",
@@ -1056,64 +1173,6 @@
       "fullText": "France&#039;s foreign minister blamed Iran for launching at least two waves of cyberattacks targeting industrial refrigerated and freezer units across France and wider Europe."
     },
     {
-      "id": "bdm8gt",
-      "title": "Air pollution goes through the roof in parts of Delhi on Deepavali night",
-      "url": "https://www.thehindu.com/news/cities/Delhi/air-pollution-goes-through-the-roof-in-parts-of-delhi-on-deepavali-night/article71683708.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1794251601000,
-      "img": "https://th-i.thgim.com/public/incoming/oqkthw/article71683964.ece/alternates/LANDSCAPE_1200/DIWALI%20CELEBRATION%20DELHI%202026%2073.JPG",
-      "cat": "local",
-      "bullets": [],
-      "summary": "Data missing from several monitoring stations at the peak of air pollution during the intervening night of November 8 and 9",
-      "fullText": "Data missing from several monitoring stations at the peak of air pollution during the intervening night of November 8 and 9"
-    },
-    {
-      "id": "glwxv2",
-      "title": "Citi downgrades US stocks to 'neutral' as AI sell-off, regulatory risks mount",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/citi-downgrades-us-stocks-to-neutral-as-ai-sell-off-regulatory-risks-mount/articleshow/135691943.cms",
-      "src": "Economic Times",
-      "dom": "economictimes.indiatimes.com",
-      "ts": 1794251549000,
-      "img": "https://img.etimg.com/thumb/msid-135692005,width-1200,height-900,imgsize-169442,overlay-etmarkets/articleshow.jpg",
-      "cat": "business",
-      "bullets": [
-        "This decision follows a significant sell-off that erased $3 trillion from the market value of S&P 500 companies.",
-        "The strategists expressed worries about the potential for key indices like Nasdaq to shift into net-short territory.",
-        "They also adjusted global and European technology sector ratings to neutral while upgrading healthcare stocks."
-      ],
-      "summary": "Citigroup strategists have downgraded US equities to neutral due to ongoing market volatility and regulatory concerns. This decision follows a significant sell-off that erased $3 trillion from the market value of S&P 500 companies. The strategists expressed worries about the potential for key indices like Nasdaq to shift into net-short territory. They also adjusted global and European technology sector ratings…",
-      "fullText": "Citigroup strategists have downgraded US equities to neutral due to ongoing market volatility and regulatory concerns. This decision follows a significant sell-off that erased $3 trillion from the market value of S&P 500 companies. The strategists expressed worries about the potential for key indices like Nasdaq to shift into net-short territory. They also adjusted global and European technology sector ratings to neutral while upgrading healthcare stocks."
-    },
-    {
-      "id": "70b788",
-      "title": "Women engineers take the helm at Chennai Metrowater",
-      "url": "https://www.thehindu.com/news/cities/chennai/women-engineers-take-the-helm-at-chennai-metrowater/article71670343.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1794251207000,
-      "img": "https://th-i.thgim.com/public/incoming/7ou241/article71683200.ece/alternates/LANDSCAPE_1200/UMS_7329.JPG",
-      "cat": "local",
-      "bullets": [
-        "The milestone comes at a time when women account for 56% of the agency’s workforce"
-      ],
-      "summary": "Their rise reflects a gradual change in an organisation where women were once largely assigned to execution and office work. The milestone comes at a time when women account for 56% of the agency’s workforce",
-      "fullText": "Their rise reflects a gradual change in an organisation where women were once largely assigned to execution and office work. The milestone comes at a time when women account for 56% of the agency’s workforce"
-    },
-    {
-      "id": "3d15hz",
-      "title": "Optional Travel Insurance Scheme urged for railway staff",
-      "url": "https://www.thehindu.com/news/cities/Visakhapatnam/optional-travel-insurance-scheme-urged-for-railway-staff/article71682339.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1794250474000,
-      "img": "https://www.thehindu.com/theme/images/og-image.png",
-      "cat": "local",
-      "bullets": [],
-      "summary": "Railway union urge extending OTIS to staff and families, ensuring affordable accident insurance up to ₹10 lakh for privileged travel.",
-      "fullText": "Railway union urge extending OTIS to staff and families, ensuring affordable accident insurance up to ₹10 lakh for privileged travel."
-    },
-    {
       "id": "1rz8fvt",
       "title": "Atiqa Mir produces overtaking masterclass to finish 6th on FIA World Championship debut",
       "url": "https://www.thehindu.com/sport/atiqa-mir-produces-overtaking-masterclass-to-finish-6th-on-fia-world-championship-debut/article71683921.ece",
@@ -1125,6 +1184,21 @@
       "bullets": [],
       "summary": "In a recovery rarely seen in this Championship, Atiqa put on an overtaking masterclass by making up 16 places in Race 1 and finishing P6, which happened to be also the highest by an Indian this weekend",
       "fullText": "In a recovery rarely seen in this Championship, Atiqa put on an overtaking masterclass by making up 16 places in Race 1 and finishing P6, which happened to be also the highest by an Indian this weekend"
+    },
+    {
+      "id": "682cag",
+      "title": "Gurnoor Brar — the X-factor in India’s bowling cartel",
+      "url": "https://www.thehindu.com/sport/cricket/gurnoor-brar-the-x-factor-in-indias-bowling-cartel/article71683740.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1794249756000,
+      "img": "https://th-i.thgim.com/public/incoming/nywxn7/article71683773.ece/alternates/LANDSCAPE_1200/GURNOOR%20MAIN.jpg",
+      "cat": "sports",
+      "bullets": [
+        "India can’t afford to be conservative in using Gurnoor in the lead-up to the mega event because he will only get better, more tactically astute and suave once…"
+      ],
+      "summary": "Gill has made no secret of his desire to have extra pace at his disposal to force the issue in the meandering middle overs. India can’t afford to be conservative in using Gurnoor in the lead-up to the mega event because he will only get better, more tactically astute and suave once he has more overs in his legs in…",
+      "fullText": "Gill has made no secret of his desire to have extra pace at his disposal to force the issue in the meandering middle overs. India can’t afford to be conservative in using Gurnoor in the lead-up to the mega event because he will only get better, more tactically astute and suave once he has more overs in his legs in the pressure-cooker situation of an international contest"
     },
     {
       "id": "rrlytd",
@@ -1166,32 +1240,6 @@
       "fullText": "The Race to Gold Masters will be held across three weekends in November, beginning with the North Zone event at the DLTA courts on November 14-15"
     },
     {
-      "id": "cvjhkr",
-      "title": "Worker killed as tractor tyre bursts during inflation at Sholinganallur",
-      "url": "https://www.thehindu.com/news/cities/chennai/worker-killed-as-tractor-tyre-bursts-during-inflation-at-sholinganallur/article71683505.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1794249475000,
-      "img": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "local",
-      "bullets": [],
-      "summary": "Tractor tyre explosion during inflation kills 40-year-old worker at Sholinganallur garbage contractor yard in Chennai.",
-      "fullText": "Tractor tyre explosion during inflation kills 40-year-old worker at Sholinganallur garbage contractor yard in Chennai."
-    },
-    {
-      "id": "1jo3qi5",
-      "title": "Food industry pushes back on WHO guidance for products with added colour, sweeteners",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNTGs5TkZhWXhIeWQzR1ZWQkR0aEg2TXlUMkp2NjVNNTRBVVcwZDRfWWV6UzBudFkyeVZEcHRHWmV6aGFpOVg5UVRzWERrcXhjdk5VMTVxaFNQblluMTlqTnh1S1pKN3QxclYzOTlPTDJTNU1lT1FEejFibzVYWGEtQ2FvTHJ1MlhkMF85bzdQU2pzRHZMajVOMWQybnUzXy1VWU1WZXlfSjdVUG93RDdMbklNX1l0aGZJS3B2NDFpSWZrTFBPSzJvdEF6aVZCLUhYYXJRbXFSS3pDYllUaWNPSXhn?oc=5",
-      "src": "Reuters",
-      "dom": "news.google.com",
-      "ts": 1794248994000,
-      "img": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "business",
-      "bullets": [],
-      "summary": "Breaking business coverage reported by Reuters. Tap Read for the full story.",
-      "fullText": ""
-    },
-    {
       "id": "z5bsph",
       "title": "Anuj lights up Indian chess, becomes the 100th GM",
       "url": "https://www.thehindu.com/sport/anuj-lights-up-indian-chess-becomes-the-100th-gm/article71683912.ece",
@@ -1203,47 +1251,6 @@
       "bullets": [],
       "summary": "The 22-year-old from Madhya Pradesh, who quit his software engineering job to pursue a career in the sport, says that it feels good to join the roll of honour and all the hard work has paid off",
       "fullText": "The 22-year-old from Madhya Pradesh, who quit his software engineering job to pursue a career in the sport, says that it feels good to join the roll of honour and all the hard work has paid off"
-    },
-    {
-      "id": "11hbuv1",
-      "title": "Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny",
-      "url": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/",
-      "src": "TechCrunch",
-      "dom": "techcrunch.com",
-      "ts": 1794247792000,
-      "img": "https://techcrunch.com/wp-content/uploads/2025/01/GettyImages-2192223928.jpg?resize=1200,801",
-      "cat": "tech",
-      "bullets": [
-        "chip export restrictions and maintain access to China’s lucrative AI market."
-      ],
-      "summary": "Jensen Huang’s alleged affair with a suspected Chinese spy threatens to complicate Nvidia’s lobbying efforts to loosen U.S. chip export restrictions and maintain access to China’s lucrative AI market.",
-      "fullText": "Jensen Huang’s alleged affair with a suspected Chinese spy threatens to complicate Nvidia’s lobbying efforts to loosen U.S. chip export restrictions and maintain access to China’s lucrative AI market."
-    },
-    {
-      "id": "jqolrc",
-      "title": "Meta releases Muse Ember, a new lightweight model for agent execution",
-      "url": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
-      "src": "TechCrunch",
-      "dom": "techcrunch.com",
-      "ts": 1794247200000,
-      "img": "https://techcrunch.com/wp-content/uploads/2026/11/Blog-Header-Visual.png?resize=1200,675",
-      "cat": "tech",
-      "bullets": [],
-      "summary": "At 10 cents per million input tokens, Ember is significantly cheaper than frontier competitors like Haiku and Luna.",
-      "fullText": "At 10 cents per million input tokens, Ember is significantly cheaper than frontier competitors like Haiku and Luna."
-    },
-    {
-      "id": "txcb67",
-      "title": "Beyond Clinical Care: Integrating Non-Medical Drivers of Health Into Maternal Health Policy in Texas",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNeWNFRDNSM0hYekxfaWM2QmRVa1FzeXJCZmxLc2FDdkxvVGk4TEpPX0t0anc1QzRJOENNWXp4YmpGZVhfQlpWMUluMXBXek1qUVpwQkNUcmxSbHZZSWZBTUkzUjRZSzZfemxrSVhXN2VDVWxOVG1mOEZfT2RTQjJXMi1kam15VzNhRDU4Ulk1QzdELXhzSzd6d3FGUF9IS0d4RUZZekVlMGE4ZFlXeFVaR3hiN1lZajF6UFAxS1V6alc4eEZ2TU00?oc=5",
-      "src": "Baker Institute",
-      "dom": "news.google.com",
-      "ts": 1794246836000,
-      "img": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "health",
-      "bullets": [],
-      "summary": "Breaking health coverage reported by Baker Institute. Tap Read for the full story.",
-      "fullText": ""
     },
     {
       "id": "1aouo43",
@@ -1259,58 +1266,6 @@
       "fullText": "L&T secures ₹1,000-2,500 crore Noida Metro Aqua Line Extension project, enabling 15.1 km of elevated viaducts and 10 stations in 36 months."
     },
     {
-      "id": "8ycute",
-      "title": "Civil servant who secretly held five jobs found guilty of fraud",
-      "url": "https://www.bbc.co.uk/news/articles/cm70pgnx891do?at_medium=RSS&at_campaign=rss",
-      "src": "BBC News",
-      "dom": "bbc.co.uk",
-      "ts": 1794244636000,
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1641/live/c3324b50-d6f9-11f1-b983-c357054e4d1e.jpg",
-      "cat": "business",
-      "bullets": [],
-      "summary": "Kashim Chowdhury had secretly held multiple public sector jobs on full-time salaries.",
-      "fullText": "Kashim Chowdhury had secretly held multiple public sector jobs on full-time salaries."
-    },
-    {
-      "id": "1blx5d",
-      "title": "Uber launches parking service following SpotHero acquisition, with an eye on robotaxis",
-      "url": "https://techcrunch.com/2026/11/09/uber-launches-parking-service-following-spothero-acquisition-with-an-eye-on-robotaxis/",
-      "src": "TechCrunch",
-      "dom": "techcrunch.com",
-      "ts": 1794243600000,
-      "img": "https://techcrunch.com/wp-content/uploads/2018/07/GettyImages-83314262.jpg?resize=1200,640",
-      "cat": "tech",
-      "bullets": [],
-      "summary": "Uber Parking is the latest example of the company offering products beyond its core ride-hailing service.",
-      "fullText": "Uber Parking is the latest example of the company offering products beyond its core ride-hailing service."
-    },
-    {
-      "id": "wxtzb6",
-      "title": "Meta sets India pricing for Muse AI agent ahead of launch",
-      "url": "https://www.thehindu.com/business/Industry/meta-sets-india-pricing-for-muse-ai-agent-ahead-of-launch/article71682680.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1794243545000,
-      "img": "https://th-i.thgim.com/public/incoming/ards8a/article71683476.ece/alternates/LANDSCAPE_1200/2026-11-09T094156Z_184369278_RC29KOA7QV4L_RTRMADP_3_AI-ENERGY.JPG",
-      "cat": "business",
-      "bullets": [],
-      "summary": "It is unclear when Meta’s rapidly growing Muse AI agent will launch in India; however, the service already displays pricing in Indian rupees.",
-      "fullText": "It is unclear when Meta’s rapidly growing Muse AI agent will launch in India; however, the service already displays pricing in Indian rupees."
-    },
-    {
-      "id": "1ksb41r",
-      "title": "Poundland unable to buy new stock as fears over collapse grow",
-      "url": "https://www.bbc.co.uk/news/articles/cw1l3lmem165o?at_medium=RSS&at_campaign=rss",
-      "src": "BBC News",
-      "dom": "bbc.co.uk",
-      "ts": 1794242800000,
-      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4c59/live/3c72aa60-dc53-11f1-b8a2-9782924402f8.jpg",
-      "cat": "business",
-      "bullets": [],
-      "summary": "The discount chain is continuing to edge towards collapse and is said to be \"running on fumes\", according to one insider.",
-      "fullText": "The discount chain is continuing to edge towards collapse and is said to be \"running on fumes\", according to one insider."
-    },
-    {
       "id": "x8o617",
       "title": "WTA Chennai Open: Linette comes from behind, bags fourth Tour-level title",
       "url": "https://www.thehindu.com/sport/tennis/linette-comes-from-behind-bags-fourth-tour-level-title/article71683730.ece",
@@ -1324,19 +1279,6 @@
       "fullText": "Linette comes from behind, bags fourth Tour-level title"
     },
     {
-      "id": "c8f4gy",
-      "title": "Mount Sinai Reaches Top 10 as a National Institutes of Health-Funded Academic Medical Center",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUEQwU3FuWnMxU2pzY0IwRDBzcVphLWV4MXVUQ0szWXo4bGVaX3liMDM0SXJ1cTBSampsNndhYWdpMmktTHNLNDhWenNQX3h5S3dMV1dOeVNLUHRHdDFVOVRtNGYzblFUb0gtaG12NjhwcGdaQzBXSjE3bF9EY0hjQU9KWTBEUnlmWXdjQS1pTlNyQlNJX0JVNjQ0aUF3a0FUd2pRM2kxcldmaHhULXkxTERZdG1GcVZPT0M5bUlLelhmcmw2d1A2U1RELWRoTHNvWjloNmRR?oc=5",
-      "src": "Mount Sinai",
-      "dom": "news.google.com",
-      "ts": 1794241023000,
-      "img": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "health",
-      "bullets": [],
-      "summary": "Breaking health coverage reported by Mount Sinai. Tap Read for the full story.",
-      "fullText": ""
-    },
-    {
       "id": "di04lt",
       "title": "Youth Olympic Games: How Pegu bounced back from a near miss to clinch bronze",
       "url": "https://www.thehindu.com/sport/how-pegu-bounced-back-from-a-near-miss-to-clinch-youth-olympic-games-bronze/article71683620.ece",
@@ -1348,32 +1290,6 @@
       "bullets": [],
       "summary": "How Pegu bounced back from a near miss to clinch Youth Olympic Games bronze",
       "fullText": "How Pegu bounced back from a near miss to clinch Youth Olympic Games bronze"
-    },
-    {
-      "id": "x3gyeu",
-      "title": "How vaccine vial monitors help protect children against disease",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB2eXpOeWdFc21VV0RHV20zMHBrWHotSDNxNjFfWFRVU2FEUkt6M1RSaFpDaGdrZE5yYTI2WkMtam9VOTlDTHJHdDVoTVNfVzZlMUZCTURXZUdnWWkzUUVlNDJRdUVCTWRNOHl2b0FmWHA3RmRwYmdmZw?oc=5",
-      "src": "Gavi, the Vaccine Alliance",
-      "dom": "news.google.com",
-      "ts": 1794240560000,
-      "img": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "health",
-      "bullets": [],
-      "summary": "Breaking health coverage reported by Gavi, the Vaccine Alliance. Tap Read for the full story.",
-      "fullText": ""
-    },
-    {
-      "id": "yblym5",
-      "title": "Stanford Medicine Sutter Health Cancer Center expands access to advanced cancer care in the East Bay",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZjg0YUxsekRnUHN2ekkyNE56NXN3WlFKNkt0VkRJQjlGTnA2cFNIQkFfUWZwMkQxdjRILUcwemxZOTN6S1hPWGJCbmhrZGJLTzctbnQtWlZNd3NhVmtIOXB2RXMxZ0gyWGFmTldDTGR1aEtJc1UtQXJmQzlxaFJkZG9LM1pxZ3U3YnRRa1JZdFJfVW1yY1dUQVJHUlA2UQ?oc=5",
-      "src": "Stanford Medicine",
-      "dom": "news.google.com",
-      "ts": 1794240310000,
-      "img": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "health",
-      "bullets": [],
-      "summary": "Breaking health coverage reported by Stanford Medicine. Tap Read for the full story.",
-      "fullText": ""
     },
     {
       "id": "y9afu7",
@@ -1454,30 +1370,97 @@
       "fullText": ""
     },
     {
-      "id": "1z0w457",
-      "title": "Astraeus, Bright Thunder excel",
-      "url": "https://www.thehindu.com/sport/races/horse-racing/article71682942.ece",
+      "id": "1c0qnck",
+      "title": "Deepavali pollution spike: How does it affect lung function and respiratory health? | Explained",
+      "url": "https://www.thehindu.com/sci-tech/health/deepavali-pollution-spike-how-does-it-affect-lung-function-and-respiratory-health/article71682011.ece",
       "src": "The Hindu",
       "dom": "thehindu.com",
-      "ts": 1794232303000,
-      "img": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=720&h=1280&q=70",
-      "cat": "sports",
-      "bullets": [],
-      "summary": "Breaking sports coverage reported by The Hindu. Tap Read for the full story.",
-      "fullText": ""
+      "ts": 1794228958000,
+      "img": "https://th-i.thgim.com/public/incoming/54az2s/article71682021.ece/alternates/LANDSCAPE_1200/2786_9_11_2026_10_36_44_2_11PY08DEEPAVALI2.JPG",
+      "cat": "health",
+      "bullets": [
+        "Experts explain the short- and long-term effects of exposure and whether the damage persists after air quality improves"
+      ],
+      "summary": "Firecracker smoke releases fine particles and harmful gases that irritate the airways and affect lung health. Experts explain the short- and long-term effects of exposure and whether the damage persists after air quality improves",
+      "fullText": "Firecracker smoke releases fine particles and harmful gases that irritate the airways and affect lung health. Experts explain the short- and long-term effects of exposure and whether the damage persists after air quality improves"
     },
     {
-      "id": "1e7dt9b",
-      "title": "Timeless Vision clinches feature event",
-      "url": "https://www.thehindu.com/sport/races/horse-racing/article71682830.ece",
+      "id": "19gvgw2",
+      "title": "Cyber bullying affects one in ten students worldwide; AI fuels new threat: UNESCO",
+      "url": "https://www.thehindu.com/sci-tech/health/cyber-bullying-affects-one-in-ten-students-worldwide-ai-fuels-new-threat-unesco/article71682385.ece",
       "src": "The Hindu",
       "dom": "thehindu.com",
-      "ts": 1794230293000,
-      "img": "https://www.thehindu.com/theme/images/og-image.png",
-      "cat": "sports",
+      "ts": 1794224746000,
+      "img": "https://th-i.thgim.com/public/incoming/d7bgu3/article71682400.ece/alternates/LANDSCAPE_1200/iStock-2210857172.jpg",
+      "cat": "health",
       "bullets": [],
-      "summary": "Breaking sports coverage reported by The Hindu. Tap Read for the full story.",
-      "fullText": ""
+      "summary": "The United Nations agency has called upon countries to invest in digital safety measures, teacher preparation, and mental health support for students, in coordination with technology companies",
+      "fullText": "The United Nations agency has called upon countries to invest in digital safety measures, teacher preparation, and mental health support for students, in coordination with technology companies"
+    },
+    {
+      "id": "131v4nf",
+      "title": "Why listening to students’ voices is crucial to tackling the student suicide crisis in India",
+      "url": "https://www.thehindu.com/sci-tech/health/why-listening-to-students-voices-is-crucial-to-tackling-the-student-suicide-crisis-in-india/article71660266.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1794220481000,
+      "img": "https://th-i.thgim.com/public/incoming/ktq3ok/article71674070.ece/alternates/LANDSCAPE_1200/IMG_iStock-924727534_2_1_UBCCNQ1E.jpg",
+      "cat": "health",
+      "bullets": [],
+      "summary": "In tackling student distress, institutions must centre students’ lived experiences by ensuring their direct representation on all institutional committees, so that systemic solutions are valid and sustainable",
+      "fullText": "In tackling student distress, institutions must centre students’ lived experiences by ensuring their direct representation on all institutional committees, so that systemic solutions are valid and sustainable"
+    },
+    {
+      "id": "j020zs",
+      "title": "Air pollution over 66 times WHO limit in parts of Delhi as people defy ban on firecrackers on Deepavali",
+      "url": "https://www.thehindu.com/news/cities/Delhi/air-pollution-over-50-times-who-limit-in-parts-of-delhi-as-people-defy-ban-on-firecrackers-on-deepavali/article71681210.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1794213897000,
+      "img": "https://th-i.thgim.com/public/incoming/566rwi/article71681278.ece/alternates/LANDSCAPE_1200/DIWALI%20DELHI%202026%2012.JPG",
+      "cat": "health",
+      "bullets": [],
+      "summary": "Data on air pollution missing from several monitoring stations of the Delhi Government at the peak of air pollution during the intervening night of November 8 and 9",
+      "fullText": "Data on air pollution missing from several monitoring stations of the Delhi Government at the peak of air pollution during the intervening night of November 8 and 9"
+    },
+    {
+      "id": "1isoofo",
+      "title": "Supreme Court terms vehicular emissions major contributor to air pollution in Delhi-NCR",
+      "url": "https://www.thehindu.com/news/national/supreme-court-terms-vehicular-emissions-major-contributor-to-air-pollution-in-delhi-ncr/article71673419.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1794213438000,
+      "img": "https://th-i.thgim.com/public/incoming/mncji6/article71673549.ece/alternates/LANDSCAPE_1200/20261106076L.jpg",
+      "cat": "health",
+      "bullets": [],
+      "summary": "The Bench highlighted the large number of vehicles plying on roads connecting Delhi with neighbouring areas, including Ghaziabad, Greater Noida, Gurugram and Faridabad",
+      "fullText": "The Bench highlighted the large number of vehicles plying on roads connecting Delhi with neighbouring areas, including Ghaziabad, Greater Noida, Gurugram and Faridabad"
+    },
+    {
+      "id": "qzn1mq",
+      "title": "Keralam measles outbreaks call for a relook at disease epidemiology",
+      "url": "https://www.thehindu.com/news/national/kerala/keralam-measles-outbreaks-call-for-a-relook-at-disease-epidemiology/article71678654.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1794213427000,
+      "img": "https://th-i.thgim.com/public/incoming/b5dgx/article71679432.ece/alternates/LANDSCAPE_1200/IMG_BL30_Think_syringe_v_2_1_Q4GNRHO3.jpg",
+      "cat": "health",
+      "bullets": [],
+      "summary": "Once predominantly a childhood disease affecting children aged one to five, measles is now being reported across age groups, including among fully vaccinated individuals and infants below nine months, who are not yet eligible for routine measles vaccination",
+      "fullText": "Once predominantly a childhood disease affecting children aged one to five, measles is now being reported across age groups, including among fully vaccinated individuals and infants below nine months, who are not yet eligible for routine measles vaccination"
+    },
+    {
+      "id": "pm7gpw",
+      "title": "Revised MRPs of 1,364 anti-cancer formulations come into effect; consumers to save ₹3,540 crore/year",
+      "url": "https://www.thehindu.com/sci-tech/health/revised-mrps-of-1364-anti-cancer-formulations-come-into-effect-consumers-to-save-3540-croreyear/article71681795.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1794210275000,
+      "img": "https://th-i.thgim.com/public/incoming/a1q9oe/article71681816.ece/alternates/LANDSCAPE_1200/man-hazmat-suit-with-medicine-pills.jpg",
+      "cat": "health",
+      "bullets": [],
+      "summary": "According to the Ministry, 85 pharmaceutical companies have reported revised MRPs for 1,364 anti-cancer formulations across 121 drugs as of November 8, 2026",
+      "fullText": "According to the Ministry, 85 pharmaceutical companies have reported revised MRPs for 1,364 anti-cancer formulations across 121 drugs as of November 8, 2026"
     },
     {
       "id": "1fmkiyf",
@@ -1491,6 +1474,19 @@
       "bullets": [],
       "summary": "Scientists are predictng this could be the hottest year on record as the COP31 climate summit opens.",
       "fullText": "Scientists are predictng this could be the hottest year on record as the COP31 climate summit opens."
+    },
+    {
+      "id": "1mps74a",
+      "title": "Willem Einthoven’s Nobel-winning discovery that laid the foundations of the modern ECG",
+      "url": "https://www.thehindu.com/sci-tech/health/willem-einthovens-nobel-winning-discovery-that-laid-the-foundations-of-the-modern-ecg/article71677371.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1794203520000,
+      "img": "https://th-i.thgim.com/public/sci-tech/health/vt2l02/article71681549.ece/alternates/LANDSCAPE_1200/final%201.jpg",
+      "cat": "health",
+      "bullets": [],
+      "summary": "Willem Einthoven’s development of the string galvanometer transformed the recording of cardiac electrical signals and laid the foundations of modern electrocardiography",
+      "fullText": "Willem Einthoven’s development of the string galvanometer transformed the recording of cardiac electrical signals and laid the foundations of modern electrocardiography"
     },
     {
       "id": "w26yy2",
@@ -1509,6 +1505,19 @@
       "fullText": "On November 8, 2018, one of the earliest wheelchairs used by Stephen Hawking fetched a whopping sum of nearly £300,000, while a copy of his doctoral thesis fetched almost £585,000. How did a theoretical physicist turn into one of the most celebrated scientists of recent times? A.S.Ganesh gives you the answer with a brief look at his life and work…"
     },
     {
+      "id": "1c4ccpc",
+      "title": "Health officials step up surveillance as Shigella cases rise in Kerala’s Malappuram",
+      "url": "https://www.thehindu.com/news/national/kerala/health-officials-step-up-surveillance-as-shigella-cases-rise-in-malappuram/article71678304.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1794199091000,
+      "img": "https://th-i.thgim.com/public/incoming/47gvg5/article71678764.ece/alternates/LANDSCAPE_1200/IMG_shigella-1184px1_2_1_5J9PCODJ.jpg",
+      "cat": "health",
+      "bullets": [],
+      "summary": "Five of the eight Shigella cases reported in Malappuram district are linked to a wedding feast at Korakkuthu in Elamkulam panchayat near Perinthalmanna",
+      "fullText": "Five of the eight Shigella cases reported in Malappuram district are linked to a wedding feast at Korakkuthu in Elamkulam panchayat near Perinthalmanna"
+    },
+    {
       "id": "manx8x",
       "title": "A glimmer of good news for Britain's sleepy dormouse",
       "url": "https://www.bbc.co.uk/news/articles/c85ynn0p5k71o?at_medium=RSS&at_campaign=rss",
@@ -1520,6 +1529,32 @@
       "bullets": [],
       "summary": "New figures suggest hazel dormice may be recovering after decades of decline, with warmer summers boosting survival.",
       "fullText": "New figures suggest hazel dormice may be recovering after decades of decline, with warmer summers boosting survival."
+    },
+    {
+      "id": "1nl28hx",
+      "title": "What's your love language - and does it actually mean anything?",
+      "url": "https://www.bbc.co.uk/news/articles/c6lykl01nzp9o?at_medium=RSS&at_campaign=rss",
+      "src": "BBC News",
+      "dom": "bbc.co.uk",
+      "ts": 1794185735000,
+      "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6efb/live/24613860-d9e7-11f1-bbe5-797ee05bee69.jpg",
+      "cat": "health",
+      "bullets": [],
+      "summary": "The theory of ‘Love Languages’ has no scientific origin but it's often still mentioned in modern dating.",
+      "fullText": "The theory of ‘Love Languages’ has no scientific origin but it's often still mentioned in modern dating."
+    },
+    {
+      "id": "34ea4n",
+      "title": "New insights into prehistoric South India’s culinary culture",
+      "url": "https://www.thehindu.com/sci-tech/science/new-insights-into-prehistoric-south-indias-culinary-culture/article71677595.ece",
+      "src": "The Hindu",
+      "dom": "thehindu.com",
+      "ts": 1794143300000,
+      "img": "https://th-i.thgim.com/public/incoming/gqy4un/article71678014.ece/alternates/LANDSCAPE_1200/IMG_TH_-_28_12_2019_-_Ke_2_1_NLC845B1.jpg",
+      "cat": "science",
+      "bullets": [],
+      "summary": "An advanced study of pottery shards from Keeladi and Gottiprolu reveals dairy and plant processing practices between the 6th and 1st century BC",
+      "fullText": "An advanced study of pottery shards from Keeladi and Gottiprolu reveals dairy and plant processing practices between the 6th and 1st century BC"
     },
     {
       "id": "175q2yn",
@@ -1600,32 +1635,6 @@
       "bullets": [],
       "summary": "Reaching net zero carbon emissions worldwide is essential to limit global warming, UN scientists say.",
       "fullText": "Reaching net zero carbon emissions worldwide is essential to limit global warming, UN scientists say."
-    },
-    {
-      "id": "1mnpdz1",
-      "title": "Cellophane bees produce a kind of plastic that also degrades, study finds",
-      "url": "https://www.thehindu.com/sci-tech/energy-and-environment/cellophane-bees-produce-a-kind-of-plastic-that-also-degrades-study-finds/article71660428.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1793940351000,
-      "img": "https://th-i.thgim.com/public/incoming/s0s9yo/article71660556.ece/alternates/LANDSCAPE_1200/Colletes_validus_male_side_2012-04-12-12.46_18431765716.jpg",
-      "cat": "science",
-      "bullets": [],
-      "summary": "The nest lining of the ground-nesting bee is translucent, flexible, resilient and degrades within a year",
-      "fullText": "The nest lining of the ground-nesting bee is translucent, flexible, resilient and degrades within a year"
-    },
-    {
-      "id": "aa03k8",
-      "title": "The Milky Way grew by devouring galaxies, leaving a trail of ghost stars",
-      "url": "https://www.thehindu.com/sci-tech/science/the-milky-way-grew-by-devouring-galaxies-leaving-a-trail-of-ghost-stars/article71652934.ece",
-      "src": "The Hindu",
-      "dom": "thehindu.com",
-      "ts": 1793940039000,
-      "img": "https://th-i.thgim.com/public/sci-tech/science/u7eb1i/article71652920.ece/alternates/LANDSCAPE_1200/jpegPIA18915.jpg",
-      "cat": "science",
-      "bullets": [],
-      "summary": "Galactic archaeologists are using precise measures and larger sample sizes afforded by new missions to tease apart minute differences between groups of stars, revealing the history of the Milky Way going back almost 12 billion years",
-      "fullText": "Galactic archaeologists are using precise measures and larger sample sizes afforded by new missions to tease apart minute differences between groups of stars, revealing the history of the Milky Way going back almost 12 billion years"
     }
   ]
 }
